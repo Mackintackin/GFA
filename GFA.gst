@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="13" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <publications>
+    <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
+  </publications>
+  <costTypes>
+    <costType id="ba61-5f33-318b-653a" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
+  </costTypes>
+  <profileTypes>
+    <profileType id="56db-5e91-a8cb-65e2" name="Ship Stats">
+      <characteristicTypes>
+        <characteristicType id="aecd-d579-3ad9-087e" name="Shields"/>
+        <characteristicType id="dc54-3469-a3c4-33c1" name="Thrusters"/>
+        <characteristicType id="7f46-3a45-4c91-3586" name="Armour Save"/>
+        <characteristicType id="5a15-af02-e253-322d" name="Crew Size"/>
+        <characteristicType id="d938-1f52-2fd4-601d" name="ADS*"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="d169-b6bf-030f-d1c7" name="Weapon Profile">
+      <characteristicTypes>
+        <characteristicType id="02c1-f192-0aa7-4b94" name="Range"/>
+        <characteristicType id="738d-1ca7-eee9-c602" name="Roll to Hit/AP"/>
+        <characteristicType id="4014-85f2-f62b-36d9" name="Shots"/>
+        <characteristicType id="b9c0-a785-db1c-1f9f" name="Fire Points"/>
+        <characteristicType id="3491-0cc6-d26a-85a4" name="Traits"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="ab05-2e44-81dc-dfd0" name="Ship Traits">
+      <characteristicTypes>
+        <characteristicType id="69e2-0fbf-e675-3b65" name="Trait"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="adcc-9796-db7a-f8b1" name="Weapon Traits">
+      <characteristicTypes>
+        <characteristicType id="9d89-00a8-8d24-cb41" name="Trait"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="ee25-8839-fc92-3ef6" name="Battlegroup Commander">
+      <characteristicTypes>
+        <characteristicType id="8431-d304-5569-d9ee" name="Commander Trait"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="033a-248a-e540-baaa" name="Faction Traits">
+      <characteristicTypes>
+        <characteristicType id="5b1e-f660-2b2b-2991" name="Faction Traits"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="fe7c-a4f6-55e4-ec01" name="Information">
+      <characteristicTypes>
+        <characteristicType id="1976-5542-b662-d9e5" name="[Reference]"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="57d9-4b4c-aef6-d2ff" name="Strikecraft">
+      <characteristicTypes>
+        <characteristicType id="5100-19bf-79a4-f46b" name="Dogfight modifier"/>
+        <characteristicType id="84f2-ec5e-e8f2-1b9c" name="Speed"/>
+        <characteristicType id="a702-c3f6-cb95-b6a6" name="Roll to hit/+AP"/>
+        <characteristicType id="c53e-747f-9f47-849c" name="Rundown"/>
+        <characteristicType id="db31-ed7c-6704-83e3" name="Save"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <categoryEntries>
+    <categoryEntry id="4abf-8ab9-931b-4a97" name="Configuration" hidden="false"/>
+    <categoryEntry id="eb6d-8a2e-eb65-f70a" name="Carrier" hidden="false"/>
+    <categoryEntry id="fac4-f029-106c-5981" name="Battlecruiser" hidden="false"/>
+    <categoryEntry id="9a6f-a8b9-4ec1-f0cb" name="Frigate" hidden="false"/>
+    <categoryEntry id="3ed0-5059-2f78-913d" name="Corvette" hidden="false"/>
+    <categoryEntry id="207d-e468-cf2d-70e7" name="Torpedo Boat" hidden="false"/>
+    <categoryEntry id="aaf5-53cb-dd7a-25e1" name="Destroyer" hidden="false"/>
+    <categoryEntry id="1d62-51cc-7dc0-4713" name="Heavy Destroyer" hidden="false"/>
+    <categoryEntry id="55c1-a6f4-adb1-799d" name="Battleship" hidden="false"/>
+    <categoryEntry id="2fa7-79f2-39bc-2852" name="Super Carrier" hidden="false"/>
+    <categoryEntry id="2481-a313-ee6b-7534" name="T1" hidden="false"/>
+    <categoryEntry id="1c0f-6851-2f14-1d00" name="T3" hidden="false"/>
+    <categoryEntry id="b6d5-6046-4ec0-655d" name="T2" hidden="false"/>
+    <categoryEntry id="4cf5-ecf3-433a-257f" name="Cruiser" hidden="false"/>
+    <categoryEntry id="ca3d-268e-c54a-5ad0" name="Green" hidden="false"/>
+    <categoryEntry id="1273-426c-e364-50de" name="Conscripts" hidden="false"/>
+    <categoryEntry id="c9ad-349e-fa78-f3fa" name="Veteran" hidden="false"/>
+    <categoryEntry id="1819-080d-2b0e-710d" name="Trained" hidden="false"/>
+    <categoryEntry id="65b3-d043-cf27-0671" name="Capital" hidden="false"/>
+    <categoryEntry id="e62e-eaf7-0a7a-8ede" name="Support" hidden="false"/>
+    <categoryEntry id="8f11-fae2-9c59-a140" name="Escort" hidden="false"/>
+    <categoryEntry id="058c-f32f-8132-917b" name="Assault" hidden="false"/>
+    <categoryEntry id="965e-e27c-1b2f-e11b" name="Heavy Capital" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e458-352f-b543-34ea" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="6176-84f7-8071-b92e" name="Fleet Commander" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="7d6c-f6c1-f8c5-d6bc" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="931d-63d7-4335-fbf1" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="1400-6cc4-e9a5-372c" name="Faction Traits" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b3c-4c9b-2cfa-abd2" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b29-760b-42a3-29e3" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="1a19-0fd1-8500-ac26" name="Upgrades" hidden="false"/>
+    <categoryEntry id="893a-0170-bcdc-468b" name="Troops" hidden="false"/>
+    <categoryEntry id="3117-f9a6-87cb-9559" name="Strikecraft" hidden="false"/>
+    <categoryEntry id="3db8-dec1-a0d0-6143" name="Hanger Medium" hidden="false"/>
+    <categoryEntry id="65e0-d6cc-fa09-919a" name="Hanger Small" hidden="false"/>
+    <categoryEntry id="197b-a939-f653-3fff" name="Hanger Bay" hidden="false"/>
+    <categoryEntry id="7d6a-9af3-2353-cf10" name="Hanger Large" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="6f57-4c2a-1ec6-28f4" name="Vanguard Group" hidden="false">
+      <comment>Can be any group type but all ships must have thrusters 4 and above.</comment>
+      <forceEntries>
+        <forceEntry id="f86c-827f-94a9-c255" name="Vanguard Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="9afa-f88a-22d5-c8b9" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="4275-1367-ca35-a03b" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink id="ab4e-3a40-6215-fd9a" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+            <categoryLink id="945c-ad1d-8dec-4393" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="890c-6c67-fd48-d430" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="ed0c-119b-a63d-794f" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+        <categoryLink id="9625-9b72-a6db-12c6" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+        <categoryLink id="f980-49c0-6b98-2542" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+        <categoryLink id="fb92-4c44-b421-2a83" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="e7c4-9ef0-f65f-8d71" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
+      <comment>2-4 Support ships, each must have 1 escort and can have up to 2 escorts in total.�</comment>
+      <forceEntries>
+        <forceEntry id="9b83-db1b-71ff-a3f1" name="Support Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="a259-f1db-b9c3-68c4" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="ae72-2589-f5ae-4cab" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink id="8aa8-efae-3bc6-8400" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+            <categoryLink id="1026-9320-4a59-1a4a" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="25d8-f23b-926b-f85b" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="c968-6dd7-9d9e-1ba5" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adba-d302-6d0b-bcf4" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a2-2f5a-aa1e-1c3d" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6074-ffb4-0078-fe79" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+        <categoryLink id="e0a8-ba58-34ab-1681" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d122-ba5e-df72-30c1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="66a8-0623-fd21-e8d6" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="7681-eb5c-f70d-1575" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="d366-1af4-d6f0-1372" name="Bombard Group" hidden="false">
+      <comment>1-3 Capital ships, each must have 1 escort and can have up to 2 escorts in total.</comment>
+      <forceEntries>
+        <forceEntry id="4345-165e-eaf1-f2f2" name="Bombard Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="e9a3-9730-fe49-677d" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="40a7-2884-9e42-19c3" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink id="b5dd-a874-0a6c-3616" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+            <categoryLink id="9296-22ef-c624-db4a" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="450a-09a2-ebf5-e543" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="9ea3-14bd-8108-8f6a" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de6b-d3be-11a8-ef86" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3c97-6cea-2e1b-2f78" name="1. Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <modifiers>
+            <modifier type="increment" field="35ea-b276-cead-05d4" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="4345-165e-eaf1-f2f2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ea-b276-cead-05d4" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="672c-2ee1-e4bd-1181" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+        <categoryLink id="2255-4a6e-fafc-d4e9" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="1ff1-047a-bd64-14ab" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="3dcb-be0a-fb67-84cd" name="Assault Group" hidden="false">
+      <comment>1-3 Assault ships, each must have 1 escort and can have up to 2 escorts in total.</comment>
+      <forceEntries>
+        <forceEntry id="5eb9-97fe-fbbd-351e" name="Assault Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="2eee-3717-2caa-25ae" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="150f-3335-c5da-581e" name="2. Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink id="5e00-f12d-33a1-2d93" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+            <categoryLink id="185b-f2c9-933a-31c4" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="4471-fa04-9aa2-645e" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="3f21-2f14-b610-3655" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="b938-fa47-3668-0b37" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
+          <constraints>
+            <constraint field="selections" scope="65b3-d043-cf27-0671" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4734-13f6-9b49-253a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="34ac-c838-c3f3-0fe8" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+        <categoryLink id="932f-93a8-b93f-349f" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+        <categoryLink id="b7f1-73d7-250f-7975" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="1383-5b5c-01df-92d5" name="Combat Group" hidden="false">
+      <comment>1-3 Capital ships, each must have 2 escorts and each can have up to 1 support ship.�</comment>
+      <forceEntries>
+        <forceEntry id="8a24-e1d2-c7c2-6c8f" name="Combat Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="b248-df4a-c60a-473d" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="68ba-488b-0731-e821" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink id="5f8d-1eab-43e3-62cc" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+            <categoryLink id="edf7-f4c8-37a1-f75f" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="62aa-bc65-6ef5-a30b" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="0047-29ae-edec-024b" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="013b-a3e9-a43d-0bdc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fab-7f40-8087-159b" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6a58-931e-3b58-e8dc" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <modifiers>
+            <modifier type="increment" field="7784-5eac-90d8-2017" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="1383-5b5c-01df-92d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7784-5eac-90d8-2017" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b89c-f7ce-61ea-df90" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false">
+          <modifiers>
+            <modifier type="increment" field="d0e4-d8c6-b254-e8b1" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="1383-5b5c-01df-92d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e4-d8c6-b254-e8b1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="523a-099c-4959-8ddd" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="3b66-ae87-9815-d065" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink id="143e-d9ea-0059-01f5" name="Generica" hidden="false" collective="false" import="true" targetId="361e-5fd6-4d5b-854e" type="selectionEntry"/>
+    <entryLink id="bdce-0f55-7d1c-197e" name="&lt;Reference&gt; Ship Classes" hidden="false" collective="false" import="true" targetId="40e0-5460-07a7-5bc1" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="4d3c-0c1b-dbad-3083" name="Fleet Commander" publicationId="9db1-597c-e74f-261b" hidden="false">
+      <description>Each battlegroup has a command ship. Some factions field specialty ships for this very purpose, while
+others will simply crowd a flag officer onto a secondary bridge and they have to make do as best they can.
+Regardless one ship in each battlegroup is the command ship. This ship becomes the center both literally
+and figuratively for the battlegroup.
+
+The command ship always contains the battlegroup commander. If this ship is destroyed, or receives a
+bridge damaged result, the commander of the battlegroup is killed. This immediately forces a moral check
+for the battlefleet and a new commander will have to be nominated from among the surviving ships. The
+new commander is ALWAYS of Poor quality. As even the best officer will be rattled after discovering his
+commander is dead, and now everyone is looking to him to fill his shoes. If he survives the battle he may
+settled down and show his true colours next engagement.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="e693-b158-d50d-23b0" name="Green" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4b81-1f88-c48f-88b6" name="Trained" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7961-cba4-0faa-1cd4" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f51-f074-3226-0196" name="Ablative Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Every time the ship is damage reduce the effective armor by 1.</comment>
+      <infoLinks>
+        <infoLink id="20cd-61dc-8d34-8cfe" name="Ablative Armour" hidden="false" targetId="124a-f4c1-a048-8fcc" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e9ea-605c-64b9-90d8" name="Upgrades" hidden="false" targetId="1a19-0fd1-8500-ac26" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="361e-5fd6-4d5b-854e" name="Generica" hidden="true" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="14b4-ca14-5483-c069" name="Ablative Armour" hidden="false" targetId="124a-f4c1-a048-8fcc" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c892-fe49-42dd-3763" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="2892-ab1c-c30e-3c31" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="78d3-2852-2d1a-f8f2" name="Ship options" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="659d-a0ef-113c-2b8e" name="Adaptive Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ab1c-0ffd-855d-2cbe" name="Adaptive Armor" hidden="false" targetId="0156-bedd-f065-093f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cde8-d50d-3c29-08f0" name="APD Kinetic" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ee17-efc7-195f-1b37" name="APD Kinetic" hidden="false" targetId="57ff-1eb5-4c62-6a1b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e1b7-fb84-6b09-0012" name="APD Energy" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3f11-a0aa-e64c-7f31" name="APD Energy" hidden="false" targetId="dfb8-bdf6-2b48-625b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="621c-ef40-771a-84ff" name="Afterburners" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="292d-bb32-ea3e-88e6" name="Afterburners" hidden="false" targetId="ba0f-0ad6-468a-61e6" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7f25-d23f-0124-f65a" name="Aegis" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6744-1755-816f-7da5" name="Aegis" hidden="false" targetId="98c1-ebfa-0322-ec29" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf4b-9d79-2302-3f4e" name="Exemplar of Command" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f780-33d2-6a3e-12a6" name="Exemplar of Command" hidden="false" targetId="5705-d64d-52a0-d20a" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c263-1075-50d4-5c53" name="Fleet Commander" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5fd3-aac0-381e-fe1e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0226-b098-5eec-9a2c" name="Fleet Commander" hidden="false" targetId="6176-84f7-8071-b92e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="40e0-5460-07a7-5bc1" name="&lt;Reference&gt; Ship Classes" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>&quot;Ship Classes:
+Escort: Corvette, Frigate, 
+
+Support Ships: Mine Layer, Destroyer, H Destroyer, Lancer, EW Ships, Torpedo Boats
+
+Capital Ship: Battlecruiser, Cruiser, Light Cruiser,  Missile Cruiser
+
+Heavy Capital Ship: Battleship, Carrier, Fleet Carrier, Dreadnought,
+
+Assault Ships: Assault Ships. &quot;			</comment>
+      <infoLinks>
+        <infoLink id="8d25-7b78-e053-f5e2" name="Ship Classes" hidden="false" targetId="8173-6ab7-423e-b29c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5062-acbe-8ccf-e944" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c400-5953-f9e1-246a" name="Hanger Bay" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7cea-24dc-bac4-6d38" name="Hanger Bay" hidden="false" targetId="05ad-bdd0-63b1-0b35" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="95c4-8da9-d607-b9f8" name="Hanger Small" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a23e-7a03-7701-7232" name="Hangar Small" hidden="false" targetId="7a47-c68f-58c9-396e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8079-f339-a5f7-d555" name="Hanger Medium" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1434-8a9c-50ba-9a17" name="Hanger Medium" hidden="false" targetId="6221-836f-0b7d-3638" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2421-cf65-1076-2cb2" name="Hanger Large" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e931-ecc6-5cf9-09e0" name="Hanger Large" hidden="false" targetId="b841-bdbf-a3ce-54cc" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="fbb2-4858-5cd7-8c4f" name="Upgrade" hidden="false" collective="false" import="true" defaultSelectionEntryId="070f-e295-681a-edd8">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a4bf-5d46-11c1-c09f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="627e-9cd7-3ad8-1150" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="b721-11d6-b06f-2a0a" name="Green" hidden="false" collective="false" import="true" targetId="e693-b158-d50d-23b0" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="ca3d-268e-c54a-5ad0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="da27-09fa-d79c-b00b" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="d898-75f9-36ec-cd4d" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="335a-4cba-fb75-c548" name="Veteran" hidden="false" collective="false" import="true" targetId="7961-cba4-0faa-1cd4" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="c9ad-349e-fa78-f3fa"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ac95-2cef-97e0-bc43" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="8714-1d67-0578-cc0b" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="070f-e295-681a-edd8" name="Trained" hidden="false" collective="false" import="true" targetId="4b81-1f88-c48f-88b6" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="1819-080d-2b0e-710d"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7b62-ae8c-d74c-d308" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="cfba-29a0-bb6c-fb95" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2d9e-c1d0-c804-6d60" name="Ship Upgrades" hidden="false" collective="false" import="true" defaultSelectionEntryId="4e94-1c70-d2a2-3eba">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a246-4f69-5f8f-49ce" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4078-bc3c-dba0-a843" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7299-efbe-7561-9a90" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="4e94-1c70-d2a2-3eba" name="Ablative Armour" hidden="false" collective="false" import="true" targetId="4f51-f074-3226-0196" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5192-0fef-cc29-68e7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b5b4-b5a2-382f-e68a" name="APD Energy" hidden="false" collective="false" import="true" targetId="e1b7-fb84-6b09-0012" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d602-4e1f-715b-aab2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="18c6-75d3-9515-9a38" name="Aegis" hidden="false" collective="false" import="true" targetId="7f25-d23f-0124-f65a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b3d1-ca9a-7dcb-432a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Admiral Command Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f78-5795-3a36-44be" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="3cf1-8dec-f98f-6eab" name="Exemplar of Command" hidden="false" collective="false" import="true" targetId="cf4b-9d79-2302-3f4e" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a197-fe12-1310-5109" name="Battlegroup Commanders" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="7175-9fd8-9ad6-bc23" name="Fleet Commander" hidden="false" collective="false" import="true" targetId="c263-1075-50d4-5c53" type="selectionEntry"/>
+        <entryLink id="7be5-6aca-8444-ea0f" name="Admiral Command Traits" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a246-4f69-5f8f-49ce" name="Hanger Upgrades" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d9e-c1d0-c804-6d60" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b09-ce02-20bd-e4f5" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="958e-a42b-5445-69e3" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="fdb4-e7ee-fa0f-d6e3" name="Hanger Bay" hidden="false" collective="false" import="true" targetId="c400-5953-f9e1-246a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="197b-a939-f653-3fff" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink id="1bde-64c0-4a2f-6071" name="Hanger Bay" hidden="false" targetId="197b-a939-f653-3fff" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="8005-d390-1f01-5e14" name="Hanger Large" hidden="false" collective="false" import="true" targetId="2421-cf65-1076-2cb2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7d6a-9af3-2353-cf10" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink id="d315-e077-a481-a757" name="Hanger Large" hidden="false" targetId="7d6a-9af3-2353-cf10" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="f86d-2614-c56a-c93c" name="Hanger Medium" hidden="false" collective="false" import="true" targetId="8079-f339-a5f7-d555" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3db8-dec1-a0d0-6143" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink id="7cd1-552c-251b-f8e2" name="Hanger Medium" hidden="false" targetId="3db8-dec1-a0d0-6143" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="b863-a60e-1921-5f01" name="Hanger Small" hidden="false" collective="false" import="true" targetId="95c4-8da9-d607-b9f8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65e0-d6cc-fa09-919a" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink id="d0c9-787b-02a8-964e" name="Hanger Small" hidden="false" targetId="65e0-d6cc-fa09-919a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="2711-87ab-91c7-05fc" name="Fleet Commander" hidden="false">
+      <description>Each battlegroup has a command ship. Some factions field specialty ships for this very purpose, while
+others will simply crowd a flag officer onto a secondary bridge and they have to make do as best they can.
+Regardless one ship in each battlegroup is the command ship. This ship becomes the center both literally
+and figuratively for the battlegroup.
+
+The command ship always contains the battlegroup commander. If this ship is destroyed, or receives a
+bridge damaged result, the commander of the battlegroup is killed. This immediately forces a moral check
+for the battlefleet and a new commander will have to be nominated from among the surviving ships. The
+new commander is ALWAYS of Poor quality. As even the best officer will be rattled after discovering his
+commander is dead, and now everyone is looking to him to fill his shoes. If he survives the battle he may
+settled down and show his true colours next engagement.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="124a-f4c1-a048-8fcc" name="Ablative Armour" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Every time the ship is damage reduce the effective armor by 1.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dfb8-bdf6-2b48-625b" name="APD Energy" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">The next generation of Advanced Defense systems can stop energy weapons to a limited degree.
+ADS may be used against “Energy” weapon attacks. However your ADS is at 3 when trying to do so. Ships still
+receive bonus from Battlegroup units with the Escort trait.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0156-bedd-f065-093f" name="Adaptive Armor" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">For each point of damage it takes increase this ships starting armor rating by 1 up to a max of 3+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="57ff-1eb5-4c62-6a1b" name="APD Kinetic" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">An advanced defense system designed to stop kinetic type attacks. A ship with this system may
+use its ADS to shoot down “kinetic” type weapons as though they were ordinance. ADS is at 2 when
+attempting to do so. Any attempt to intercept at long range, ADS receives a +1 against Kinetic weapons. Ships
+still receive bonus from Battlegroup units with the Escort trait.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba0f-0ad6-468a-61e6" name="Afterburners" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">When using the &quot;All Ahead Full!&quot; Special Order ship gain +2 thrust, instead of just +1.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="98c1-ebfa-0322-ec29" name="Aegis" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship may use its Point Defense weapons at twice the normal range for overwatch only. In addition, it gets +1 accuracy when doing so</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5705-d64d-52a0-d20a" name="Exemplar of Command (Test)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+      <characteristics>
+        <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Add +2 to Morale Checks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8173-6ab7-423e-b29c" name="Ship Classes" hidden="false" typeId="fe7c-a4f6-55e4-ec01" typeName="Information">
+      <characteristics>
+        <characteristic name="[Reference]" typeId="1976-5542-b662-d9e5">&quot;Ship Classes:
+Escort: Corvette, Frigate, 
+
+Support Ships: Mine Layer, Destroyer, H Destroyer, Lancer, EW Ships, Torpedo Boats
+
+Capital Ship: Battlecruiser, Cruiser, Light Cruiser,  Missile Cruiser
+
+Heavy Capital Ship: Battleship, Carrier, Fleet Carrier, Dreadnought,
+
+Assault Ships: Assault Ships. &quot;			</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d6ff-f2a8-3f0b-8627" name="All or Nothing Armor Scheme" publicationId="9db1-597c-e74f-261b" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">On a to hit roll of 9 or 10, this ship gets no armor save! However, when rolling for damage from such hits, the defender may reroll the damage result if it does notplease them. The second result stands. Only on rolls of 9 and 10 may the defender reroll the damage. Damage from failed saves is treated as normal.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b829-cf0e-4386-ea68" name="Armored Bridge" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship has a reinforced bridge that can resist hits. Ignore first Bridge hit’s effect. Second hit would still destroy the ship.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="34bb-a9f7-0e05-2123" name="Armored Reactor Core" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ether the presence of heavy armor or unusual fail safes protect this ship. Ignore Chain Reaction hits on Capitals, OR a roll of 8 9 on an Escort or Support ship.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c51-ceaa-f4aa-ba4b" name="Assault pods" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">A radical boarding method, this ship has boarding missiles allowing it to board a ship under power at short range. If this ship it is within 2” of an enemy ship, it may send its crew to board. If theattacking ship is left without crew after CQB is completed it is destroyed and removed from play.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8b25-5436-8f22-3d08" name="Assassin System" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Advanced computer systems can isolate a single ship from a Battlegroups network to allow it to be directly targeted. This ship can attack a specific ship of their choice among the enemy ships in a battlegroup instead of splitting hits across the whole battlegroup.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7982-56b7-6537-4b84" name="Auto Repair" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship may make a crew quality check during the turn clean up phase to repair one point of damage on this ships. This is different from the “Damage Control on Deck!” special action, and both this trait,and that special action can happen in the same turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0deb-f3ce-27d1-2c52" name="Backup Shield Generators" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Prevents shields from being destroyed when hit. Note: second shield hit will still destroy the ship.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3021-daed-51fc-24c4" name="Catapults" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship is equipped with advanced launch tubes for its strikecraft . Strikecraft launched from this ship may be placed within 6” inches of the carrier when launched instead of the usual 2”.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f938-a629-11ce-7228" name="Cargo" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ships is able to carry cargo. Any scenario requiring the moving of cargo or an objective involving cargo may use this ship to carry that objective.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="52e4-75fe-2ae3-6c1a" name="Civilian Shields" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">When receiving an “All power to Shields!” special action, this ship may only recover 1 point of shields as its shield generators are not military grade.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7a24-a3ab-0aeb-8ce4" name="Command" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Command X remember to add adendum</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Some ships have specialized communication and holographic displays that allow the commander of a battlegroup to more efficiently issue orders and prevent confusion. Ships with the command trait add X to any Special Action check.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7e4b-e0e3-7d7d-660b" name="Countermeasures" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Some ships have deployable decoys that will attract enemy ordinance. The Ship with this system completely ignores the very first ordinance hit each turn. ADS rolls are made only after this hit is deducted, not before.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="585e-0300-9c87-4b1d" name="Crystal Hull" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">The ships crystal hull absorbs energy and redirects it to the shields. Any time this ship makes a successful armor save against an “Energy”, “Big Gun” or “Beam” weapon, it gains 1 shield point. This point of shielding is not applied until all hits on this ship’s hull have been resolved. So if it takes 4 hits without shields and saves 3 of them, it will take 1 point of damage and afterwards receive 3 shield points, assuming its shield generator is not destroyed. Ship cannot gain more shields than its max shield allowance.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="174d-a163-a770-23c6" name="Deflector Shields" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Deflector Shields X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Shields get a save where X is the number to be equaled or exceeded to prevent damage. This can be modified by the Armor Piercing trait.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bec5-dd23-0966-0c7b" name="Dodge " hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Dodge X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship is extremely nimble for its size and unlike most spaceships may maneuver to react to enemy fire. When attacked this ship may completely ignore a hit on a roll of X+. This is done before damage is applied to shields or an armor save is made. A weapons AP does not apply to Dodge Rolls.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="af6a-415f-d118-62c4" name="Efficient Shield" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+1 to shields when issuing an “All power to Shields” Special Order.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cbc2-f9bf-4de1-83aa" name="Energy Resistant Armor" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ships with this type of armor count their armor rating as being 1 higher against 
+“Energy” and “Beam” type weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8bc5-4ea7-21fa-d867" name="Escort" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Escort X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Some ships possess dedicated point defense computers that bolster the effectiveness of a battlegroups ADS beyond what a single ship can manage. Ships with the escort trait add +X to the individual ADS of every ship in the battlegroup. However this escort bonus + ship ADS total cannot exceed the faction ADS limit. Any bonus above the ADS faction limit is simply ignored.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="05ad-bdd0-63b1-0b35" name="Hanger Bay" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+1 Strikecraft capacity</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7a47-c68f-58c9-396e" name="Hangar Small" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+2 Strikecraft Capacity</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6221-836f-0b7d-3638" name="Hanger Medium" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+4 Strikecraft Capacity</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b841-bdbf-a3ce-54cc" name="Hanger Large" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+8 Strikecraft Capacity</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e2ab-dcb8-7ef7-cb2c" name="Extra Weapon Capacitors " hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Extra Weapon Capacitors X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+X” all “energy” and “kinetic” type weapon ranges.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="710c-5330-0b4e-ff17" name="Fast" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Fast this ship is . Get 4” of movement per thrust point spent, not compatible with Improved Engines upgrade.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d983-3d7d-25e2-5260" name="Fear" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Something about this ship is just frightening. Enemy ships within 4” of this ship suffer -1 to moral rolls. Anyone boarding this ship suffers a -1 to CQB unless they too cause Fear or Terror.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4bb1-8f4b-9d23-6b13" name="Flag Bridge" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">If this ship has the Grand Admiral onboard, player gains +1 Activation Skips.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4aea-bbfd-1add-375d" name="Fleet Carrier" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Fleet carriers are optimized carriers with full technical support. They grant +1 Dogfight support up to 24” away from the carrier to Fighters, Interceptors, and bombers. In addition when one of these craft is destroyed within 12” of the carrier you may instead place the destroyed unit back on the carrier on a roll of 7+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1ee5-b59a-3ad5-98db" name="Hidden Stalkers" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">If a ship has used 0 Thrust, it cannot be targeted from enemies farther than 12&quot; away. However, all incoming fire bypasses shields and directly hits armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9245-0092-a94b-8f5a" name="Hospital Bay" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship’s medical facilities include a full hospital for injured troops. When a troop company is destroyed within 6” of this ship place the troop company on this ship on a roll of 5+ instead of removing it from the game</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6672-cc66-bce4-a5b2" name="Indestructible" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Some truly massive stations and ships can’t really be destroyed as most people mean it. A ship or station with this trait when “destroyed” remains on the table as a derelict object. Its crew are still alive, and any strikecraft aboard may still be launched, but none recovered. No weapons may be fired and no thrust spent. Further shooting at this object will accomplish nothing; however it may still be boarded and counts in games that calculate objectives.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3b2a-92ab-f9ec-f870" name="Kinetic Resistant Armor" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Armor is counted as one higher against Kinetic weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="209b-2acd-8dac-0cf7" name="Launch " hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Launch X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Strikecraft Launch ability for ship. All ships have a Launch 1 trait which is assumed and never written. Therefore Launch is only written if its capacity is higher than 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0356-96f1-a911-30a8" name="Lumbering" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may only turn once per activation.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="adf1-c01f-16df-d6b9" name="Medical Bay" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship has expanded facilities for injured troops. When a troop company is destroyed in CQB within 6” of this ship. Roll a dice, on an 8+, place the troop company on this ship instead of removing it from the game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="436d-7b8e-f52c-8936" name="Mine Layer" page="" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Mine Layer X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may deploy X number of minefields during gameplay. A minelayer may also safely remove enemy mines. Removed “enemy” mines are considered to be destroyed and my not then later be deployed from this ship. A minelayer may however pick up friendly mines and move them to be deployed elsewhere.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1315-42b2-e854-61f9" name="Multi-Spectrum Shielding" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">An advanced form of shield modulation. As long as this ship has an active shield, it may ignore the first shield hit it receives each game turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="297b-21ca-d0df-8bee" name="Piggy Backed Strikecraft" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Piggy Backed Strikecraft</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6df1-4799-3ad0-2fc5" name="Reactive Armor" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Reactive Armor X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">You may ignore X successful hits on your hull per turn. Do not make an armor save simply ignore the hit or hits. Once the reactive armor has stopped X number of hits, proceed to take armor saves normally</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c788-fa96-ace6-1942" name="Reinforced Hull" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Some ships are heavily engineered to withstand catastrophic damage. A ship with this trait may re-roll damage to the ship. The second result stands. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3b6b-4ec8-4ed3-c8a5" name="Scout" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">During deployment in the Vanguard and Battle Phase of the game you may redeploy one battle group for each ship with the scout ability that you have on the table, that exceeds the enemies scout total. Example, your enemy has one scout ship, and you deploy three. You may redeploy two units during the beginning of the phase.
+In addition, the presence of a scout ship in a battlegroup allows the battlegroup to make long range attacks against a single nominated enemy battlegroup just as though the “Set All Guns For Long Range Bombardment” special action had been used. This does not count as a special action.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="37d0-f9b3-3f6a-fd66" name="Scout (Advanced" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">All abilities of “Scout”. In addition, Advanced scouts have powerful sensor suits to detect enemies and can assist a command ship in targeting data. +1 to accuracy for the battlegroup against a single enemy battlegroup nominated for the turn. Multiple Advanced Scouts in the same battlegroup do not stack for accuracy bonuses.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fdae-e1a5-6c8f-d206" name="Security Stations" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Some ships are equipped with special guard stations and well stocked arms lockers to counter enemy boarding. +1 CQB when defending your ship or station with this trait. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ff5a-3984-e7ab-7b60" name="Shielded Carapace" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Shielded Carapace X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">X+ save to all incoming damage on shields and armour (Taken before armour save)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ee75-fc0a-f7a0-ad93" name="Shield Charger" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">During turn clean up this ships shield auto rebuilds 1 point of shielding. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6702-a7ca-8e05-951c" name="Shield Projector" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship may project its shield 3” around it covering other ships nearby from damage. Any ship within 3” range to this ship, may transfer damage taken to this ships shield as long as it has shields remaining. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac08-1a37-1e1e-88b8" name="Sluggish" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may only turn twice during an activation. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba3e-19c6-09b8-e7d7" name="Stealth" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <comment>Stealth X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship possesses heavy stealth systems which conceal it from detection except at very close ranges. Attacks against this ship firing from X distance MUST reroll all successful hits with any weapon.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3ace-703a-281e-96bc" name="Structure" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65"> Some stations and ships are incredibly resilient and can survive damage that would destroy lesser vessels. When a ship or station with this trait is “destroyed” instead of it being destroyed it loses a point of structure. Only when all points of structure are removed will the next “destroyed” result actually destroy the ship. Structure may not be repaired by any means during gameplay</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3a2d-b488-270b-cc6e" name="Terror" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Something about this ship fills the enemy with unspeakable dread. Enemy ships within 4” of this ship suffer -2 to moral rolls. Anyone trying to board this ship is at -1 CQB unless they cause Terror themselves.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="48a1-01c6-51cf-4c1a" name="Thrust Vectoring" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may make one free turn per activation without expending thrust OR one double turn after making a move once per activation. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1aaa-ac73-61a1-0b6a" name="True Carrier" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship is a dedicated carrier and can launch 3 strikecraft per turn. All Fighters, Interceptors, and Bombers, regardless of battlegroup, gain +1 Dogfight when within 18” of this ship. Additional rules and special actions may apply to a True Carrier. (See: Rules)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5a4e-8b8c-67ab-d61e" name="Volatile" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Something about the nature of this ship is extremely volatile. Perhaps its carrying fuel, or some technology that is highly unstable. When this ship is destroyed it explodes! Any ship within 3” of this ship takes (D10/2)-1 damage (0-4 damage). Rolled for each ship in range. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0e82-fd26-481a-dcd2" name="Beam" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <comment>Beam X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This type of weapon consists of a single long firing beam of energy. When you successfully hit the target, you may roll again, if successful a second time, an additional point of damage is done to the same target, and you may roll again… and again…etc. However you can only attack a number of times equal to X. And if you fail to hit, you may not reroll at all! In addition there is a cumulative -1 accuracy modifier for each reroll. So first roll -0, second roll -1, third roll -2 etc. Beam: 3 would mean you can make a total of 3 attempts to hit the target</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6eeb-7183-1180-b5ea" name="Big Gun" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <comment>Big Gun X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon is a single weapon instead of an array of weapons. When the defender distributes hits, all these dice must be placed on the same ship before they are rolled. X represents the number of Dice. Once dice are placed on a single target, a to-hit roll is made for each dice separately.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bf07-e167-475f-1c1f" name="Energy" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">The most standard of all weapons. Energy weapons have no unique traits or penalties.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aff1-2fb7-d643-5a57" name="Kinetic" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Weapons with this trait represent projectile weapons of various kinds. Kinetic weapons when fired at long range (special action or trait) may be intercepted with ADS just like ordinance weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0a92-80b4-4d29-90dc" name="Ordinance" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Ordinance weapon usually represent missiles, rockets, and torpedoes. As such these weapons may be stopped by a ships ADS.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f833-1d85-67e8-d06b" name="Heavy Point Defense" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Greater coverage of Point Defense weapons on the ship. PD weapons make two attacks each activation instead of just one.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0cbb-7e8f-4aa9-ecc9" name="Biological" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon also does damage to Crew. When a ship is hit with this weapon, and the armor save is failed, the ship loses 1 crew. Crewless ships are destroyed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="573a-ad6c-b3bc-264a" name="Broadside" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">While many ships mount broadside weapons, few have the energy to fire both sides simultaneously. Side firing weapons with this trait, may fire to both sides in the same activation instead of having to pick just one side.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c253-d5cb-2165-a88e" name="Corrosive" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <comment>Corrosive X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">On a successful hit that penetrates armor roll a dice, on a roll of X do an additional point of damage without an armor roll.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3993-b5c9-88f8-e8e5" name="Critical Damage" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Attacker may force the defender reroll their damage roll for hits that penetrate armor. Second result stands. Note: If a weapon with this trait hits a ship with the Reinforced Hull trait, the two traits cancel each other out.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9267-b048-eda0-3858" name="Dangerous" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <comment>Dangerous x</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Something about using this weapon is extremely dangerous. Any roll of X or less will result in the firing ship taking damage. Regardless of how many dice of this weapon the ship has it can never take more than a single point of damage per turn from this weapon. Example: A weapon with Dangerous 3 means any roll of 1, 2, or 3 will result in an automatic point of damage on this ship with no armor save.
+Note: Because all attack dice are rolled as a pool when a dangerous weapon misfires you will not know which ship’s weapon misfired. Therefore the attacker will simply assign the damage to one of his ships that has the dangerous weapon as they please.
+Note 2: Beam weapons with Dangerous only count a failure on the first dice roll. Subsequent rerolls are ignored for this trait.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8a06-b92d-648b-38c6" name="HARM Missiles" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">HARM Missiles target enemy command ship communications and sensor nets causing -1 to all shooting accuracy for the turn which you get hit by one. But only that turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="24db-b9ef-f2f1-29e7" name="Devastating" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <comment>Devastating X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">On a successful hit X number of armor saves must be made for this hit, and each failure will inflict a point of damage. Ships without armor just take X damage. Note: In theory all weapons are Devastating 1.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f2e6-9722-1650-4eb6" name="Dual Purpose" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Some weapons are designed to be equally good at engaging warships or strikecraft and mines. Dual Purpose weapons may attack Strikecraft as though a “Switch All Weapons to Point Defense!” special action had been issued. Mines may also be attacked without a special action.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b65c-c3f1-a8d6-9dea" name="Dumb Fire" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Ordinance weapon only; Some missile don’t have very advanced tracking. Double all enemy thrust penalties against this weapon. Example if your moving Thrust 3 (-1) and your target is moving Thrust 4 (-2) then the total would be -5. (-1 for you thrust, but -4 for the enemy = -5)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="61d1-888d-812a-ed31" name="EMP" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <comment>EMP X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Weapon does additional damage to shields. When hit by an EMP weapon roll a dice on X+ a second point of damage is done to the shield of the ship hit. EMP cannot damage a ship only shields.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="88c7-6b82-866d-36b6" name="External Weapon" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon system is mounted on the exterior of the ship. Any damage to the ship will destroy this weapon and it may not be used again until all damage is repaired.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="13a4-cd05-accb-27d6" name="Hyper-Velocity" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Weapon ignores enemy thrust accuracy modifier “if” negative. A positive number will still improve your accuracy.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="263a-dd99-359f-06a3" name="Instantaneous" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon arrives at the target the instant it fires, there is no delay. No accuracy thrust modifiers are applies to this weapon ether positive or negative. Note an Instantaneous weapon still suffers range penalties for long range shooting. This has less to do with the weapon and more to do with tracking issues.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b972-f8cc-bd0a-1e3b" name="Limited Ordinance" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon system can only fire as long as you have ordinance counters remaining for the battlegroup. Each time an ordinance counter is expended, only one per turn, it allows all ships in the battlegroup to fire weapons with the Limited ordinance trait, regardless of the actual number of dice thrown. When all Ordinance counters are expended no further ordinance weapons may be used. Limited ordinance weapons come with two counters, additional counters may be purchased for 1pt per shot.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ec63-bf71-c75c-40b4" name="Long Range" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Weapons this with trait may fire as though using “Set Guns for Long Range 
+Bombardment” special action for free. When choosing to do so all ships in a battlegroup with this weapon must fire at long range regardless what range their target is actually at, they must take the normal -2 to hit modifier as per the special action. This however is not a special action, and happens automatically without a roll, a special action may still be taken.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="babd-653d-281d-c3f2" name="Penetration Aid X" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Some nations deploy advance guidance and avoidance systems to penetrate ADS fields, others use a brute force method of lobbing huge shells. Applies to Ordinance and Kinetic Weapons only. ADS systems attempting to shoot down this weapon suffer a negative X modifier against this weapon.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bcd5-b9d5-5bc4-6e45" name="Precision" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon may be fired at a specific target in the enemy battlegroup, determined by the attacker. Just like the assassin system, however it only applies to this specific weapon system.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="344d-dfe1-b219-938d" name="Rapid Fire" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">On a to-hit roll of 8, 9 or 10, this “dice” may fire a second time this activation at the same 
+target. Any additional dice rolled as a result of this trait do not benefit from “Rapid Fire”.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="be75-2372-7256-b4e1" name="Shattering" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Weapon Ignores all Armor.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="165c-5682-4982-16fa" name="Short Range" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon may not double its range when the special actions “Set guns for long range bombardment” is given. Nor does it suffer a -2 penalty as it is not firing long range.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d339-ccb4-bf7b-4791" name="Shield Penetrating" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Ignores all Shields.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aff2-e8e1-ddde-8382" name="Shield Skipping" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <comment>Shield Skipping X</comment>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon has a chance to penetrate a shield. When this weapon inflicts a hit on a roll of X ignore the ships shield.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c4cf-fdf1-f60f-7726" name="Single Shot" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Weapon only has one shot. And may not be used a second time.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="08a9-7af4-ae86-4440" name="Unstoppable" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Weapon ignores all armor and shields. Yikes!</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="31f3-4edf-6cba-f569" name="Weak against shields" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Whether outdated or underpowered this weapon is simply weaker than most weapons at penetrating shields. Shields get a 7+ saving throw against this weapon. If the shields already have a saving throw due to another trait add +3 to it. </characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</gameSystem>
