@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry id="a561-528f-8bf2-5e43" name="Harpoon Torpedo (Ord)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e7de-98ec-878c-f34d" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="7+"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4d0e-c305-d6a4-547b" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
+        <infoLink id="4481-2fbf-ca3a-6444" name="Harpoon Torpedo (Ord)" hidden="false" targetId="2af0-7201-f648-50aa" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3fd6-e846-5d58-d4c3" name="Point Defence Lasers (PD)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a060-4d55-b22b-2d7e" name="Point Defence Lasers (PD)" hidden="false" targetId="b7e3-0c96-921a-8f65" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="94a9-ab26-8143-1c73" name="Heavy Mass Accelerator" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8c3a-2507-e8fe-47a5" name="Heavy Mass Accelerator" hidden="false" targetId="dff6-ca56-08a3-3ea4" type="profile"/>
+        <infoLink id="3cf9-4f31-018a-a7c6" name="Broadside" hidden="false" targetId="573a-ad6c-b3bc-264a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="e4b8-317a-08be-af4c" name="Light Mass Accelerator" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0290-b4b7-3c72-4493" name="Light Mass Accelerator" hidden="false" targetId="3370-a9de-8c2b-9076" type="profile"/>
+        <infoLink id="13ff-d9ea-846a-6aa4" name="Broadside" hidden="false" targetId="573a-ad6c-b3bc-264a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5e3c-8f15-258d-97ab" name="Multi Frequency Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f595-fdc1-62e3-0c3e" name="Multi Frequency Laser" hidden="false" targetId="5fe1-ff09-95a5-4ef6" type="profile"/>
+        <infoLink id="509e-c5c7-5e79-02d3" name="Instantaneous" hidden="false" targetId="263a-dd99-359f-06a3" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="35d1-e600-872f-f425" name="Neutron Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="389d-4de4-b1fd-68c1" name="Neutron Lance" hidden="false" targetId="70b1-33a4-1764-344f" type="profile"/>
+        <infoLink id="7d4d-a28e-710f-374d" name="Assassin System" hidden="false" targetId="8b25-5436-8f22-3d08" type="profile"/>
+        <infoLink id="25a1-d131-c5be-56e5" name="Beam" hidden="false" targetId="0e82-fd26-481a-dcd2" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="2af0-7201-f648-50aa" name="Harpoon Torpedo (Ord)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;-20&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield skipping 7+, Dumb fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b7e3-0c96-921a-8f65" name="Point Defence Lasers (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="70b1-33a4-1764-344f" name="Neutron Lance" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">15&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-3</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front (Asn)</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Beam 2, Assassin</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5fe1-ff09-95a5-4ef6" name="Multi Frequency Laser" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">12&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Instantanious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3370-a9de-8c2b-9076" name="Light Mass Accelerator" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">5+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Broadside</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dff6-ca56-08a3-3ea4" name="Heavy Mass Accelerator" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Broadside</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry id="09f6-ef3b-0c87-b11d" name="Stinger Torpedo" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a289-6167-b624-3326" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6+"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a952-40dc-443d-7f89" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
+        <infoLink id="e0cc-5e5c-fc39-ef54" name="Stinger Torpedo (Ord))" hidden="false" targetId="8c6b-56da-258a-5ae8" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="15bd-1568-6b7a-99fb" name="Missile Pods" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7bce-63e6-c194-e7f6" name="Missile Pods (Ord)" hidden="false" targetId="3718-7fd7-7653-3bcc" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9566-ca93-9139-f9b1" name="Light Coilgun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cf46-0961-6a28-0ee4" name="Light Coilgun" hidden="false" targetId="f55e-7ac7-71a5-dcca" type="profile"/>
+        <infoLink id="70b0-722b-7279-4f69" name="Kinetic" hidden="false" targetId="aff1-2fb7-d643-5a57" type="profile"/>
+        <infoLink id="032e-9b45-fc4f-59f9" name="Long Range" hidden="false" targetId="ec63-bf71-c75c-40b4" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5537-ce19-de6c-7ebb" name="Heavy Coilgun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="abb5-e563-178f-a709" name="Heavy Coilgun" hidden="false" targetId="9e6a-ff33-08b8-8c6b" type="profile"/>
+        <infoLink id="6cf6-941a-954e-5d20" name="Kinetic" hidden="false" targetId="aff1-2fb7-d643-5a57" type="profile"/>
+        <infoLink id="0ec3-41d7-34a0-5d58" name="Long Range" hidden="false" targetId="ec63-bf71-c75c-40b4" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6cb0-641b-e691-e512" name="Point Defense Guns (PD)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5c58-3460-c539-781e" name="Point Defence Guns (PD)" hidden="false" targetId="88bf-320f-d121-d71e" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="8c6b-56da-258a-5ae8" name="Stinger Torpedo (Ord))" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6-20&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield skipping 6+, Dumb fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f55e-7ac7-71a5-dcca" name="Light Coilgun" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Kinetic, Long Range</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9e6a-ff33-08b8-8c6b" name="Heavy Coilgun" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">2+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Kinetic, Long Range</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3718-7fd7-7653-3bcc" name="Missile Pods (Ord)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="88bf-320f-d121-d71e" name="Point Defence Guns (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a046-d803-a073-3560" name="Imperial Hemina" hidden="false">
       <comment>-Centralised Command : If captain is killed them morale saves get a 2 from now on as well as
@@ -11,10 +11,11 @@ going captain skill going down a level
   </categoryEntries>
   <entryLinks>
     <entryLink id="1927-1c31-8ba3-bd2c" name="Cruiser " hidden="false" collective="false" import="true" targetId="eff7-3c47-3825-5eda" type="selectionEntry"/>
-    <entryLink id="0718-c883-c9a3-8d81" name="Imperial Hemina" hidden="false" collective="false" import="true" targetId="5263-73c6-3588-8c88" type="selectionEntry">
+    <entryLink id="0718-c883-c9a3-8d81" name="Faction: Imperial Hemina" hidden="false" collective="false" import="true" targetId="5263-73c6-3588-8c88" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="bf0e-b9be-9fab-a43c" name="New CategoryLink" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="3e04-c210-ca14-09be" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+        <categoryLink id="c2ab-5cc1-0bd1-2b1b" name="Imperial Hemina" hidden="false" targetId="a046-d803-a073-3560" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5f8e-ed44-1e8a-fff9" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="2546-9124-6e9e-0868" type="selectionEntry"/>
@@ -22,39 +23,6 @@ going captain skill going down a level
     <entryLink id="a913-97d4-7296-756e" name="Carrier" hidden="false" collective="false" import="true" targetId="74e0-dce2-0384-8fa4" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="b366-d498-33d3-8303" name="Cruiser (Green)" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="9c82-21db-d2cf-ce11" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="733f-a555-5e7d-a3d0" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
-        <categoryLink id="6691-f7a7-c55b-92a0" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
-        <categoryLink id="8950-abce-0861-0f55" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="-9.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3d08-aa72-943f-0322" name="Cruiser (Veteran)" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="67cb-628d-c9e0-4540" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="0527-505f-776f-2726" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
-        <categoryLink id="85d3-f4c0-14d2-b14a" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
-        <categoryLink id="2853-7441-a361-9c77" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e37b-d489-9665-cfa4" name="Cruiser (Trained)" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="f74c-8301-03b4-3a4b" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="b1ef-b6bb-8809-af4f" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
-        <categoryLink id="eb18-9af4-a537-0547" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
-        <categoryLink id="bc17-b381-6440-824f" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="eff7-3c47-3825-5eda" name="Cruiser " hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="55ad-7dad-05f1-b3c7" name="Cruiser" hidden="false" targetId="4bb7-4a93-0b79-eb89" type="profile"/>
@@ -81,11 +49,8 @@ going captain skill going down a level
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="46.0"/>
-      </costs>
     </selectionEntry>
-    <selectionEntry id="5263-73c6-3588-8c88" name="Imperial Hemina" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5263-73c6-3588-8c88" name="Faction: Imperial Hemina" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="25bc-a901-5126-17e5" type="min"/>
       </constraints>
@@ -152,33 +117,6 @@ going captain skill going down a level
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="29.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6da4-b4e5-adee-cd3c" name="Corvette (Trained)" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="aaab-69a4-4dd2-e506" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="011f-878e-7a99-6477" name="Corvette (Veteran)" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="5c5a-f120-862a-e76b" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a405-f5ec-e9bd-dfc9" name="Corvette (Green)" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="ad1a-7ad3-0c0a-5bb8" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="-3.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="b15c-61a6-5ba4-8cc0" name="Corvette" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -192,7 +130,7 @@ going captain skill going down a level
       </categoryLinks>
       <entryLinks>
         <entryLink id="3f00-b185-2b95-8ba3" name="Corvette" hidden="false" collective="false" import="true" targetId="50c2-39b1-4421-e5ea" type="selectionEntryGroup"/>
-        <entryLink id="8772-06d9-bf16-9cce" name="Ship options" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="8772-06d9-bf16-9cce" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="758a-9d65-733f-72b2" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="f582-1c9f-e838-c733" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="741a-7eeb-16c9-7e23" type="max"/>
@@ -206,9 +144,6 @@ going captain skill going down a level
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="18.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="f582-1c9f-e838-c733" name="Disruptor Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -290,33 +225,6 @@ going captain skill going down a level
         <entryLink id="772b-386c-8f7c-cf11" name="Ship Upgrades" hidden="false" collective="false" import="true" targetId="2d9e-c1d0-c804-6d60" type="selectionEntryGroup"/>
         <entryLink id="be44-5d72-e152-d231" name="Carrier" hidden="false" collective="false" import="true" targetId="f2ac-011a-1811-7647" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="57.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f12d-a03f-92de-0c59" name="Carrier (Green)" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="4dc5-9e0f-8a94-23d5" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="-12.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="76b8-0dbe-b62f-bac2" name="Carrier (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="1b7f-0e49-57b9-3f79" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="11.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c708-6596-2138-72d4" name="Carrier (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="f022-c2ed-f94a-a10f" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="07bc-50f1-5cc2-1989" name="Fighter" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -386,28 +294,46 @@ going captain skill going down a level
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="0190-3032-5632-4df2" name="Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="a99d-9c3b-0a3e-520e">
+    <selectionEntryGroup id="0190-3032-5632-4df2" name="Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="0e20-2546-9fb1-bc7a">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5540-de7d-58d3-047f" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e65b-0ce3-a05e-23ae" type="min"/>
       </constraints>
-      <entryLinks>
-        <entryLink id="566d-fb33-fa5f-a8c8" name="Cruiser (Green)" hidden="false" collective="false" import="true" targetId="b366-d498-33d3-8303" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da3e-d0b5-69ee-ca57" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="a99d-9c3b-0a3e-520e" name="Cruiser (Trained)" hidden="false" collective="false" import="true" targetId="e37b-d489-9665-cfa4" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec3d-4d85-6d20-c9b9" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5fc8-5ec9-0a3a-1668" name="Cruiser (Veteran)" hidden="false" collective="false" import="true" targetId="3d08-aa72-943f-0322" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2432-b725-dca6-f0a8" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+      <selectionEntries>
+        <selectionEntry id="4303-ec9d-c0dd-dd21" name="Cruiser (Green)" hidden="false" collective="false" import="true" type="unit">
+          <categoryLinks>
+            <categoryLink id="fd96-2b11-d46c-4717" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
+            <categoryLink id="46da-fa05-8769-9612" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+            <categoryLink id="635f-8956-0f23-9293" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+            <categoryLink id="4411-6e73-7ae4-25f5" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="37.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0e20-2546-9fb1-bc7a" name="Cruiser (Trained)" hidden="false" collective="false" import="true" type="unit">
+          <categoryLinks>
+            <categoryLink id="5467-f919-fa9d-dee3" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
+            <categoryLink id="60d8-a2db-83d6-c9f6" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+            <categoryLink id="1184-e475-3410-f5bd" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+            <categoryLink id="a2d8-2794-d538-7793" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="46.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b630-1a87-569c-e586" name="Cruiser (Veteran)" hidden="false" collective="false" import="true" type="unit">
+          <categoryLinks>
+            <categoryLink id="0b08-b4e7-404a-c5b9" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
+            <categoryLink id="b009-50ed-8977-bcd8" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+            <categoryLink id="0278-4ade-467b-2aa2" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+            <categoryLink id="23f0-1ee3-a4ff-f60e" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="56.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="fef2-bb01-e932-2d60" name="Torpedo Boat" hidden="false" collective="false" import="true" defaultSelectionEntryId="112b-bf0a-92b9-05c1">
       <constraints>
@@ -419,41 +345,59 @@ going captain skill going down a level
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="186d-151a-95b3-8264" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="23.0"/>
+          </costs>
         </entryLink>
         <entryLink id="112b-bf0a-92b9-05c1" name="Torpedo Boat (Trained)" hidden="false" collective="false" import="true" targetId="0caf-09bf-4bb9-9437" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9cd-d00f-f846-4170" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="29.0"/>
+          </costs>
         </entryLink>
         <entryLink id="e1f3-46f7-12f9-0c57" name="Torpedo Boat (Veteran)" hidden="false" collective="false" import="true" targetId="53cd-584f-93a4-d888" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d333-7163-0d87-259b" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="34.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="50c2-39b1-4421-e5ea" name="Corvette" hidden="false" collective="false" import="true" defaultSelectionEntryId="ef66-f417-1f3f-d35f">
+    <selectionEntryGroup id="50c2-39b1-4421-e5ea" name="Corvette" hidden="false" collective="false" import="true" defaultSelectionEntryId="a1e8-e2b4-5758-97d0">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aed-0132-8d9e-e4dc" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf58-f40d-a4ee-a3e0" type="min"/>
       </constraints>
-      <entryLinks>
-        <entryLink id="8199-5b47-7f9d-a65c" name="Corvette (Green)" hidden="false" collective="false" import="true" targetId="a405-f5ec-e9bd-dfc9" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38d5-af21-b099-3552" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ef66-f417-1f3f-d35f" name="Corvette (Trained)" hidden="false" collective="false" import="true" targetId="6da4-b4e5-adee-cd3c" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f65-c19a-8389-185b" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="73aa-8e55-7416-5bf1" name="Corvette (Veteran)" hidden="false" collective="false" import="true" targetId="011f-878e-7a99-6477" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f57-0d3f-f8cf-cbab" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+      <selectionEntries>
+        <selectionEntry id="ef8a-d004-d412-2e5c" name="Corvette (Green)" hidden="false" collective="false" import="true" type="unit">
+          <categoryLinks>
+            <categoryLink id="e487-bc60-6a96-f2ad" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a1e8-e2b4-5758-97d0" name="Corvette (Trained)" hidden="false" collective="false" import="true" type="unit">
+          <categoryLinks>
+            <categoryLink id="7354-c426-9f06-8665" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="18.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="29e7-1520-abd3-f519" name="Corvette (Veteran)" hidden="false" collective="false" import="true" type="unit">
+          <categoryLinks>
+            <categoryLink id="c803-216a-6e18-5b43" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="d0a4-cec2-62e6-b18c" name="Strikecraft" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -465,16 +409,37 @@ going captain skill going down a level
         <entryLink id="3b5f-7e3f-5b40-8de8" name="Bomber" hidden="false" collective="false" import="true" targetId="d762-b3c6-994d-8133" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f2ac-011a-1811-7647" name="Carrier" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8ea-7dbf-1837-e8cf">
+    <selectionEntryGroup id="f2ac-011a-1811-7647" name="Carrier" hidden="false" collective="false" import="true" defaultSelectionEntryId="3990-293e-f1f8-0ada">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd9-5654-0c6c-f1d4" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcdd-3503-18af-cc00" type="min"/>
       </constraints>
-      <entryLinks>
-        <entryLink id="6226-fd3e-61c4-8adb" name="Carrier (Green)" hidden="false" collective="false" import="true" targetId="f12d-a03f-92de-0c59" type="selectionEntry"/>
-        <entryLink id="a8ea-7dbf-1837-e8cf" name="Carrier (Trained)" hidden="false" collective="false" import="true" targetId="c708-6596-2138-72d4" type="selectionEntry"/>
-        <entryLink id="3756-52af-bcf7-e570" name="Carrier (Veteran)" hidden="false" collective="false" import="true" targetId="76b8-0dbe-b62f-bac2" type="selectionEntry"/>
-      </entryLinks>
+      <selectionEntries>
+        <selectionEntry id="ced4-429b-2481-814e" name="Carrier (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="bf52-5431-9e79-9b49" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="45.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3990-293e-f1f8-0ada" name="Carrier (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="f827-a4ac-2aad-f3a1" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="57.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="647d-ea6a-ebd9-b860" name="Carrier (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="d010-fad8-05d3-32d7" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="68.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="e491-8bfe-4e18-3eec" name="Strikecraft Carrier" hidden="false" collective="true" import="true">
       <modifiers>
@@ -520,7 +485,6 @@ going captain skill going down a level
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">9&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-1</characteristic>
-        <characteristic name="Shots" typeId="4014-85f2-f62b-36d9">1</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Broadside, Long Range</characteristic>
       </characteristics>
@@ -529,7 +493,6 @@ going captain skill going down a level
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&apos;-18&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-2</characteristic>
-        <characteristic name="Shots" typeId="4014-85f2-f62b-36d9">1(Ord)</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield Skipping +6, Dumbfire</characteristic>
       </characteristics>
@@ -538,7 +501,6 @@ going captain skill going down a level
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+/-1</characteristic>
-        <characteristic name="Shots" typeId="4014-85f2-f62b-36d9">1</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Dual Purpose</characteristic>
       </characteristics>
@@ -547,7 +509,6 @@ going captain skill going down a level
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">7&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/0</characteristic>
-        <characteristic name="Shots" typeId="4014-85f2-f62b-36d9">1</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Broadside</characteristic>
       </characteristics>
@@ -556,7 +517,6 @@ going captain skill going down a level
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
-        <characteristic name="Shots" typeId="4014-85f2-f62b-36d9">1(PD)</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
       </characteristics>

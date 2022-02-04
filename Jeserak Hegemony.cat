@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d36a-e814-0679-4ee1" name="Jeserak Hegemony" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry id="db07-1ed2-170d-86f2" name="Gatling Pulsar (PD)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="30e3-2e48-6476-78ad" name="Gatling Pulsar (PD)" hidden="false" targetId="22a6-0a69-d88c-8282" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f32a-f470-a281-48d3" name="HARM Missiles (Ord)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6a2e-aba9-a72b-44d6" name="HARM Missiles (Ord)" hidden="false" targetId="4eec-0772-d795-3b61" type="profile"/>
+        <infoLink id="fd4a-67e3-e935-ffdb" name="Hyper-Velocity" hidden="false" targetId="13a4-cd05-accb-27d6" type="profile"/>
+        <infoLink id="58b2-95c8-8bfe-8bf0" name="Penetration Aid X" hidden="false" targetId="babd-653d-281d-c3f2" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="36be-963f-4439-7d36" name="HARM Missiles" hidden="false" targetId="8a06-b92d-648b-38c6" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b5e-018a-696d-aabe" name="Heavy Pulsar" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="90b7-8fed-ce76-6f22" name="Heavy Pulsar" hidden="false" targetId="0986-78f6-451e-fd70" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2589-09cc-4268-e5f8" name="Lance Torpedo (Ord)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="694e-6d6e-3e4b-780c" name="Lance Torpedo (Ord)" hidden="false" targetId="411c-65fd-2698-e333" type="profile"/>
+        <infoLink id="9690-5ff5-2422-a710" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
+        <infoLink id="2d2e-bfd5-9caa-3780" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="5+"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c40-c86e-78d5-e2ed" name="Light Pulsar" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4917-f588-533b-75d6" name="Light Pulsar" hidden="false" targetId="ce1b-9bb0-a56f-caf8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ff8-9029-af15-e7f3" name="Zeon Missiles (Ord)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="aefd-b1d2-3d2d-2526" name="Zeon Missiles (Ord)" hidden="false" targetId="b841-bfd3-36b4-cf3d" type="profile"/>
+        <infoLink id="c82b-b541-47af-e4fc" name="Penetration Aid X" hidden="false" targetId="babd-653d-281d-c3f2" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="eace-67d6-38dd-6415" name="Hyper-Velocity" hidden="false" targetId="13a4-cd05-accb-27d6" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="4eec-0772-d795-3b61" name="HARM Missiles (Ord)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">16&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">5+/+2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Pen Aid 2, Hypervelocity, HARM</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="411c-65fd-2698-e333" name="Lance Torpedo (Ord)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8-32&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-3</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield skipping 5+, Dumb fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b841-bfd3-36b4-cf3d" name="Zeon Missiles (Ord)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">16&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">5+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Pen Aid 2, Hypervelocity</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ce1b-9bb0-a56f-caf8" name="Light Pulsar" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="0986-78f6-451e-fd70" name="Heavy Pulsar" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="22a6-0a69-d88c-8282" name="Gatling Pulsar (PD)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">3&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

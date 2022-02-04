@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry id="73b3-494d-5eb5-b8a3" name="Fracture Torpedo" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8c63-9ddf-f7ff-51a6" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
+        <infoLink id="b414-890e-1372-4b25" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6+"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="deea-06a8-3dca-6fdf" name="Fracture Torpedo (Ord)" hidden="false" targetId="a6ad-15f2-4dce-2b76" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7f7e-da31-9515-ef1d" name="Lightning Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1d4d-babc-8da2-2459" name="Lightning Lance" hidden="false" targetId="a395-5e26-e13e-d649" type="profile"/>
+        <infoLink id="4671-6a9e-19f2-2dcc" name="EMP" hidden="false" targetId="61d1-888d-812a-ed31" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="8+"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="d133-fa37-cca9-b523" name="Defence Fields" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b8d5-e389-f6f7-9e6d" name="Defence Fields" hidden="false" targetId="319f-94c8-f733-a4ed" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2771-90e1-95eb-6168" name="Heavy Disruptor Cannons (Nosterov)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ceb7-6dcf-9b12-5482" name="Heavy Disruptor Cannons (Nosterov)" hidden="false" targetId="c78b-1aa2-b982-487d" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2304-e9be-e7ae-16b5" name="Disruptor Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6860-de54-5bb5-ed6a" name="Disruptor Cannon" hidden="false" targetId="ae84-8841-023f-47c1" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="a6ad-15f2-4dce-2b76" name="Fracture Torpedo (Ord)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;-12&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1(Ord)</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield skipping 6+, Dumb fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c78b-1aa2-b982-487d" name="Heavy Disruptor Cannons (Nosterov)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="319f-94c8-f733-a4ed" name="Defence Fields" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">7+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="a395-5e26-e13e-d649" name="Lightning Lance" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/+2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">EMP 8+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ae84-8841-023f-47c1" name="Disruptor Cannon" publicationId="9db1-597c-e74f-261b" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"></characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

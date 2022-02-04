@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="13" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="14" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -20,7 +20,6 @@
       <characteristicTypes>
         <characteristicType id="02c1-f192-0aa7-4b94" name="Range"/>
         <characteristicType id="738d-1ca7-eee9-c602" name="Roll to Hit/AP"/>
-        <characteristicType id="4014-85f2-f62b-36d9" name="Shots"/>
         <characteristicType id="b9c0-a785-db1c-1f9f" name="Fire Points"/>
         <characteristicType id="3491-0cc6-d26a-85a4" name="Traits"/>
       </characteristicTypes>
@@ -107,6 +106,12 @@
     <categoryEntry id="65e0-d6cc-fa09-919a" name="Hanger Small" hidden="false"/>
     <categoryEntry id="197b-a939-f653-3fff" name="Hanger Bay" hidden="false"/>
     <categoryEntry id="7d6a-9af3-2353-cf10" name="Hanger Large" hidden="false"/>
+    <categoryEntry id="a340-6370-56da-2c93" name="Improved Drives" hidden="false"/>
+    <categoryEntry id="925e-66d7-1207-148d" name="Armoured Core" hidden="false"/>
+    <categoryEntry id="ef48-03b8-36e3-e0f0" name="Twinned Escorts" hidden="false"/>
+    <categoryEntry id="1c95-20dd-7250-0c03" name="Lancer" hidden="false"/>
+    <categoryEntry id="d8fe-df28-9098-c1a4" name="Mine Layer" hidden="false"/>
+    <categoryEntry id="db64-bc52-ef6a-cf57" name="Dreadnought" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6f57-4c2a-1ec6-28f4" name="Vanguard Group" hidden="false">
@@ -119,6 +124,7 @@
             <categoryLink id="ab4e-3a40-6215-fd9a" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
             <categoryLink id="945c-ad1d-8dec-4393" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="890c-6c67-fd48-d430" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="03b6-3da8-dbeb-b829" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -128,6 +134,7 @@
         <categoryLink id="f980-49c0-6b98-2542" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
         <categoryLink id="fb92-4c44-b421-2a83" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="e7c4-9ef0-f65f-8d71" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="8eda-2aa7-64d8-962b" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
@@ -140,6 +147,7 @@
             <categoryLink id="8aa8-efae-3bc6-8400" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
             <categoryLink id="1026-9320-4a59-1a4a" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="25d8-f23b-926b-f85b" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="cb8e-8398-61c6-86ab" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -158,6 +166,7 @@
         </categoryLink>
         <categoryLink id="66a8-0623-fd21-e8d6" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="7681-eb5c-f70d-1575" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="31f5-7f4a-f5eb-571f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d366-1af4-d6f0-1372" name="Bombard Group" hidden="false">
@@ -170,6 +179,7 @@
             <categoryLink id="b5dd-a874-0a6c-3616" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
             <categoryLink id="9296-22ef-c624-db4a" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="450a-09a2-ebf5-e543" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="c4e3-c71a-506f-8213" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -194,6 +204,7 @@
         <categoryLink id="672c-2ee1-e4bd-1181" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
         <categoryLink id="2255-4a6e-fafc-d4e9" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="1ff1-047a-bd64-14ab" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="a0eb-5643-e67c-d87d" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="3dcb-be0a-fb67-84cd" name="Assault Group" hidden="false">
@@ -206,6 +217,7 @@
             <categoryLink id="5e00-f12d-33a1-2d93" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
             <categoryLink id="185b-f2c9-933a-31c4" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="4471-fa04-9aa2-645e" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="c759-d36d-7e93-6c27" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -219,6 +231,7 @@
         <categoryLink id="34ac-c838-c3f3-0fe8" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
         <categoryLink id="932f-93a8-b93f-349f" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
         <categoryLink id="b7f1-73d7-250f-7975" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="9855-45f5-8636-78cf" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="1383-5b5c-01df-92d5" name="Combat Group" hidden="false">
@@ -231,6 +244,7 @@
             <categoryLink id="5f8d-1eab-43e3-62cc" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
             <categoryLink id="edf7-f4c8-37a1-f75f" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="62aa-bc65-6ef5-a30b" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="74f3-c714-7ad5-35c8" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -267,6 +281,7 @@
         </categoryLink>
         <categoryLink id="523a-099c-4959-8ddd" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="3b66-ae87-9815-d065" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="0a55-947a-5a69-10e7" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -320,13 +335,19 @@ settled down and show his true colours next engagement.</description>
     <selectionEntry id="361e-5fd6-4d5b-854e" name="Generica" hidden="true" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="14b4-ca14-5483-c069" name="Ablative Armour" hidden="false" targetId="124a-f4c1-a048-8fcc" type="profile"/>
+        <infoLink id="ef02-1878-664c-2ae6" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6+"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bd79-5faf-032c-7325" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c892-fe49-42dd-3763" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="2892-ab1c-c30e-3c31" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="78d3-2852-2d1a-f8f2" name="Ship options" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="78d3-2852-2d1a-f8f2" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -456,13 +477,91 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="74f5-e86b-6a36-d521" name="Battlegroup Veterency" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="05fe-d2bd-19c0-c628" name="Battlegroup Veterency" hidden="false" collective="false" import="true" targetId="fbb2-4858-5cd7-8c4f" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="135a-3cb6-228a-98ee" name="Torpedo (Ord)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5beb-fc2b-ae1f-9453" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6+"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6ede-c3a7-a3d5-9ea8" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="63c5-8bf9-02f2-e2ec" name="Point Defense Lasers (PD)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0969-ad50-0dec-4fa7" name="Point Defence Lasers (PD)" hidden="false" targetId="22b3-9a15-af4e-2b69" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="79d3-375a-3019-8c04" name="Point Defense Guns (PD)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0c00-7fa5-9dfe-7f73" name="Point Defence Guns (PD)" hidden="false" targetId="a23a-75bc-adc3-334e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e9b8-cd55-1588-cdf3" name="Improved Drive" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3de0-8903-cf13-3ade" name="Improved Drive" hidden="false" targetId="a9c4-c42a-82b6-0985" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bc05-e88e-1a9c-39ac" name="Improved Drives" hidden="false" targetId="a340-6370-56da-2c93" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a12b-233b-558c-95fb" name="Armoured Reactor Core" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5288-6db8-90e3-d8bf" name="Armored Reactor Core" hidden="false" targetId="34bb-a9f7-0e05-2123" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="44b6-ccc8-d7bc-2612" name="Escort +1" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1753-8a61-9d71-3231" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="928a-8192-f225-5384" name="Escort" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b7f9-5c1f-7107-3bea" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="fbb2-4858-5cd7-8c4f" name="Upgrade" hidden="false" collective="false" import="true" defaultSelectionEntryId="070f-e295-681a-edd8">
+    <selectionEntryGroup id="fbb2-4858-5cd7-8c4f" name="Battlegroup Veterency" hidden="false" collective="false" import="true" defaultSelectionEntryId="070f-e295-681a-edd8">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a4bf-5d46-11c1-c09f" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="627e-9cd7-3ad8-1150" type="min"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink id="aa30-36c2-e22a-1352" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+        <categoryLink id="9f54-096c-1fc8-6e97" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="b721-11d6-b06f-2a0a" name="Green" hidden="false" collective="false" import="true" targetId="e693-b158-d50d-23b0" type="selectionEntry">
           <modifiers>
@@ -512,7 +611,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7299-efbe-7561-9a90" type="min"/>
       </constraints>
       <entryLinks>
-        <entryLink id="4e94-1c70-d2a2-3eba" name="Ablative Armour" hidden="false" collective="false" import="true" targetId="4f51-f074-3226-0196" type="selectionEntry">
+        <entryLink id="4e94-1c70-d2a2-3eba" name="Improved Drive:" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5192-0fef-cc29-68e7" type="max"/>
           </constraints>
@@ -561,7 +660,6 @@ Assault Ships: Assault Ships. &quot;			</comment>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b09-ce02-20bd-e4f5" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="958e-a42b-5445-69e3" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="fdb4-e7ee-fa0f-d6e3" name="Hanger Bay" hidden="false" collective="false" import="true" targetId="c400-5953-f9e1-246a" type="selectionEntry">
@@ -1071,7 +1169,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
 Bombardment” special action for free. When choosing to do so all ships in a battlegroup with this weapon must fire at long range regardless what range their target is actually at, they must take the normal -2 to hit modifier as per the special action. This however is not a special action, and happens automatically without a roll, a special action may still be taken.</characteristic>
       </characteristics>
     </profile>
-    <profile id="babd-653d-281d-c3f2" name="Penetration Aid X" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+    <profile id="babd-653d-281d-c3f2" name="Penetration Aid" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
       <characteristics>
         <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Some nations deploy advance guidance and avoidance systems to penetrate ADS fields, others use a brute force method of lobbing huge shells. Applies to Ordinance and Kinetic Weapons only. ADS systems attempting to shoot down this weapon suffer a negative X modifier against this weapon.</characteristic>
       </characteristics>
@@ -1121,6 +1219,99 @@ target. Any additional dice rolled as a result of this trait do not benefit from
     <profile id="31f3-4edf-6cba-f569" name="Weak against shields" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
       <characteristics>
         <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Whether outdated or underpowered this weapon is simply weaker than most weapons at penetrating shields. Shields get a 7+ saving throw against this weapon. If the shields already have a saving throw due to another trait add +3 to it. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7174-64e8-9d53-506e" name="Gun Battery" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Kinetic</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="540d-fe45-998a-f930" name="Kinetic Guns" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Kinetic</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac7d-43de-f308-4379" name="Mac Cannons" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">12&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-3</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Hypervelocity</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0f5c-d783-5e7e-2108" name="Missile Pods (Ord)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="a23a-75bc-adc3-334e" name="Point Defence Guns (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="a158-3b02-15ca-ef97" name="Disruptor Cannon" publicationId="9db1-597c-e74f-261b" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Sides</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="4515-f012-2720-efaf" name="Heavy Disruptor Cannon" publicationId="9db1-597c-e74f-261b" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Sides</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="948f-c023-5cac-e084" name="Particle Laser" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Dual Purpose</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b1d5-952a-0ff9-28b9" name="Photon Torpedo (Ord)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&apos;-18&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield Skipping +6, Dumbfire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="22b3-9a15-af4e-2b69" name="Point Defence Lasers (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="627b-3cce-e1a9-36c3" name="Torpedo (Ord)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;-24&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield skipping 6+, Dumb fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a9c4-c42a-82b6-0985" name="Improved Drive" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+1 Thrust</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

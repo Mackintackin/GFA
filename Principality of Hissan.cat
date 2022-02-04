@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry id="0f66-ef76-e656-ffe7" name="Photon Torpedo (Ord)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="02df-6307-921a-e761" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6+"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a790-7fe0-5475-d391" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
+        <infoLink id="ed5e-1488-d819-a5d4" name="Photon Torpedo (Ord)" hidden="false" targetId="a9db-8031-4d44-da89" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="e7f8-0f96-8414-b0d4" name="Fusion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0b5a-df3d-4378-62de" name="Fusion Cannon" hidden="false" targetId="162e-6343-bf31-97bb" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="85fc-4d6a-5474-91ca" name="Heavy Fusion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="70f6-dbe1-f30b-24ec" name="Heavy Fusion Cannon" hidden="false" targetId="f7c1-619e-35dc-9620" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ea1a-87a8-b61c-a1ee" name="Point Defense Lasers (PD)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="28a0-59e8-be4b-cdb3" name="Point Defence Lasers (PD)" hidden="false" targetId="b5fc-5dc4-fc4b-d834" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="a9db-8031-4d44-da89" name="Photon Torpedo (Ord)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&apos;-18&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield Skipping +6, Dumbfire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="162e-6343-bf31-97bb" name="Fusion Cannon" publicationId="9db1-597c-e74f-261b" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Sides</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f7c1-619e-35dc-9620" name="Heavy Fusion Cannon" publicationId="9db1-597c-e74f-261b" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Sides</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"></characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2856-d9c9-07d4-63d9" name="Penetrator Rounds" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">5+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="b5fc-5dc4-fc4b-d834" name="Point Defence Lasers (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&apos;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

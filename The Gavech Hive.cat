@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry id="3efd-6f68-2d6f-0436" name="Penetrator Barbs" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="42a6-98e2-f536-0732" name="Penetrator Barbs" hidden="false" targetId="642b-7417-a21e-205a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="d97a-e7ba-419c-3703" name="Acid Spray" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6503-1da0-4c2e-0fbc" name="Acid Spray" hidden="false" targetId="32c6-98ee-595e-5e14" type="profile"/>
+        <infoLink id="51a4-55f8-97d2-0fa6" name="Corrosive" hidden="false" targetId="c253-d5cb-2165-a88e" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="8+"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="c5fc-9986-6989-792d" name="Point defence barbs" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0a53-1edb-b4d7-04bd" name="Point defence barbs" hidden="false" targetId="d0d4-edfc-d284-d667" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="99b5-6fce-1a83-4c55" name="Bio pods" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ab33-0445-7cf2-2035" name="Bio pods" hidden="false" targetId="02ec-d043-85ba-710c" type="profile"/>
+        <infoLink id="5a0b-bef4-b516-fadd" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
+        <infoLink id="9d66-381e-746a-676c" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="5+"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="02ec-d043-85ba-710c" name="Bio pods" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">12&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield skipping 7+, Dumb fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="32c6-98ee-595e-5e14" name="Acid Spray" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Corrosive 8+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="642b-7417-a21e-205a" name="Penetrator Barbs" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="d0d4-edfc-d284-d667" name="Point Defence Barbs" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
