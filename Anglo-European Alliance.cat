@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <categoryEntries>
-    <categoryEntry id="c6e0-ebfd-9a42-cff2" name="Anglo-European Alliance" hidden="false"/>
-  </categoryEntries>
+<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29f7-6558-f3cf-6005" name="Battle Cruiser" hidden="false" collective="false" import="true" targetId="e720-6af7-03e3-fda1" type="selectionEntry"/>
     <entryLink id="182c-72b4-b254-5e74" name="Assault Ship" hidden="false" collective="false" import="true" targetId="9923-f04f-d00a-4aa9" type="selectionEntry"/>
@@ -23,9 +20,9 @@
     <entryLink id="6514-b0d4-0cf6-ccbc" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="5948-1c72-c6c9-9309" type="selectionEntry"/>
     <entryLink id="2cd4-2f69-d234-7aff" name="Faction: Anglo-European Alliance" hidden="false" collective="false" import="true" targetId="8ecf-5f61-8739-8789" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4a02-9481-4ee7-a4f4" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="e552-de2d-759c-fa3d" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
         <categoryLink id="648b-a908-bb63-3258" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="8cb6-6f38-5ab7-82f6" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -42,7 +39,7 @@
     <selectionEntry id="fc64-0413-452e-49b1" name="Kinetic Guns" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a68c-0a16-10c8-ae2c" name="Kinetic Guns" hidden="false" targetId="424e-1ec4-9a23-4b42" type="profile"/>
-        <infoLink id="2cea-cd00-4c0c-6a5d" name="Gun Battery" hidden="false" targetId="af77-f0b3-bc7c-ffd6" type="profile"/>
+        <infoLink id="2101-ad1f-d5ed-02bf" name="Kinetic" hidden="false" targetId="aff1-2fb7-d643-5a57" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -97,7 +94,7 @@
       <categoryLinks>
         <categoryLink id="ae31-50b7-610f-c518" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="e18f-eaf8-c76a-427f" name="New CategoryLink" hidden="false" targetId="058c-f32f-8132-917b" primary="true"/>
-        <categoryLink id="6dbc-c152-cc11-9f10" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
+        <categoryLink id="2d32-0835-f3ab-b409" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5df3-6417-4d42-e0ee" name="Missile Pods" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
@@ -121,7 +118,11 @@
         <entryLink id="29f0-d269-8225-6ef1" name="Assault Ship" hidden="false" collective="false" import="true" targetId="cf83-7db1-0cb5-3ec0" type="selectionEntryGroup"/>
         <entryLink id="0d3d-e9fb-1e0d-ea7c" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="c887-5f90-33ee-b522" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="6763-a123-cbe0-7a56" name="Strikecraft Assault Ship" hidden="false" collective="false" import="true" targetId="dc89-0cc9-14c8-ee1f" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e720-6af7-03e3-fda1" name="Battle Cruiser" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -140,7 +141,7 @@
         <categoryLink id="e1d1-6528-d20f-4259" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="56e6-a856-f351-acfb" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="13b4-e198-64e2-8563" name="Battlecruiser" hidden="false" targetId="fac4-f029-106c-5981" primary="false"/>
-        <categoryLink id="2821-739b-8c43-11ba" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
+        <categoryLink id="6bbf-6f0c-57de-2888" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d993-0363-bbed-d9c0" name="Missile Pods" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
@@ -169,7 +170,7 @@
         </entryLink>
         <entryLink id="e44b-3127-2387-1106" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="89d0-8e56-17ca-03f6" name="BattleCruiser" hidden="false" collective="false" import="true" targetId="128a-4478-58f3-0a6c" type="selectionEntryGroup"/>
-        <entryLink id="6c2c-5db8-8163-b0ad" name="Improved Drive:" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
+        <entryLink id="6c2c-5db8-8163-b0ad" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c6b-913d-df77-42a7" type="max"/>
           </constraints>
@@ -192,7 +193,7 @@
         <categoryLink id="de52-6a94-4483-09f0" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="c946-920c-38f5-77d6" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
         <categoryLink id="7327-f512-5abe-63b4" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="d70f-1610-03d7-5228" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
+        <categoryLink id="5001-d9d0-3d73-f32a" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5670-84ca-5197-ef48" name="Battleship" hidden="false" collective="false" import="true" targetId="770f-4635-2334-d724" type="selectionEntryGroup"/>
@@ -252,7 +253,7 @@
         <categoryLink id="4d33-d983-da2f-db2f" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
         <categoryLink id="3cc3-ac8f-1c25-8979" name="Carrier" hidden="false" targetId="eb6d-8a2e-eb65-f70a" primary="false"/>
         <categoryLink id="e15b-d762-93f8-cb4d" name="Hanger Medium" hidden="false" targetId="3db8-dec1-a0d0-6143" primary="false"/>
-        <categoryLink id="315a-c639-dce9-135d" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
+        <categoryLink id="9431-4237-36a5-84e9" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="aab6-2b0d-2478-3edc" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
@@ -357,9 +358,9 @@
       <categoryLinks>
         <categoryLink id="5b14-4bee-06f9-9d17" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="f094-995a-cc0b-ccda" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="3a1c-6ce8-83bd-92dd" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="113c-5e3e-062b-90ea" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
         <categoryLink id="a379-fbb1-4486-2803" name="Hanger Small" hidden="false" targetId="65e0-d6cc-fa09-919a" primary="false"/>
+        <categoryLink id="594d-1638-0f1b-8bd6" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="72c0-95ce-a456-9dd2" name="Cruiser" hidden="false" collective="false" import="true" targetId="071a-7b7b-8349-90ac" type="selectionEntryGroup"/>
@@ -406,7 +407,7 @@
         <categoryLink id="36e2-a641-1cfa-642b" name="Destroyer" hidden="false" targetId="aaf5-53cb-dd7a-25e1" primary="false"/>
         <categoryLink id="4b93-98f7-0bf8-3d2b" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="13a3-2c1a-cbb4-7c28" name="Hanger Bay" hidden="false" targetId="197b-a939-f653-3fff" primary="false"/>
-        <categoryLink id="5655-72a8-81a3-c2d3" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
+        <categoryLink id="f861-71dc-7998-51ff" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="bf34-1a09-c5f8-23e5" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
@@ -450,8 +451,8 @@
       <categoryLinks>
         <categoryLink id="254b-4df4-4f0b-5ff0" name="Destroyer" hidden="false" targetId="aaf5-53cb-dd7a-25e1" primary="false"/>
         <categoryLink id="63e4-ab6b-b957-cb10" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="12eb-d661-2d70-d795" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="41e0-1c3c-b1f3-636c" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
+        <categoryLink id="50ba-cb71-7f53-22f5" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2298-77d6-afc4-9be6" name="Missile Pods (Ord)" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
@@ -501,6 +502,7 @@
         <categoryLink id="4470-984a-fd72-92a2" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="72de-5423-1812-ff39" name="Carrier" hidden="false" targetId="eb6d-8a2e-eb65-f70a" primary="false"/>
         <categoryLink id="460f-63a5-1f0b-dceb" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
+        <categoryLink id="e8a5-fece-90a9-7e18" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="012f-c5b8-7a23-2ecd" name="Missile Pods (Ord)" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
@@ -546,8 +548,8 @@
       <categoryLinks>
         <categoryLink id="a9ae-2cc4-88ce-784c" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="cd62-4ad0-bf91-38dd" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
-        <categoryLink id="e9af-a1fc-68e9-dc08" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="190d-ce2d-c5c6-dd48" name="Frigate" hidden="false" targetId="9a6f-a8b9-4ec1-f0cb" primary="false"/>
+        <categoryLink id="215f-30ee-a2d3-5d78" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="13bc-ffa7-39b3-9398" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
@@ -591,7 +593,8 @@
         <categoryLink id="051e-0d2d-af3a-49cb" name="Destroyer" hidden="false" targetId="aaf5-53cb-dd7a-25e1" primary="false"/>
         <categoryLink id="5ce7-9875-5f0c-57ea" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="d40c-c939-c870-de46" name="Hanger Bay" hidden="false" targetId="197b-a939-f653-3fff" primary="false"/>
-        <categoryLink id="b602-a119-c1f7-61a5" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
+        <categoryLink id="c852-5bd1-3592-9e81" name="Heavy Destroyer" hidden="false" targetId="1d62-51cc-7dc0-4713" primary="false"/>
+        <categoryLink id="850b-baf5-f6eb-dfeb" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="82d3-d04c-7f74-015f" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
@@ -630,8 +633,8 @@
       <categoryLinks>
         <categoryLink id="344c-a52b-4d10-44e2" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
         <categoryLink id="dfe3-8475-e9cb-f667" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="1056-9525-06dc-7ae7" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="9320-0aa2-ead8-bd76" name="Lancer" hidden="false" targetId="1c95-20dd-7250-0c03" primary="false"/>
+        <categoryLink id="dffb-e4dc-cfeb-6145" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="fd87-d159-8ac5-216e" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
@@ -662,7 +665,6 @@
       <categoryLinks>
         <categoryLink id="f4ca-5781-4f4b-89a1" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="ec6c-eae1-fabf-cbd6" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="c166-774a-da0d-e34c" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="9045-7dab-86ce-6e85" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
         <categoryLink id="aac0-4792-0deb-7acd" name="Hanger Small" hidden="false" targetId="65e0-d6cc-fa09-919a" primary="false"/>
       </categoryLinks>
@@ -696,9 +698,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2f04-0d8d-c13e-ec44" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="c2c1-1803-281f-39cc" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="830d-76f9-6628-449e" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
         <categoryLink id="900a-5d3f-bbfe-868e" name="Mine Layer" hidden="false" targetId="d8fe-df28-9098-c1a4" primary="false"/>
+        <categoryLink id="5c03-18c8-b167-4f6b" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a5df-f146-3d8c-da09" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
@@ -729,9 +731,9 @@
       <categoryLinks>
         <categoryLink id="4b02-e622-89b6-60fc" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="0bff-bfc9-a1d7-29f0" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="489c-2dc9-0e0d-6cff" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="c310-4edb-5051-5ba3" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
         <categoryLink id="7054-dfd2-4d76-6916" name="Hanger Small" hidden="false" targetId="65e0-d6cc-fa09-919a" primary="false"/>
+        <categoryLink id="bb3d-25c2-d0fb-e28b" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0db7-b879-02ae-f6e3" name="Missile Cruiser" hidden="false" collective="false" import="true" targetId="802b-e45d-48d1-3410" type="selectionEntryGroup"/>
@@ -787,6 +789,7 @@
         <categoryLink id="fe70-fee5-60f0-ac08" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="ccbd-b7c6-2992-71b1" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="4736-5a59-b893-1e76" name="Super Carrier" hidden="false" targetId="2fa7-79f2-39bc-2852" primary="false"/>
+        <categoryLink id="83cf-6194-c698-9750" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3576-ac7f-bb28-67f3" name="Missile Pods (Ord)" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
@@ -825,7 +828,7 @@
         <categoryLink id="8d3b-e6c0-f557-e207" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="82b2-7823-00e9-8e05" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
         <categoryLink id="9eb2-ed0f-55b1-2b31" name="Corvette" hidden="false" targetId="3ed0-5059-2f78-913d" primary="false"/>
-        <categoryLink id="e230-4eb8-7768-203e" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
+        <categoryLink id="0523-c70f-4dd1-a8e2" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2e05-312d-ee8a-d3d8" name="Corvette" hidden="false" collective="false" import="true" targetId="39a6-c11b-1ec0-d887" type="selectionEntryGroup"/>
@@ -855,9 +858,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="eb4d-ae6f-aba0-f630" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="39eb-ec23-f03f-58c1" name="Anglo-European Alliance" hidden="false" targetId="c6e0-ebfd-9a42-cff2" primary="false"/>
         <categoryLink id="b55e-0dba-d9fc-67e5" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
-        <categoryLink id="1ff5-27b5-2213-f378" name="Mine Layer" hidden="false" targetId="d8fe-df28-9098-c1a4" primary="false"/>
+        <categoryLink id="599a-2302-0ab2-d947" name="Torpedo Boat" hidden="false" targetId="207d-e468-cf2d-70e7" primary="false"/>
+        <categoryLink id="6e02-6bbf-5fb8-52f8" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5792-c6b8-8cbe-c518" name="Ship: Torpedo Boat" hidden="false" collective="false" import="true" targetId="cacc-1307-4cac-62fc" type="selectionEntryGroup"/>
@@ -901,9 +904,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8ecf-5f61-8739-8789" name="Faction: Anglo-European Alliance" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="588c-e564-5a95-0af1" type="min"/>
-      </constraints>
       <infoLinks>
         <infoLink id="b922-7627-5a12-9054" name="Node Engineers" hidden="false" targetId="3ef9-85f9-86e1-e301" type="profile"/>
         <infoLink id="c405-f973-a6cc-e2cb" name="Company level sentry guns" hidden="false" targetId="77ec-62c5-cfff-e75f" type="profile"/>
@@ -911,6 +911,9 @@
       <categoryLinks>
         <categoryLink id="319f-52df-0755-eb84" name="New CategoryLink" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1514,6 +1517,14 @@
         <entryLink id="4a75-cc6d-ff4a-b27e" name="Power Armour Company" hidden="false" collective="false" import="true" targetId="501b-85fa-6fd1-df95" type="selectionEntry"/>
         <entryLink id="1a55-71a1-6eae-d387" name="Regular Company" hidden="false" collective="false" import="true" targetId="5d26-a557-b4d7-e1ef" type="selectionEntry"/>
         <entryLink id="ccdc-36a7-8981-6eb3" name="Shock Company" hidden="false" collective="false" import="true" targetId="14e4-25eb-185f-01e0" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="dc89-0cc9-14c8-ee1f" name="Strikecraft Assault Ship" hidden="false" collective="true" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25dc-a16a-d295-f375" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="7dd4-62c5-bc46-ba9b" name="Strikecraft" hidden="false" collective="false" import="true" targetId="f3ab-94b0-7c71-baa9" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

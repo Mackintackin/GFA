@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="14" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="16" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -83,6 +83,13 @@
     <categoryEntry id="8f11-fae2-9c59-a140" name="Escort" hidden="false"/>
     <categoryEntry id="058c-f32f-8132-917b" name="Assault" hidden="false"/>
     <categoryEntry id="965e-e27c-1b2f-e11b" name="Heavy Capital" hidden="false">
+      <modifiers>
+        <modifier type="set" field="e458-352f-b543-34ea" value="2.0">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26f4-1ea5-e00d-f290" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e458-352f-b543-34ea" type="max"/>
       </constraints>
@@ -95,23 +102,35 @@
     </categoryEntry>
     <categoryEntry id="1400-6cc4-e9a5-372c" name="Faction Traits" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b3c-4c9b-2cfa-abd2" type="min"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b29-760b-42a3-29e3" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="1b3c-4c9b-2cfa-abd2" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5b29-760b-42a3-29e3" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="1a19-0fd1-8500-ac26" name="Upgrades" hidden="false"/>
     <categoryEntry id="893a-0170-bcdc-468b" name="Troops" hidden="false"/>
     <categoryEntry id="3117-f9a6-87cb-9559" name="Strikecraft" hidden="false"/>
-    <categoryEntry id="3db8-dec1-a0d0-6143" name="Hanger Medium" hidden="false"/>
-    <categoryEntry id="65e0-d6cc-fa09-919a" name="Hanger Small" hidden="false"/>
-    <categoryEntry id="197b-a939-f653-3fff" name="Hanger Bay" hidden="false"/>
-    <categoryEntry id="7d6a-9af3-2353-cf10" name="Hanger Large" hidden="false"/>
+    <categoryEntry id="3db8-dec1-a0d0-6143" name="Hanger Medium" hidden="true"/>
+    <categoryEntry id="65e0-d6cc-fa09-919a" name="Hanger Small" hidden="true"/>
+    <categoryEntry id="197b-a939-f653-3fff" name="Hanger Bay" hidden="true"/>
+    <categoryEntry id="7d6a-9af3-2353-cf10" name="Hanger Large" hidden="true"/>
     <categoryEntry id="a340-6370-56da-2c93" name="Improved Drives" hidden="false"/>
     <categoryEntry id="925e-66d7-1207-148d" name="Armoured Core" hidden="false"/>
     <categoryEntry id="ef48-03b8-36e3-e0f0" name="Twinned Escorts" hidden="false"/>
     <categoryEntry id="1c95-20dd-7250-0c03" name="Lancer" hidden="false"/>
     <categoryEntry id="d8fe-df28-9098-c1a4" name="Mine Layer" hidden="false"/>
     <categoryEntry id="db64-bc52-ef6a-cf57" name="Dreadnought" hidden="false"/>
+    <categoryEntry id="6f56-a31c-b476-6b3b" name="Anglo-European Alliance" hidden="false"/>
+    <categoryEntry id="d2a7-17fc-9ace-d387" name="Merathian Khanate" hidden="false"/>
+    <categoryEntry id="bf5b-01fd-015f-7980" name="Hilin Republic" hidden="false"/>
+    <categoryEntry id="5424-330c-9b4b-71ea" name="Arreki Singularity" hidden="false"/>
+    <categoryEntry id="cfa8-33a3-9ab9-04a8" name="Empire of the Rising Sun" hidden="false"/>
+    <categoryEntry id="0b53-ae75-8c67-2771" name="Nosterov Covens" hidden="false"/>
+    <categoryEntry id="919b-1192-f03e-8121" name="Martian Confederation" hidden="false"/>
+    <categoryEntry id="57f9-2ea1-6771-4793" name="Sino-Russian Pact" hidden="false"/>
+    <categoryEntry id="2eab-856d-734a-9c38" name="Imperial Hemina" hidden="false"/>
+    <categoryEntry id="d088-b00e-24aa-43d8" name="The Gavech Hive" hidden="false"/>
+    <categoryEntry id="43e0-5ac9-7cc6-818b" name="The Polar League" hidden="false"/>
+    <categoryEntry id="d6ca-f98d-bb19-dd34" name="Principality of Hissan" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6f57-4c2a-1ec6-28f4" name="Vanguard Group" hidden="false">
@@ -282,6 +301,59 @@
         <categoryLink id="523a-099c-4959-8ddd" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="3b66-ae87-9815-d065" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="0a55-947a-5a69-10e7" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="90e5-ead8-f2f6-c899" name="Patrol Group" hidden="false">
+      <comment>Can be any group type but all ships must have thrusters 4 and above.</comment>
+      <forceEntries>
+        <forceEntry id="ecd0-aa04-3df5-d34c" name="Patrol Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="3e5b-3a0b-a089-c21f" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="1a75-29e0-1224-8b6d" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="3094-e016-651a-725d" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="6abe-11b0-8893-10b9" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+        <categoryLink id="cc85-b043-63e9-ace2" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="2f3a-9d4e-607f-18bb" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="fa06-bc3a-fdc3-52a2" name="Defender Group" hidden="false">
+      <comment>Can be any group type but all ships must have thrusters 4 and above.</comment>
+      <forceEntries>
+        <forceEntry id="f575-333b-46b9-b397" name="Defender Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="9535-d7e5-efa3-80c3" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="2758-0e7d-e021-deb4" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink id="c4f7-93bf-b7c4-5953" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+            <categoryLink id="709c-6c1f-1fc6-2735" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="db02-068e-5947-bdd7" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="43c3-fe92-d195-5bea" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="efcc-728d-2ed2-903e" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd98-1862-91fc-4ecb" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8646-d8e8-235e-7611" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf2c-6eb1-771f-7f07" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c21e-b148-d06b-f724" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8fba-561c-1197-39ab" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fac-bb2a-0bb3-6976" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="79a7-9876-544d-8594" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="2bee-491c-cec4-387d" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="1c50-e68d-31a5-696f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -541,6 +613,9 @@ Assault Ships: Assault Ships. &quot;			</comment>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="928a-8192-f225-5384" name="Escort" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -550,6 +625,17 @@ Assault Ships: Assault Ships. &quot;			</comment>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f32-7bb1-35db-671c" name="Flag Bridge" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dd28-10ea-20da-1880" name="Flag Bridge" hidden="false" targetId="4bb1-8f4b-9d23-6b13" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
