@@ -131,6 +131,7 @@
     <categoryEntry id="d088-b00e-24aa-43d8" name="The Gavech Hive" hidden="false"/>
     <categoryEntry id="43e0-5ac9-7cc6-818b" name="The Polar League" hidden="false"/>
     <categoryEntry id="d6ca-f98d-bb19-dd34" name="Principality of Hissan" hidden="false"/>
+    <categoryEntry id="b09d-d647-606f-39d3" name="Other" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6f57-4c2a-1ec6-28f4" name="Vanguard Group" hidden="false">
@@ -144,6 +145,7 @@
             <categoryLink id="945c-ad1d-8dec-4393" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="890c-6c67-fd48-d430" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="03b6-3da8-dbeb-b829" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+            <categoryLink id="33f1-97d6-39c4-2be2" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -154,6 +156,7 @@
         <categoryLink id="fb92-4c44-b421-2a83" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="e7c4-9ef0-f65f-8d71" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="8eda-2aa7-64d8-962b" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="c1d4-8b36-2937-e055" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
@@ -167,6 +170,7 @@
             <categoryLink id="1026-9320-4a59-1a4a" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="25d8-f23b-926b-f85b" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="cb8e-8398-61c6-86ab" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+            <categoryLink id="d0d8-9b15-8288-c9ae" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -186,6 +190,7 @@
         <categoryLink id="66a8-0623-fd21-e8d6" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="7681-eb5c-f70d-1575" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="31f5-7f4a-f5eb-571f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="a3ed-55ee-c7d5-18a3" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d366-1af4-d6f0-1372" name="Bombard Group" hidden="false">
@@ -199,6 +204,7 @@
             <categoryLink id="9296-22ef-c624-db4a" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="450a-09a2-ebf5-e543" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="c4e3-c71a-506f-8213" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+            <categoryLink id="b5f4-8460-0d2f-1e8f" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -224,6 +230,7 @@
         <categoryLink id="2255-4a6e-fafc-d4e9" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="1ff1-047a-bd64-14ab" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="a0eb-5643-e67c-d87d" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="3008-b6b4-c1a9-055d" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="3dcb-be0a-fb67-84cd" name="Assault Group" hidden="false">
@@ -237,6 +244,7 @@
             <categoryLink id="185b-f2c9-933a-31c4" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="4471-fa04-9aa2-645e" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="c759-d36d-7e93-6c27" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+            <categoryLink id="b295-a2ac-6cc1-aee1" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -249,8 +257,9 @@
         </categoryLink>
         <categoryLink id="34ac-c838-c3f3-0fe8" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
         <categoryLink id="932f-93a8-b93f-349f" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
-        <categoryLink id="b7f1-73d7-250f-7975" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="b7f1-73d7-250f-7975" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="9855-45f5-8636-78cf" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="7b07-1975-af99-f447" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="1383-5b5c-01df-92d5" name="Combat Group" hidden="false">
@@ -264,6 +273,7 @@
             <categoryLink id="edf7-f4c8-37a1-f75f" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="62aa-bc65-6ef5-a30b" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="74f3-c714-7ad5-35c8" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+            <categoryLink id="156b-e0ac-c248-d0f8" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -301,6 +311,7 @@
         <categoryLink id="523a-099c-4959-8ddd" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="3b66-ae87-9815-d065" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="0a55-947a-5a69-10e7" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="25d8-ece4-1879-182c" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="90e5-ead8-f2f6-c899" name="Patrol Group" hidden="false">
@@ -311,6 +322,7 @@
             <categoryLink id="3e5b-3a0b-a089-c21f" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="1a75-29e0-1224-8b6d" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="3094-e016-651a-725d" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="20d7-5039-ba41-373b" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -318,6 +330,7 @@
         <categoryLink id="6abe-11b0-8893-10b9" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
         <categoryLink id="cc85-b043-63e9-ace2" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="2f3a-9d4e-607f-18bb" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="9727-3035-4d4d-e227" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="fa06-bc3a-fdc3-52a2" name="Defender Group" hidden="false">
@@ -331,6 +344,7 @@
             <categoryLink id="709c-6c1f-1fc6-2735" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="db02-068e-5947-bdd7" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="43c3-fe92-d195-5bea" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+            <categoryLink id="370a-129c-9654-4bda" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -354,6 +368,7 @@
         <categoryLink id="79a7-9876-544d-8594" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="2bee-491c-cec4-387d" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="1c50-e68d-31a5-696f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="2032-7e6e-45cc-65bc" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
