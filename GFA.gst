@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="16" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="18" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -132,6 +132,11 @@
     <categoryEntry id="43e0-5ac9-7cc6-818b" name="The Polar League" hidden="false"/>
     <categoryEntry id="d6ca-f98d-bb19-dd34" name="Principality of Hissan" hidden="false"/>
     <categoryEntry id="b09d-d647-606f-39d3" name="Other" hidden="false"/>
+    <categoryEntry id="af6d-3b24-162e-fa9e" name="Improved Drive" hidden="false"/>
+    <categoryEntry id="902a-ca22-719e-2120" name="Armoured Reactor Core" hidden="false"/>
+    <categoryEntry id="5abe-3356-c80e-5842" name="Flagship" hidden="false"/>
+    <categoryEntry id="6bdf-c598-d98d-7f1b" name="Light Cruiser" hidden="false"/>
+    <categoryEntry id="880c-5304-7956-9ca0" name="EW Frigate" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6f57-4c2a-1ec6-28f4" name="Vanguard Group" hidden="false">
