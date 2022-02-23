@@ -132,11 +132,25 @@
     <categoryEntry id="43e0-5ac9-7cc6-818b" name="The Polar League" hidden="false"/>
     <categoryEntry id="d6ca-f98d-bb19-dd34" name="Principality of Hissan" hidden="false"/>
     <categoryEntry id="b09d-d647-606f-39d3" name="Other" hidden="false"/>
-    <categoryEntry id="af6d-3b24-162e-fa9e" name="Improved Drive" hidden="false"/>
     <categoryEntry id="902a-ca22-719e-2120" name="Armoured Reactor Core" hidden="false"/>
     <categoryEntry id="5abe-3356-c80e-5842" name="Flagship" hidden="false"/>
     <categoryEntry id="6bdf-c598-d98d-7f1b" name="Light Cruiser" hidden="false"/>
     <categoryEntry id="880c-5304-7956-9ca0" name="EW Frigate" hidden="false"/>
+    <categoryEntry id="6757-9f7f-e13f-8b54" name="Jeserak Hegemony" hidden="false"/>
+    <categoryEntry id="4f1e-5340-6785-526d" name="Hunter Killer" hidden="false"/>
+    <categoryEntry id="6038-74d0-b1f8-5d1d" name="Grand Cruiser" hidden="false"/>
+    <categoryEntry id="c7fe-0fd5-f2e7-e934" name="Electronic Warfare" hidden="false"/>
+    <categoryEntry id="3606-557c-efda-dbcb" name="Attack Corvette" hidden="false"/>
+    <categoryEntry id="8e60-12a7-706c-9950" name="Line Frigate" hidden="false"/>
+    <categoryEntry id="f8c2-8038-a64d-f6ae" name="Torpedo Cruiser" hidden="false"/>
+    <categoryEntry id="65c1-5406-714f-d034" name="Torpedo Frigate" hidden="false"/>
+    <categoryEntry id="6103-7c4d-8d9d-262d" name="Armoured Cruiser" hidden="false"/>
+    <categoryEntry id="7827-9587-65dd-c72f" name="Armoured Destroyer" hidden="false"/>
+    <categoryEntry id="f091-0857-3f91-c344" name="Armoured Frigate" hidden="false"/>
+    <categoryEntry id="ad8d-40ca-356d-ad22" name="Attack Ship" hidden="false"/>
+    <categoryEntry id="9322-0eaf-8900-a53d" name="Light Carrier" hidden="false"/>
+    <categoryEntry id="cf39-2c2e-f7a4-6ca0" name="Scout" hidden="false"/>
+    <categoryEntry id="ee8d-abbf-ad61-b122" name="Torpedo Destroyer" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6f57-4c2a-1ec6-28f4" name="Vanguard Group" hidden="false">

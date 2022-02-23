@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3eef-3507-3c86-08f7" name="Corvette" hidden="false" collective="false" import="true" targetId="8755-e250-9d76-0729" type="selectionEntry"/>
     <entryLink id="534b-6a98-4d43-36b7" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="1faf-7623-b9be-5ea7" type="selectionEntry"/>
@@ -360,6 +360,8 @@
       <categoryLinks>
         <categoryLink id="8155-9e81-1f25-b802" name="Empire of the Rising Sun" hidden="false" targetId="cfa8-33a3-9ab9-04a8" primary="false"/>
         <categoryLink id="9da7-4fff-31e1-130e" name="Hanger Bay" hidden="false" targetId="197b-a939-f653-3fff" primary="false"/>
+        <categoryLink id="92de-cca0-1352-a39f" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+        <categoryLink id="fb77-85dd-5146-76e0" name="Destroyer" hidden="false" targetId="aaf5-53cb-dd7a-25e1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3a31-67a7-89dc-5018" name="Ion Cannon" hidden="false" collective="false" import="true" targetId="c7a1-d880-539c-8f57" type="selectionEntry">
@@ -477,8 +479,8 @@
         <categoryLink id="65e1-ec63-30e1-7051" name="Empire of the Rising Sun" hidden="false" targetId="cfa8-33a3-9ab9-04a8" primary="false"/>
         <categoryLink id="0596-1f1b-23b4-c610" name="Frigate" hidden="false" targetId="9a6f-a8b9-4ec1-f0cb" primary="false"/>
         <categoryLink id="4ab1-6154-2f8c-53d7" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="c7eb-1bb6-e266-efc4" name="EW Frigate" hidden="false" targetId="880c-5304-7956-9ca0" primary="false"/>
         <categoryLink id="06b4-cdc4-ce65-1a1e" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+        <categoryLink id="ea3e-c0e4-b957-5553" name="Electronic Warfare" hidden="false" targetId="c7fe-0fd5-f2e7-e934" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3616-5f54-48d4-926d" name="Ion Cannon" hidden="false" collective="false" import="true" targetId="c7a1-d880-539c-8f57" type="selectionEntry">
@@ -642,6 +644,9 @@
       <categoryLinks>
         <categoryLink id="1236-e419-7c83-5f07" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
