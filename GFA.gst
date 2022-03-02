@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="18" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="19" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -628,7 +628,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <categoryLink id="bc05-e88e-1a9c-39ac" name="Improved Drives" hidden="false" targetId="a340-6370-56da-2c93" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a12b-233b-558c-95fb" name="Armoured Reactor Core" hidden="false" collective="false" import="true" type="upgrade">
@@ -636,7 +636,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="5288-6db8-90e3-d8bf" name="Armored Reactor Core" hidden="false" targetId="34bb-a9f7-0e05-2123" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="44b6-ccc8-d7bc-2612" name="Escort +1" hidden="false" collective="false" import="true" type="upgrade">
@@ -648,7 +648,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="928a-8192-f225-5384" name="Escort" hidden="false" collective="false" import="true" type="upgrade">
@@ -668,7 +668,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="dd28-10ea-20da-1880" name="Flag Bridge" hidden="false" targetId="4bb1-8f4b-9d23-6b13" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -793,6 +793,9 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <categoryLinks>
             <categoryLink id="1bde-64c0-4a2f-6071" name="Hanger Bay" hidden="false" targetId="197b-a939-f653-3fff" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+          </costs>
         </entryLink>
         <entryLink id="8005-d390-1f01-5e14" name="Hanger Large" hidden="false" collective="false" import="true" targetId="2421-cf65-1076-2cb2" type="selectionEntry">
           <modifiers>
@@ -817,6 +820,9 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <categoryLinks>
             <categoryLink id="7cd1-552c-251b-f8e2" name="Hanger Medium" hidden="false" targetId="3db8-dec1-a0d0-6143" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+          </costs>
         </entryLink>
         <entryLink id="b863-a60e-1921-5f01" name="Hanger Small" hidden="false" collective="false" import="true" targetId="95c4-8da9-d607-b9f8" type="selectionEntry">
           <modifiers>
@@ -829,6 +835,9 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <categoryLinks>
             <categoryLink id="d0c9-787b-02a8-964e" name="Hanger Small" hidden="false" targetId="65e0-d6cc-fa09-919a" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
