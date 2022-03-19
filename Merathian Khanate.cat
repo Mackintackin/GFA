@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="97f7-5a48-5c1a-44c1" name="Merathian Khanate" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="97f7-5a48-5c1a-44c1" name="Merathian Khanate" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="659d-a37f-1e50-6876" name="Corvette" hidden="false" collective="false" import="true" targetId="b18b-e51a-67a1-e710" type="selectionEntry"/>
     <entryLink id="4f31-8663-457f-a207" name="Attack Corvette" hidden="false" collective="false" import="true" targetId="ee78-73b3-31a5-0059" type="selectionEntry"/>
@@ -24,6 +24,11 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <infoLinks>
+    <infoLink id="eb7c-7f84-92b5-2f29" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
+    <infoLink id="557e-8c18-35aa-3a5f" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
+    <infoLink id="6efe-50e3-2d6c-cafa" name="Instantaneous" hidden="false" targetId="c96e-f030-1ecd-0d08" type="rule"/>
+  </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="39ba-0530-d96d-414a" name="Disruptor Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1435,9 +1440,6 @@
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="e89b-c0b1-4653-fcf1" name="Troop Selection" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c62d-4599-fb04-c517" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="cb38-087a-5a9e-e842" name="Light Company" hidden="false" collective="false" import="true" targetId="bebf-fa63-97e5-66cc" type="selectionEntry"/>
         <entryLink id="8130-ce4e-a322-7bf9" name="Regular Company" hidden="false" collective="false" import="true" targetId="1aaf-3ce0-0581-6782" type="selectionEntry"/>

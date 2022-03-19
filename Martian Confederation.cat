@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3a26-c560-e648-04fe" name="Frigate" hidden="false" collective="false" import="true" targetId="ab7f-baeb-1678-4b64" type="selectionEntry"/>
     <entryLink id="a802-4515-3b49-f916" name="Line Frigate" hidden="false" collective="false" import="true" targetId="b004-55c3-1f43-e60d" type="selectionEntry"/>
@@ -13,6 +13,12 @@
     <entryLink id="03a0-cb8b-624d-8376" name="Carrier" hidden="false" collective="false" import="true" targetId="6bfb-2728-8d38-7779" type="selectionEntry"/>
     <entryLink id="ddd9-7b1d-0b1a-683e" name="Super Carrier" hidden="false" collective="false" import="true" targetId="5890-89d4-41a3-946f" type="selectionEntry"/>
   </entryLinks>
+  <infoLinks>
+    <infoLink id="cdec-8f3c-5b5e-9c49" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
+    <infoLink id="3570-95c3-3a89-03c1" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
+    <infoLink id="666c-c0c3-67e6-e9e7" name="Long Range " hidden="false" targetId="0952-d944-21ef-d99e" type="rule"/>
+    <infoLink id="3283-45f7-67d3-0304" name="Kinetic" hidden="false" targetId="5325-1e0e-f155-dbce" type="rule"/>
+  </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="09f6-ef3b-0c87-b11d" name="Stinger Torpedo (Ord)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -700,9 +706,6 @@
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="b557-2776-952b-4a27" name="Troop Selection" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2b-0e60-943e-d7be" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="dc4b-dfc1-8b18-9877" name="Light Company" hidden="false" collective="false" import="true" targetId="964d-d759-a698-fd16" type="selectionEntry"/>
         <entryLink id="5739-de7b-152e-6486" name="Regular Company" hidden="false" collective="false" import="true" targetId="8e4c-64aa-859c-8b6e" type="selectionEntry"/>

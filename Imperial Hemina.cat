@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1927-1c31-8ba3-bd2c" name="Cruiser " hidden="false" collective="false" import="true" targetId="eff7-3c47-3825-5eda" type="selectionEntry"/>
     <entryLink id="0718-c883-c9a3-8d81" name="Faction: Imperial Hemina" hidden="false" collective="false" import="true" targetId="5263-73c6-3588-8c88" type="selectionEntry">
@@ -19,6 +19,13 @@
     <entryLink id="1c49-1482-e917-3fb2" name="Battleship" hidden="false" collective="false" import="true" targetId="d130-8aa5-881c-4a40" type="selectionEntry"/>
     <entryLink id="8bdb-24a3-09da-af1c" name="Dreadnought" hidden="false" collective="false" import="true" targetId="821b-8ce8-5a54-5ace" type="selectionEntry"/>
   </entryLinks>
+  <infoLinks>
+    <infoLink id="96dc-ec32-2af5-aa0c" name="Broadside" hidden="false" targetId="94e9-1c97-3aea-9ed9" type="rule"/>
+    <infoLink id="7a6e-727c-b450-f4ea" name="Dual Purpose" hidden="false" targetId="9476-2d8a-3ae7-7495" type="rule"/>
+    <infoLink id="c897-7fa1-da56-b854" name="Long Range " hidden="false" targetId="0952-d944-21ef-d99e" type="rule"/>
+    <infoLink id="653d-f8ae-ab0e-d368" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
+    <infoLink id="0fb2-3a7a-1cd7-9d2c" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
+  </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="eff7-3c47-3825-5eda" name="Cruiser " hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -131,8 +138,8 @@
     </selectionEntry>
     <selectionEntry id="f582-1c9f-e838-c733" name="Disruptor Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="4be3-8c91-977b-d8cb" name="Broadside" hidden="false" targetId="573a-ad6c-b3bc-264a" type="profile"/>
         <infoLink id="4d11-5a6c-9456-33e7" name="Disruptor Cannon" hidden="false" targetId="2037-2afc-2af4-3c13" type="profile"/>
+        <infoLink id="ca98-2156-f0c2-6dbc" name="Broadside" hidden="false" targetId="573a-ad6c-b3bc-264a" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -140,9 +147,9 @@
     </selectionEntry>
     <selectionEntry id="b679-5f7b-44df-6313" name="Heavy Disruptor Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="6235-efec-b0bd-6246" name="Broadside" hidden="false" targetId="573a-ad6c-b3bc-264a" type="profile"/>
-        <infoLink id="880f-f741-8c3a-f62d" name="Long Range" hidden="false" targetId="ec63-bf71-c75c-40b4" type="profile"/>
         <infoLink id="72d0-a631-f134-ac63" name="Heavy Disruptor Cannon" hidden="false" targetId="7cf1-0d32-ffa3-8c74" type="profile"/>
+        <infoLink id="ca1b-a493-2c12-fcdf" name="Broadside" hidden="false" targetId="573a-ad6c-b3bc-264a" type="profile"/>
+        <infoLink id="745f-4acb-2baf-7984" name="Long Range" hidden="false" targetId="ec63-bf71-c75c-40b4" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -150,8 +157,8 @@
     </selectionEntry>
     <selectionEntry id="1785-09d7-1ce4-11b8" name="Particle Laser" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="4b26-10c2-17da-4cda" name="Dual Purpose" hidden="false" targetId="f2e6-9722-1650-4eb6" type="profile"/>
         <infoLink id="51e4-d55b-cd99-d56f" name="Particle Laser" hidden="false" targetId="df88-94b9-9283-16ca" type="profile"/>
+        <infoLink id="8ccb-3a16-e494-42f7" name="Dual Purpose" hidden="false" targetId="f2e6-9722-1650-4eb6" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -378,7 +385,7 @@
         <categoryLink id="4dce-8eb3-7f9a-6164" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="cec2-5297-0477-af34" name="Ship: Corvette" hidden="false" collective="false" import="true" targetId="50c2-39b1-4421-e5ea" type="selectionEntryGroup"/>
+        <entryLink id="cec2-5297-0477-af34" name="Ship: Frigate" hidden="false" collective="false" import="true" targetId="73ce-c48d-7244-cc44" type="selectionEntryGroup"/>
         <entryLink id="e29b-2584-9d70-87a5" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="45b1-fde7-2e8a-2084" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="f582-1c9f-e838-c733" type="selectionEntry">
           <constraints>
@@ -644,7 +651,7 @@
         <categoryLink id="906d-69ab-97d5-7cba" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ba7e-8588-d22b-c44d" name="Ship: Battleship" hidden="false" collective="false" import="true" targetId="545c-0fc4-f9da-ca81" type="selectionEntryGroup"/>
+        <entryLink id="ba7e-8588-d22b-c44d" name="Ship: Dreadnought" hidden="false" collective="false" import="true" targetId="8432-9b38-1fd4-8e16" type="selectionEntryGroup"/>
         <entryLink id="ba9e-4106-279c-35b2" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="8d43-d57b-6982-4393" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
           <constraints>
@@ -856,9 +863,6 @@
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="b847-8ccd-020f-d554" name="Troop Selection" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df79-2117-45eb-2ab8" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="71f9-1061-daf3-d4b7" name="Light Company" hidden="false" collective="false" import="true" targetId="e852-866f-caf8-0322" type="selectionEntry"/>
         <entryLink id="0915-a354-dfe5-604e" name="Regular Company" hidden="false" collective="false" import="true" targetId="e35a-a9e2-109b-8a1c" type="selectionEntry"/>

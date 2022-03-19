@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9251-199f-6899-d87c" name="The Polar League" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9251-199f-6899-d87c" name="The Polar League" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="f5b3-5884-39d4-6c46" name="Corvette" hidden="false" collective="false" import="true" targetId="f19e-8895-dd25-743c" type="selectionEntry"/>
     <entryLink id="dd5b-99cd-8f94-ac5e" name="Attack Ship" hidden="false" collective="false" import="true" targetId="f0a6-b3ec-e426-334f" type="selectionEntry"/>
@@ -12,6 +12,12 @@
     <entryLink id="ed29-067d-1402-a713" name="Cruiser" hidden="false" collective="false" import="true" targetId="6821-ba58-efc6-40c7" type="selectionEntry"/>
     <entryLink id="57f3-908f-ed9b-e4bd" name="Grand Cruiser" hidden="false" collective="false" import="true" targetId="07e8-58a5-0e98-6bc9" type="selectionEntry"/>
   </entryLinks>
+  <infoLinks>
+    <infoLink id="051f-8f2e-ddf6-32ec" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
+    <infoLink id="91f2-7cfb-4f56-f098" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
+    <infoLink id="2779-0162-b06c-ab9b" name="Biological" hidden="false" targetId="f5f8-13f1-b099-9905" type="rule"/>
+    <infoLink id="4521-b7d3-0768-95db" name="Beam" hidden="false" targetId="e469-269b-6261-11b1" type="rule"/>
+  </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ba20-44d0-f485-a6aa" name="Light Torpedo" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -868,9 +874,6 @@
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="0d27-4caf-039c-b0d9" name="Troop Selection" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4439-44e0-7a87-bf66" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="fb53-e58d-789c-28c4" name="Light Company" hidden="false" collective="false" import="true" targetId="947b-c93d-68ae-5556" type="selectionEntry"/>
         <entryLink id="dbc5-1442-a55b-1694" name="Regular Company" hidden="false" collective="false" import="true" targetId="5b8f-597b-ab5b-2eac" type="selectionEntry"/>

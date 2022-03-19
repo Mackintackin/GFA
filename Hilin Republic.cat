@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5ddc-540e-c117-12bc" name="Corvette" hidden="false" collective="false" import="true" targetId="8792-0358-45f6-d405" type="selectionEntry"/>
     <entryLink id="923a-1ac7-35c4-2cbb" name="Assault Ship" hidden="false" collective="false" import="true" targetId="152a-69f4-13a7-40e7" type="selectionEntry"/>
@@ -18,6 +18,13 @@
     <entryLink id="ffab-8298-d373-1339" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="1080-83d8-b912-d0bf" type="selectionEntry"/>
     <entryLink id="3341-8bb2-2c20-e1f8" name="Faction Traits: Hilin Republic" hidden="false" collective="false" import="true" targetId="d879-d9cb-8f40-b9e1" type="selectionEntry"/>
   </entryLinks>
+  <infoLinks>
+    <infoLink id="5a6c-aa46-ac38-7969" name="Beam" hidden="false" targetId="e469-269b-6261-11b1" type="rule"/>
+    <infoLink id="e8ba-8c3c-cc4d-4dc6" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
+    <infoLink id="3ba5-b1bd-3df1-6913" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
+    <infoLink id="0673-6e4d-b10e-c299" name="Broadside" hidden="false" targetId="94e9-1c97-3aea-9ed9" type="rule"/>
+    <infoLink id="1d16-e01f-c905-f500" name="Instantaneous" hidden="false" targetId="c96e-f030-1ecd-0d08" type="rule"/>
+  </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="a561-528f-8bf2-5e43" name="Harpoon Torpedo (Ord)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -95,6 +102,9 @@
         <categoryLink id="40cc-e581-0a16-b2d8" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
         <categoryLink id="8c27-a664-7379-8b34" name="Hilin Republic" hidden="false" targetId="bf5b-01fd-015f-7980" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6f00-5bd8-37aa-02cd" name="Power Armour Company" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -201,6 +211,9 @@
         <entryLink id="da9c-43e3-5d60-29fc" name="Strikecraft Light Cruiser" hidden="false" collective="false" import="true" targetId="7a5c-673a-534b-d29c" type="selectionEntryGroup"/>
         <entryLink id="b903-836b-314a-c11e" name="Ship: Light Cruiser" hidden="false" collective="false" import="true" targetId="85c9-cb54-78da-13e3" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="22d4-3392-f3b4-8673" name="Heavy Destroyer" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -238,6 +251,9 @@
         <entryLink id="0dff-c4cc-72de-db3d" name="Strikecraft Heavy Destroyer" hidden="false" collective="false" import="true" targetId="2c60-3a83-11cb-ce60" type="selectionEntryGroup"/>
         <entryLink id="7295-ad3e-9414-df81" name="Ship: Heavy Destroyer" hidden="false" collective="false" import="true" targetId="3d1e-a431-fce5-5a54" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="867a-6a78-423f-2740" name="Lancer (Asn)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -267,6 +283,9 @@
         </entryLink>
         <entryLink id="68e3-459a-a659-3d8b" name="Ship: Lancer (Asn)" hidden="false" collective="false" import="true" targetId="c182-bec9-3ccf-dfd9" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="34b7-991f-625e-1e41" name="Frigate" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -310,6 +329,9 @@
         </entryLink>
         <entryLink id="8cf9-59fe-b290-573b" name="Ship: Frigate" hidden="false" collective="false" import="true" targetId="b6d0-b901-42e3-8708" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8792-0358-45f6-d405" name="Corvette" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -339,6 +361,9 @@
         </entryLink>
         <entryLink id="5d81-6cc9-9b26-b577" name="Ship: Corvette" hidden="false" collective="false" import="true" targetId="4d90-56aa-139e-5de7" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1c3f-2270-8f9d-945d" name="Destroyer" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -387,6 +412,9 @@
         </entryLink>
         <entryLink id="8f62-75c8-52e9-eb2a" name="Ship: Destroyer" hidden="false" collective="false" import="true" targetId="23e5-eee5-9e63-40af" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="152a-69f4-13a7-40e7" name="Assault Ship" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -454,6 +482,9 @@
         </entryLink>
         <entryLink id="663e-c1d0-dc8f-95f4" name="Ship: Assault Ship" hidden="false" collective="false" import="true" targetId="02fd-19f1-ba39-ff22" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9076-3b41-2995-aad5" name="Carrier" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -492,6 +523,9 @@
         <entryLink id="3172-d3a8-4804-5287" name="Strikecraft Carrier" hidden="false" collective="false" import="true" targetId="abe0-274c-9393-b28c" type="selectionEntryGroup"/>
         <entryLink id="9540-a35f-1a9a-b1bc" name="Ship: Carrier" hidden="false" collective="false" import="true" targetId="9d31-5a56-7ca5-a121" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7f15-2b91-b8c0-0880" name="Torpedo Battleship" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -530,6 +564,9 @@
         </entryLink>
         <entryLink id="0ffe-6362-6174-653a" name="Ship: Battleship Torpedo" hidden="false" collective="false" import="true" targetId="7c3a-61eb-d7c3-30aa" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f7f0-1e3b-8c5d-2380" name="Phase Shift Battleship " hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -604,6 +641,9 @@
         </entryLink>
         <entryLink id="4f55-5c26-9780-3b0a" name="Ship: Battleship Phase Shift" hidden="false" collective="false" import="true" targetId="1f88-8858-2769-74dc" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="09bf-ab5c-d43f-5c55" name="Lance Battleship (Asn)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -643,6 +683,9 @@
         </entryLink>
         <entryLink id="95c3-9b14-9130-b7cc" name="Ship: Battleship Lance (Asn)" hidden="false" collective="false" import="true" targetId="eef8-785c-3a4c-73fc" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ed8f-d926-c8ea-78e6" name="Battleship" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -687,6 +730,9 @@
         </entryLink>
         <entryLink id="473c-41de-08c1-1880" name="Ship: Battleship" hidden="false" collective="false" import="true" targetId="3ea7-1803-cd13-2a8f" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5319-547d-32de-6362" name="Battle Cruiser" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -738,6 +784,9 @@
         </entryLink>
         <entryLink id="d00e-50ce-e816-0a23" name="Ship: Battle Cruiser" hidden="false" collective="false" import="true" targetId="f36f-2106-173f-c2e6" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4f5b-13a5-1632-873c" name="Cruiser" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -776,6 +825,9 @@
         <entryLink id="1e37-1358-c368-dba6" name="Strikecraft Cruiser" hidden="false" collective="false" import="true" targetId="861d-83f7-1b5b-01c3" type="selectionEntryGroup"/>
         <entryLink id="4066-3b62-afd5-149e" name="Ship: Cruiser" hidden="false" collective="false" import="true" targetId="8f5a-d562-0677-3b2d" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1080-83d8-b912-d0bf" name="Torpedo Boat" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -798,6 +850,9 @@
         </entryLink>
         <entryLink id="1938-9703-d736-aabb" name="Ship: Battleship Torpedo" hidden="false" collective="false" import="true" targetId="7c3a-61eb-d7c3-30aa" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -844,9 +899,6 @@
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c54e-d845-89e0-a94b" name="Troop Selection" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a2-4955-18de-ef49" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="610f-412e-77c7-9666" name="Light Company" hidden="false" collective="false" import="true" targetId="5454-eef6-baed-5ea3" type="selectionEntry"/>
         <entryLink id="8537-7874-67f4-cd8e" name="Regular Company" hidden="false" collective="false" import="true" targetId="9c14-26e6-25a0-596b" type="selectionEntry"/>

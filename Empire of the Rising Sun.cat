@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3eef-3507-3c86-08f7" name="Corvette" hidden="false" collective="false" import="true" targetId="8755-e250-9d76-0729" type="selectionEntry"/>
     <entryLink id="534b-6a98-4d43-36b7" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="1faf-7623-b9be-5ea7" type="selectionEntry"/>
@@ -21,6 +21,12 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <infoLinks>
+    <infoLink id="aefd-0865-58ff-58f4" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
+    <infoLink id="1128-7943-e29b-83fb" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
+    <infoLink id="02af-da95-4507-01b2" name="Beam" hidden="false" targetId="e469-269b-6261-11b1" type="rule"/>
+    <infoLink id="1118-4b4f-bca2-04bd" name="Long Range " hidden="false" targetId="0952-d944-21ef-d99e" type="rule"/>
+  </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c7a1-d880-539c-8f57" name="Ion Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -693,9 +699,6 @@
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3df3-45f4-0d61-9204" name="Troop Selection" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf46-d840-b1ae-4d1a" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="0f71-526b-defe-78f2" name="Regular Company" hidden="false" collective="false" import="true" targetId="a3ff-660d-e553-d996" type="selectionEntry"/>
         <entryLink id="16ef-37ea-b1b9-eaa4" name="Light Company" hidden="false" collective="false" import="true" targetId="8a34-1aa7-e83c-7a86" type="selectionEntry"/>

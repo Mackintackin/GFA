@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d5c0-7397-f4c5-4bff" name="Faction Trait: Nosterov Covens" hidden="false" collective="false" import="true" targetId="27aa-c01f-2d3e-a5e3" type="selectionEntry">
       <categoryLinks>
@@ -20,6 +20,11 @@
     <entryLink id="4580-24be-2184-5aa4" name="Carrier" hidden="false" collective="false" import="true" targetId="6868-5aa2-dd2e-a36b" type="selectionEntry"/>
     <entryLink id="0a24-9752-c3ea-0700" name="Flagship" hidden="false" collective="false" import="true" targetId="3984-8d7f-5def-30bf" type="selectionEntry"/>
   </entryLinks>
+  <infoLinks>
+    <infoLink id="dbc8-2ab2-dc45-3d7a" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
+    <infoLink id="fc6e-b342-c43b-c5c7" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
+    <infoLink id="c893-6018-3925-4a4b" name="EMP" hidden="false" targetId="4412-2299-fc6e-be37" type="rule"/>
+  </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="73b3-494d-5eb5-b8a3" name="Fracture Torpedo" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -114,31 +119,49 @@
       <infoLinks>
         <infoLink id="14f5-ecf7-452e-a2fc" name="Fighters" hidden="false" targetId="14a5-5ad1-493b-5b44" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="aa3a-acff-a891-a563" name="Fighters Aces" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="29e1-3d4b-b207-06f0" name="Fighter Aces" hidden="false" targetId="d937-5fbd-c53f-204b" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8442-3e91-d6bf-c413" name="Bombers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1b6a-d1b2-93e9-7489" name="Bombers" hidden="false" targetId="320f-b16e-70d1-1ffa" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="096b-2d34-93f7-8ab5" name="Interceptors" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="bc12-c960-fb73-9ec0" name="Interceptors" hidden="false" targetId="3689-c0b0-f9ae-93a8" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b655-c3ec-e9ed-c31d" name="Interceptors Aces" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="44b5-c11a-e9d8-b318" name="Interceptor Aces" hidden="false" targetId="5482-a82c-4da1-7817" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cfb8-02ed-d21e-f258" name="Dropships" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b3fb-8367-5c33-3bcb" name="Dropships" hidden="false" targetId="6395-9cf7-9314-8977" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0e89-5de9-d1f2-eec4" name="Corvette" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -582,6 +605,9 @@
       <categoryLinks>
         <categoryLink id="4dd6-60ff-5e60-0bf0" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -615,7 +641,11 @@
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="164c-e259-9cce-5eb5" name=" (Conscript/Slaves)" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="164c-e259-9cce-5eb5" name=" (Conscript/Slaves)" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="333f-6d35-fd78-19ce" name="Strikecraft" hidden="false" collective="false" import="true">
@@ -1028,9 +1058,6 @@
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="093c-2c49-cff7-4056" name="Troop Selection" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d881-89a5-dc32-aeaa" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="09e8-a921-7a1e-1fcf" name="Light Company" hidden="false" collective="false" import="true" targetId="614b-9f74-8272-bc3e" type="selectionEntry"/>
         <entryLink id="236b-e8f2-44e8-a3a6" name="Regular Company" hidden="false" collective="false" import="true" targetId="8e40-a6c3-b3b8-2359" type="selectionEntry"/>
