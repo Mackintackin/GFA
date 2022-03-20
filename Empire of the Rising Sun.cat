@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3eef-3507-3c86-08f7" name="Corvette" hidden="false" collective="false" import="true" targetId="8755-e250-9d76-0729" type="selectionEntry"/>
     <entryLink id="534b-6a98-4d43-36b7" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="1faf-7623-b9be-5ea7" type="selectionEntry"/>
@@ -630,9 +630,6 @@
       <infoLinks>
         <infoLink id="4d66-dc54-a4ec-0a8c" name="Dropships" hidden="false" targetId="3627-64f3-a112-30de" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="ec8b-fb70-2799-0586" name="Bombers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>

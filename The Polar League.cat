@@ -133,9 +133,6 @@
       <infoLinks>
         <infoLink id="0911-8811-e465-f875" name="Dropships" hidden="false" targetId="04f0-dab2-2c7b-06b7" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="8d7c-060b-92bc-d45e" name="Bombers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>

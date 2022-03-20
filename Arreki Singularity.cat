@@ -137,9 +137,6 @@
       <infoLinks>
         <infoLink id="50ee-a207-4067-86e7" name="Dropships" hidden="false" targetId="66ed-6668-a0f2-a98e" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="14f1-2575-d3d2-657a" name="Light Cruiser" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>

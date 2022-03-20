@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5ddc-540e-c117-12bc" name="Corvette" hidden="false" collective="false" import="true" targetId="8792-0358-45f6-d405" type="selectionEntry"/>
     <entryLink id="923a-1ac7-35c4-2cbb" name="Assault Ship" hidden="false" collective="false" import="true" targetId="152a-69f4-13a7-40e7" type="selectionEntry"/>
@@ -162,9 +162,6 @@
       <infoLinks>
         <infoLink id="0dea-2119-ecd2-63d8" name="Dropships" hidden="false" targetId="0c8c-eee8-cf1b-c486" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="7eb1-c791-0f27-d1ef" name="Bombers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
