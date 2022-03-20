@@ -373,7 +373,7 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd98-1862-91fc-4ecb" type="max"/>
           </constraints>
-        </categoryLink>2
+        </categoryLink>
         <categoryLink id="8fba-561c-1197-39ab" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fac-bb2a-0bb3-6976" type="max"/>
@@ -700,6 +700,14 @@ Assault Ships: Assault Ships. &quot;			</comment>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="967b-25d0-480e-1efd" name="Assassin System" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4df9-17e0-5df9-5c88" name="Assassin System" hidden="false" targetId="8b25-5436-8f22-3d08" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

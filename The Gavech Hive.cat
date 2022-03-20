@@ -6,7 +6,12 @@
     <entryLink id="4904-6087-76a7-54bb" name="Stinger" hidden="false" collective="false" import="true" targetId="4016-8810-f477-cfa5" type="selectionEntry"/>
     <entryLink id="4211-3279-6bca-18dc" name="Hive Ship" hidden="false" collective="false" import="true" targetId="69f8-a58b-908e-c1d5" type="selectionEntry"/>
     <entryLink id="78e9-4980-a04c-067c" name="Seeker" hidden="false" collective="false" import="true" targetId="cf49-bbb4-3ca8-3104" type="selectionEntry"/>
-    <entryLink id="12a9-01cd-673d-b08c" name="Faction Trait: The Gavech Hive" hidden="false" collective="false" import="true" targetId="6c0d-41f5-8160-3877" type="selectionEntry"/>
+    <entryLink id="12a9-01cd-673d-b08c" name="Faction Trait: The Gavech Hive" hidden="false" collective="false" import="true" targetId="6c0d-41f5-8160-3877" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e6c9-6600-00a8-5acd" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+        <categoryLink id="fc30-653a-cc13-5c1b" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <infoLinks>
     <infoLink id="b502-b9ce-17cf-54c4" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
@@ -79,7 +84,7 @@
         <infoLink id="d7a2-90e7-f671-6fb3" name="Detonator Pods" hidden="false" targetId="aa0e-f39c-c7dd-99cd" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c8f0-e7b4-beaa-5c76" name="Hunters" hidden="false" collective="false" import="true" type="upgrade">
@@ -87,7 +92,7 @@
         <infoLink id="d4bf-536d-5dba-269a" name="Hunters" hidden="false" targetId="0489-5eeb-5e90-babc" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3a28-76c0-6fbf-2011" name="Leaches (dropships)" hidden="false" collective="false" import="true" type="upgrade">
@@ -100,7 +105,7 @@
     </selectionEntry>
     <selectionEntry id="1e93-db4b-8aaf-6687" name="Light Bugs" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4420-4e4c-8b98-7594" name="Battle Bugs" hidden="false" collective="false" import="true" type="upgrade">
@@ -127,12 +132,28 @@
         <categoryLink id="cbf2-136d-e044-6225" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="f24f-0068-7f8a-b6a9" name="The Gavech Hive" hidden="false" targetId="d088-b00e-24aa-43d8" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1ae3-3158-e32d-37a4" name="Void Hunter (+1 Penetrator Barbs)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4833-f5c0-c986-feeb" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="2c56-56cc-ce6b-6691" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="82f8-deca-c1ef-c7a1" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3c22-3245-72ad-b290" type="selectionEntryGroup"/>
-        <entryLink id="6c5a-df45-d77b-149d" name="Ship: Stalker" hidden="false" collective="false" import="true" targetId="6f6a-2553-da30-3726" type="selectionEntryGroup"/>
         <entryLink id="cdb9-21f2-bafc-0d8c" name="Strikecraft Stalker" hidden="false" collective="false" import="true" targetId="d766-17c5-aefc-5ad2" type="selectionEntryGroup"/>
         <entryLink id="ee7c-8369-96eb-7963" name="Penetrator Barbs" hidden="false" collective="false" import="true" targetId="3efd-6f68-2d6f-0436" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="521b-577d-04a0-f1f6" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ae3-3158-e32d-37a4" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="521b-577d-04a0-f1f6" type="max"/>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac0-2c98-b10c-2462" type="min"/>
@@ -146,7 +167,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="45.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="69f8-a58b-908e-c1d5" name="Hive Ship" hidden="false" collective="false" import="true" type="unit">
@@ -164,7 +185,7 @@
         <infoLink id="a0e2-8cf1-9138-038b" name="True Carrier" hidden="false" targetId="1aaa-ac73-61a1-0b6a" type="profile"/>
         <infoLink id="06cb-249d-0298-fa1a" name="Structure" hidden="false" targetId="3ace-703a-281e-96bc" type="profile">
           <modifiers>
-            <modifier type="append" field="name" value="3"/>
+            <modifier type="append" field="name" value="2"/>
           </modifiers>
         </infoLink>
         <infoLink id="db2d-46f7-9b2a-deb2" name="Fear" hidden="false" targetId="d983-3d7d-25e2-5260" type="profile"/>
@@ -179,12 +200,28 @@
         <categoryLink id="9323-085e-9395-54ad" name="The Gavech Hive" hidden="false" targetId="d088-b00e-24aa-43d8" primary="false"/>
         <categoryLink id="1c90-09c2-d3dd-d439" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1f94-818b-637d-9212" name="Queen of Queens (+6 Slots)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac94-28ee-717b-9f92" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1286-d32a-2915-654a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="bfd7-d69f-1e89-0e3d" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="077b-6e78-30cb-c66e" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3c22-3245-72ad-b290" type="selectionEntryGroup"/>
         <entryLink id="6870-7f84-3912-8a98" name="Strikecraft Hive Ship" hidden="false" collective="false" import="true" targetId="dccb-32cb-0aaa-7089" type="selectionEntryGroup"/>
-        <entryLink id="f2ca-3dde-5bdb-75b2" name="Ship: Hive Ship" hidden="false" collective="false" import="true" targetId="2d33-3178-31ea-27c2" type="selectionEntryGroup"/>
-        <entryLink id="24c4-7e7c-335f-0e42" name="Bio pods" hidden="false" collective="false" import="true" targetId="99b5-6fce-1a83-4c55" type="selectionEntry">
+        <entryLink id="24c4-7e7c-335f-0e42" name="Bio pods (Ord)" hidden="false" collective="false" import="true" targetId="99b5-6fce-1a83-4c55" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81e8-4d51-915e-74e3" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee2-bdb9-3e82-568d" type="min"/>
@@ -197,13 +234,20 @@
           </constraints>
         </entryLink>
         <entryLink id="ac94-28ee-717b-9f92" name="Heavy Carapace" hidden="false" collective="false" import="true" targetId="9302-c38c-ff3d-333c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f94-818b-637d-9212" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deb0-5b05-ef41-6b3a" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eba0-a456-8d37-d7ce" name="Devastator" hidden="false" collective="false" import="true" type="unit">
@@ -215,12 +259,28 @@
         <categoryLink id="db51-ac8c-46e7-93d7" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="1fca-44ae-d4f7-b1a6" name="The Gavech Hive" hidden="false" targetId="d088-b00e-24aa-43d8" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="da83-5db7-ca0a-9e83" name="Siege Ship (+2 Biopods)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac86-ea01-eb43-a0c7" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="cfb8-a882-2845-cef4" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="2761-4b3b-790a-3a1a" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3c22-3245-72ad-b290" type="selectionEntryGroup"/>
-        <entryLink id="b48c-32e3-117e-c33f" name="Ship: Devastator" hidden="false" collective="false" import="true" targetId="6c72-9143-1be4-e91c" type="selectionEntryGroup"/>
         <entryLink id="ec6f-769e-8060-7a50" name="Strikecraft Devastator" hidden="false" collective="false" import="true" targetId="eb46-48b6-1854-2353" type="selectionEntryGroup"/>
-        <entryLink id="1116-9afe-1339-24ae" name="Bio pods" hidden="false" collective="false" import="true" targetId="99b5-6fce-1a83-4c55" type="selectionEntry">
+        <entryLink id="1116-9afe-1339-24ae" name="Bio pods (Ord)" hidden="false" collective="true" import="true" targetId="99b5-6fce-1a83-4c55" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="515c-d298-c2b7-0819" value="10.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da83-5db7-ca0a-9e83" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="515c-d298-c2b7-0819" type="max"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e00a-0b32-edcf-9a76" type="min"/>
@@ -228,7 +288,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf49-bbb4-3ca8-3104" name="Seeker" hidden="false" collective="false" import="true" type="unit">
@@ -241,18 +301,34 @@
         <categoryLink id="158e-c69f-7c83-df3c" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="0fcb-c5e4-d950-9116" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="07b9-ef94-19b0-6d91" name="Fly Catcher (+2 point defence barbs)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6347-c033-241f-5705" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="c531-7dca-e057-8624" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="4e40-d5b6-d997-aae7" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3c22-3245-72ad-b290" type="selectionEntryGroup"/>
-        <entryLink id="921c-6de0-d417-826b" name="Ship: Seeker" hidden="false" collective="false" import="true" targetId="1c7c-9a34-627d-f702" type="selectionEntryGroup"/>
         <entryLink id="9609-29a4-3edf-8530" name="Strikecraft Seeker" hidden="false" collective="false" import="true" targetId="630b-79de-6764-de8d" type="selectionEntryGroup"/>
         <entryLink id="0aaf-9fea-9e45-6d4e" name="Penetrator Barbs" hidden="false" collective="false" import="true" targetId="3efd-6f68-2d6f-0436" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3633-b1cd-3dd0-3230" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c14d-e8d9-93c1-11dc" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3633-b1cd-3dd0-3230" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c14d-e8d9-93c1-11dc" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="f75b-2b2d-f197-a615" name="Point defence barbs" hidden="false" collective="false" import="true" targetId="c5fc-9986-6989-792d" type="selectionEntry">
+        <entryLink id="f75b-2b2d-f197-a615" name="Point Defence Barbs (PD)" hidden="false" collective="false" import="true" targetId="c5fc-9986-6989-792d" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="5dda-398a-8b04-1bf3" value="2.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="07b9-ef94-19b0-6d91" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dda-398a-8b04-1bf3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5691-8541-5715-4c1b" type="min"/>
@@ -260,7 +336,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="24.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4016-8810-f477-cfa5" name="Stinger" hidden="false" collective="false" import="true" type="unit">
@@ -275,25 +351,64 @@
         <categoryLink id="eedf-240c-16bf-f29a" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="2201-81b0-841e-24e6" name="The Gavech Hive" hidden="false" targetId="d088-b00e-24aa-43d8" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7cc1-5ba9-1d17-6865" name="Weapon Selection" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd24-fe67-7518-2deb" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="43c1-3a84-4aca-9268" name="Penetrator Barbs" hidden="false" collective="false" import="true" targetId="3efd-6f68-2d6f-0436" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="0853-94f4-eeab-5265" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="508f-8dec-c9b2-206f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0853-94f4-eeab-5265" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="508f-8dec-c9b2-206f" name="Acid Spray" hidden="false" collective="false" import="true" targetId="d97a-e7ba-419c-3703" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="8954-26ef-e624-49fc" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="445c-3848-c5be-489e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43c1-3a84-4aca-9268" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8954-26ef-e624-49fc" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e18c-cf41-d823-cbc0" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="456d-fd91-ac03-7708" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3c22-3245-72ad-b290" type="selectionEntryGroup"/>
-        <entryLink id="2e99-6a5c-8873-cfad" name="Ship: Stinger" hidden="false" collective="false" import="true" targetId="339c-7e75-1f31-ec23" type="selectionEntryGroup"/>
-        <entryLink id="4fb0-80f9-1a19-a228" name="Penetrator Barbs" hidden="false" collective="false" import="true" targetId="3efd-6f68-2d6f-0436" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae80-b345-a15d-7e55" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c6c-59b5-88c1-59c4" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="6e02-c451-0bf2-9aed" name="Point Defence Barbs (PD)" hidden="false" collective="false" import="true" targetId="c5fc-9986-6989-792d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5b2-46c9-5842-72fd" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe89-96db-a46e-aa92" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="445c-3848-c5be-489e" name="Assassin System" hidden="false" collective="false" import="true" targetId="967b-25d0-480e-1efd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ca8-49c6-1bfa-eb97" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="14.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9302-c38c-ff3d-333c" name="Heavy Carapace" hidden="false" collective="false" import="true" type="upgrade">
@@ -527,6 +642,13 @@
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="dccb-32cb-0aaa-7089" name="Strikecraft Hive Ship" hidden="false" collective="true" import="true">
+      <modifiers>
+        <modifier type="increment" field="8fde-b3b7-f8f9-bcca" value="6.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f94-818b-637d-9212" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fde-b3b7-f8f9-bcca" type="max"/>
       </constraints>
@@ -563,7 +685,7 @@
     <profile id="02ec-d043-85ba-710c" name="Bio pods" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">12&quot;</characteristic>
-        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/0</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">2+/0</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield skipping 7+, Dumb fire</characteristic>
       </characteristics>
@@ -603,7 +725,7 @@
     </profile>
     <profile id="f39b-b25b-196b-1c55" name="Drones" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+1</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">0</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">9+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
@@ -664,7 +786,7 @@
       <characteristics>
         <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">0</characteristic>
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
-        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
         <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
