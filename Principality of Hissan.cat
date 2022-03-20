@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="811b-5dbf-9a35-8671" name="Hunter Squadron" hidden="false" collective="false" import="true" targetId="007b-16bf-bf6a-f04c" type="selectionEntry"/>
     <entryLink id="4331-6d3c-1187-5839" name="Corvette" hidden="false" collective="false" import="true" targetId="1563-15e1-1511-6e93" type="selectionEntry"/>
@@ -1041,6 +1041,7 @@
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
           </costs>
         </entryLink>
+        <entryLink id="5eab-8491-224a-05c0" name="Dropships" hidden="false" collective="false" import="true" targetId="8f70-2beb-3a72-3a29" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="017b-fa53-8096-893b" name="Strikecraft Hybrid Carrier" hidden="false" collective="true" import="true">
@@ -1088,7 +1089,22 @@
         <entryLink id="7589-48f9-0b4d-525f" name="Strikecraft" hidden="false" collective="false" import="true" targetId="7dc2-e8d1-73a9-3d79" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ca27-9dbf-77d9-147c" name="Troop Selection" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="ca27-9dbf-77d9-147c" name="Troop Selection" hidden="true" collective="true" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5eab-8491-224a-05c0" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="4979-b992-c3ff-01cd" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5eab-8491-224a-05c0" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4979-b992-c3ff-01cd" type="max"/>
+      </constraints>
       <entryLinks>
         <entryLink id="cd1e-5c86-37b9-378f" name="Light Company" hidden="false" collective="false" import="true" targetId="ab6f-a6e8-0ced-61e4" type="selectionEntry"/>
         <entryLink id="e4fa-5650-8bb8-99e6" name="Regular Company" hidden="false" collective="false" import="true" targetId="f30e-7d6a-8a11-9e21" type="selectionEntry"/>

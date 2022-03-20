@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc7-8c1e-1373-40ec" name="SINO-Russian Pact" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="edc7-8c1e-1373-40ec" name="SINO-Russian Pact" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a0b3-5e5e-0b6a-3ddc" name="Corvette" hidden="false" collective="false" import="true" targetId="99e6-d9c2-9249-abec" type="selectionEntry"/>
     <entryLink id="1f8e-c6ea-8743-626f" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="be32-fb14-c50e-41cb" type="selectionEntry"/>
@@ -890,7 +890,22 @@
         <entryLink id="05b3-43fe-24e2-3166" name="Strikecraft" hidden="false" collective="false" import="true" targetId="4eba-6126-624d-2629" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0c4b-3241-f7fb-4769" name="Troop Selection" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="0c4b-3241-f7fb-4769" name="Troop Selection" hidden="true" collective="true" import="true">
+      <modifiers>
+        <modifier type="increment" field="b6c8-7573-c54c-41cc" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0468-36c2-5060-acd9" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0468-36c2-5060-acd9" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6c8-7573-c54c-41cc" type="max"/>
+      </constraints>
       <entryLinks>
         <entryLink id="3b60-f0e4-31f1-a28d" name="Light Company" hidden="false" collective="false" import="true" targetId="84ca-47ff-d12b-6f44" type="selectionEntry"/>
         <entryLink id="a4b4-63ef-eff7-a422" name="Regular Company" hidden="false" collective="false" import="true" targetId="56bc-f201-5f08-8c5f" type="selectionEntry"/>

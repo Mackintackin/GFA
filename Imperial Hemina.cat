@@ -55,6 +55,7 @@
         </entryLink>
         <entryLink id="f561-1f8c-6ce7-b839" name="Strikecraft Cruiser" hidden="false" collective="false" import="true" targetId="ec26-debc-c81a-7a6b" type="selectionEntryGroup"/>
         <entryLink id="dfca-1d04-fdce-cb0e" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="2f09-9d9a-104e-dff2" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -235,6 +236,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d48d-e443-304f-4964" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="45fd-a82e-e326-6255" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -302,6 +304,9 @@
       <categoryLinks>
         <categoryLink id="83e9-73a0-7997-c469" name="Strikecraft" hidden="false" targetId="3117-f9a6-87cb-9559" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ebec-1bd7-d27d-09b9" name="Power Armour Company" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -357,6 +362,7 @@
         </entryLink>
         <entryLink id="399d-6ba4-abcd-3e27" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
         <entryLink id="2591-8f1e-b8e9-531f" name="Strikecraft Light Cruiser" hidden="false" collective="false" import="true" targetId="ea7d-f5b5-fccc-b912" type="selectionEntryGroup"/>
+        <entryLink id="892d-1e45-8e87-1407" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -508,6 +514,7 @@
           </modifiers>
         </entryLink>
         <entryLink id="c953-371f-2ad3-5c68" name="Strikecraft Heavy Destroyer" hidden="false" collective="false" import="true" targetId="04ac-6f50-f04d-6eeb" type="selectionEntryGroup"/>
+        <entryLink id="6a62-83d2-d040-370d" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -690,6 +697,7 @@
           </constraints>
         </entryLink>
         <entryLink id="8bea-1052-c85e-f2e8" name="Strikecraft Dreadnought" hidden="false" collective="false" import="true" targetId="86e9-c9e6-ff38-ee13" type="selectionEntryGroup"/>
+        <entryLink id="5ec8-4e08-497b-3fbd" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -859,7 +867,22 @@
         <entryLink id="48df-0266-c810-2cff" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d0a4-cec2-62e6-b18c" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b847-8ccd-020f-d554" name="Troop Selection" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b847-8ccd-020f-d554" name="Troop Selection" hidden="true" collective="true" import="true">
+      <modifiers>
+        <modifier type="increment" field="57c2-25ba-3e48-53ff" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8e84-c4b9-e13e-fc14" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8e84-c4b9-e13e-fc14" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c2-25ba-3e48-53ff" type="max"/>
+      </constraints>
       <entryLinks>
         <entryLink id="71f9-1061-daf3-d4b7" name="Light Company" hidden="false" collective="false" import="true" targetId="e852-866f-caf8-0322" type="selectionEntry"/>
         <entryLink id="0915-a354-dfe5-604e" name="Regular Company" hidden="false" collective="false" import="true" targetId="e35a-a9e2-109b-8a1c" type="selectionEntry"/>

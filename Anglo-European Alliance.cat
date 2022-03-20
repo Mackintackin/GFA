@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29f7-6558-f3cf-6005" name="Battle Cruiser" hidden="false" collective="false" import="true" targetId="e720-6af7-03e3-fda1" type="selectionEntry"/>
     <entryLink id="182c-72b4-b254-5e74" name="Assault Ship" hidden="false" collective="false" import="true" targetId="9923-f04f-d00a-4aa9" type="selectionEntry"/>
@@ -297,6 +297,9 @@
       <categoryLinks>
         <categoryLink id="63d7-f5c4-679d-3540" name="Strikecraft" hidden="false" targetId="3117-f9a6-87cb-9559" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4509-1f1e-1a87-93a3" name="Fighters" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1518,7 +1521,22 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9f3d-993f-0e42-735b" name="Troop Selection" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="9f3d-993f-0e42-735b" name="Troop Selection" hidden="true" collective="true" import="true">
+      <modifiers>
+        <modifier type="increment" field="f9ca-d7b4-1428-7677" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2f4-b358-7ecc-1b09" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2f4-b358-7ecc-1b09" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ca-d7b4-1428-7677" type="max"/>
+      </constraints>
       <entryLinks>
         <entryLink id="ade7-e4a5-67e3-9e92" name="Light Company" hidden="false" collective="false" import="true" targetId="6217-b8ca-5fbd-c62c" type="selectionEntry"/>
         <entryLink id="4a75-cc6d-ff4a-b27e" name="Power Armour Company" hidden="false" collective="false" import="true" targetId="501b-85fa-6fd1-df95" type="selectionEntry"/>

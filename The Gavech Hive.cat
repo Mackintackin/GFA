@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6d5b-7b88-74f3-550f" name="Devastator" hidden="false" collective="false" import="true" targetId="eba0-a456-8d37-d7ce" type="selectionEntry"/>
     <entryLink id="da6b-4ca4-547a-03f3" name="Stalker" hidden="false" collective="false" import="true" targetId="4b5b-5215-7166-ff05" type="selectionEntry"/>
@@ -601,7 +601,22 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3c22-3245-72ad-b290" name="Troop Selection" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3c22-3245-72ad-b290" name="Troop Selection" hidden="true" collective="true" import="true">
+      <modifiers>
+        <modifier type="increment" field="90a2-f393-aa14-b0af" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87d2-e6df-9e69-07e4" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87d2-e6df-9e69-07e4" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a2-f393-aa14-b0af" type="max"/>
+      </constraints>
       <entryLinks>
         <entryLink id="4fa7-1ab1-ca6c-5f04" name="Light Bugs" hidden="false" collective="false" import="true" targetId="1e93-db4b-8aaf-6687" type="selectionEntry"/>
         <entryLink id="8510-d1af-4bf5-97fa" name="Battle Bugs" hidden="false" collective="false" import="true" targetId="4420-4e4c-8b98-7594" type="selectionEntry"/>

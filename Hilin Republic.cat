@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5ddc-540e-c117-12bc" name="Corvette" hidden="false" collective="false" import="true" targetId="8792-0358-45f6-d405" type="selectionEntry"/>
     <entryLink id="923a-1ac7-35c4-2cbb" name="Assault Ship" hidden="false" collective="false" import="true" targetId="152a-69f4-13a7-40e7" type="selectionEntry"/>
@@ -162,6 +162,9 @@
       <infoLinks>
         <infoLink id="0dea-2119-ecd2-63d8" name="Dropships" hidden="false" targetId="0c8c-eee8-cf1b-c486" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7eb1-c791-0f27-d1ef" name="Bombers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -895,7 +898,22 @@
         <entryLink id="40ab-db52-81d1-606c" name="Dropships" hidden="false" collective="false" import="true" targetId="2345-630c-e5f9-59b9" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c54e-d845-89e0-a94b" name="Troop Selection" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="c54e-d845-89e0-a94b" name="Troop Selection" hidden="true" collective="true" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ab-db52-81d1-606c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="4be4-3d01-fef3-4a93" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ab-db52-81d1-606c" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be4-3d01-fef3-4a93" type="max"/>
+      </constraints>
       <entryLinks>
         <entryLink id="610f-412e-77c7-9666" name="Light Company" hidden="false" collective="false" import="true" targetId="5454-eef6-baed-5ea3" type="selectionEntry"/>
         <entryLink id="8537-7874-67f4-cd8e" name="Regular Company" hidden="false" collective="false" import="true" targetId="9c14-26e6-25a0-596b" type="selectionEntry"/>

@@ -153,31 +153,6 @@
     <categoryEntry id="ee8d-abbf-ad61-b122" name="Torpedo Destroyer" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="6f57-4c2a-1ec6-28f4" name="Vanguard Group" hidden="false">
-      <comment>Can be any group type but all ships must have thrusters 4 and above.</comment>
-      <forceEntries>
-        <forceEntry id="f86c-827f-94a9-c255" name="Vanguard Group" hidden="false">
-          <categoryLinks>
-            <categoryLink id="9afa-f88a-22d5-c8b9" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
-            <categoryLink id="4275-1367-ca35-a03b" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
-            <categoryLink id="ab4e-3a40-6215-fd9a" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
-            <categoryLink id="945c-ad1d-8dec-4393" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
-            <categoryLink id="890c-6c67-fd48-d430" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
-            <categoryLink id="03b6-3da8-dbeb-b829" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
-            <categoryLink id="33f1-97d6-39c4-2be2" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
-          </categoryLinks>
-        </forceEntry>
-      </forceEntries>
-      <categoryLinks>
-        <categoryLink id="e7c4-9ef0-f65f-8d71" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
-        <categoryLink id="ed0c-119b-a63d-794f" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
-        <categoryLink id="f980-49c0-6b98-2542" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
-        <categoryLink id="9625-9b72-a6db-12c6" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
-        <categoryLink id="fb92-4c44-b421-2a83" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
-        <categoryLink id="8eda-2aa7-64d8-962b" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
-        <categoryLink id="c1d4-8b36-2937-e055" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
-      </categoryLinks>
-    </forceEntry>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
       <comment>2-4 Support ships, each must have 1 escort and can have up to 2 escorts in total.�</comment>
       <forceEntries>
@@ -395,6 +370,7 @@
     <entryLink id="143e-d9ea-0059-01f5" name="Generica" hidden="false" collective="false" import="true" targetId="361e-5fd6-4d5b-854e" type="selectionEntry"/>
     <entryLink id="bdce-0f55-7d1c-197e" name="&lt;Reference&gt; Ship Classes" hidden="false" collective="false" import="true" targetId="40e0-5460-07a7-5bc1" type="selectionEntry"/>
     <entryLink id="ac1c-16bc-5571-4e46" name="Weapon Trait Location " hidden="false" collective="false" import="true" targetId="2a5a-38c4-30cc-39b7" type="selectionEntry"/>
+    <entryLink id="ddb8-25b4-3570-f103" name="Vanguard Group" hidden="false" collective="false" import="true" targetId="da43-03f5-15cb-e16f" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="4d3c-0c1b-dbad-3083" name="Fleet Commander" publicationId="9db1-597c-e74f-261b" hidden="false">
@@ -708,6 +684,20 @@ Assault Ships: Assault Ships. &quot;			</comment>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da43-03f5-15cb-e16f" name="Vanguard Group" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60c2-3050-c2e2-fc12" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="baaa-f0f8-8dd0-8733" name="Vanguard" hidden="false" targetId="f9ef-0d75-192f-f129" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e8de-1abf-c7ba-0436" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2008,6 +1998,11 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
     <profile id="a9c4-c42a-82b6-0985" name="Improved Drive" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+1 Thrust</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f9ef-0d75-192f-f129" name="Vanguard" hidden="false" typeId="fe7c-a4f6-55e4-ec01" typeName="Information">
+      <characteristics>
+        <characteristic name="[Reference]" typeId="1976-5542-b662-d9e5">Can be any group type but all ships must have thrusters 4 and above.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
