@@ -151,6 +151,11 @@
     <categoryEntry id="9322-0eaf-8900-a53d" name="Light Carrier" hidden="false"/>
     <categoryEntry id="cf39-2c2e-f7a4-6ca0" name="Scout" hidden="false"/>
     <categoryEntry id="ee8d-abbf-ad61-b122" name="Torpedo Destroyer" hidden="false"/>
+    <categoryEntry id="8d5d-b6e3-5fa5-90cf" name="Patrol Craft" hidden="false"/>
+    <categoryEntry id="5e11-5ac9-c8cf-c104" name="Gunship" hidden="false"/>
+    <categoryEntry id="ef99-36e7-74bf-a84b" name="Squadron" hidden="false"/>
+    <categoryEntry id="3061-e93e-94ca-7ef5" name="Hybrid Carrier" hidden="false"/>
+    <categoryEntry id="c38b-cd67-6d5c-c08f" name="Escort Carrier" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">

@@ -664,7 +664,7 @@
             <categoryLink id="5946-9fba-dc4d-e4c8" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="38.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="289e-5e0c-bc18-131a" name="Light Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -672,7 +672,7 @@
             <categoryLink id="389a-1171-4f55-afa0" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="823c-f6dd-9c03-db58" name="Light Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -680,7 +680,7 @@
             <categoryLink id="1606-fd75-7af4-021d" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="54.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -728,7 +728,7 @@
             <categoryLink id="3d0c-e066-bd6f-8eb5" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1d63-6a78-adac-554c" name="Hunter Killer (Asn) (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -736,7 +736,7 @@
             <categoryLink id="b396-cc1d-c2b1-02b0" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d1ea-1eac-c009-8447" name="Hunter Killer (Asn) (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -744,7 +744,7 @@
             <categoryLink id="0b83-13f1-4996-aad9" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="36.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -760,7 +760,7 @@
             <categoryLink id="2ce8-86c2-fce7-d133" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="28.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ccc7-c2f0-1725-ab33" name="Heavy Destroyer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -768,7 +768,7 @@
             <categoryLink id="3024-a185-4bfa-cd27" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="33.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6a40-37c9-ade7-bf2c" name="Heavy Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -776,7 +776,7 @@
             <categoryLink id="c07b-76ef-976e-4596" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -792,7 +792,7 @@
             <categoryLink id="8e71-0386-0120-e429" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="26.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f958-8cea-a684-15ba" name="Destroyer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -800,7 +800,7 @@
             <categoryLink id="b807-efa0-8956-54c7" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="31.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d0ee-fbc6-70de-b1f8" name="Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -808,7 +808,7 @@
             <categoryLink id="91bf-2c41-dac3-d924" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="37.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -824,7 +824,7 @@
             <categoryLink id="00f8-e329-a146-4376" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="57.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d6da-1ee1-20e2-ec03" name="Carrier (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -832,7 +832,7 @@
             <categoryLink id="e8ab-2c14-a619-e975" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="67.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c844-78ba-668b-91dd" name="Carrier (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -840,7 +840,7 @@
             <categoryLink id="a32f-ef08-896f-699d" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="80.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -856,7 +856,7 @@
             <categoryLink id="8aa1-4784-e6cb-1851" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="62.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fe09-487a-8d6d-92f7" name="Battleship (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -864,7 +864,7 @@
             <categoryLink id="9273-cde9-7a57-b536" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="74.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="93b4-af3a-d916-bc22" name="Battleship (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -872,7 +872,7 @@
             <categoryLink id="a4aa-4813-4660-878c" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="88.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -888,7 +888,7 @@
             <categoryLink id="ed6a-6b87-d235-5bd6" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="56.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3d9d-38c6-5be7-bb75" name="Battle Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -896,7 +896,7 @@
             <categoryLink id="f9f0-c456-15ef-da98" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="66.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="84f1-dee5-f848-2bd1" name="Battle Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -904,7 +904,7 @@
             <categoryLink id="f376-4980-504a-dac2" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="79.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -920,7 +920,7 @@
             <categoryLink id="6bfb-0234-99a3-57ee" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b116-9c62-f1ec-43a8" name="Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -928,7 +928,7 @@
             <categoryLink id="586d-8c51-50af-93e0" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="52.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d24d-fef6-df78-bf10" name="Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -936,7 +936,7 @@
             <categoryLink id="6777-a00b-13bc-99b3" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="63.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -975,7 +975,7 @@
             <categoryLink id="c24f-6ab7-613b-b94e" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="57a8-f022-4248-71d6" name="Corvette (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -983,7 +983,7 @@
             <categoryLink id="db6c-c637-ab5d-e941" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="23.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0d6a-3d1c-4950-7247" name="Corvette (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -991,7 +991,7 @@
             <categoryLink id="83b0-9c1a-8131-c326" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="28.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1007,7 +1007,7 @@
             <categoryLink id="e749-65d3-6cf2-c296" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="18.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="93ad-6d96-0b72-2782" name="Frigate (Trained)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1015,7 +1015,7 @@
             <categoryLink id="09cf-5177-7dcd-15bc" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f142-b84b-49dc-139e" name="Frigate (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1023,7 +1023,7 @@
             <categoryLink id="af3d-6e16-8e39-f2db" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="26.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

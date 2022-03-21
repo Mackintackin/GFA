@@ -188,7 +188,7 @@
             <modifier type="append" field="name" value="2"/>
           </modifiers>
         </infoLink>
-        <infoLink id="db2d-46f7-9b2a-deb2" name="Fear" hidden="false" targetId="d983-3d7d-25e2-5260" type="profile"/>
+        <infoLink id="db2d-46f7-9b2a-deb2" name="Terror" hidden="false" targetId="3a2d-b488-270b-cc6e" type="profile"/>
         <infoLink id="67bd-bf15-d122-c86d" name="Launch " hidden="false" targetId="209b-2acd-8dac-0cf7" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="6"/>
