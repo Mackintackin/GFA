@@ -655,9 +655,14 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="dccb-32cb-0aaa-7089" name="Strikecraft Hive Ship" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="dccb-32cb-0aaa-7089" name="Strikecraft Hive Ship (18 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="8fde-b3b7-f8f9-bcca" value="6.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f94-818b-637d-9212" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Hive Ship (24 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f94-818b-637d-9212" type="equalTo"/>
           </conditions>
@@ -670,7 +675,7 @@
         <entryLink id="f2f1-a9ff-facc-d088" name="Strikecraft" hidden="false" collective="false" import="true" targetId="51a8-ca73-20d7-d814" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="d766-17c5-aefc-5ad2" name="Strikecraft Stalker" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="d766-17c5-aefc-5ad2" name="Strikecraft Stalker (6 Slots)" hidden="false" collective="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aeb-985a-fb3f-92f6" type="max"/>
       </constraints>
@@ -678,7 +683,7 @@
         <entryLink id="6d25-fb67-bc56-241b" name="Strikecraft" hidden="false" collective="false" import="true" targetId="51a8-ca73-20d7-d814" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="eb46-48b6-1854-2353" name="Strikecraft Devastator" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="eb46-48b6-1854-2353" name="Strikecraft Devastator (2 slots)" hidden="false" collective="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="380f-0995-8329-f73d" type="max"/>
       </constraints>
@@ -686,7 +691,7 @@
         <entryLink id="0c07-a104-a205-2546" name="Strikecraft" hidden="false" collective="false" import="true" targetId="51a8-ca73-20d7-d814" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="630b-79de-6764-de8d" name="Strikecraft Seeker" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="630b-79de-6764-de8d" name="Strikecraft Seeker (2 Slots)" hidden="false" collective="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f936-60de-41d8-2d22" type="max"/>
       </constraints>

@@ -1044,9 +1044,14 @@
         <entryLink id="5eab-8491-224a-05c0" name="Dropships" hidden="false" collective="false" import="true" targetId="8f70-2beb-3a72-3a29" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="017b-fa53-8096-893b" name="Strikecraft Hybrid Carrier" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="017b-fa53-8096-893b" name="Strikecraft Hybrid Carrier (4 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="3614-cacd-5d95-aff1" value="2.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Hybrid Carrier (6 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>
@@ -1059,7 +1064,7 @@
         <entryLink id="fa56-e588-8be6-7ebb" name="Strikecraft" hidden="false" collective="false" import="true" targetId="7dc2-e8d1-73a9-3d79" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9b5b-0bb3-260a-82b3" name="Strikecraft Heavy Destroyer" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="9b5b-0bb3-260a-82b3" name="Strikecraft Heavy Destroyer (1 Slot)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1074,9 +1079,14 @@
         <entryLink id="2669-f58c-3b6a-6314" name="Strikecraft" hidden="false" collective="false" import="true" targetId="7dc2-e8d1-73a9-3d79" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="6bf8-4501-076c-c082" name="Strikecraft Carrier" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="6bf8-4501-076c-c082" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="344b-8670-b59d-81a9" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>
@@ -1121,7 +1131,7 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="a9db-8031-4d44-da89" name="Photon Torpedo (Ord)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+    <profile id="a9db-8031-4d44-da89" name="Photon Torpedo (Ord)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&apos;-18&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-2</characteristic>
@@ -1129,7 +1139,7 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Shield Skipping +6, Dumbfire</characteristic>
       </characteristics>
     </profile>
-    <profile id="162e-6343-bf31-97bb" name="Fusion Cannon" publicationId="9db1-597c-e74f-261b" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+    <profile id="162e-6343-bf31-97bb" name="Fusion Cannon" publicationId="9db1-597c-e74f-261b" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-1</characteristic>
@@ -1137,7 +1147,7 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
       </characteristics>
     </profile>
-    <profile id="f7c1-619e-35dc-9620" name="Heavy Fusion Cannon" publicationId="9db1-597c-e74f-261b" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+    <profile id="f7c1-619e-35dc-9620" name="Heavy Fusion Cannon" publicationId="9db1-597c-e74f-261b" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/-1</characteristic>
@@ -1153,7 +1163,7 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
       </characteristics>
     </profile>
-    <profile id="b5fc-5dc4-fc4b-d834" name="Point Defence Lasers (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+    <profile id="b5fc-5dc4-fc4b-d834" name="Point Defence Lasers (PD)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>

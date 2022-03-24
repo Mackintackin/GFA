@@ -1333,9 +1333,14 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f05d-8c40-b798-77d1" name="Strikecraft Carrier" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="f05d-8c40-b798-77d1" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="2f9d-6f9f-3a8e-e16e" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
           </conditions>
@@ -1348,9 +1353,14 @@
         <entryLink id="849c-6c7a-f78a-204e" name="Strikecraft" hidden="false" collective="false" import="true" targetId="6e7c-5a08-e69e-c05a" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ca7a-1a15-35bc-07d8" name="Strikecraft Light Cruiser" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="ca7a-1a15-35bc-07d8" name="Strikecraft Light Cruiser (6 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="8c7a-9ee8-1f17-9b66" value="2.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Light Cruiser (8 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>

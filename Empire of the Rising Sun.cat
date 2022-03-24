@@ -1390,9 +1390,14 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7f78-63fe-1ca1-9bb3" name="Strikecraft Carrier" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="7f78-63fe-1ca1-9bb3" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="459d-cce3-4f19-bb7d" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
           </conditions>
@@ -1405,7 +1410,7 @@
         <entryLink id="42cc-94f6-09d4-5f48" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d36d-a84e-80d6-c8ba" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bab8-2893-23fd-5546" name="Strikecraft Destroyer" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="bab8-2893-23fd-5546" name="Strikecraft Destroyer (1 Slot)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1420,7 +1425,7 @@
         <entryLink id="8ba1-4946-bd89-ac59" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d36d-a84e-80d6-c8ba" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c14a-0306-a800-1dd7" name="Strikecraft Assault Ship " hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="c14a-0306-a800-1dd7" name="Strikecraft Assault Ship (6 Slots)" hidden="false" collective="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="607d-374f-9205-e1fb" type="max"/>
       </constraints>
@@ -1428,7 +1433,7 @@
         <entryLink id="d55a-d0d0-3795-8472" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d36d-a84e-80d6-c8ba" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2186-0e72-f00d-f8cb" name="Strikecraft Heavy Destroyer" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="2186-0e72-f00d-f8cb" name="Strikecraft Heavy Destroyer (1 Slot)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1443,9 +1448,14 @@
         <entryLink id="64e5-8312-5685-74ec" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d36d-a84e-80d6-c8ba" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="60e4-5274-2791-d24e" name="Strikecraft Light Cruiser" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="60e4-5274-2791-d24e" name="Strikecraft Light Cruiser (2 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="38a6-5fba-ced9-7fd0" value="2.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Light Cruiser (4 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>
@@ -1618,9 +1628,14 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="4364-979f-d321-eade" name="Strikecraft Escort Carrier" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="4364-979f-d321-eade" name="Strikecraft Escort Carrier (6 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="db61-a18c-99f5-7105" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Escort Carrier (10 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
           </conditions>

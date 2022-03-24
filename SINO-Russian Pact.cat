@@ -879,9 +879,9 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b4e8-5c78-5197-b8da" name="Strikecraft Carrier" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="b4e8-5c78-5197-b8da" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
-        <modifier type="increment" field="6916-30f1-76c6-a7a8" value="4.0">
+        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
           </conditions>
@@ -1301,7 +1301,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ab70-ad1b-4836-f916" name="Strikecraft Cruiser" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="ab70-ad1b-4836-f916" name="Strikecraft Cruiser (2 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1316,7 +1316,7 @@
         <entryLink id="7df2-7013-80e3-abc0" name="Strikecraft" hidden="false" collective="false" import="true" targetId="4eba-6126-624d-2629" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bbde-e43f-4f3a-8e67" name="Strikecraft Destroyer" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="bbde-e43f-4f3a-8e67" name="Strikecraft Destroyer (1 Slot)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1395,7 +1395,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9cf8-ddd5-d3eb-f1cc" name="Strikecraft Light Carrier T3" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="9cf8-ddd5-d3eb-f1cc" name="Strikecraft Light Carrier T3 (8 Slots)" hidden="false" collective="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5889-6b5c-5599-1b94" type="max"/>
       </constraints>
@@ -1435,7 +1435,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3042-1942-8637-e75b" name="Strikecraft Light Cruiser" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="3042-1942-8637-e75b" name="Strikecraft Light Cruiser (2 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1450,7 +1450,7 @@
         <entryLink id="b713-f2aa-3143-cf80" name="Strikecraft" hidden="false" collective="false" import="true" targetId="4eba-6126-624d-2629" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5395-8a2e-d5f0-4a39" name="Strikecraft Super Carrier" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="5395-8a2e-d5f0-4a39" name="Strikecraft Super Carrier (18 Slots)" hidden="false" collective="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6f-5022-db0c-4edb" type="max"/>
       </constraints>
@@ -1522,7 +1522,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="32f9-bb63-7f7d-706c" name="Strikecraft Heavy Frigate T3" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="32f9-bb63-7f7d-706c" name="Strikecraft Heavy Frigate T3 (1 Slot)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>

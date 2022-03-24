@@ -1369,9 +1369,14 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="abe0-274c-9393-b28c" name="Strikecraft Carrier" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="abe0-274c-9393-b28c" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="90a7-f840-59cb-a6b5" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
           </conditions>
@@ -1384,7 +1389,7 @@
         <entryLink id="891b-a031-0642-64c5" name="Strikecraft" hidden="false" collective="false" import="true" targetId="bc45-b329-4dd5-8293" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7a5c-673a-534b-d29c" name="Strikecraft Light Cruiser" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="7a5c-673a-534b-d29c" name="Strikecraft Light Cruiser (2 Slot)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1399,7 +1404,7 @@
         <entryLink id="c013-f0eb-8782-cbd2" name="Strikecraft" hidden="false" collective="false" import="true" targetId="bc45-b329-4dd5-8293" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2c60-3a83-11cb-ce60" name="Strikecraft Heavy Destroyer" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="2c60-3a83-11cb-ce60" name="Strikecraft Heavy Destroyer (1 Slot)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1414,7 +1419,7 @@
         <entryLink id="ffe8-4de4-fc54-3988" name="Strikecraft" hidden="false" collective="false" import="true" targetId="bc45-b329-4dd5-8293" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="861d-83f7-1b5b-01c3" name="Strikecraft Cruiser" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="861d-83f7-1b5b-01c3" name="Strikecraft Cruiser (2 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1429,9 +1434,14 @@
         <entryLink id="0b52-2777-6464-88f5" name="Strikecraft" hidden="false" collective="false" import="true" targetId="bc45-b329-4dd5-8293" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2fd4-e8ed-2a21-5d91" name="Strikecraft Assault Ship" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="2fd4-e8ed-2a21-5d91" name="Strikecraft Assault Ship (6 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="38c0-d0bf-1c9f-424b" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Assault Ship (10 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
           </conditions>

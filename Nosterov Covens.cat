@@ -1084,7 +1084,7 @@
         <entryLink id="9154-8b8a-0d44-9d4c" name="Power Armour Company" hidden="false" collective="false" import="true" targetId="409f-fbd7-8992-5ace" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a3fa-4d88-e17e-e81c" name="Strikecraft Frigate" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="a3fa-4d88-e17e-e81c" name="Strikecraft Frigate (1 Slot)" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1099,7 +1099,7 @@
         <entryLink id="8245-b7dd-f431-6d38" name="Strikecraft" hidden="false" collective="false" import="true" targetId="333f-6d35-fd78-19ce" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2bbe-753e-27d7-5a1b" name="Strikecraft Heavy Destroyer" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="2bbe-753e-27d7-5a1b" name="Strikecraft Heavy Destroyer (1 Slot)" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1114,7 +1114,7 @@
         <entryLink id="2d2c-f89e-8e5c-fb58" name="Strikecraft" hidden="false" collective="false" import="true" targetId="333f-6d35-fd78-19ce" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e73f-3f20-a21a-d547" name="Strikecraft Light Cruiser" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="e73f-3f20-a21a-d547" name="Strikecraft Light Cruiser (2 Slots)" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1129,7 +1129,7 @@
         <entryLink id="4576-f956-52eb-7432" name="Strikecraft" hidden="false" collective="false" import="true" targetId="333f-6d35-fd78-19ce" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1725-f3e0-3e8f-a33a" name="Strikecraft Cruiser" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="1725-f3e0-3e8f-a33a" name="Strikecraft Cruiser (2 Slots)" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -1144,9 +1144,14 @@
         <entryLink id="3efd-b1e8-2c32-c79c" name="Strikecraft" hidden="false" collective="false" import="true" targetId="333f-6d35-fd78-19ce" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b509-d9ad-b675-fca4" name="Strikecraft Carrier" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b509-d9ad-b675-fca4" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="b58b-a70a-1cdf-e28d" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8079-f339-a5f7-d555" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8079-f339-a5f7-d555" type="equalTo"/>
           </conditions>
@@ -1159,7 +1164,7 @@
         <entryLink id="1612-d3e6-8295-9203" name="Strikecraft" hidden="false" collective="false" import="true" targetId="333f-6d35-fd78-19ce" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cc40-d19b-b522-ef7c" name="Strikecraft Flagship" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="cc40-d19b-b522-ef7c" name="Strikecraft Flagship (12 Slots)" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="963f-a62f-d95f-637c" value="4.0">
           <conditions>

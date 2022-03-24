@@ -376,6 +376,7 @@
     <entryLink id="bdce-0f55-7d1c-197e" name="&lt;Reference&gt; Ship Classes" hidden="false" collective="false" import="true" targetId="40e0-5460-07a7-5bc1" type="selectionEntry"/>
     <entryLink id="ac1c-16bc-5571-4e46" name="Weapon Trait Location " hidden="false" collective="false" import="true" targetId="2a5a-38c4-30cc-39b7" type="selectionEntry"/>
     <entryLink id="ddb8-25b4-3570-f103" name="Vanguard Group" hidden="false" collective="false" import="true" targetId="da43-03f5-15cb-e16f" type="selectionEntry"/>
+    <entryLink id="36f0-ade1-7dee-d95d" name="&lt;Reference&gt; Battlegroup Rules" hidden="false" collective="false" import="true" targetId="ebb2-307a-e49a-dd90" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="4d3c-0c1b-dbad-3083" name="Fleet Commander" publicationId="9db1-597c-e74f-261b" hidden="false">
@@ -642,7 +643,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f32-7bb1-35db-671c" name="Flag Bridge" hidden="false" collective="false" import="true" type="upgrade">
@@ -655,8 +656,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
     </selectionEntry>
     <selectionEntry id="2a5a-38c4-30cc-39b7" name="Weapon Trait Location " hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6cd5-0a76-2e5d-f79d" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d57b-8982-0b5c-cf1f" type="min"/>
+        <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="de28-30e8-d507-c3ab" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="8032-52f5-64c7-4b45" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
@@ -704,6 +704,14 @@ Assault Ships: Assault Ships. &quot;			</comment>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="ebb2-307a-e49a-dd90" name="&lt;Reference&gt; Battlegroup Rules" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1a19-f064-0f45-51b6" name="Battlegroup: Traits" hidden="false" targetId="84f4-11be-8f1b-9876" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1b26-4839-ad59-48d4" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2008,6 +2016,21 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
     <profile id="f9ef-0d75-192f-f129" name="Vanguard" hidden="false" typeId="fe7c-a4f6-55e4-ec01" typeName="Information">
       <characteristics>
         <characteristic name="[Reference]" typeId="1976-5542-b662-d9e5">Can be any group type but all ships must have thrusters 4 and above.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="84f4-11be-8f1b-9876" name="Battlegroup: Traits" hidden="false" typeId="fe7c-a4f6-55e4-ec01" typeName="Information">
+      <characteristics>
+        <characteristic name="[Reference]" typeId="1976-5542-b662-d9e5">Combat Group: 1-3 Capital ships, each must have 2 escorts and each can have up to 1 support ship.
+
+Vanguard Group: Can be any group type but all ships must have thrusters 4 and above.
+
+Support Group: 2-4 Support ships, each must have 1 escort and can have up to 2 escorts in total.
+
+Bombard Group: 1-3 Capital ships, each must have 1 escort and can have up to 2 escorts in total.
+
+Patrol Group: 3-5 Escort Ships
+
+Defender Group: 1 Capital ship with 2 escorts, up to 3 Support ships 2 Escort Ships can be added</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
