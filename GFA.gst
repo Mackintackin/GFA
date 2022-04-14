@@ -156,6 +156,7 @@
     <categoryEntry id="ef99-36e7-74bf-a84b" name="Squadron" hidden="false"/>
     <categoryEntry id="3061-e93e-94ca-7ef5" name="Hybrid Carrier" hidden="false"/>
     <categoryEntry id="c38b-cd67-6d5c-c08f" name="Escort Carrier" hidden="false"/>
+    <categoryEntry id="e27e-880b-84a9-ad7c" name="Iralynn Intrusion" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
@@ -437,6 +438,40 @@ settled down and show his true colours next engagement.</description>
       </categoryLinks>
       <entryLinks>
         <entryLink id="78d3-2852-2d1a-f8f2" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="77d9-0851-7aa9-d4bb" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0578-25f7-69e7-dd03" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="5382-f592-6e75-f146" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="583a-026b-a04b-7df9" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="8b33-7eb7-e796-8273" name="Flag Bridge" hidden="false" collective="false" import="true" targetId="2f32-7bb1-35db-671c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77d9-0851-7aa9-d4bb" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c7d-ac1d-5f90-a432" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4477-7508-7a25-ced6" name="Escort +1" hidden="false" collective="false" import="true" targetId="44b6-ccc8-d7bc-2612" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3558-93d1-5d6b-719a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a74b-db6e-9784-5c57" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -712,6 +747,9 @@ Assault Ships: Assault Ships. &quot;			</comment>
       <categoryLinks>
         <categoryLink id="1b26-4839-ad59-48d4" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1495,7 +1533,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
     </profile>
     <profile id="ee75-fc0a-f7a0-ad93" name="Shield Charger" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">During turn clean up this ships shield auto rebuilds 1 point of shielding. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">During this turn, ship&apos;s shield auto rebuilds 1 point of shielding. </characteristic>
       </characteristics>
     </profile>
     <profile id="6702-a7ca-8e05-951c" name="Shield Projector" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2031,6 +2069,17 @@ Bombard Group: 1-3 Capital ships, each must have 1 escort and can have up to 2 e
 Patrol Group: 3-5 Escort Ships
 
 Defender Group: 1 Capital ship with 2 escorts, up to 3 Support ships 2 Escort Ships can be added</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5e4e-df63-39a6-961e" name="Aquatic Hulls" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">-2 CQB to enemy boarders</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="abdc-397c-3ab6-a60a" name="Space Sails" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">At the start of the game both players roll off. Higher roll may pick a table edge where the Iralynn are capable of
+turning towards. When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth of rotation to rotate to that edge direction. They also gain 2&quot; of movement per thrust point when moving towards that edge.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
