@@ -187,7 +187,18 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a2-2f5a-aa1e-1c3d" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="6074-ffb4-0078-fe79" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+        <categoryLink id="6074-ffb4-0078-fe79" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <modifiers>
+            <modifier type="increment" field="f41a-eeb3-1198-d916" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="5ef9-7be3-c10e-89bb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e62e-eaf7-0a7a-8ede" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f41a-eeb3-1198-d916" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="66a8-0623-fd21-e8d6" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="31f5-7f4a-f5eb-571f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
         <categoryLink id="a3ed-55ee-c7d5-18a3" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
@@ -213,19 +224,20 @@
         <categoryLink id="9ea3-14bd-8108-8f6a" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de6b-d3be-11a8-ef86" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8040-ce8d-5852-0499" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="672c-2ee1-e4bd-1181" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
-        <categoryLink id="3c97-6cea-2e1b-2f78" name="1. Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+        <categoryLink id="3c97-6cea-2e1b-2f78" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
           <modifiers>
             <modifier type="increment" field="35ea-b276-cead-05d4" value="2.0">
               <repeats>
-                <repeat field="selections" scope="4345-165e-eaf1-f2f2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="d366-1af4-d6f0-1372" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ea-b276-cead-05d4" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ea-b276-cead-05d4" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="2255-4a6e-fafc-d4e9" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
@@ -328,7 +340,12 @@
       </forceEntries>
       <categoryLinks>
         <categoryLink id="2f3a-9d4e-607f-18bb" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
-        <categoryLink id="6abe-11b0-8893-10b9" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+        <categoryLink id="6abe-11b0-8893-10b9" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6561-f66f-7d7d-efa5" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d05-b3dc-ea22-37ef" type="min"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="cc85-b043-63e9-ace2" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="9727-3035-4d4d-e227" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
@@ -361,6 +378,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="8646-d8e8-235e-7611" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <modifiers>
+            <modifier type="set" field="c21e-b148-d06b-f724" value="0.0">
+              <conditions>
+                <condition field="selections" scope="fa06-bc3a-fdc3-52a2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf2c-6eb1-771f-7f07" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c21e-b148-d06b-f724" type="min"/>
