@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="97f7-5a48-5c1a-44c1" name="Merathian Khanate" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="97f7-5a48-5c1a-44c1" name="Merathian Khanate" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="659d-a37f-1e50-6876" name="Corvette" hidden="false" collective="false" import="true" targetId="b18b-e51a-67a1-e710" type="selectionEntry"/>
     <entryLink id="4f31-8663-457f-a207" name="Attack Corvette" hidden="false" collective="false" import="true" targetId="ee78-73b3-31a5-0059" type="selectionEntry"/>

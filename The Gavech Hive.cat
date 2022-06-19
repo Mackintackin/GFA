@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6d5b-7b88-74f3-550f" name="Devastator" hidden="false" collective="false" import="true" targetId="eba0-a456-8d37-d7ce" type="selectionEntry"/>
     <entryLink id="da6b-4ca4-547a-03f3" name="Stalker" hidden="false" collective="false" import="true" targetId="4b5b-5215-7166-ff05" type="selectionEntry"/>

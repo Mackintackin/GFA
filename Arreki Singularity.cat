@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ffa3-9951-6005-3cec" name="Arreki Singularity" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ffa3-9951-6005-3cec" name="Arreki Singularity" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ab34-79d1-a454-647e" name="Faction Trait: Arreki Singularity" hidden="false" collective="false" import="true" targetId="ba75-327f-0b6e-0748" type="selectionEntry"/>
     <entryLink id="ec3a-5de1-0286-3af9" name="Corvette" hidden="false" collective="false" import="true" targetId="9b0b-20bf-6489-c355" type="selectionEntry"/>
@@ -1415,7 +1415,7 @@
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
       </characteristics>
     </profile>
-    <profile id="9801-08d4-526b-6191" name="Point Defence Lasers (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+    <profile id="9801-08d4-526b-6191" name="Point Defence Lasers (PD)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&apos;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
