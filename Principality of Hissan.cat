@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="811b-5dbf-9a35-8671" name="Hunter Squadron" hidden="false" collective="false" import="true" targetId="007b-16bf-bf6a-f04c" type="selectionEntry"/>
     <entryLink id="4331-6d3c-1187-5839" name="Corvette" hidden="false" collective="false" import="true" targetId="1563-15e1-1511-6e93" type="selectionEntry"/>
@@ -119,6 +119,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8429-7f1e-be9f-1b7d" name="Hybrid Carrier" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Strikecraft Hybrid Carrier (6 Slots)">
+          <conditions>
+            <condition field="selections" scope="8429-7f1e-be9f-1b7d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="2377-b5b8-3ce0-6c2b" name="Launch " hidden="false" targetId="209b-2acd-8dac-0cf7" type="profile">
           <modifiers>
@@ -342,6 +349,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="758f-1dbd-c232-4235" name="Heavy Destroyer" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Heavy Destroyer (1 Slot)">
+          <conditions>
+            <condition field="selections" scope="758f-1dbd-c232-4235" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdb4-e7ee-fa0f-d6e3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="a333-d0ee-9219-8a0e" name="Assassin System" hidden="false" targetId="8b25-5436-8f22-3d08" type="profile"/>
         <infoLink id="8b43-aebe-6bc4-0974" name="Heavy Destroyer (Asn)" hidden="false" targetId="6259-098f-0c93-273e" type="profile"/>
@@ -550,6 +564,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="96b5-4a62-1cd4-2899" name="Carrier" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Carrier (16 Slots)">
+          <conditions>
+            <condition field="selections" scope="96b5-4a62-1cd4-2899" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="3843-c87f-b270-adab" name="Launch " hidden="false" targetId="209b-2acd-8dac-0cf7" type="profile">
           <modifiers>
@@ -710,6 +731,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d9d9-73f1-9c60-c233" name="Grand Cruiser" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Grand Cruiser (2 Slots)">
+          <conditions>
+            <condition field="selections" scope="d9d9-73f1-9c60-c233" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="f3e6-b585-45e9-efa1" name="Grand Cruiser" hidden="false" targetId="2ce4-8e3f-1e2b-9b22" type="profile"/>
         <infoLink id="5a6b-7c20-b2af-51d3" name="Flag Bridge" hidden="false" targetId="4bb1-8f4b-9d23-6b13" type="profile"/>
@@ -849,6 +877,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ad30-6df5-fdda-2559" name="Lancer (Asn)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Lancer (Asn) (1 Slot)">
+          <conditions>
+            <condition field="selections" scope="ad30-6df5-fdda-2559" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdb4-e7ee-fa0f-d6e3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="df0b-85c3-0e05-4170" name="Assassin System" hidden="false" targetId="8b25-5436-8f22-3d08" type="profile"/>
         <infoLink id="9d28-0c6f-45d3-3c17" name="Lancer" hidden="false" targetId="4e97-4831-132b-3f54" type="profile"/>
@@ -933,6 +968,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7ed5-6f2f-a51f-f597" name="Destroyer" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Destroyer (1 Slot)">
+          <conditions>
+            <condition field="selections" scope="7ed5-6f2f-a51f-f597" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdb4-e7ee-fa0f-d6e3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="63bf-287b-1b41-e2b3" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
         <infoLink id="d26b-1c31-5319-5265" name="Heavy Destroyer (Asn)" hidden="false" targetId="6259-098f-0c93-273e" type="profile"/>
@@ -1369,11 +1411,6 @@
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="name" value="Strikecraft Hybrid Carrier (6 Slots)">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3614-cacd-5d95-aff1" type="max"/>
@@ -1397,14 +1434,9 @@
         <entryLink id="2669-f58c-3b6a-6314" name="Strikecraft" hidden="false" collective="false" import="true" targetId="7dc2-e8d1-73a9-3d79" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="6bf8-4501-076c-c082" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="6bf8-4501-076c-c082" name="Strikecraft Carrier (12 or 16 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="344b-8670-b59d-81a9" value="4.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>
@@ -1641,7 +1673,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6b4-862d-e318-5391" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6b4-862d-e318-5391" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="67c3-e978-ac8a-b785" name="Strikecraft" hidden="false" collective="false" import="true" targetId="7dc2-e8d1-73a9-3d79" type="selectionEntryGroup"/>

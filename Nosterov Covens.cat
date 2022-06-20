@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d5c0-7397-f4c5-4bff" name="Faction Trait: Nosterov Covens" hidden="false" collective="false" import="true" targetId="27aa-c01f-2d3e-a5e3" type="selectionEntry">
       <categoryLinks>
@@ -244,6 +244,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6da6-f447-8651-f26e" name="Frigate" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Frigate (1 Slot)">
+          <conditions>
+            <condition field="selections" scope="6da6-f447-8651-f26e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdb4-e7ee-fa0f-d6e3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="212a-569f-087c-4cb1" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
         <infoLink id="17ea-e14f-4841-9b33" name="Frigate" hidden="false" targetId="6754-74a6-5d03-46e4" type="profile"/>
@@ -320,6 +327,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b0f8-66b6-d319-a6e0" name="Heavy Destroyer" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Heavy Destroyer (1 Slot)">
+          <conditions>
+            <condition field="selections" scope="b0f8-66b6-d319-a6e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdb4-e7ee-fa0f-d6e3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="2740-9d23-964b-bd2a" name="Heavy Destroyer" hidden="false" targetId="ab05-fb0d-8bdf-c65b" type="profile"/>
         <infoLink id="4649-75fd-e67b-3cad" name="Fear" hidden="false" targetId="d983-3d7d-25e2-5260" type="profile"/>
@@ -350,6 +364,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="56f2-77b4-9d8d-3976" name="Light Cruiser" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Light Cruiser (2 Slots)">
+          <conditions>
+            <condition field="selections" scope="56f2-77b4-9d8d-3976" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="8c8f-7dd4-889b-ba4c" name="Light Cruiser" hidden="false" targetId="51ba-e85d-8ea6-1f38" type="profile"/>
         <infoLink id="4f89-ed26-550d-12ac" name="Fear" hidden="false" targetId="d983-3d7d-25e2-5260" type="profile"/>
@@ -391,6 +412,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3b6d-44b5-230b-1fed" name="Cruiser" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Cruiser (2 Slots)">
+          <conditions>
+            <condition field="selections" scope="3b6d-44b5-230b-1fed" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="95c4-8da9-d607-b9f8" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="2504-25be-1278-0a31" name="Cruiser" hidden="false" targetId="dfb2-4bbe-d931-bd2f" type="profile"/>
         <infoLink id="f106-8b8c-0055-7394" name="Fear" hidden="false" targetId="d983-3d7d-25e2-5260" type="profile"/>
@@ -515,7 +543,14 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6868-5aa2-dd2e-a36b" name="Carrier" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6868-5aa2-dd2e-a36b" name="Carrier (12 Slots)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Carrier (16 Slots)">
+          <conditions>
+            <condition field="selections" scope="6868-5aa2-dd2e-a36b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8079-f339-a5f7-d555" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="c64d-f43f-8bee-91b5" name="Carrier" hidden="false" targetId="8eca-75d6-9d45-2977" type="profile"/>
         <infoLink id="9f5e-9d6e-cbb1-b247" name="True Carrier" hidden="false" targetId="1aaa-ac73-61a1-0b6a" type="profile"/>
@@ -556,7 +591,14 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3984-8d7f-5def-30bf" name="Flagship" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3984-8d7f-5def-30bf" name="Flagship (12 Slots)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Flagship (16 Slots)">
+          <conditions>
+            <condition field="selections" scope="3984-8d7f-5def-30bf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3db8-dec1-a0d0-6143" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="f1ed-a5b8-dc12-aa13" name="True Carrier" hidden="false" targetId="1aaa-ac73-61a1-0b6a" type="profile"/>
         <infoLink id="6a6d-0127-310f-135b" name="Flagship" hidden="false" targetId="a2cd-052d-ba06-ed23" type="profile"/>
@@ -1144,14 +1186,9 @@
         <entryLink id="3efd-b1e8-2c32-c79c" name="Strikecraft" hidden="false" collective="false" import="true" targetId="333f-6d35-fd78-19ce" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b509-d9ad-b675-fca4" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b509-d9ad-b675-fca4" name="Strikecraft Carrier (12 or 16 Slots)" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="b58b-a70a-1cdf-e28d" value="4.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8079-f339-a5f7-d555" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8079-f339-a5f7-d555" type="equalTo"/>
           </conditions>
@@ -1164,7 +1201,7 @@
         <entryLink id="1612-d3e6-8295-9203" name="Strikecraft" hidden="false" collective="false" import="true" targetId="333f-6d35-fd78-19ce" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cc40-d19b-b522-ef7c" name="Strikecraft Flagship (12 Slots)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="cc40-d19b-b522-ef7c" name="Strikecraft Flagship (12 or 16 Slots)" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="increment" field="963f-a62f-d95f-637c" value="4.0">
           <conditions>

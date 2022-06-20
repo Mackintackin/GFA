@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3eef-3507-3c86-08f7" name="Corvette" hidden="false" collective="false" import="true" targetId="8755-e250-9d76-0729" type="selectionEntry"/>
     <entryLink id="534b-6a98-4d43-36b7" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="1faf-7623-b9be-5ea7" type="selectionEntry"/>
@@ -88,7 +88,14 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="84d0-14bf-a762-0f63" name="Light Cruiser" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="84d0-14bf-a762-0f63" name="Light Cruiser (2 Slots)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Light Cruiser (4 Slots)">
+          <conditions>
+            <condition field="selections" scope="84d0-14bf-a762-0f63" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="10ef-e701-391d-82d5" name="Light Cruiser" hidden="false" targetId="3d64-4543-1586-880b" type="profile"/>
       </infoLinks>
@@ -122,7 +129,7 @@
         <entryLink id="b2be-0d8e-2cfb-7546" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3df3-45f4-0d61-9204" type="selectionEntryGroup"/>
         <entryLink id="99c4-ef88-8bd2-8f82" name="Ship: Light Cruiser" hidden="false" collective="false" import="true" targetId="0a12-f130-d10c-1874" type="selectionEntryGroup"/>
         <entryLink id="6deb-cf2b-d1eb-0d2c" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
-        <entryLink id="83f3-2d9e-7668-21af" name="Strikecraft Light Cruiser" hidden="false" collective="false" import="true" targetId="60e4-5274-2791-d24e" type="selectionEntryGroup"/>
+        <entryLink id="83f3-2d9e-7668-21af" name="Strikecraft Light Cruiser (2 Slots)" hidden="false" collective="false" import="true" targetId="60e4-5274-2791-d24e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -309,7 +316,14 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f7a7-7d9d-d38a-d506" name="Carrier" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f7a7-7d9d-d38a-d506" name="Carrier (12 Slots)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Carrier (16 Slots)">
+          <conditions>
+            <condition field="selections" scope="f7a7-7d9d-d38a-d506" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="57b0-0546-47f2-70bd" name="Carrier" hidden="false" targetId="3148-af06-a412-33a6" type="profile"/>
         <infoLink id="0416-c102-6907-af41" name="True Carrier" hidden="false" targetId="1aaa-ac73-61a1-0b6a" type="profile"/>
@@ -408,6 +422,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="680d-a5e2-a5dc-1d30" name="Destroyer" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Destroyer (1 Slot)">
+          <conditions>
+            <condition field="selections" scope="680d-a5e2-a5dc-1d30" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdb4-e7ee-fa0f-d6e3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="095b-cb22-d0d5-2e93" name="Destroyer" hidden="false" targetId="29fb-757c-ae72-f269" type="profile"/>
         <infoLink id="d046-f04e-9aee-e159" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
@@ -436,6 +457,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7774-5c9e-9b3e-02ea" name="Heavy Destroyer" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Heavy Destroyer (1 Slot)">
+          <conditions>
+            <condition field="selections" scope="7774-5c9e-9b3e-02ea" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdb4-e7ee-fa0f-d6e3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="a14f-1ffe-3b8d-f463" name="Heavy Destroyer (Asn)" hidden="false" targetId="9420-18d9-8fb2-2b85" type="profile"/>
       </infoLinks>
@@ -591,7 +619,7 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1ea5-4180-2044-6474" name="Assault Ship" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1ea5-4180-2044-6474" name="Assault Ship (6 Slots)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c3ff-eff3-957d-392f" name="Catapults" hidden="false" targetId="3021-daed-51fc-24c4" type="profile"/>
         <infoLink id="7427-47a3-4897-a10d" name="Launch " hidden="false" targetId="209b-2acd-8dac-0cf7" type="profile">
@@ -824,7 +852,14 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1390-6615-a46f-5b5e" name="T3 Escort Carrier" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1390-6615-a46f-5b5e" name="T3 Escort Carrier (6 Slots)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="T3 Escort Carrier (10 Slots)">
+          <conditions>
+            <condition field="selections" scope="1390-6615-a46f-5b5e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="7850-603f-cef2-86c0" name="T3 Escort Carrier" hidden="false" targetId="11c2-f14e-899f-53ab" type="profile"/>
         <infoLink id="890b-6a95-b495-d820" name="Multi-Spectrum Shielding" hidden="false" targetId="1315-42b2-e854-61f9" type="profile"/>
@@ -854,7 +889,7 @@
         <entryLink id="2c50-d39c-8aec-0a2a" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3df3-45f4-0d61-9204" type="selectionEntryGroup"/>
         <entryLink id="2baf-2ca0-95a1-0392" name="Ship: T3 Escort Carrier" hidden="false" collective="false" import="true" targetId="844d-4031-9374-1424" type="selectionEntryGroup"/>
         <entryLink id="af92-398b-7b66-2cb9" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
-        <entryLink id="25c4-5292-fbca-46ae" name="Strikecraft Escort Carrier" hidden="false" collective="false" import="true" targetId="4364-979f-d321-eade" type="selectionEntryGroup"/>
+        <entryLink id="25c4-5292-fbca-46ae" name="Strikecraft Escort Carrier (6 or 10 Slots)" hidden="false" collective="false" import="true" targetId="4364-979f-d321-eade" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -1390,14 +1425,9 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7f78-63fe-1ca1-9bb3" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="7f78-63fe-1ca1-9bb3" name="Strikecraft Carrier (12 or 16 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="459d-cce3-4f19-bb7d" value="4.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="name" value="Strikecraft Carrier (16 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
           </conditions>
@@ -1455,9 +1485,9 @@
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="name" value="Strikecraft Light Cruiser (4 Slots)">
+        <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1628,14 +1658,9 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="4364-979f-d321-eade" name="Strikecraft Escort Carrier (6 Slots)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="4364-979f-d321-eade" name="Strikecraft Escort Carrier (6 or 10 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="db61-a18c-99f5-7105" value="4.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="name" value="Strikecraft Escort Carrier (10 Slots)">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f86d-2614-c56a-c93c" type="equalTo"/>
           </conditions>

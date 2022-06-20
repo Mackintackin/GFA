@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6d5b-7b88-74f3-550f" name="Devastator" hidden="false" collective="false" import="true" targetId="eba0-a456-8d37-d7ce" type="selectionEntry"/>
     <entryLink id="da6b-4ca4-547a-03f3" name="Stalker" hidden="false" collective="false" import="true" targetId="4b5b-5215-7166-ff05" type="selectionEntry"/>
@@ -125,7 +125,7 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4b5b-5215-7166-ff05" name="Stalker" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="4b5b-5215-7166-ff05" name="Stalker (6 Slots)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="e61e-4dbb-7ddc-3ac6" name="Stalker" hidden="false" targetId="b5ae-81de-2b25-c421" type="profile"/>
         <infoLink id="457a-eecf-e099-81d8" name="Launch " hidden="false" targetId="209b-2acd-8dac-0cf7" type="profile">
@@ -177,7 +177,7 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="56.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="69f8-a58b-908e-c1d5" name="Hive Ship" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="69f8-a58b-908e-c1d5" name="Hive Ship (18 Slots)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="e79d-a603-95ae-ff46" name="Hive Ship" hidden="false" targetId="ff07-4d0b-1f85-f918" type="profile">
           <modifiers>
@@ -234,7 +234,7 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="110.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eba0-a456-8d37-d7ce" name="Devastator" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="eba0-a456-8d37-d7ce" name="Devastator (2 Slots)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="ed3d-180c-bb08-d910" name="Devastator" hidden="false" targetId="c0a7-5786-18ab-cab2" type="profile"/>
       </infoLinks>
@@ -275,7 +275,7 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="37.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf49-bbb4-3ca8-3104" name="Seeker" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="cf49-bbb4-3ca8-3104" name="Seeker (2 Slots)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="df8f-1374-c8a5-1bb2" name="Seeker" hidden="false" targetId="f7a9-fd9f-d12f-f4ca" type="profile"/>
         <infoLink id="ab2f-132a-2304-2275" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
@@ -416,7 +416,7 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1020-45e6-e160-7a65" name="Queen of Queens Hive Ship (EW3)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1020-45e6-e160-7a65" name="Queen of Queens Hive Ship (EW3) (24 Slots)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="894f-d948-ae73-43a7" name="Queen of Queens Hive Ship (EW3)" hidden="false" targetId="957b-f6de-8724-0207" type="profile"/>
         <infoLink id="bc59-6740-4ba1-97b8" name="Indestructible" hidden="false" targetId="6672-cc66-bce4-a5b2" type="profile"/>
@@ -460,7 +460,7 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ebe-78c5-4207-7fd8" name="Hive Cruiser" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9ebe-78c5-4207-7fd8" name="Hive Cruiser (8 Slots)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="0dca-c166-5fb5-04b6" name="Hive Cruiser" hidden="false" targetId="0c37-2ec4-1490-4548" type="profile">
           <modifiers>
@@ -540,7 +540,7 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="48.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9b3b-1d36-986c-f1db" name="Floater" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9b3b-1d36-986c-f1db" name="Floater (6 Slots)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="5211-895b-fc66-9e17" name="Floater" hidden="false" targetId="a2e4-d688-11c7-ded3" type="profile"/>
         <infoLink id="5403-19fc-cd1e-046e" name="Stealth" hidden="false" targetId="ba3e-19c6-09b8-e7d7" type="profile">

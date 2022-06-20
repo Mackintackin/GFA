@@ -111,7 +111,7 @@
     <categoryEntry id="3117-f9a6-87cb-9559" name="Strikecraft" hidden="false"/>
     <categoryEntry id="3db8-dec1-a0d0-6143" name="Hanger Medium" hidden="true"/>
     <categoryEntry id="65e0-d6cc-fa09-919a" name="Hanger Small" hidden="true"/>
-    <categoryEntry id="197b-a939-f653-3fff" name="Hanger Bay" hidden="true"/>
+    <categoryEntry id="197b-a939-f653-3fff" name="Hanger Bay" hidden="false"/>
     <categoryEntry id="7d6a-9af3-2353-cf10" name="Hanger Large" hidden="true"/>
     <categoryEntry id="a340-6370-56da-2c93" name="Improved Drives" hidden="false"/>
     <categoryEntry id="925e-66d7-1207-148d" name="Armoured Core" hidden="false"/>
@@ -875,13 +875,6 @@ Assault Ships: Assault Ships. &quot;			</comment>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a246-4f69-5f8f-49ce" name="Hanger Upgrades" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d9e-c1d0-c804-6d60" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b09-ce02-20bd-e4f5" type="max"/>
       </constraints>
