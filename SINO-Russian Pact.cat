@@ -914,7 +914,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b4e8-5c78-5197-b8da" name="Strikecraft Carrier (12 Slots)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="b4e8-5c78-5197-b8da" name="Strikecraft Carrier (12 or 16 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="6916-30f1-76c6-a7a8" value="4.0">
           <conditions>

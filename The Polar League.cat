@@ -973,7 +973,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="de2b-80ab-6ac9-6eb2" name="Strikecraft Light Carrier (6 Slots)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="de2b-80ab-6ac9-6eb2" name="Strikecraft Light Carrier (6 or 8 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="252b-6fae-58c5-c2d5" value="2.0">
           <conditions>
@@ -988,7 +988,7 @@
         <entryLink id="fe48-7343-b222-b5a8" name="Strikecraft" hidden="false" collective="false" import="true" targetId="93a4-a43a-1773-6158" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7693-a900-050a-f527" name="Strikecraft Assault Frigate (4 Slot)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="7693-a900-050a-f527" name="Strikecraft Assault Frigate (4 or 5 Slot)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="b3f7-d890-f874-62b9" value="1.0">
           <conditions>
