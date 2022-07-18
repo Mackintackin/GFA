@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="811b-5dbf-9a35-8671" name="Hunter Squadron" hidden="false" collective="false" import="true" targetId="007b-16bf-bf6a-f04c" type="selectionEntry"/>
     <entryLink id="4331-6d3c-1187-5839" name="Corvette" hidden="false" collective="false" import="true" targetId="1563-15e1-1511-6e93" type="selectionEntry"/>
@@ -1794,18 +1794,20 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
       <characteristics>
         <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+3</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
+        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="44af-33e6-47c3-bca4" name="Fighter Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+5</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
+        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">5+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
       </characteristics>
     </profile>
     <profile id="a47f-34ba-ed50-5c84" name="Bombers" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1815,24 +1817,27 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">3+/-3</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
       </characteristics>
     </profile>
     <profile id="f76f-6b50-0602-68f7" name="Interceptors" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+2</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
+        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">5+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="829f-6c20-746a-7f97" name="Interceptor Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+5</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+6</characteristic>
+        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">3+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">6+</characteristic>
+        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">5+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="d70c-9b77-7c24-9a4c" name="Dropships" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1841,7 +1846,8 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">5+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">5+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="29d7-7662-2334-b738" name="Hunter Squadron" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1851,6 +1857,7 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">4+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">5+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="7397-cee4-25be-7186" name="Light Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">

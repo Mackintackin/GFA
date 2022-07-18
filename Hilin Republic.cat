@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="26f4-1ea5-e00d-f290" name="Hilin Republic" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="5ddc-540e-c117-12bc" name="Corvette" hidden="false" collective="false" import="true" targetId="8792-0358-45f6-d405" type="selectionEntry"/>
     <entryLink id="923a-1ac7-35c4-2cbb" name="Assault Ship" hidden="false" collective="false" import="true" targetId="152a-69f4-13a7-40e7" type="selectionEntry"/>
@@ -1558,45 +1558,50 @@
       <characteristics>
         <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+3</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
+        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="3479-2bc2-5e4e-9ce3" name="Fighter Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+5</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">5+</characteristic>
+        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
+        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
       </characteristics>
     </profile>
     <profile id="ecc5-ca10-5096-b534" name="Bombers" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
         <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+2</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">3+/-2</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-3</characteristic>
+        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
       </characteristics>
     </profile>
     <profile id="ec64-1b61-4ab8-ff23" name="Interceptors" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+2</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
+        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">5+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="e531-8481-9803-142a" name="Interceptor Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+5</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+6</characteristic>
+        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">3+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">6+</characteristic>
+        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">4+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="0c8c-eee8-cf1b-c486" name="Dropships" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1604,8 +1609,9 @@
         <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+1</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">8+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">5+</characteristic>
+        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="4676-db85-84ba-24f9" name="Light Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">

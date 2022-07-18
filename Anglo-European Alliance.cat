@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29f7-6558-f3cf-6005" name="Battle Cruiser" hidden="false" collective="false" import="true" targetId="e720-6af7-03e3-fda1" type="selectionEntry"/>
     <entryLink id="182c-72b4-b254-5e74" name="Assault Ship" hidden="false" collective="false" import="true" targetId="9923-f04f-d00a-4aa9" type="selectionEntry"/>
@@ -1795,20 +1795,22 @@
     </profile>
     <profile id="a4c0-0c6b-996c-6bbe" name="Fighter Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+5</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/10</characteristic>
+        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="a6cc-2ba9-4dc1-2404" name="Fighters" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+3</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
+        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">8+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="d9bc-6283-d144-806e" name="Attack Bombers" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1818,24 +1820,27 @@
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-3</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
       </characteristics>
     </profile>
     <profile id="71fd-b4a2-197d-032c" name="Interceptors" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
         <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+2</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
+        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="5a5b-f1b6-9769-7e8f" name="Interceptor Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+5</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
+        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
+        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">4+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">6+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="bf53-ab36-0551-1dca" name="Dropships" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1845,6 +1850,7 @@
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="3ef9-85f9-86e1-e301" name="Node Engineers" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">

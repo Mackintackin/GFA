@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="23" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="24" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -56,6 +56,7 @@
         <characteristicType id="a702-c3f6-cb95-b6a6" name="Roll to hit/+AP"/>
         <characteristicType id="c53e-747f-9f47-849c" name="Rundown"/>
         <characteristicType id="db31-ed7c-6704-83e3" name="Save"/>
+        <characteristicType id="3fbd-f301-2926-dcaf" name="Damage to ships"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
