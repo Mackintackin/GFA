@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="24" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="25" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -13,7 +13,6 @@
         <characteristicType id="dc54-3469-a3c4-33c1" name="Thrusters"/>
         <characteristicType id="7f46-3a45-4c91-3586" name="Armour Save"/>
         <characteristicType id="5a15-af02-e253-322d" name="Crew Size"/>
-        <characteristicType id="d938-1f52-2fd4-601d" name="ADS*"/>
       </characteristicTypes>
     </profileType>
     <profileType id="d169-b6bf-030f-d1c7" name="Weapon Profile">
@@ -112,7 +111,7 @@
     <categoryEntry id="3117-f9a6-87cb-9559" name="Strikecraft" hidden="false"/>
     <categoryEntry id="3db8-dec1-a0d0-6143" name="Hanger Medium" hidden="true"/>
     <categoryEntry id="65e0-d6cc-fa09-919a" name="Hanger Small" hidden="true"/>
-    <categoryEntry id="197b-a939-f653-3fff" name="Hanger Bay" hidden="false"/>
+    <categoryEntry id="197b-a939-f653-3fff" name="Hanger Bay" hidden="true"/>
     <categoryEntry id="7d6a-9af3-2353-cf10" name="Hanger Large" hidden="true"/>
     <categoryEntry id="a340-6370-56da-2c93" name="Improved Drives" hidden="false"/>
     <categoryEntry id="925e-66d7-1207-148d" name="Armoured Core" hidden="false"/>

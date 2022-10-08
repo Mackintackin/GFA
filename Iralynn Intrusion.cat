@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dedc-9c5e-47a0-3e24" name="Iralynn Intrusion" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="dedc-9c5e-47a0-3e24" name="Iralynn Intrusion" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e229-c686-d81d-122f" name="Patrol Boats" hidden="false" collective="false" import="true" targetId="8e73-6d45-f48b-c2a9" type="selectionEntry"/>
     <entryLink id="1d6e-bc44-3c27-4d9f" name="Attack Boats" hidden="false" collective="false" import="true" targetId="0530-5337-e741-3ffa" type="selectionEntry"/>
@@ -87,7 +87,7 @@
         <infoLink id="9366-8f4c-bf32-19e8" name="Fighter Aces" hidden="false" targetId="16cb-2290-ea85-64fd" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="06eb-5d1b-ee37-81f5" name="Fighters" hidden="false" collective="false" import="true" type="upgrade">
@@ -95,7 +95,7 @@
         <infoLink id="f567-5205-cfe4-965e" name="Fighters" hidden="false" targetId="bf8e-2d98-5194-e702" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1196-b305-559d-a151" name="Interceptor Aces" hidden="false" collective="false" import="true" type="upgrade">
@@ -336,6 +336,7 @@
         <categoryLink id="e0e4-29a8-9225-e70e" name="Hanger Medium" hidden="false" targetId="3db8-dec1-a0d0-6143" primary="false"/>
         <categoryLink id="7a7f-f0eb-ab2a-2903" name="Carrier" hidden="false" targetId="eb6d-8a2e-eb65-f70a" primary="false"/>
         <categoryLink id="73b1-007c-4a61-9de2" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="eff3-1d33-a264-1e8e" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="66f4-02fb-861c-45ec" name="Ship: Carrier" hidden="false" collective="false" import="true" targetId="7702-1b2f-c67a-eb53" type="selectionEntryGroup"/>
@@ -852,11 +853,31 @@
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e71d-55ad-e847-109b" name="Strikecraft" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="d959-061b-5ca6-0e02" name="Bombers" hidden="false" collective="false" import="true" targetId="651c-3969-1549-d00f" type="selectionEntry"/>
-        <entryLink id="9281-73ad-90f3-acdf" name="Fighters" hidden="false" collective="false" import="true" targetId="06eb-5d1b-ee37-81f5" type="selectionEntry"/>
-        <entryLink id="2725-f825-bd7b-3d84" name="Fighter Aces" hidden="false" collective="false" import="true" targetId="eba6-2aef-a2d5-0fe7" type="selectionEntry"/>
-        <entryLink id="453c-aa0e-eb88-5eb8" name="Interceptors" hidden="false" collective="false" import="true" targetId="65ce-49a6-15d5-38e6" type="selectionEntry"/>
-        <entryLink id="b0d9-86c6-5777-54d8" name="Interceptor Aces" hidden="false" collective="false" import="true" targetId="1196-b305-559d-a151" type="selectionEntry"/>
+        <entryLink id="d959-061b-5ca6-0e02" name="Bombers" hidden="false" collective="false" import="true" targetId="651c-3969-1549-d00f" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="9281-73ad-90f3-acdf" name="Fighters" hidden="false" collective="false" import="true" targetId="06eb-5d1b-ee37-81f5" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="2725-f825-bd7b-3d84" name="Fighter Aces" hidden="false" collective="false" import="true" targetId="eba6-2aef-a2d5-0fe7" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="453c-aa0e-eb88-5eb8" name="Interceptors" hidden="false" collective="false" import="true" targetId="65ce-49a6-15d5-38e6" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b0d9-86c6-5777-54d8" name="Interceptor Aces" hidden="false" collective="false" import="true" targetId="1196-b305-559d-a151" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+          </costs>
+        </entryLink>
         <entryLink id="82a1-9044-5a67-9662" name="Dropships" hidden="false" collective="false" import="true" targetId="a6e8-78be-dba5-a33f" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -1559,7 +1580,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="eb92-e4f9-42c1-0145" name="Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1568,7 +1588,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="6dec-83e9-0a8e-8ad0" name="Battle Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1577,7 +1596,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="1f68-b69f-8460-fd57" name="Battleship Lance" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1586,7 +1604,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">5</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="b7e2-4e13-7582-3e6e" name="Battleship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1595,7 +1612,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">5</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="543c-329d-1cb5-2dea" name="Carrier" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1604,7 +1620,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="43d5-ac02-095c-0af8" name="Dreadnought" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1613,7 +1628,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">5+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="d625-24b0-f1ca-3e97" name="Flagship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1622,7 +1636,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="34c8-4f86-1b62-9377" name="Destroyer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1631,7 +1644,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">8+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="ea17-07c8-b8a3-50c7" name="Heavy Destroyer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1640,7 +1652,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">8+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="74af-71a3-8ff8-0ddb" name="Torpedo Destroyer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1649,7 +1660,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">8+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="1753-a458-95e1-5ed8" name="Frigate" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1658,7 +1668,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="b85a-66d2-b677-da1e" name="Heavy Frigate" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1667,7 +1676,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="06d7-8186-6982-09f0" name="Patrol Boats" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1676,7 +1684,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">7</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="8c0a-ae11-715b-f9b0" name="Attack Boats" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1685,7 +1692,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="bfb5-e37b-2c61-7872" name="Light Carrier" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1694,7 +1700,6 @@ When Iralynn ships are manoeuvring, they may choose to use 1 thrust pointworth o
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="16cb-2290-ea85-64fd" name="Fighter Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">

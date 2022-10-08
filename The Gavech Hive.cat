@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6d5b-7b88-74f3-550f" name="Devastator" hidden="false" collective="false" import="true" targetId="eba0-a456-8d37-d7ce" type="selectionEntry"/>
     <entryLink id="da6b-4ca4-547a-03f3" name="Stalker" hidden="false" collective="false" import="true" targetId="4b5b-5215-7166-ff05" type="selectionEntry"/>
@@ -73,9 +73,6 @@
       <infoLinks>
         <infoLink id="2396-a689-6ac3-2253" name="Hive Fighters" hidden="false" targetId="b81e-ea9a-c08b-d02d" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="27bd-216d-8a20-6d00" name="Drones" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -90,17 +87,11 @@
         <infoLink id="6d25-eff3-068d-1566" name="Detonator Pods*" hidden="false" targetId="9ddf-363d-a7de-85e2" type="profile"/>
         <infoLink id="d7a2-90e7-f671-6fb3" name="Detonator Pods" hidden="false" targetId="aa0e-f39c-c7dd-99cd" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="c8f0-e7b4-beaa-5c76" name="Hunters" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d4bf-536d-5dba-269a" name="Hunters" hidden="false" targetId="0489-5eeb-5e90-babc" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="3a28-76c0-6fbf-2011" name="Leaches (dropships)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -702,10 +693,22 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="51a8-ca73-20d7-d814" name="Strikecraft" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="467b-db4e-4445-1ff3" name="Hunters" hidden="false" collective="false" import="true" targetId="c8f0-e7b4-beaa-5c76" type="selectionEntry"/>
-        <entryLink id="88c1-f8c1-7c0c-fe9c" name="Hive Fighters" hidden="false" collective="false" import="true" targetId="2d4f-31ad-a5e7-fb31" type="selectionEntry"/>
+        <entryLink id="467b-db4e-4445-1ff3" name="Hunters" hidden="false" collective="false" import="true" targetId="c8f0-e7b4-beaa-5c76" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="88c1-f8c1-7c0c-fe9c" name="Hive Fighters" hidden="false" collective="false" import="true" targetId="2d4f-31ad-a5e7-fb31" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+          </costs>
+        </entryLink>
         <entryLink id="91b9-5f48-8551-06b4" name="Drones" hidden="false" collective="false" import="true" targetId="27bd-216d-8a20-6d00" type="selectionEntry"/>
-        <entryLink id="7fb3-0c29-99fd-1fdf" name="Detonator Pods*" hidden="false" collective="false" import="true" targetId="b335-ccd4-9394-b5ed" type="selectionEntry"/>
+        <entryLink id="7fb3-0c29-99fd-1fdf" name="Detonator Pods*" hidden="false" collective="false" import="true" targetId="b335-ccd4-9394-b5ed" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+          </costs>
+        </entryLink>
         <entryLink id="87d2-e6df-9e69-07e4" name="Leaches (dropships)" hidden="false" collective="false" import="true" targetId="3a28-76c0-6fbf-2011" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -988,6 +991,7 @@
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">8+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf"/>
       </characteristics>
     </profile>
     <profile id="f39b-b25b-196b-1c55" name="Drones" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -997,6 +1001,7 @@
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">9+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">9+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf"/>
       </characteristics>
     </profile>
     <profile id="9ddf-363d-a7de-85e2" name="Detonator Pods*" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1006,6 +1011,7 @@
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">2+/-4</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">-</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf"/>
       </characteristics>
     </profile>
     <profile id="0489-5eeb-5e90-babc" name="Hunters" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1015,6 +1021,7 @@
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">4+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">5+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf"/>
       </characteristics>
     </profile>
     <profile id="b7a7-6f07-8da4-a9b9" name="Leaches (dropships)" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1024,6 +1031,7 @@
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf"/>
       </characteristics>
     </profile>
     <profile id="aa0e-f39c-c7dd-99cd" name="Detonator Pods" hidden="false" typeId="fe7c-a4f6-55e4-ec01" typeName="Information">
@@ -1037,7 +1045,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">4+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="c0a7-5786-18ab-cab2" name="Devastator" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1046,7 +1053,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="f7a9-fd9f-d12f-f4ca" name="Seeker" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1055,7 +1061,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="7949-f949-d659-238b" name="Stinger" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1064,7 +1069,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">5</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">8+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="ff07-4d0b-1f85-f918" name="Hive Ship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1073,7 +1077,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">2+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">10</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">5+</characteristic>
       </characteristics>
     </profile>
     <profile id="8839-0914-084d-6adf" name="Heavy Carapace" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -1107,7 +1110,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">2</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">6+</characteristic>
       </characteristics>
     </profile>
     <profile id="490f-21c3-ad50-278f" name="Spawner" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1116,7 +1118,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="a2cd-7573-dfe2-bf30" name="Hive Assassin" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1125,7 +1126,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">5</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">9+</characteristic>
       </characteristics>
     </profile>
     <profile id="5419-6b99-c58a-199d" name="Knifehead" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1134,7 +1134,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="a646-fea4-2648-44d0" name="Lasher" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1143,7 +1142,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">8+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="957b-f6de-8724-0207" name="Queen of Queens Hive Ship (EW3)" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1152,7 +1150,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">1+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">12</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">5+</characteristic>
       </characteristics>
     </profile>
     <profile id="0c37-2ec4-1490-4548" name="Hive Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1161,7 +1158,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">4+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">7</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="d289-a595-4a1d-6b0e" name="Hive Vanguard" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">

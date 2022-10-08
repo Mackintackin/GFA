@@ -101,33 +101,21 @@
       <infoLinks>
         <infoLink id="f782-338f-dc9a-90ca" name="Fighter" hidden="false" targetId="ca19-5fe7-a218-e794" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="afee-8f34-6244-62fa" name="Fighter Aces" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9ea5-ee88-760c-f5e5" name="Fighter Aces" hidden="false" targetId="314c-7cb2-f660-f857" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="087c-5891-faa0-be86" name="Interceptors" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="da75-5460-1eb3-ca15" name="Interceptors" hidden="false" targetId="304b-fd82-35eb-8854" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="03c8-dbf7-9c67-e1c1" name="Interceptor Aces " hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8ca6-c7cc-4f57-0685" name="Interceptor Aces" hidden="false" targetId="bd1d-e79b-7cf6-cb2a" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="3e5a-52e4-4b5e-9d3b" name="Dropships" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -141,9 +129,6 @@
       <infoLinks>
         <infoLink id="f772-fcbe-0d0d-e5b8" name="Bombers" hidden="false" targetId="a616-bf5b-05f5-760e" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="f19e-8895-dd25-743c" name="Corvette" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -933,12 +918,32 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="93a4-a43a-1773-6158" name="Strikecraft" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="832b-726b-efbb-9be8" name="Fighters" hidden="false" collective="false" import="true" targetId="5412-441a-b5bf-9308" type="selectionEntry"/>
-        <entryLink id="1a47-cac6-a078-e0b9" name="Fighter Aces" hidden="false" collective="false" import="true" targetId="afee-8f34-6244-62fa" type="selectionEntry"/>
+        <entryLink id="832b-726b-efbb-9be8" name="Fighters" hidden="false" collective="false" import="true" targetId="5412-441a-b5bf-9308" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="1a47-cac6-a078-e0b9" name="Fighter Aces" hidden="false" collective="false" import="true" targetId="afee-8f34-6244-62fa" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
+          </costs>
+        </entryLink>
         <entryLink id="67e8-6ead-0362-8cb0" name="Dropships" hidden="false" collective="false" import="true" targetId="3e5a-52e4-4b5e-9d3b" type="selectionEntry"/>
-        <entryLink id="84b2-9491-200a-03e1" name="Bombers" hidden="false" collective="false" import="true" targetId="8d7c-060b-92bc-d45e" type="selectionEntry"/>
-        <entryLink id="ffa4-35d4-22fa-f15b" name="Interceptors" hidden="false" collective="false" import="true" targetId="087c-5891-faa0-be86" type="selectionEntry"/>
-        <entryLink id="aacb-a5ff-7aa9-9708" name="Interceptor Aces " hidden="false" collective="false" import="true" targetId="03c8-dbf7-9c67-e1c1" type="selectionEntry"/>
+        <entryLink id="84b2-9491-200a-03e1" name="Bombers" hidden="false" collective="false" import="true" targetId="8d7c-060b-92bc-d45e" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ffa4-35d4-22fa-f15b" name="Interceptors" hidden="false" collective="false" import="true" targetId="087c-5891-faa0-be86" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="aacb-a5ff-7aa9-9708" name="Interceptor Aces " hidden="false" collective="false" import="true" targetId="03c8-dbf7-9c67-e1c1" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="12e7-b148-494d-5603" name="Ship: Corvette" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ad7-d8bb-bcb4-9489">
@@ -1164,7 +1169,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="5849-ae51-371a-4152" name="Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1173,7 +1177,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="e275-cc22-e59d-30ae" name="Grand Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1182,7 +1185,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">5</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">6+</characteristic>
       </characteristics>
     </profile>
     <profile id="af01-06e8-8965-7303" name="Light Carrier" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1191,7 +1193,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="d94d-a032-6f4a-d90a" name="Torpedo Destroyer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1200,7 +1201,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">9+</characteristic>
       </characteristics>
     </profile>
     <profile id="ff1b-a0d3-f9ca-984c" name="Scout" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1209,7 +1209,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="0843-8955-7670-8d15" name="Lance Frigate (Asn)" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1218,7 +1217,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="ad14-ab76-dd61-cc83" name="Frigate" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1227,7 +1225,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="339c-44f7-98be-3337" name="Assault Frigate" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1236,7 +1233,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="303e-8cd5-4e58-0809" name="Attack Ship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1245,7 +1241,6 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">5</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

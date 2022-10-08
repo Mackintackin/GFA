@@ -1378,12 +1378,12 @@
       <entryLinks>
         <entryLink id="879a-7042-f969-cac6" name="Fighters" hidden="false" collective="false" import="true" targetId="a7de-13b9-fbf7-8005" type="selectionEntry">
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
           </costs>
         </entryLink>
         <entryLink id="e6ad-f8d3-bd5f-71a9" name="Fighter Aces" hidden="false" collective="false" import="true" targetId="fb53-2482-38dd-748d" type="selectionEntry">
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
           </costs>
         </entryLink>
         <entryLink id="c0a8-9f83-265e-0e9a" name="Interceptors" hidden="false" collective="false" import="true" targetId="46e7-ea16-f3ce-eb16" type="selectionEntry">
@@ -1866,7 +1866,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="e938-2ef2-81d4-5d3e" name="Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1875,7 +1874,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="f69e-99ac-3334-d6cf" name="Battle Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1884,7 +1882,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="5e15-eb15-2f04-60e2" name="Battleship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1893,7 +1890,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">5+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="9a2a-9b6f-f89f-909b" name="Carrier" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1902,7 +1898,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">7+</characteristic>
       </characteristics>
     </profile>
     <profile id="8881-ecab-25de-e53d" name="Hybrid Carrier" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1911,7 +1906,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">9+</characteristic>
       </characteristics>
     </profile>
     <profile id="6259-098f-0c93-273e" name="Heavy Destroyer (Asn)" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1920,7 +1914,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">8+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">9+</characteristic>
       </characteristics>
     </profile>
     <profile id="d74b-19a6-c20e-4e62" name="Torpedo Boat" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1929,7 +1922,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="eac2-e282-a7f6-54e3" name="Corvette" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1938,7 +1930,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="466f-5732-c027-733d" name="Frigate" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1947,7 +1938,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="88e7-c4ec-9776-4828" name="Agile strike craft" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
@@ -1976,7 +1966,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">5</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="c50e-ae58-707a-1327" name="Heavy Gunships" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1985,7 +1974,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="77d7-9e4a-f216-e19b" name="Destroyer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1994,7 +1982,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">9+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="9578-7f96-9ad2-742f" name="Heavy Frigate" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -2003,7 +1990,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">9+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="4e97-4831-132b-3f54" name="Lancer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -2012,7 +1998,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">2</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">8+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">9+</characteristic>
       </characteristics>
     </profile>
     <profile id="4cff-1fb0-1e7e-5548" name="Gun Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -2021,7 +2006,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="2ce4-8e3f-1e2b-9b22" name="Grand Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -2030,7 +2014,6 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">5</characteristic>
-        <characteristic name="ADS*" typeId="d938-1f52-2fd4-601d">8+</characteristic>
       </characteristics>
     </profile>
     <profile id="2332-7950-22d3-6f21" name="Heavy Fusion Ballista" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
