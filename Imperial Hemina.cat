@@ -1582,7 +1582,7 @@
         <entryLink id="a63a-34d2-1164-83f8" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d0a4-cec2-62e6-b18c" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="8ca4-19e8-f8bd-ce31" name="Ship: Reformed Cruiser" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="8ca4-19e8-f8bd-ce31" name="Ship: Reformed Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="e847-e8df-6a05-3356">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb2d-02f8-e4d7-e658" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4da8-9599-37e6-1a64" type="min"/>
@@ -1614,7 +1614,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3f78-57e1-3eb3-f5a4" name="Ship: Reformed Light Carrier" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3f78-57e1-3eb3-f5a4" name="Ship: Reformed Light Carrier" hidden="false" collective="false" import="true" defaultSelectionEntryId="e540-d96e-9c8f-5fb5">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5ea2-68b3-5cc7-96d9" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca7d-4d0c-7fa7-af22" type="min"/>
@@ -1646,7 +1646,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="822d-84e2-2da6-1bea" name="Ship: Vespa Protector" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="822d-84e2-2da6-1bea" name="Ship: Vespa Protector" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ed0-e6c8-45c8-837d">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="65a9-7d8c-3a5b-e4da" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="010f-940d-eec5-dbd9" type="min"/>
@@ -1678,7 +1678,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="64d8-1f2b-aa6a-d46c" name="Ship: Reformed Guardian Ships" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="64d8-1f2b-aa6a-d46c" name="Ship: Reformed Guardian Ships" hidden="false" collective="false" import="true" defaultSelectionEntryId="4758-fdfd-4ddb-df7b">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a500-e008-999d-c791" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cbd-8952-8c06-9553" type="min"/>
@@ -1710,7 +1710,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="6127-83ae-079f-c3fc" name="Ship: Reformed Destroyer" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="6127-83ae-079f-c3fc" name="Ship: Reformed Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="cce3-4466-6f25-9e78">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6127-207a-521c-1306" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="78e8-876c-4239-fa0f" type="min"/>
@@ -1742,7 +1742,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5c92-d5dd-4595-8d52" name="Ship: Vespa Heavy Cruiser" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5c92-d5dd-4595-8d52" name="Ship: Vespa Heavy Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="fcf8-7b83-ba4e-21ba">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cd9-6487-0d79-dcb5" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8484-f942-4be3-c1d9" type="min"/>
@@ -1774,7 +1774,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="45c5-6d29-1db4-a889" name="Ship: Krotan Assault Carrier" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="45c5-6d29-1db4-a889" name="Ship: Krotan Assault Carrier" hidden="false" collective="false" import="true" defaultSelectionEntryId="dac9-4c20-da7e-73dd">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d51-4363-b7f6-e29a" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="63c2-0927-9718-6e48" type="min"/>
@@ -1806,7 +1806,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="de73-2c9b-11c3-7391" name="Ship: Krotan Ravager" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="de73-2c9b-11c3-7391" name="Ship: Krotan Ravager" hidden="false" collective="false" import="true" defaultSelectionEntryId="226a-2af0-f2fb-7c2f">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bee6-f4e8-fc7c-d342" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1727-65fc-0e00-5917" type="min"/>
