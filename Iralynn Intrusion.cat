@@ -16,7 +16,7 @@
     <entryLink id="5258-5c23-52a4-be45" name="Flagship" hidden="false" collective="false" import="true" targetId="3eb4-32aa-83ba-1569" type="selectionEntry"/>
     <entryLink id="a8d0-0e58-31d9-4877" name="Dreadnought" hidden="false" collective="false" import="true" targetId="fa5e-43ec-6f15-1180" type="selectionEntry"/>
     <entryLink id="2ccb-9c3d-2e80-2720" name="Light Carrier" hidden="false" collective="false" import="true" targetId="9ec7-11fe-fe7e-cf02" type="selectionEntry"/>
-    <entryLink id="829d-905a-8f72-ab62" name="Carrier" hidden="false" collective="false" import="true" targetId="30c6-96ba-f4c4-93a9" type="selectionEntry"/>
+    <entryLink id="829d-905a-8f72-ab62" name="Carrier (14 Slots)" hidden="false" collective="false" import="true" targetId="30c6-96ba-f4c4-93a9" type="selectionEntry"/>
     <entryLink id="5d30-c0f1-e936-9fae" name="Faction: Iralynn Intrusion" hidden="false" collective="false" import="true" targetId="5be9-52c8-8551-9c46" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e42e-238e-617f-0487" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
@@ -336,7 +336,6 @@
         <categoryLink id="e0e4-29a8-9225-e70e" name="Hanger Medium" hidden="false" targetId="3db8-dec1-a0d0-6143" primary="false"/>
         <categoryLink id="7a7f-f0eb-ab2a-2903" name="Carrier" hidden="false" targetId="eb6d-8a2e-eb65-f70a" primary="false"/>
         <categoryLink id="73b1-007c-4a61-9de2" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
-        <categoryLink id="eff3-1d33-a264-1e8e" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="66f4-02fb-861c-45ec" name="Ship: Carrier" hidden="false" collective="false" import="true" targetId="7702-1b2f-c67a-eb53" type="selectionEntryGroup"/>
