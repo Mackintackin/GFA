@@ -1523,7 +1523,7 @@
         <entryLink id="1222-077b-03df-9e4f" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d36d-a84e-80d6-c8ba" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="844d-4031-9374-1424" name="Ship: T3 Escort Carrier" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="844d-4031-9374-1424" name="Ship: T3 Escort Carrier" hidden="false" collective="false" import="true" defaultSelectionEntryId="3dd6-537e-37e4-284d">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6481-4b8f-fe8e-8ec9" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa2a-1cd8-8cc2-453e" type="min"/>
@@ -1555,7 +1555,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0a6e-88e2-c971-5147" name="Ship: T3 Lancer Destroyer" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="0a6e-88e2-c971-5147" name="Ship: T3 Lancer Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="1386-2736-8ef2-40fa">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b6af-1e9e-d1d8-6240" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d6d0-a8f3-a3f3-aaba" type="min"/>
@@ -1587,7 +1587,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="8673-1114-9ee6-5a96" name="Ship: T3 Destroyer" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="8673-1114-9ee6-5a96" name="Ship: T3 Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="6cb1-e6dc-f107-9126">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be67-c4d6-509e-a8b1" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9f8b-f8b5-824b-89d5" type="min"/>
@@ -1619,7 +1619,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="dcd6-e3db-c56c-8738" name="Ship: T3 Patrol Boat Squadron" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="dcd6-e3db-c56c-8738" name="Ship: T3 Patrol Boat Squadron" hidden="false" collective="false" import="true" defaultSelectionEntryId="241e-31a1-3b2a-f290">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a0d7-afd9-af3b-a3d5" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c7f9-a0a4-1c90-c9cb" type="min"/>
@@ -1651,7 +1651,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5fed-d36b-afbb-de22" name="Ship: T3 Battleship" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5fed-d36b-afbb-de22" name="Ship: T3 Battleship" hidden="false" collective="false" import="true" defaultSelectionEntryId="e98d-f2f6-487d-66f9">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cdb2-75fc-5f95-95f3" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="51f1-4a0d-83a7-cd00" type="min"/>
