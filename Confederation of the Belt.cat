@@ -594,9 +594,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8cb5-c3e0-b074-e1d5" name="Interceptor Squadron" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="b455-4794-cff1-e00b" name="Interceptor Squadron" hidden="false" collective="false" import="true" targetId="8cb5-c3e0-b074-e1d5" type="selectionEntry"/>
-      </entryLinks>
+      <infoLinks>
+        <infoLink id="102c-ed7b-e85b-f317" name="Interceptors" hidden="false" targetId="1d02-3b49-2cbb-4924" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
       </costs>
@@ -1070,7 +1070,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a080-0bf7-9d1d-af42" name="Ship: Corvette" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="a080-0bf7-9d1d-af42" name="Ship: Corvette" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea6b-db8e-4fac-1cb9">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c1cd-8ebf-8813-e2b6" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eb88-9c7f-b217-689d" type="min"/>
