@@ -133,8 +133,8 @@
         <entryLink id="01d7-a1d2-f3e9-de97" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="b2be-0d8e-2cfb-7546" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3df3-45f4-0d61-9204" type="selectionEntryGroup"/>
         <entryLink id="99c4-ef88-8bd2-8f82" name="Ship: Light Cruiser" hidden="false" collective="false" import="true" targetId="0a12-f130-d10c-1874" type="selectionEntryGroup"/>
-        <entryLink id="6deb-cf2b-d1eb-0d2c" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
-        <entryLink id="83f3-2d9e-7668-21af" name="Strikecraft Light Cruiser (2 Slots)" hidden="false" collective="false" import="true" targetId="60e4-5274-2791-d24e" type="selectionEntryGroup"/>
+        <entryLink id="6deb-cf2b-d1eb-0d2c" name="Hanger Upgrades" hidden="true" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="83f3-2d9e-7668-21af" name="Strikecraft Light Cruiser (2 or 4 Slots)" hidden="false" collective="false" import="true" targetId="60e4-5274-2791-d24e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>

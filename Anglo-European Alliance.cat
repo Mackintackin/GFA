@@ -1115,6 +1115,51 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d6a3-2e7d-e981-c098" name="Light Carrier (8 Slots)" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="ace5-851c-a018-2ce0" name="Security Stations" hidden="false" targetId="fdae-e1a5-6c8f-d206" type="profile"/>
+        <infoLink id="038d-8238-51bd-49ef" name="Light Carrier" hidden="false" targetId="8e2d-70d8-d9f3-dab1" type="profile"/>
+        <infoLink id="4c3a-2381-90f7-66da" name="Launch " hidden="false" targetId="209b-2acd-8dac-0cf7" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="3"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0471-6020-839d-2b67" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="1492-62a2-c8ab-d9e8" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
+        <categoryLink id="9474-b00c-9e3f-4160" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+        <categoryLink id="72a8-422c-0723-3d82" name="Light Carrier" hidden="false" targetId="9322-0eaf-8900-a53d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1aef-85aa-9e3c-bdef" name="Ship: Light Carrier" hidden="false" collective="false" import="true" targetId="8976-7266-8345-3f4c" type="selectionEntryGroup"/>
+        <entryLink id="dd1c-e70c-8080-bc2a" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="70ef-a144-d804-ecd1" name="Missile Pods (Ord)" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61d3-d502-5895-0788" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c91-86bc-f60e-55a0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5c27-5635-c59d-0aaf" name="Point Defense Guns (PD)" hidden="false" collective="false" import="true" targetId="b26e-31b3-2cc2-143e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="993a-0c02-2b84-fcc3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837a-467a-b759-f87b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1feb-168c-5ee2-106e" name="Strikecraft Light Carrier (8 Slots)" hidden="false" collective="false" import="true" targetId="d6ea-4a45-59fd-7f00" type="selectionEntryGroup"/>
+        <entryLink id="aefb-3142-e143-1064" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="4cc9-6ebb-a6ac-886e" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="9cbe-7968-253f-11b5" name="Kinetic Guns" hidden="false" collective="false" import="true" targetId="fc64-0413-452e-49b1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5e-ca3a-bfbf-a3b1" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b61-b6f0-d717-340f" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cf83-7db1-0cb5-3ec0" name="Ship: Assault Ship" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce5b-78f2-f71f-a5ad">
@@ -1905,6 +1950,37 @@
         <entryLink id="097a-9ee8-4c0d-84f5" name="Strikecraft" hidden="false" collective="false" import="true" targetId="f3ab-94b0-7c71-baa9" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="d6ea-4a45-59fd-7f00" name="Strikecraft Light Carrier (8 Slots)" hidden="false" collective="true" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65f1-4500-4339-e9c6" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="3011-913c-e0fb-c631" name="Strikecraft" hidden="false" collective="false" import="true" targetId="f3ab-94b0-7c71-baa9" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8976-7266-8345-3f4c" name="Ship: Light Carrier" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d1a3-923c-410e-4aef" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="80c6-35f0-672b-0f82" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="f83c-d6ad-9d7c-69aa" name="Light Carrier (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="37.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4696-21a0-3a89-8cc7" name="Light Carrier (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="43.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f748-7db3-bd65-f146" name="Light Carrier (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="52.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="6e6a-1358-8d96-1965" name="Point defence guns (PD)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
@@ -2191,6 +2267,14 @@
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
         <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8e2d-70d8-d9f3-dab1" name="Light Carrier" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">5</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">5</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ffa3-9951-6005-3cec" name="Arreki Singularity" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ffa3-9951-6005-3cec" name="Arreki Singularity" revision="11" battleScribeVersion="2.03" authorName="" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ab34-79d1-a454-647e" name="Faction Trait: Arreki Singularity" hidden="false" collective="false" import="true" targetId="ba75-327f-0b6e-0748" type="selectionEntry"/>
     <entryLink id="ec3a-5de1-0286-3af9" name="Corvette" hidden="false" collective="false" import="true" targetId="9b0b-20bf-6489-c355" type="selectionEntry"/>
@@ -801,6 +801,38 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="86cc-4bff-507a-4ce3" name="Attack Boat" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="ed05-6ad8-7ab9-7568" name="Attack Boats" hidden="false" targetId="d8d7-4850-14fa-c12f" type="profile"/>
+        <infoLink id="2ca7-34d6-c1c7-a11c" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e5f9-65f0-f40f-757b" name="Arreki Singularity" hidden="false" targetId="5424-330c-9b4b-71ea" primary="false"/>
+        <categoryLink id="0657-7cde-fe85-695d" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
+        <categoryLink id="0487-462c-5184-dda4" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
+        <categoryLink id="467c-a8c8-9d1e-0863" name="Attack Ship" hidden="false" targetId="ad8d-40ca-356d-ad22" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="49f7-fca7-fbce-9985" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="3647-d48d-bf76-4c94" name="Corrosive Warheads (Ord)" hidden="false" collective="false" import="true" targetId="01c6-5394-1ad8-5404" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f414-7b27-ff7b-6cc1" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8c1-d625-c8c4-6c37" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1ed4-315c-2dcb-2630" name="Troop Selection" hidden="false" collective="false" import="true" targetId="61a1-3e8a-ae33-7138" type="selectionEntryGroup"/>
+        <entryLink id="2e65-2bf2-5288-ce9f" name="Ship: Attack Boats" hidden="false" collective="false" import="true" targetId="199b-09db-fe97-860b" type="selectionEntryGroup"/>
+        <entryLink id="468d-7d14-6497-456a" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="3b72-7bde-974b-40e9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30a3-396b-19c0-088e" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4dd-1058-d6f5-a21f" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f2a4-f71c-f45a-e56c" name="Ship: " hidden="false" collective="false" import="true">
@@ -1397,6 +1429,38 @@
         <entryLink id="31cc-6ee0-8d1c-677b" name="Strikecraft" hidden="false" collective="false" import="true" targetId="6e7c-5a08-e69e-c05a" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="199b-09db-fe97-860b" name="Ship: Attack Boats" hidden="false" collective="false" import="true" defaultSelectionEntryId="86d3-1fd1-22a4-d753">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f869-7be5-b23a-e984" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0667-8495-228c-bcd9" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="c76e-978d-23e3-3c03" name="Attack Boats (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="9691-b470-7367-c2d2" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="86d3-1fd1-22a4-d753" name="Attack Boats (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="6b1b-1193-77ce-da6a" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="28.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fbfb-b910-282f-380c" name="Attack Boats (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="9681-5033-bd27-b8b3" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="34.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="94f4-5520-286c-ad54" name="Corrosive Warheads" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
@@ -1652,6 +1716,14 @@ If the Arreki shoot any weapon, they will be revealed and immediately placed on 
     <profile id="d71c-81fa-f309-3777" name="Independent Fighters" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Due to the structure of their society, Arreki fighters never benefit from any kind of carrier support. However an Arreki carrier may launch all its fighters at once.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d8d7-4850-14fa-c12f" name="Attack Boats" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">3</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
