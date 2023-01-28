@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3a26-c560-e648-04fe" name="Frigate" hidden="false" collective="false" import="true" targetId="ab7f-baeb-1678-4b64" type="selectionEntry"/>
     <entryLink id="a802-4515-3b49-f916" name="Line Frigate" hidden="false" collective="false" import="true" targetId="b004-55c3-1f43-e60d" type="selectionEntry"/>
@@ -716,6 +716,55 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6dc5-0e3e-468d-a79f" name="Flagship" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="e17e-90d4-acae-9c27" name="Reinforced Hull" hidden="false" targetId="c788-fa96-ace6-1942" type="profile"/>
+        <infoLink id="213b-35a1-dbfb-4350" name="Flagship" hidden="false" targetId="4d35-666d-63ff-88ee" type="profile"/>
+        <infoLink id="ee74-de16-126e-4139" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
+        <infoLink id="71a3-c512-39fe-2ce1" name="Flag Bridge" hidden="false" targetId="4bb1-8f4b-9d23-6b13" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0e47-4ab0-f50b-9df4" name="Martian Confederation" hidden="false" targetId="919b-1192-f03e-8121" primary="false"/>
+        <categoryLink id="ff37-4817-8604-4f4b" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
+        <categoryLink id="5a9e-dcb9-c117-7afc" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
+        <categoryLink id="5be6-6359-01d8-b3e1" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="5acf-8acd-4d8a-174b" name="Flagship" hidden="false" targetId="5abe-3356-c80e-5842" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bf6a-cc0a-d74c-d27a" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b557-2776-952b-4a27" type="selectionEntryGroup"/>
+        <entryLink id="cad9-bb00-a549-82bc" name="Ship: Flagship" hidden="false" collective="false" import="true" targetId="4565-017c-d8f5-0074" type="selectionEntryGroup"/>
+        <entryLink id="9713-8d36-25d0-ef3d" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="c845-59fd-4133-7be5" name="Missile Pods (Ord)" hidden="false" collective="false" import="true" targetId="15bd-1568-6b7a-99fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bad-ef08-7502-f5f0" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5105-d12a-4c38-1786" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="539f-5b87-2ba9-00cd" name="Light Coilgun" hidden="false" collective="false" import="true" targetId="9566-ca93-9139-f9b1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94bb-0e2d-0e0c-6b6e" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89b8-b0bd-5382-1c1c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fe33-bdb0-ab21-8dca" name="Heavy Coilgun" hidden="false" collective="false" import="true" targetId="5537-ce19-de6c-7ebb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="489e-a630-5826-c495" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b71d-a881-4a12-3914" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="970e-e30b-3590-87f8" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbd6-ef44-bdcd-03db" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fe5a-4823-fa27-bfaa" name="Ship: " hidden="false" collective="false" import="true">
@@ -1228,6 +1277,38 @@
         <entryLink id="c4b1-278d-f131-93f7" name="Strikecraft" hidden="false" collective="false" import="true" targetId="cca9-427f-6c77-7e08" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="4565-017c-d8f5-0074" name="Ship: Flagship" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4be-5fd2-a149-1494" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b922-0313-4d06-1ca5" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="2afb-9ab4-cbf5-46f5" name="Flagship (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="474e-a925-a8cb-4757" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="61.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d6bb-6267-0846-2d96" name="Flagship (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="ab07-bb84-9ea3-8b64" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="72.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="353c-394b-fffa-37ca" name="Flagship (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="d98e-8717-f729-4135" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="86.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="8c6b-56da-258a-5ae8" name="Stinger Torpedo (Ord))" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
@@ -1435,6 +1516,14 @@ control many of the node drives in the galaxy, and are
 backed by both SINO Russia and the Anglo European
 Alliance. At the start of the game the Martian player has 2 Light companies that they can place down onto node
 drives on the field. For example 2 companies can be placed onto a single node or those companies can be spread out to hold 2 nodes at the start of the game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4d35-666d-63ff-88ee" name="Flagship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">9</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">4+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">7</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

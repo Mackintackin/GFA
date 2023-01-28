@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6d5b-7b88-74f3-550f" name="Devastator" hidden="false" collective="false" import="true" targetId="eba0-a456-8d37-d7ce" type="selectionEntry"/>
     <entryLink id="da6b-4ca4-547a-03f3" name="Stalker" hidden="false" collective="false" import="true" targetId="4b5b-5215-7166-ff05" type="selectionEntry"/>
@@ -73,6 +73,9 @@
       <infoLinks>
         <infoLink id="2396-a689-6ac3-2253" name="Hive Fighters" hidden="false" targetId="b81e-ea9a-c08b-d02d" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="27bd-216d-8a20-6d00" name="Drones" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -87,11 +90,17 @@
         <infoLink id="6d25-eff3-068d-1566" name="Detonator Pods*" hidden="false" targetId="9ddf-363d-a7de-85e2" type="profile"/>
         <infoLink id="d7a2-90e7-f671-6fb3" name="Detonator Pods" hidden="false" targetId="aa0e-f39c-c7dd-99cd" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c8f0-e7b4-beaa-5c76" name="Hunters" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d4bf-536d-5dba-269a" name="Hunters" hidden="false" targetId="0489-5eeb-5e90-babc" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3a28-76c0-6fbf-2011" name="Leaches (dropships)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>

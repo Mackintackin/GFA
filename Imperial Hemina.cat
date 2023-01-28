@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4a51-d63d-5a1f-0841" name="Krotan" hidden="false"/>
     <categoryEntry id="f9db-fdcf-4414-5386" name="Vespa" hidden="false"/>
@@ -688,6 +688,7 @@
             <modifier type="append" field="name" value="2"/>
           </modifiers>
         </infoLink>
+        <infoLink id="841c-6b77-1f49-b9fe" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bef0-5bdd-f83e-e971" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
@@ -789,7 +790,11 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="17d6-0bb7-b474-5970" name="Ship: Reformed Destroyer" hidden="false" collective="false" import="true" targetId="6127-83ae-079f-c3fc" type="selectionEntryGroup"/>
-        <entryLink id="913a-6211-f82a-1d04" name="Escort +1" hidden="false" collective="false" import="true" targetId="44b6-ccc8-d7bc-2612" type="selectionEntry"/>
+        <entryLink id="913a-6211-f82a-1d04" name="Escort +1" hidden="false" collective="false" import="true" targetId="44b6-ccc8-d7bc-2612" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b8-c01c-77f4-15af" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="dfff-9e47-1fe4-f4ea" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e62d-519a-74b8-2b7d" type="max"/>
@@ -1868,7 +1873,7 @@
         <entryLink id="26ad-7e54-715c-00b7" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d0a4-cec2-62e6-b18c" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="dfca-eac3-4118-0732" name="Krotan Troop Selection" hidden="true" collective="true" import="true">
+    <selectionEntryGroup id="dfca-eac3-4118-0732" name="Troop: Krotan" hidden="true" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="dc8f-57c5-8bd1-3e9d" value="1.0">
           <repeats>

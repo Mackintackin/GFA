@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9251-199f-6899-d87c" name="The Polar League" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9251-199f-6899-d87c" name="The Polar League" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="f5b3-5884-39d4-6c46" name="Corvette" hidden="false" collective="false" import="true" targetId="f19e-8895-dd25-743c" type="selectionEntry"/>
     <entryLink id="dd5b-99cd-8f94-ac5e" name="Attack Ship" hidden="false" collective="false" import="true" targetId="f0a6-b3ec-e426-334f" type="selectionEntry"/>
@@ -101,21 +101,33 @@
       <infoLinks>
         <infoLink id="f782-338f-dc9a-90ca" name="Fighter" hidden="false" targetId="ca19-5fe7-a218-e794" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="afee-8f34-6244-62fa" name="Fighter Aces" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9ea5-ee88-760c-f5e5" name="Fighter Aces" hidden="false" targetId="314c-7cb2-f660-f857" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="087c-5891-faa0-be86" name="Interceptors" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="da75-5460-1eb3-ca15" name="Interceptors" hidden="false" targetId="304b-fd82-35eb-8854" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="03c8-dbf7-9c67-e1c1" name="Interceptor Aces " hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8ca6-c7cc-4f57-0685" name="Interceptor Aces" hidden="false" targetId="bd1d-e79b-7cf6-cb2a" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3e5a-52e4-4b5e-9d3b" name="Dropships" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -129,6 +141,9 @@
       <infoLinks>
         <infoLink id="f772-fcbe-0d0d-e5b8" name="Bombers" hidden="false" targetId="a616-bf5b-05f5-760e" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f19e-8895-dd25-743c" name="Corvette" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>

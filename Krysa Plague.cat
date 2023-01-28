@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="9380-ca18-59b9-a0b1" name="Krysa Plague" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="b124-3e9c-c1f8-7962" name="Faction Trait: Krysa Plague" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9096-4c42-750a-c3f0" name="Disorganized rabble" hidden="false" targetId="dec9-bc27-db3e-1108" type="profile"/>
+        <infoLink id="e828-140c-7588-947b" name="Constant backstabbing" hidden="false" targetId="41f0-993f-4092-0ef8" type="profile"/>
+        <infoLink id="6c70-acfe-5be1-112a" name="Shield Overload" hidden="false" targetId="5609-88e4-3394-4e4b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b7e4-703e-da13-6432" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+        <categoryLink id="9926-166e-9967-bc34" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="f5db-b5d1-e6a2-bb24" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4b81-7438-a8b6-4435" name="Frigate" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="d4fc-d170-83d4-7ddb" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
+        <infoLink id="a5a0-5d3e-5009-4d75" name="Frigate" hidden="false" targetId="29d9-15e5-8549-eda3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cd21-df03-a6bd-8cff" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
+        <categoryLink id="938f-bcea-d2f2-74ec" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="7b43-3ca7-fd41-dd1d" name="Frigate" hidden="false" targetId="9a6f-a8b9-4ec1-f0cb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9078-ed9f-d367-4c00" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="b1c8-ef72-0f72-8042" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="737e-8dc5-eb75-5a28" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="cd78-2f5a-7092-40bb" name="Ship: Frigate" hidden="false" collective="false" import="true" targetId="f29f-b3f6-1ada-0b91" type="selectionEntryGroup"/>
+        <entryLink id="120a-b582-a0a1-08ca" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00d6-8464-4320-b2a5" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f66f-5067-2cb3-9b2d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0811-4ee8-2322-ca13" name="Flak Cannons (PD)" hidden="false" collective="false" import="true" targetId="b75c-860e-23e1-da22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e71-a47b-a20c-dcd7" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c28-20cd-d15a-1553" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5af-ab2b-09e6-a577" name="Attack Boats" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="9dec-4384-1a10-6e50" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
+        <infoLink id="7bb6-4fbd-0f4d-2df7" name="Squadron" hidden="false" targetId="c583-e232-f934-3e6b" type="profile"/>
+        <infoLink id="1a10-8263-519a-7044" name="Attack Boats" hidden="false" targetId="1da6-301f-a2f1-f3a3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="00bd-0e50-0fea-73a0" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
+        <categoryLink id="bb91-f3a4-e27d-c229" name="Attack Ship" hidden="false" targetId="ad8d-40ca-356d-ad22" primary="false"/>
+        <categoryLink id="71c8-b2d0-8518-f79a" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="75e2-af26-ff72-4518" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="e7ae-b6b6-a416-592f" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="6128-ec89-9182-7db8" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="e494-f001-911f-cbd6" name="Ship: Attack Boats" hidden="false" collective="false" import="true" targetId="2dba-0424-e221-ca92" type="selectionEntryGroup"/>
+        <entryLink id="c2bc-3eec-69e9-a988" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db9c-dbb8-c357-913f" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e89-8cc9-2edd-b40c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="392f-20d3-a53a-f75f" name="Flak Cannons (PD)" hidden="false" collective="false" import="true" targetId="b75c-860e-23e1-da22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eab3-0564-e6f6-515f" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea55-dbcd-8f64-9fa6" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e20c-5e29-55dd-81fa" name="Heavy Frigate" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="ffc7-256a-1639-dda7" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
+        <infoLink id="6399-50b2-c23d-3305" name="Heavy Frigate" hidden="false" targetId="4ef7-1467-4645-07fa" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f90e-d97f-142c-352d" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
+        <categoryLink id="e935-9249-7f62-72f9" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="6181-fdf1-37ca-1b11" name="Frigate" hidden="false" targetId="9a6f-a8b9-4ec1-f0cb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="569b-c080-2d7e-eeec" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="dec4-196a-5fe6-f179" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="c752-1254-8fb6-6c48" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="b78a-619a-09a3-ec34" name="Ship: Heavy Frigate" hidden="false" collective="false" import="true" targetId="3759-1c9f-9e8d-3495" type="selectionEntryGroup"/>
+        <entryLink id="b0c4-10c6-06a3-4b17" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74e0-5c14-d89b-4740" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="406e-c432-d568-6913" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0a4d-2e09-1cb4-7c9a" name="Crude X-Ray Lasers" hidden="false" collective="false" import="true" targetId="3e07-b46a-8d6d-f660" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6c0-208a-012a-f4bd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c82-9dc5-01a9-821e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f80-d5f0-f522-acfc" name="Assault Ship (4 Slots)" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="d0c2-2e42-779a-5eec" name="Assault Ship (4 Slots)" hidden="false" targetId="0c20-402a-8ac0-649a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e9bd-4b95-e680-30e8" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="9948-c09b-74f1-4e58" name="Frigate" hidden="false" targetId="9a6f-a8b9-4ec1-f0cb" primary="false"/>
+        <categoryLink id="2cc4-d932-71d2-29d7" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="8c6c-e803-09c3-ff3b" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="631e-eec1-246d-6f03" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="aba1-a81b-e6a6-5ed0" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="62a6-e867-194a-1a61" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="bff0-6ab6-1764-1ec0" name="Ship: Assault Ship (4 slots)" hidden="false" collective="false" import="true" targetId="a288-8912-9620-7c12" type="selectionEntryGroup"/>
+        <entryLink id="cb8b-e215-353d-807a" name="Flak Cannons (PD)" hidden="false" collective="false" import="true" targetId="b75c-860e-23e1-da22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2000-737d-77aa-c94a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="927a-3549-8e1f-1ae1" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9e1c-9702-ffcb-53f5" name="Strikecraft: Assault Ship (4 Slots)" hidden="false" collective="false" import="true" targetId="aa2f-6cb3-3bb3-6cd3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7093-08ae-7aba-5d4b" name="Lancer" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="c061-ec74-bb10-ae1c" name="Assassin System" hidden="false" targetId="8b25-5436-8f22-3d08" type="profile"/>
+        <infoLink id="edc0-0017-ef0d-a72d" name="Lancer" hidden="false" targetId="6465-4cf6-26cd-e22a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7cf7-a356-7167-a391" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="7121-7b73-ef84-66ea" name="Lancer" hidden="false" targetId="1c95-20dd-7250-0c03" primary="false"/>
+        <categoryLink id="140c-e5a8-514f-0fbb" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9de9-4cbc-916a-0bc8" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="81fa-0eed-393e-4419" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="e98f-213a-03c8-45c7" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="378f-8ac0-a7cf-a6e6" name="Ship: Lancer" hidden="false" collective="false" import="true" targetId="8b94-70c5-4b1d-c811" type="selectionEntryGroup"/>
+        <entryLink id="4013-a2f3-245e-516b" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="369c-040c-3e85-0711" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e89-7f7e-16f0-dae9" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4038-ca81-daa0-0722" name="Dimensional Flux Cannon" hidden="false" collective="false" import="true" targetId="f03a-f006-14c9-252b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ced-365e-2941-0b03" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85a6-4999-0e67-ef37" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77c9-287b-f273-b2d3" name="Destroyer" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="40ac-5db5-313a-5358" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
+        <infoLink id="b050-27e1-ac88-53aa" name="Destroyer" hidden="false" targetId="7c2b-98bb-e392-a067" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e3e8-3709-587b-a82d" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="77fb-a081-5657-d53f" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+        <categoryLink id="331d-5f86-51da-2735" name="Destroyer" hidden="false" targetId="aaf5-53cb-dd7a-25e1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3dcd-a773-f2d4-c020" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="a5ea-5f50-dd81-eeaf" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="644f-c1c9-d64d-9618" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="f3ac-d0ab-d2b6-3695" name="Ship: Destroyer" hidden="false" collective="false" import="true" targetId="f0af-04d0-e1bd-1aa2" type="selectionEntryGroup"/>
+        <entryLink id="1b5f-4ee9-bc9e-1525" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="426a-5c9c-c636-2d1b" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4020-84e5-c78f-f7b8" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f9c6-8239-4f17-cb60" name="Dimensional Flux Cannon" hidden="false" collective="false" import="true" targetId="f03a-f006-14c9-252b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd29-2d61-039f-1f04" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b015-a4c9-09a3-51a6" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a848-299a-f1f2-8464" name="Advanced Destroyer" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="08ee-29fa-d86b-6fdd" name="Advanced Destroyer" hidden="false" targetId="ab72-f2fc-e4ee-a8eb" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9f37-f8bb-562b-ce64" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="36ef-7753-fe4b-137e" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+        <categoryLink id="ebb4-e53c-d65e-5416" name="Destroyer" hidden="false" targetId="aaf5-53cb-dd7a-25e1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3ad3-003c-0617-d5b2" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="9b8e-5d88-0464-4966" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="ce88-5532-cde5-bfab" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="73cc-2f83-d411-b466" name="Ship: Advanced Destroyer" hidden="false" collective="false" import="true" targetId="30ef-3995-7220-60bb" type="selectionEntryGroup"/>
+        <entryLink id="359f-fc91-22f6-b9da" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e32-918e-d273-e34f" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e973-3475-812e-da83" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3a2c-894d-6321-d170" name="Crude X-Ray Lasers" hidden="false" collective="false" import="true" targetId="3e07-b46a-8d6d-f660" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a1-3f3a-9df7-faaa" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5917-9ef3-68a9-a61e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1868-825c-f411-abd5" name="Flak Cannons (PD)" hidden="false" collective="false" import="true" targetId="b75c-860e-23e1-da22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a849-e60b-360e-2402" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b091-63bf-9a0f-0feb" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a64-a08a-8f3a-2386" name="Heavy Destroyer" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="daa4-6ce6-47bf-41a6" name="Heavy Destroyer" hidden="false" targetId="0233-3707-c9e3-2fc8" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="260e-d030-7cc9-f490" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="b97b-feb9-10d0-9147" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+        <categoryLink id="0472-8ceb-5d6e-e1c6" name="Heavy Destroyer" hidden="false" targetId="1d62-51cc-7dc0-4713" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ce90-cbb6-0558-d695" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="ebd1-fafd-aed7-f975" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="f296-61d5-9b26-7e58" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="578a-0200-19c7-838c" name="Ship: Heavy Destroyer" hidden="false" collective="false" import="true" targetId="a16d-c7b7-5814-4fbb" type="selectionEntryGroup"/>
+        <entryLink id="871c-4868-7cf7-c6c9" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="814f-16fb-7423-5917" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e570-99bf-1ef6-d3bd" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a1f8-60a9-c6f3-143d" name="Dimensional Flux Cannon" hidden="false" collective="false" import="true" targetId="f03a-f006-14c9-252b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee9-8b5f-4227-e072" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32aa-fe2b-9d71-acd3" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e3f7-5312-c763-dd47" name="Scout Cruiser" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="fd77-1304-5b47-bf00" name="Scout Cruiser" hidden="false" targetId="a662-4fdd-eaa4-ddbc" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="287f-9376-54de-0f3b" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="be51-43f1-8a7a-90b7" name="Scout" hidden="false" targetId="cf39-2c2e-f7a4-6ca0" primary="false"/>
+        <categoryLink id="8f2e-7c09-77cf-0d88" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+        <categoryLink id="5ff6-e86d-b4ad-bc8c" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="52a5-415d-a4b1-b05d" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="b70f-98b5-6a0c-95ac" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="6ebf-d4af-38db-c3d8" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="6b45-811a-3655-d11f" name="Ship: Scout Cruiser" hidden="false" collective="false" import="true" targetId="d810-1a42-b033-dc21" type="selectionEntryGroup"/>
+        <entryLink id="8b6b-2b0d-5a92-1863" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8517-2d3e-b2b5-9a47" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4cb-c822-c20a-fa66" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a774-12b4-8411-475c" name="Crude X-Ray Lasers" hidden="false" collective="false" import="true" targetId="3e07-b46a-8d6d-f660" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc9b-f6d3-acf3-0674" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e80d-8490-ae13-45df" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="83c2-f552-159d-9ba9" name="Flak Cannons (PD)" hidden="false" collective="false" import="true" targetId="b75c-860e-23e1-da22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b51b-ac96-aff8-a80d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fab-3232-8572-b2e8" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f79b-29ae-e1ed-b96d" name="Improved Cruiser" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="c572-df3b-5107-2db7" name="Improved Cruiser" hidden="false" targetId="138c-d34f-9bb3-ba83" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b46d-14c5-8f1f-2671" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="e032-c5b1-57eb-a24b" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+        <categoryLink id="fb97-d31d-b87c-02ee" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f76f-c65e-ee42-0784" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="b706-dc9b-1bc9-262d" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="7e98-9483-5b1f-c11b" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="02fe-4628-626f-5293" name="Ship: Improved Cruiser" hidden="false" collective="false" import="true" targetId="a54e-11e6-2081-cb6b" type="selectionEntryGroup"/>
+        <entryLink id="6472-5751-b440-01df" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f8-0780-13dd-ed66" type="max"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c263-4fb2-02d2-33c1" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="498d-35c7-725d-a183" name="Crude X-Ray Lasers" hidden="false" collective="false" import="true" targetId="3e07-b46a-8d6d-f660" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c95-f584-ce33-307c" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cee-b09d-b276-18e3" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="03a4-6c07-056e-376b" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef53-2253-9661-c234" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6468-c744-a75c-d979" name="Cruiser" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="e0e7-0908-8684-45e2" name="Cruiser" hidden="false" targetId="d777-a8be-dbdd-9cb3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="12b1-1dbc-34bd-8e69" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="43e3-4d2c-85da-74fb" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+        <categoryLink id="b8b7-22b4-4f45-4f8f" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1843-14e6-263e-9855" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="724e-a679-28f4-e499" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="ad8d-31db-9d33-3316" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="352b-171a-6042-fea2" name="Ship: Cruiser" hidden="false" collective="false" import="true" targetId="4dff-9205-c540-b47c" type="selectionEntryGroup"/>
+        <entryLink id="7645-3a14-dc00-1706" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81cf-6beb-cbc1-28da" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5d7-79f9-0a00-a3b0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8e59-9d51-c4c7-74a6" name="Crude X-Ray Lasers" hidden="false" collective="false" import="true" targetId="3e07-b46a-8d6d-f660" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1f3-0b4e-5470-c86f" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e663-8900-ecac-c37e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1cb6-a32b-a604-3cbc" name="Command Cruiser" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="7cec-7572-b458-c272" name="Command Cruiser (Heavy)" hidden="false" targetId="df08-d2ac-da5a-1299" type="profile"/>
+        <infoLink id="183a-7ae4-afc4-2537" name="Flag Bridge" hidden="false" targetId="4bb1-8f4b-9d23-6b13" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="963d-dd25-c960-1a29" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="a5f0-535c-690b-a08f" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+        <categoryLink id="e54d-6c38-01a4-9d4b" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="e17d-6381-b9d0-ee56" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d88c-00ce-0864-a1b3" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="535a-2bc8-32f8-8143" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="77cf-b138-472f-57d0" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry"/>
+            <entryLink id="92a3-7a3f-e98b-f21b" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5523-7420-1e94-cd12" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="633c-44fc-68e3-e2f7" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="a70f-7bc2-582a-627f" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="2ef6-6206-1b37-e044" name="Ship: Command cruiser" hidden="false" collective="false" import="true" targetId="87de-bf93-7dd8-a4b9" type="selectionEntryGroup"/>
+        <entryLink id="0140-95a6-467c-e947" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad40-f52e-f90e-568e" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3e9-4982-8628-0cfa" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="95ec-f026-0b10-4d41" name="Crude X-Ray Lasers" hidden="false" collective="false" import="true" targetId="3e07-b46a-8d6d-f660" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6329-c41f-55d4-0f03" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c65-392b-eb42-0963" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="295a-0d7f-ffb6-34a8" name="Dimensional Flux Cannon" hidden="false" collective="false" import="true" targetId="f03a-f006-14c9-252b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa16-d426-a944-c00c" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6022-8d20-2874-c705" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c238-cc78-33b6-7d37" name="Battleship" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="a90a-a775-a3de-5672" name="Battleship (Heavy)" hidden="false" targetId="7669-7412-e03f-f6e2" type="profile"/>
+        <infoLink id="32a0-1ab1-7817-1aeb" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2406-9ee8-f4e2-5200" name="Krysa Plague" hidden="false" targetId="819c-2511-a7b5-574b" primary="false"/>
+        <categoryLink id="d5ac-b5b2-70c1-d785" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="c8ae-398e-eaf2-eecb" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
+        <categoryLink id="4f28-190c-5a51-1184" name="Battleship" hidden="false" targetId="55c1-a6f4-adb1-799d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="404c-f642-d0fe-7626" name="Troop Selection" hidden="false" collective="false" import="true" targetId="88ce-3a65-99f4-b10a" type="selectionEntryGroup"/>
+        <entryLink id="dcfe-2dc2-8b13-1506" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
+        <entryLink id="e314-0f1f-9689-6a06" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="5a89-d44f-1958-db99" name="Ship: Battleship" hidden="false" collective="false" import="true" targetId="6b32-f8ea-730a-d3af" type="selectionEntryGroup"/>
+        <entryLink id="e0d2-084e-7dd4-57c0" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" targetId="a123-812f-38ba-b91c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18bc-b69a-fa44-4855" type="max"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d48c-f145-ad49-7681" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="38b0-1062-7fb2-db78" name="Crude X-Ray Lasers" hidden="false" collective="false" import="true" targetId="3e07-b46a-8d6d-f660" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cca-c0b0-bb85-83c4" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c43-d3c7-af02-256e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="87bb-e44d-db95-85eb" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b172-d4b3-9a37-8bc7" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <infoLinks>
+    <infoLink id="9f64-5ec5-1a11-7fef" name="Beam" hidden="false" targetId="e469-269b-6261-11b1" type="rule"/>
+    <infoLink id="eb11-bb18-44a2-077b" name="Dangerous" hidden="false" targetId="db95-9ca8-3982-da5b" type="rule"/>
+    <infoLink id="5abf-4793-8621-0188" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
+    <infoLink id="eead-e385-e606-4802" name="Instantaneous" hidden="false" targetId="c96e-f030-1ecd-0d08" type="rule"/>
+    <infoLink id="9c35-c8c0-1107-c7c5" name="Shield Penetrating" hidden="false" targetId="7f97-e613-67e0-21b0" type="rule"/>
+  </infoLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="cc95-89a2-6bcf-ee46" name="Light Company" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47fc-8ccd-fb30-9130" name="Regular Company" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2006-c335-f4f2-459a" name="Shock Company" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f0f-6888-56db-b518" name="Assault Pods" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0e02-2f5c-9440-4542" name="Assault pods" hidden="false" targetId="0c51-ceaa-f4aa-ba4b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3e07-b46a-8d6d-f660" name="Crude X-Ray Lasers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8a7f-7bb4-ee1a-3f41" name="Crude X-Ray Lasers" hidden="false" targetId="a2e9-9bc4-fe57-efd5" type="profile"/>
+        <infoLink id="0bfd-ae2c-e319-689a" name="Dangerous" hidden="false" targetId="9267-b048-eda0-3858" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7b8a-cb50-9146-ea96" name="Beam" hidden="false" targetId="0e82-fd26-481a-dcd2" type="profile"/>
+        <infoLink id="a731-1cfd-1e0e-e38c" name="Shield Penetrating" hidden="false" targetId="d339-ccb4-bf7b-4791" type="profile"/>
+        <infoLink id="c9d0-d182-55ad-9768" name="Instantaneous" hidden="false" targetId="263a-dd99-359f-06a3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a123-812f-38ba-b91c" name="Slug Throwers (Ord)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8690-f3d2-f171-0786" name="Slug Throwers (Ord)" hidden="false" targetId="043b-6f1b-b2c7-4338" type="profile"/>
+        <infoLink id="9bd6-9a4f-f37d-1c80" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b75c-860e-23e1-da22" name="Flak Cannons (PD)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3227-dd04-b9ae-fbef" name="Flak Cannons (PD)" hidden="false" targetId="d00d-20f2-b417-2b83" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f03a-f006-14c9-252b" name="Dimensional Flux Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9f3e-6027-4b90-8c8e" name="Dimensional Flux Cannon" hidden="false" targetId="f699-4d92-5f23-b414" type="profile"/>
+        <infoLink id="7ae2-d1b3-7418-2647" name="Dangerous" hidden="false" targetId="9267-b048-eda0-3858" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e18a-db06-a529-70d3" name="Beam" hidden="false" targetId="0e82-fd26-481a-dcd2" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="d18a-e836-62d0-e4fd" name="Ship: " hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7015-ff64-1a53-88c0" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7796-611b-fddb-fc1a" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="3141-b2f4-56d5-4c4e" name=" (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="1b18-b0d0-852a-ecd9" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c438-b531-052f-05e6" name=" (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="465a-3383-8176-01a6" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="92b2-96de-1cfa-822a" name=" (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="c692-f33e-bd5d-bbe9" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b9ea-377d-8875-fd43" name="Strikecraft" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="4878-cab2-f390-1973" name="Assault Pods" hidden="false" collective="false" import="true" targetId="0f0f-6888-56db-b518" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="88ce-3a65-99f4-b10a" name="Troop Selection" hidden="true" collective="true" import="true">
+      <modifiers>
+        <modifier type="increment" field="8ba5-167e-7418-72c6" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f0f-6888-56db-b518" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4878-cab2-f390-1973" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba5-167e-7418-72c6" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="fd06-b432-4858-8988" name="Light Company" hidden="false" collective="false" import="true" targetId="cc95-89a2-6bcf-ee46" type="selectionEntry"/>
+        <entryLink id="e8f0-f51c-24ef-c5db" name="Regular Company" hidden="false" collective="false" import="true" targetId="47fc-8ccd-fb30-9130" type="selectionEntry"/>
+        <entryLink id="f0f0-134b-3f85-8162" name="Shock Company" hidden="false" collective="false" import="true" targetId="2006-c335-f4f2-459a" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d810-1a42-b033-dc21" name="Ship: Scout Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="7a35-29a8-b743-35b4">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d3e1-9192-5762-d0d3" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7675-c90c-5b08-6159" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="0905-30f4-59dd-bdd2" name="Scout Cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="3ed1-7ae9-ff5a-d126" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="27.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7a35-29a8-b743-35b4" name="Scout Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="2f77-641a-dd42-6e44" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="35a4-1da9-be2c-422e" name="Scout Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="8d00-99b4-8fdf-e0d0" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="38.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8b94-70c5-4b1d-c811" name="Ship: Lancer" hidden="false" collective="false" import="true" defaultSelectionEntryId="64de-12b8-71b1-f4de">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8eee-abde-deae-a4ad" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5ee1-1715-f690-a721" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b3f5-60f8-e366-4e00" name="Lancer (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="b5a7-f277-87de-fbdc" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="29.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="64de-12b8-71b1-f4de" name="Lancer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="6e11-06ca-ec7d-8bfc" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="34.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b93b-8591-542b-6277" name="Lancer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="aba4-57be-bd1d-039e" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="41.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a54e-11e6-2081-cb6b" name="Ship: Improved Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="eabf-539f-c83d-3b36">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="099f-f672-2c9e-ae52" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="94f0-9dcd-1aa1-fc14" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="df35-a04a-16ef-c48e" name="Improved Cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="7b4a-3576-dd3f-dced" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="38.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eabf-539f-c83d-3b36" name="Improved Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="abad-0785-443e-1e61" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="44.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="892d-6a33-ff20-403e" name="Improved Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="63ed-29d2-63ad-aca3" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="54.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3759-1c9f-9e8d-3495" name="Ship: Heavy Frigate" hidden="false" collective="false" import="true" defaultSelectionEntryId="deff-23c5-487d-772f">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ccee-d276-2c67-4575" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7af5-cd18-7ed0-00db" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="5a6a-a016-bd91-2ada" name="Heavy Frigate (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="7941-1b3a-ced7-179b" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="21.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="deff-23c5-487d-772f" name="Heavy Frigate (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="71c5-8dc3-8177-54fe" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5e1e-1e08-dab2-082d" name="Heavy Frigate (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="0baf-9269-5494-3135" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a16d-c7b7-5814-4fbb" name="Ship: Heavy Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="860c-a621-2cef-8466">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e49f-af33-1a45-6816" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dba3-0ed5-6d81-9a9f" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="17fa-03ff-0e5c-4da1" name="Heavy Destroyer (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="2f00-e6a1-4a4a-8676" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="860c-a621-2cef-8466" name="Heavy Destroyer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="c1e5-a970-7d64-717f" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7a99-f344-b0c7-b014" name="Heavy Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="282d-120c-6943-a81e" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="42.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f29f-b3f6-1ada-0b91" name="Ship: Frigate" hidden="false" collective="false" import="true" defaultSelectionEntryId="caa6-d93c-07f3-af8b">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c42-81b6-5fa2-f527" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2969-c98a-6628-7f73" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="af1d-1f08-9cc7-0358" name="Frigate (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="453d-2e3a-55ad-f2bd" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="19.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="caa6-d93c-07f3-af8b" name="Frigate (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="f436-41b1-1c33-1523" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9e24-82b8-d50c-048e" name="Frigate (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="8a25-b76d-f845-cf50" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="26.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f0af-04d0-e1bd-1aa2" name="Ship: Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="61a1-38a9-ed03-a4dc">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b883-ff9d-c083-dae7" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a1d1-2613-ee98-7e1a" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="49c3-ae62-c712-c138" name="Destroyer (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="74d6-7bb5-a2e7-1198" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="61a1-38a9-ed03-a4dc" name="Destroyer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="1f6f-e5d0-a04e-99ce" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="29.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a43b-58ff-38cc-c7cb" name="Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="089b-6590-c95b-41e2" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4dff-9205-c540-b47c" name="Ship: Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="4043-8d40-8eec-8691">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1117-3392-44a3-70c5" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b6c9-8f7d-689d-4e3b" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="f2b2-bc03-b426-391b" name="Cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="f2c3-9a0a-059d-d1c0" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="31.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4043-8d40-8eec-8691" name="Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="43d3-ed16-12a1-fca2" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="37.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d438-5509-893e-ecb7" name="Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="d6aa-8188-8565-2750" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="43.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="87de-bf93-7dd8-a4b9" name="Ship: Command cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="dcda-8bd0-6649-105a">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d6cd-cb2a-fbcf-1a94" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="61eb-6af8-58f1-d890" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="3d23-f9fd-accb-cecb" name="Command cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="06e3-28da-1c0e-d38c" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="48.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dcda-8bd0-6649-105a" name="Command cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="1a65-773f-2feb-1142" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="56.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1ab9-5dcd-9fc8-3a1c" name="Command cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="6c77-70ed-dfec-6d4a" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="68.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6b32-f8ea-730a-d3af" name="Ship: Battleship" hidden="false" collective="false" import="true" defaultSelectionEntryId="afe4-df6a-cf25-f858">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="425c-74d7-08ed-e759" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2bb9-8762-1eda-e6f0" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="c68d-6b5c-bb67-889a" name="Battleship (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="ac4c-bca0-91fc-4d18" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="48.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="afe4-df6a-cf25-f858" name="Battleship (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="461d-fc49-5eb2-092f" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="56.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7c0a-18ca-2d1d-375d" name="Battleship (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="2ccf-3850-6173-02d4" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="68.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2dba-0424-e221-ca92" name="Ship: Attack Boats" hidden="false" collective="false" import="true" defaultSelectionEntryId="01d0-ec23-4e83-7565">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3fc0-513b-57b9-1997" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b70-fc7f-e374-56ce" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="8143-3efd-9e07-9657" name="Attack Boats (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="7f8b-7948-cc75-50d6" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="18.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="01d0-ec23-4e83-7565" name="Attack Boats (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="e709-3b31-c2f7-edfc" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fd86-7824-03d6-e162" name="Attack Boats (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="5048-d168-1df7-f2ee" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a288-8912-9620-7c12" name="Ship: Assault Ship (4 slots)" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e9c-a48f-4213-b3f4">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="479a-37fb-60bf-5791" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="770b-700d-422d-bfa6" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="9376-df62-9aa9-f7fa" name="Assault Ship (4 slots) (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="9e2c-2726-cd52-d825" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8e9c-a48f-4213-b3f4" name="Assault Ship (4 slots) (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="4ad4-9a91-6289-d204" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="18.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2288-1fff-2f40-6f92" name="Assault Ship (4 slots) (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="8849-4268-17ad-e019" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="21.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="30ef-3995-7220-60bb" name="Ship: Advanced Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="215f-f64f-0c48-fef3">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2035-cd4c-440b-c85e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9f38-1e57-5c55-f6c5" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="ce3a-7fa2-1390-3c56" name="Advanced Destroyer (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="e31c-8c44-3edb-7270" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="215f-f64f-0c48-fef3" name="Advanced Destroyer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="e3ea-e7de-0935-f5eb" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="63f2-2f1d-8e0c-3f43" name="Advanced Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="4016-b629-2e02-6dae" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="36.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="aa2f-6cb3-3bb3-6cd3" name="Strikecraft: Assault Ship (4 Slots)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc88-10e9-a587-f706" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="1a18-e841-a293-7e48" name="Strikecraft" hidden="false" collective="false" import="true" targetId="b9ea-377d-8875-fd43" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="a662-4fdd-eaa4-ddbc" name="Scout Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">5</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d777-a8be-dbdd-9cb3" name="Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">5</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">
+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="138c-d34f-9bb3-ba83" name="Improved Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">6</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7669-7412-e03f-f6e2" name="Battleship (Heavy)" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">7</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">5+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="df08-d2ac-da5a-1299" name="Command Cruiser (Heavy)" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">7</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7c2b-98bb-e392-a067" name="Destroyer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">3</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">9+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0233-3707-c9e3-2fc8" name="Heavy Destroyer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">4</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">7+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ab72-f2fc-e4ee-a8eb" name="Advanced Destroyer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">4</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">8+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6465-4cf6-26cd-e22a" name="Lancer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">3</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1da6-301f-a2f1-f3a3" name="Attack Boats" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">3</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">5</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="29d9-15e5-8549-eda3" name="Frigate" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">3</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4ef7-1467-4645-07fa" name="Heavy Frigate" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">3</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c20-402a-8ac0-649a" name="Assault Ship (4 Slots)" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">2</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d00d-20f2-b417-2b83" name="Flak Cannons (PD)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">4&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="043b-6f1b-b2c7-4338" name="Slug Throwers (Ord)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/0</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Dumb Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f699-4d92-5f23-b414" name="Dimensional Flux Cannon" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-3</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Dangerous 2, Beam 6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a2e9-9bc4-fe57-efd5" name="Crude X-Ray Lasers" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+      <characteristics>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">7+/+3</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Beam 1, Shield Penetrating, Instantaneous, Dangerous 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dec9-bc27-db3e-1108" name="Disorganized rabble" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
+      <characteristics>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">The Krysa are highly disorganized and so barely follow any plans set out before battle. Instead of having vanguard groups, before the game starts every battlegroup must roll a d10. On a roll of an 8+ they become a vanguard group which will come in in the vanguard deployment. The rest will come in in the combat section.
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="41f0-993f-4092-0ef8" name="Constant backstabbing" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
+      <characteristics>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">The Krysa face constant mutinies and power struggles within their ranks. At the beginning of every activation a battlegroup must roll a d10. On an 8+ the battlegroup commander has been murdered and a new commander is attempting to take charge. No special orders can be done this activation by this commander.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5609-88e4-3394-4e4b" name="Shield Overload" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
+      <characteristics>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Krysa Shields are able to be overloaded with power when they go down to be brought back to life. Once a ships shields go down, before they take any hits to the hull the player may choose to roll a d10. On a 7+ the shields come back to full strength. On a fail the ship goes critical and explodes.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

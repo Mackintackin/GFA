@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc7-8c1e-1373-40ec" name="SINO-Russian Pact" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="edc7-8c1e-1373-40ec" name="SINO-Russian Pact" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a0b3-5e5e-0b6a-3ddc" name="Corvette" hidden="false" collective="false" import="true" targetId="99e6-d9c2-9249-abec" type="selectionEntry"/>
     <entryLink id="1f8e-c6ea-8743-626f" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="be32-fb14-c50e-41cb" type="selectionEntry"/>
@@ -268,6 +268,7 @@
     <selectionEntry id="1c61-f1af-ecbc-6290" name="Battleship" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="65d3-ae2f-163f-e98c" name="Battleship" hidden="false" targetId="b32e-6ed7-8b2c-5aa0" type="profile"/>
+        <infoLink id="1c93-6013-3b12-0d32" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5337-1085-ece2-6e21" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
@@ -327,6 +328,7 @@
             <modifier type="append" field="name" value="3"/>
           </modifiers>
         </infoLink>
+        <infoLink id="78b5-5d9f-e618-1710" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5c0c-cef4-4483-caa9" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
@@ -740,6 +742,7 @@
             <modifier type="append" field="name" value="1"/>
           </modifiers>
         </infoLink>
+        <infoLink id="17a6-fcd2-f506-1c24" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b251-9567-9956-b799" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>

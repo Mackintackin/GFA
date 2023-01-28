@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d5c0-7397-f4c5-4bff" name="Faction Trait: Nosterov Covens" hidden="false" collective="false" import="true" targetId="27aa-c01f-2d3e-a5e3" type="selectionEntry">
       <categoryLinks>
@@ -127,6 +127,9 @@
       <infoLinks>
         <infoLink id="29e1-3d4b-b207-06f0" name="Fighter Aces" hidden="false" targetId="d937-5fbd-c53f-204b" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8442-3e91-d6bf-c413" name="Bombers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -497,6 +500,7 @@
       <infoLinks>
         <infoLink id="85c2-646b-3173-5fb4" name="Battleship" hidden="false" targetId="409a-110a-38a3-be07" type="profile"/>
         <infoLink id="2d12-b094-a988-9d9e" name="Fear" hidden="false" targetId="d983-3d7d-25e2-5260" type="profile"/>
+        <infoLink id="c6eb-7e21-1ccb-2f08" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5617-3abe-727c-923c" name="Nosterov Covens" hidden="false" targetId="0b53-ae75-8c67-2771" primary="false"/>
@@ -557,6 +561,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="709d-3729-7821-aab1" name="Fear" hidden="false" targetId="d983-3d7d-25e2-5260" type="profile"/>
+        <infoLink id="415b-862a-8daa-fd61" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7c6a-ae05-205a-0ab5" name="Nosterov Covens" hidden="false" targetId="0b53-ae75-8c67-2771" primary="false"/>
@@ -613,6 +618,7 @@
             <modifier type="append" field="name" value="3"/>
           </modifiers>
         </infoLink>
+        <infoLink id="8689-76ff-bf8c-4e37" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8e68-31d4-526f-3060" name="Nosterov Covens" hidden="false" targetId="0b53-ae75-8c67-2771" primary="false"/>

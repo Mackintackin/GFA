@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3eef-3507-3c86-08f7" name="Corvette" hidden="false" collective="false" import="true" targetId="8755-e250-9d76-0729" type="selectionEntry"/>
     <entryLink id="534b-6a98-4d43-36b7" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="1faf-7623-b9be-5ea7" type="selectionEntry"/>
@@ -250,6 +250,7 @@
     <selectionEntry id="eea7-c116-10e5-eea6" name="Battleship" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="f896-0528-7aba-dcb2" name="Battleship" hidden="false" targetId="ba5b-fd1e-7840-89df" type="profile"/>
+        <infoLink id="7edf-8c19-d8e3-cca3" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cb25-c001-5c7d-962a" name="Empire of the Rising Sun" hidden="false" targetId="cfa8-33a3-9ab9-04a8" primary="false"/>
@@ -338,6 +339,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="92d9-47e6-d327-a28f" name="Catapults" hidden="false" targetId="3021-daed-51fc-24c4" type="profile"/>
+        <infoLink id="0c2a-2091-50c5-f933" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1179-2caf-09db-4dd7" name="Empire of the Rising Sun" hidden="false" targetId="cfa8-33a3-9ab9-04a8" primary="false"/>
@@ -650,7 +652,7 @@
         <entryLink id="945b-1fea-4062-bdd4" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="73c9-c48f-c42b-3b4b" name="Troop Selection" hidden="false" collective="false" import="true" targetId="3df3-45f4-0d61-9204" type="selectionEntryGroup"/>
         <entryLink id="719d-a0dc-3ce4-360e" name="Ship: Assault Ship" hidden="false" collective="false" import="true" targetId="3742-f796-9216-4cdf" type="selectionEntryGroup"/>
-        <entryLink id="e6ab-f987-31f9-53fa" name="Strikecraft Assault Ship " hidden="false" collective="false" import="true" targetId="bab8-2893-23fd-5546" type="selectionEntryGroup"/>
+        <entryLink id="e6ab-f987-31f9-53fa" name="Strikecraft Assault Ship (6 Slots)" hidden="false" collective="false" import="true" targetId="c14a-0306-a800-1dd7" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -753,6 +755,7 @@
       <infoLinks>
         <infoLink id="f6da-495b-2117-461e" name="T3 Battleship" hidden="false" targetId="bea5-361d-830f-d76a" type="profile"/>
         <infoLink id="d782-9c50-484e-9dce" name="Multi-Spectrum Shielding" hidden="false" targetId="1315-42b2-e854-61f9" type="profile"/>
+        <infoLink id="d330-a300-8879-76bf" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a35a-ca8f-72bd-6839" name="Empire of the Rising Sun" hidden="false" targetId="cfa8-33a3-9ab9-04a8" primary="false"/>
@@ -1503,16 +1506,11 @@
         <entryLink id="64e5-8312-5685-74ec" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d36d-a84e-80d6-c8ba" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="60e4-5274-2791-d24e" name="Strikecraft Light Cruiser (2 Slots)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="60e4-5274-2791-d24e" name="Strikecraft Light Cruiser (2 or 4 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="38a6-5fba-ced9-7fd0" value="2.0">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b863-a60e-1921-5f01" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

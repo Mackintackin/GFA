@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="811b-5dbf-9a35-8671" name="Hunter Squadron" hidden="false" collective="false" import="true" targetId="007b-16bf-bf6a-f04c" type="selectionEntry"/>
     <entryLink id="4331-6d3c-1187-5839" name="Corvette" hidden="false" collective="false" import="true" targetId="1563-15e1-1511-6e93" type="selectionEntry"/>
@@ -26,6 +26,7 @@
     <entryLink id="5618-441f-bdc8-e1ce" name="Lancer" hidden="false" collective="false" import="true" targetId="ad30-6df5-fdda-2559" type="selectionEntry"/>
     <entryLink id="d121-0915-f0e7-5792" name="Gun Cruiser" hidden="false" collective="false" import="true" targetId="62c8-1584-b972-2647" type="selectionEntry"/>
     <entryLink id="5e1c-933d-0455-1156" name="Grand Cruiser" hidden="false" collective="false" import="true" targetId="d9d9-73f1-9c60-c233" type="selectionEntry"/>
+    <entryLink id="7375-ee7a-46ed-5f7d" name="Dreadnought" hidden="false" collective="false" import="true" targetId="e877-c53a-37ca-ffeb" type="selectionEntry"/>
   </entryLinks>
   <infoLinks>
     <infoLink id="848e-73ba-3241-a269" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
@@ -520,6 +521,7 @@
             <modifier type="append" field="name" value="9"/>
           </modifiers>
         </infoLink>
+        <infoLink id="f75a-bb96-bea9-7b62" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8209-7fcb-fbe4-50fd" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
@@ -583,6 +585,7 @@
             <modifier type="append" field="name" value="9"/>
           </modifiers>
         </infoLink>
+        <infoLink id="c693-d7ff-ae26-8504" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3846-da57-ae27-0d55" name="Hanger Medium" hidden="false" targetId="3db8-dec1-a0d0-6143" primary="false"/>
@@ -746,6 +749,7 @@
             <modifier type="append" field="name" value="9"/>
           </modifiers>
         </infoLink>
+        <infoLink id="d14e-39a6-0e02-4aa7" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a880-dc29-4319-4793" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
@@ -1013,6 +1017,52 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ac-f785-558a-0f7a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc0-70c7-f8a8-2dfb" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e877-c53a-37ca-ffeb" name="Dreadnought" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="1893-58e2-867e-053e" name="Dreadnought" hidden="false" targetId="c135-de01-2be1-d3ec" type="profile"/>
+        <infoLink id="acbb-8eee-589d-9222" name="Shielded Carapace" hidden="false" targetId="ff5a-3984-e7ab-7b60" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="9"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0e83-5a57-ae49-1084" name="Sluggish" hidden="false" targetId="ac08-1a37-1e1e-88b8" type="profile"/>
+        <infoLink id="7d52-cb94-7677-3a9c" name="Armored Reactor Core" hidden="false" targetId="34bb-a9f7-0e05-2123" type="profile"/>
+        <infoLink id="685a-4e39-2055-c363" name="Flag Bridge" hidden="false" targetId="4bb1-8f4b-9d23-6b13" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cfd5-f42b-99a0-97d9" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
+        <categoryLink id="fb67-f055-8213-37af" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="b1ba-53c7-dbbb-c67c" name="Principality of Hissan" hidden="false" targetId="d6ca-f98d-bb19-dd34" primary="false"/>
+        <categoryLink id="1fea-40ac-1a47-c1f0" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
+        <categoryLink id="cdf6-8736-3921-1e1d" name="Dreadnought" hidden="false" targetId="db64-bc52-ef6a-cf57" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e993-0722-b466-da1a" name="Heavy Fusion Cannon" hidden="false" collective="false" import="true" targetId="85fc-4d6a-5474-91ca" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67f6-87b3-3a35-80a8" type="max"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1303-925e-9a11-fabf" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="504c-20bd-ac81-9f0b" name="Penetrator Rounds (Ord)" hidden="false" collective="false" import="true" targetId="e16c-4724-88a0-c6e1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="866b-c695-d2fe-25a6" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9b0-78af-1407-ab2a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0a30-833f-d3b1-ec7d" name="Ship: Dreadnought" hidden="false" collective="false" import="true" targetId="f659-a4c3-fac9-874e" type="selectionEntryGroup"/>
+        <entryLink id="ec76-9707-2a86-5061" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="16ce-aab8-dc55-6bf6" name="Troop Selection" hidden="false" collective="false" import="true" targetId="ca27-9dbf-77d9-147c" type="selectionEntryGroup"/>
+        <entryLink id="ef6b-b778-fc7a-76bf" name="Photon Torpedo (Ord)" hidden="false" collective="false" import="true" targetId="0f66-ef76-e656-ffe7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1198-6fb4-c6c6-c56b" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2c6-3899-3052-da9a" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1741,6 +1791,38 @@
         <entryLink id="0b1b-0017-b2fd-d8e4" name="Strikecraft" hidden="false" collective="false" import="true" targetId="7dc2-e8d1-73a9-3d79" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="f659-a4c3-fac9-874e" name="Ship: Dreadnought" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6e12-c6ea-a579-f0be" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2259-3251-ab9b-7dba" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="306b-b2ad-a73e-9eec" name="Dreadnought (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="f091-c628-97f9-500a" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="84.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2a78-8833-d92a-6f2e" name="Dreadnought (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="ed03-af6e-383d-32ee" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="98.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a86d-3d5c-741b-ec22" name="Dreadnought (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="9ae1-0b9e-ff0f-30ce" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="119.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="d55d-48db-71d7-71ad" name="Hunter Squadrons" hidden="false">
@@ -2022,6 +2104,14 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">5+/0</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="c135-de01-2be1-d3ec" name="Dreadnought" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">8</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">4+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
