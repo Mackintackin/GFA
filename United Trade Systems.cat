@@ -1071,6 +1071,7 @@
         <entryLink id="62d5-7e76-feec-72fb" name="Interceptor" hidden="false" collective="false" import="true" targetId="64e1-11c5-a6a4-8211" type="selectionEntry"/>
         <entryLink id="0a34-6755-90ef-0d1a" name="Interceptor Ace" hidden="false" collective="false" import="true" targetId="91b1-61e9-2a90-ddb3" type="selectionEntry"/>
         <entryLink id="82fd-5549-50b3-3fab" name="Bombers" hidden="false" collective="false" import="true" targetId="af30-a99f-a209-a44c" type="selectionEntry"/>
+        <entryLink id="3261-e2a2-e36d-3ed3" name="Dropship" hidden="false" collective="false" import="true" targetId="3b0d-304d-c623-3236" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="172b-6a6e-f285-68b7" name="Troop Selection" hidden="true" collective="true" import="true">
