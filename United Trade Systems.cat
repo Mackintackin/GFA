@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="35aa-e208-20bc-8660" name="United Trade Systems" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="35aa-e208-20bc-8660" name="United Trade Systems" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="fce2-3224-f89d-68d9" name="Faction: United Trade Systems" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -29,6 +29,8 @@
     <entryLink id="a194-5ee4-1eed-1f02" name="Dreadnought" hidden="false" collective="false" import="true" targetId="17c1-52c5-96d4-664f" type="selectionEntry"/>
     <entryLink id="5a6e-053e-9cd5-334b" name="Mine Layer" hidden="false" collective="false" import="true" targetId="1a05-87d5-31f5-2df5" type="selectionEntry"/>
     <entryLink id="e078-d017-d60c-5b7c" name="Trade Station (12 Slots) (EW Lvl1)" hidden="false" collective="false" import="true" targetId="0917-a502-fd1c-cf72" type="selectionEntry"/>
+    <entryLink id="7f34-2342-8186-b27c" name="Mine Layer" hidden="false" collective="false" import="true" targetId="1a05-87d5-31f5-2df5" type="selectionEntry"/>
+    <entryLink id="2f21-3c14-ae11-e90c" name="Trade Station (12 Slots) (EW Lvl1)" hidden="false" collective="false" import="true" targetId="0917-a502-fd1c-cf72" type="selectionEntry"/>
   </entryLinks>
   <infoLinks>
     <infoLink id="7cb8-85aa-5cb3-284e" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
@@ -461,9 +463,10 @@
         <infoLink id="b3fa-25fd-c3ab-ac96" name="Battleship (Heavy)" hidden="false" targetId="7ae1-82b0-e9f0-e8ac" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d1fd-99b6-c75a-0120" name="New CategoryLink" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="true"/>
+        <categoryLink id="d1fd-99b6-c75a-0120" name="New CategoryLink" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
         <categoryLink id="a785-14b6-4933-7472" name="United Trade Systems" hidden="false" targetId="fc56-972d-2b0a-f02c" primary="false"/>
         <categoryLink id="7c54-4730-849f-f0f9" name="Battleship" hidden="false" targetId="55c1-a6f4-adb1-799d" primary="false"/>
+        <categoryLink id="5358-ca6a-7a3e-c2d2" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ce94-1b12-eb12-01f0" name="Ship: Battleship" hidden="false" collective="false" import="true" targetId="84df-0bf3-94f4-9f02" type="selectionEntryGroup"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6f71-fe3a-ae32-8a44" name="Quintek" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6f71-fe3a-ae32-8a44" name="Quintek" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="ec32-c933-2df0-bfe5" name="Faction Trait: Quin-Tek" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -25,6 +25,7 @@
     <entryLink id="7fce-b66f-46f8-f9f9" name="Cruiser" hidden="false" collective="false" import="true" targetId="d6e5-1777-b770-7b5b" type="selectionEntry"/>
     <entryLink id="e0e5-4655-f69a-59d1" name="Battlecruiser" hidden="false" collective="false" import="true" targetId="070a-6496-5137-01bc" type="selectionEntry"/>
     <entryLink id="2610-0dbd-2a8f-1d2c" name="Command Cruiser" hidden="false" collective="false" import="true" targetId="8552-757b-df70-272b" type="selectionEntry"/>
+    <entryLink id="7a93-78d2-2605-7df5" name="Carrier (12 Slots)" hidden="false" collective="false" import="true" targetId="d131-ea1f-2549-7044" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="e7ab-9639-0ffd-45cc" name="Crystal Hull" hidden="false">
