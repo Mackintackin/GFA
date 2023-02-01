@@ -257,7 +257,6 @@
         <infoLink id="0ccd-2efd-a94b-1ec1" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="41b7-ffac-7dd2-358b" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
         <categoryLink id="2fd6-4888-1451-144c" name="Frigate" hidden="false" targetId="9a6f-a8b9-4ec1-f0cb" primary="false"/>
         <categoryLink id="430c-bfdb-4d75-5e22" name="United Trade Systems" hidden="false" targetId="fc56-972d-2b0a-f02c" primary="false"/>
         <categoryLink id="2b1b-3738-c95c-8292" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
