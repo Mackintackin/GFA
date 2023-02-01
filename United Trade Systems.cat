@@ -215,6 +215,7 @@
         </entryLink>
         <entryLink id="2a44-794a-7d49-91ba" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="784e-348a-ed91-8dd6" name="Strikecraft Guardian Ship (6 Slots)" hidden="false" collective="false" import="true" targetId="054f-5253-a32b-7ba6" type="selectionEntryGroup"/>
+        <entryLink id="f5b1-aa91-0803-464e" name="Troop Selection" hidden="false" collective="false" import="true" targetId="172b-6a6e-f285-68b7" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -578,6 +579,7 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="482a-6cc1-fecd-d01a" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="0d53-24b1-44c2-ba70" name="Troop Selection" hidden="false" collective="false" import="true" targetId="172b-6a6e-f285-68b7" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -671,6 +673,7 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da95-245a-d857-b2d2" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="5cc2-b6e0-781b-da49" name="Troop Selection" hidden="false" collective="false" import="true" targetId="172b-6a6e-f285-68b7" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
