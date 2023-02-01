@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="31" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="32" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -172,6 +172,24 @@
     <categoryEntry id="819c-2511-a7b5-574b" name="Krysa Plague" hidden="false"/>
     <categoryEntry id="e618-c037-9cf3-5380" name="Guardian" hidden="false"/>
     <categoryEntry id="0b94-f752-e2c8-6797" name="Supply Ship" hidden="false"/>
+    <categoryEntry id="ecf2-2176-9f95-0948" name="Station" hidden="false">
+      <modifiers>
+        <modifier type="set" field="a660-d452-b24a-a094" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f11-fae2-9c59-a140" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e62e-eaf7-0a7a-8ede" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a660-d452-b24a-a094" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
@@ -1282,6 +1300,15 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       </modifiers>
       <description>The moment that a ship enters the range of the minefield, they take a shot from the minefield. The number of shots they take is the level of Thrust their battlegroup is using. Every turn that they remain in range of the field they take shot at the end of their activation. The roll to hit for mines is not effected by any modifiers such as enemy thrust.</description>
     </rule>
+    <rule id="253b-2464-1105-7abc" name="ADS Attack X" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="124a-f4c1-a048-8fcc" name="Ablative Armour" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2130,6 +2157,23 @@ Note that the base of 3 ships acts as a single ship when they are boarded.</char
       </modifiers>
       <characteristics>
         <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">The moment that a ship enters the range of the minefield, they take a shot from the minefield. The number of shots they take is the level of Thrust their battlegroup is using. Every turn that they remain in range of the field they take shot at the end of their activation. The roll to hit for mines is not effected by any modifiers such as enemy thrust.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bf89-5dfe-1993-78f9" name="ADS Attack X" hidden="true" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">These weapons hamper enemy ADS systems by overloading them with debris and heat signals making them less effective against targets. Ships hit by this have &apos; X&apos; to their ads rolls until the shooters next activation. If the weapon is an aura such as the UTS minefield. Then while any ships from a battlegroup are within the aura, the full battlegroup is affected.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4fad-3a2f-efcf-91e0" name="Station" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">These ships are actually Large stations. They cannot be with within battlegroups with other ships and are always independent.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

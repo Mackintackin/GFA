@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9380-ca18-59b9-a0b1" name="Krysa Plague" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9380-ca18-59b9-a0b1" name="Krysa Plague" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="b124-3e9c-c1f8-7962" name="Faction Trait: Krysa Plague" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1169,7 +1169,7 @@
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">7+/+3</characteristic>
-        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front 180</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Beam 1, Shield Penetrating, Instantaneous, Dangerous 2</characteristic>
       </characteristics>
     </profile>

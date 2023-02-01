@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="35aa-e208-20bc-8660" name="United Trade Systems" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="35aa-e208-20bc-8660" name="United Trade Systems" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="fce2-3224-f89d-68d9" name="Faction: United Trade Systems" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -33,6 +33,7 @@
     <infoLink id="381e-7e59-3f6e-f29a" name="Dumb Fire" hidden="false" targetId="b42e-be6f-5017-fcb4" type="rule"/>
     <infoLink id="0c96-5b9c-fd57-3840" name="Corrosive" hidden="false" targetId="fe61-46d3-7b8c-15ee" type="rule"/>
     <infoLink id="9182-b555-0471-9357" name="Penetration Aid" hidden="false" targetId="b212-432a-92f9-eb8c" type="rule"/>
+    <infoLink id="de48-b228-3420-fbe6" name="ADS Attack X" hidden="false" targetId="253b-2464-1105-7abc" type="rule"/>
   </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2f2b-9c29-da84-b5f5" name="Fighters" hidden="false" collective="false" import="true" type="upgrade">
@@ -579,6 +580,99 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1a05-87d5-31f5-2df5" name="Mine Layer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a51b-4ca8-4140-2414" name="Mine Layer" hidden="false" targetId="3cc2-d353-688c-85ba" type="profile"/>
+        <infoLink id="6000-4dde-4651-526c" name="Mine Layer" hidden="false" targetId="436d-7b8e-f52c-8936" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="333e-87e5-46a0-5c73" name="United Trade Systems" hidden="false" targetId="fc56-972d-2b0a-f02c" primary="false"/>
+        <categoryLink id="87c9-b9bb-8b14-96a5" name="Destroyer" hidden="false" targetId="aaf5-53cb-dd7a-25e1" primary="false"/>
+        <categoryLink id="42f0-87e1-0d4e-bcf9" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3272-7847-7b06-d140" name="Ship: Mine Layer" hidden="false" collective="false" import="true" targetId="aa11-78e3-37d2-3d4f" type="selectionEntryGroup"/>
+        <entryLink id="42c6-2ff6-a676-47c7" name="Hyden Warhead" hidden="false" collective="false" import="true" targetId="eb0e-b3d1-416a-f9be" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e971-27a2-6e4f-6010" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e9-fddf-2689-91c5" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9046-28eb-405b-6bad" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="9f29-3e6c-bf3e-27d9" name="Shatterfield Mines" hidden="false" collective="false" import="true" targetId="55d6-6cca-7bde-73b7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8882-e1ef-1c10-ca9f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="55d6-6cca-7bde-73b7" name="Shatterfield Mines" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="39b0-b350-9438-2bf1" name="Shatterfield Mines" hidden="false" targetId="75cc-56d8-3246-bc64" type="profile"/>
+        <infoLink id="2028-92e3-3cbf-a8a5" name="ADS Attack X" hidden="false" targetId="bf89-5dfe-1993-78f9" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0917-a502-fd1c-cf72" name="Trade Station (12 Slots) (EW Lvl1)" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="70ce-bf7d-fbd7-1112" name="Structure" hidden="false" targetId="3ace-703a-281e-96bc" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5064-ecc3-371c-370e" name="Indestructible" hidden="false" targetId="6672-cc66-bce4-a5b2" type="profile"/>
+        <infoLink id="bb28-b903-bdad-e0f9" name="Station" hidden="false" targetId="4fad-3a2f-efcf-91e0" type="profile"/>
+        <infoLink id="203f-2f49-9db1-7338" name="True Carrier" hidden="false" targetId="1aaa-ac73-61a1-0b6a" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a570-2a46-b0fc-baad" name="Launch " hidden="false" targetId="209b-2acd-8dac-0cf7" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="15c3-ccb0-c375-eda9" name="Trade Station (12 Slots) (EW Lvl1)" hidden="false" targetId="0eb9-1654-4056-52ee" type="profile"/>
+        <infoLink id="b191-9271-dc4a-eb36" name="Fleet Repair Shop" hidden="false" targetId="4aea-bbfd-1add-375d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5d20-62b4-6033-37dd" name="United Trade Systems" hidden="false" targetId="fc56-972d-2b0a-f02c" primary="false"/>
+        <categoryLink id="d764-cefe-6f27-316f" name="Station" hidden="false" targetId="ecf2-2176-9f95-0948" primary="false"/>
+        <categoryLink id="d552-3157-1979-013b" name="New CategoryLink" hidden="false" targetId="b09d-d647-606f-39d3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6aa6-2be8-6c37-a8c9" name="Ship: Trade Station (12 Slots) (EW Lvl1)" hidden="false" collective="false" import="true" targetId="bec9-17a3-4699-9ec2" type="selectionEntryGroup"/>
+        <entryLink id="9137-3ddb-60bd-dc4f" name="Hyden Warhead" hidden="false" collective="false" import="true" targetId="eb0e-b3d1-416a-f9be" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89fe-6adf-3de6-c8d7" type="max"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d0-e0fd-9cad-9868" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0245-094b-f1ed-e3a8" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="a929-7b13-5939-638e" name="Point Defence Guns (PD)" hidden="false" collective="false" import="true" targetId="0d8a-03a1-7580-4a41" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d501-15eb-f7a3-4585" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da95-245a-d857-b2d2" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="804f-b800-acd5-3799" name="Ship: Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="db72-b6ee-1997-1740">
@@ -763,7 +857,7 @@
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="28.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="932f-4481-4dd6-b1eb" name="Destroyer(Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="932f-4481-4dd6-b1eb" name="Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="5cd0-bcea-48be-8340" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
@@ -997,7 +1091,7 @@
         <entryLink id="4691-1dd4-ddfc-63c1" name="Power Armour Company" hidden="false" collective="false" import="true" targetId="8474-7ba1-c37c-e337" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="054f-5253-a32b-7ba6" name="Strikecraft Guardian Ship (6 Slots)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="054f-5253-a32b-7ba6" name="Strikecraft: Guardian Ship (6 Slots)" hidden="false" collective="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbcb-42c3-2c64-f517" type="max"/>
       </constraints>
@@ -1005,12 +1099,84 @@
         <entryLink id="7215-05f8-17b4-71f3" name="Strikecraft" hidden="false" collective="false" import="true" targetId="2f43-0f8d-5637-b408" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="fb47-7f31-ca0b-48c9" name="Strikecraft Light Carrier (8 Slots)" hidden="false" collective="true" import="true">
+    <selectionEntryGroup id="fb47-7f31-ca0b-48c9" name="Strikecraft: Light Carrier (8 Slots)" hidden="false" collective="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8590-d479-8764-1fe0" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="5737-8e56-c220-978f" name="Strikecraft" hidden="false" collective="false" import="true" targetId="2f43-0f8d-5637-b408" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="aa11-78e3-37d2-3d4f" name="Ship: Mine Layer" hidden="false" collective="false" import="true" defaultSelectionEntryId="df23-dd2a-52fc-6ea9">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d3b5-bc02-7759-1866" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="edfc-6b4e-7325-0428" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="4ba4-6074-f018-25f8" name="Mine Layer (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="e336-7025-7205-12f0" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="23.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="df23-dd2a-52fc-6ea9" name="Mine Layer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="a39c-3a6a-a973-53cb" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="28.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3223-5c25-75f3-97fe" name="Mine Layer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="9292-0a5f-d88d-8ed3" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="33.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bec9-17a3-4699-9ec2" name="Ship: Trade Station (12 Slots) (EW Lvl1)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d952-9e2b-73d9-f5a8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1759-9551-f010-89e1" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="a2f0-4bb0-4a53-ea01" name="Trade Station (12 Slots) (EW Lvl1) (Green)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="d30f-23c6-0216-c16a" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="85.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c156-ff21-f861-d84a" name="Trade Station (12 Slots) (EW Lvl1) (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="0f4a-4242-09c9-5b3b" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="100.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8eb1-b87d-31e6-7825" name="Trade Station (12 Slots) (EW Lvl1) (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="c061-9592-c65f-429d" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="120.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8257-8394-2975-cab1" name="Strikecraft: Trade Station (12 Slots) (EW Lvl1)" hidden="false" collective="true" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f5b-10d6-78cc-5442" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="7ec8-8f17-017f-de49" name="Strikecraft" hidden="false" collective="false" import="true" targetId="2f43-0f8d-5637-b408" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -1201,12 +1367,28 @@
         <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
-    <profile id="3cc2-d353-688c-85ba" name="New Profile" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+    <profile id="3cc2-d353-688c-85ba" name="Mine Layer" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
       <characteristics>
-        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e"/>
-        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1"/>
-        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586"/>
-        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d"/>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">4</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="75cc-56d8-3246-bc64" name="Shatterfield Mines" hidden="false" typeId="caff-551f-3edf-ec79" typeName="Mine">
+      <characteristics>
+        <characteristic name="Range" typeId="5ea5-0383-0304-75d6">6&quot;</characteristic>
+        <characteristic name="Roll to hit/AP" typeId="643a-074a-5228-ebc3">Aura Effect</characteristic>
+        <characteristic name="Fire Points" typeId="59cf-5e36-8154-2283">All</characteristic>
+        <characteristic name="Traits" typeId="ca93-99b9-6661-294e">ADS breaker 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0eb9-1654-4056-52ee" name="Trade Station (12 Slots) (EW Lvl1)" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">12</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">1</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">5+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77dc-0960-95d4-e9f1" name="The Gavech Hive" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6d5b-7b88-74f3-550f" name="Devastator" hidden="false" collective="false" import="true" targetId="eba0-a456-8d37-d7ce" type="selectionEntry"/>
     <entryLink id="da6b-4ca4-547a-03f3" name="Stalker" hidden="false" collective="false" import="true" targetId="4b5b-5215-7166-ff05" type="selectionEntry"/>
@@ -973,7 +973,7 @@
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-2</characteristic>
-        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front 180</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Corrosive 8+</characteristic>
       </characteristics>
     </profile>

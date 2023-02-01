@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6f71-fe3a-ae32-8a44" name="Quintek" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6f71-fe3a-ae32-8a44" name="Quintek" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="ec32-c933-2df0-bfe5" name="Faction Trait: Quin-Tek" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1031,34 +1031,32 @@
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">2+/-1</characteristic>
-        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+side</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front 180</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Long Range</characteristic>
       </characteristics>
     </profile>
-    <profile id="d4c1-199d-a4f5-c82a" name="Photon cannon" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+    <profile id="d4c1-199d-a4f5-c82a" name="Photon cannon" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
-        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">10&quot;</characteristic>
-        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">2+/-1</characteristic>
-        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">
-Front+side</characteristic>
-        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">Long Range
-</characteristic>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">2+/-1</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front 180</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Long Range</characteristic>
       </characteristics>
     </profile>
     <profile id="4fef-ab1c-1879-a17a" name="Neutrino Blaster" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-1</characteristic>
-        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front 180</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Rapid Fire</characteristic>
       </characteristics>
     </profile>
-    <profile id="9a2b-5a75-ede9-d2b0" name="Proton Beam" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+    <profile id="9a2b-5a75-ede9-d2b0" name="Proton Beam" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
-        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">10&quot;</characteristic>
-        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3+/-2</characteristic>
-        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">Front</characteristic>
-        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">Beam 4</characteristic>
+        <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
+        <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/-2</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Beam 4</characteristic>
       </characteristics>
     </profile>
     <profile id="2acd-2672-217e-29be" name="Defence Fields" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -1216,22 +1214,6 @@ Front+side</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">1</characteristic>
         <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">8+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="5348-85d0-c99b-cd15" name="New Profile" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
-      <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">
-</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">
-</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">
-</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">
-</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">
-</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">
-</characteristic>
       </characteristics>
     </profile>
     <profile id="25d3-cde8-48dc-d87b" name="Flickerweb Mines" hidden="false" typeId="caff-551f-3edf-ec79" typeName="Mine">

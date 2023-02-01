@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3812-dfb0-f7d9-4053" name="Nosterov Covens" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d5c0-7397-f4c5-4bff" name="Faction Trait: Nosterov Covens" hidden="false" collective="false" import="true" targetId="27aa-c01f-2d3e-a5e3" type="selectionEntry">
       <categoryLinks>
@@ -120,7 +120,7 @@
         <infoLink id="14f5-ecf7-452e-a2fc" name="Fighters" hidden="false" targetId="14a5-5ad1-493b-5b44" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aa3a-acff-a891-a563" name="Fighters Aces" hidden="false" collective="false" import="true" type="upgrade">
@@ -128,7 +128,7 @@
         <infoLink id="29e1-3d4b-b207-06f0" name="Fighter Aces" hidden="false" targetId="d937-5fbd-c53f-204b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8442-3e91-d6bf-c413" name="Bombers" hidden="false" collective="false" import="true" type="upgrade">
@@ -136,7 +136,7 @@
         <infoLink id="1b6a-d1b2-93e9-7489" name="Bombers" hidden="false" targetId="320f-b16e-70d1-1ffa" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="096b-2d34-93f7-8ab5" name="Interceptors" hidden="false" collective="false" import="true" type="upgrade">
@@ -144,7 +144,7 @@
         <infoLink id="bc12-c960-fb73-9ec0" name="Interceptors" hidden="false" targetId="3689-c0b0-f9ae-93a8" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b655-c3ec-e9ed-c31d" name="Interceptors Aces" hidden="false" collective="false" import="true" type="upgrade">
@@ -152,7 +152,7 @@
         <infoLink id="44b5-c11a-e9d8-b318" name="Interceptor Aces" hidden="false" targetId="5482-a82c-4da1-7817" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfb8-02ed-d21e-f258" name="Dropships" hidden="false" collective="false" import="true" type="upgrade">
@@ -699,36 +699,12 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="333f-6d35-fd78-19ce" name="Strikecraft" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="1275-72dd-f179-4676" name="Fighters" hidden="false" collective="false" import="true" targetId="e5b4-fbbd-2bc7-3d15" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="c7af-dfa5-8fb6-bc2d" name="Fighters Aces" hidden="false" collective="false" import="true" targetId="aa3a-acff-a891-a563" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="04ea-3370-3210-ca8b" name="Bombers" hidden="false" collective="false" import="true" targetId="8442-3e91-d6bf-c413" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="d35f-13b6-fc2e-539a" name="Interceptors" hidden="false" collective="false" import="true" targetId="096b-2d34-93f7-8ab5" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="0b7f-0404-9762-b0fe" name="Interceptors Aces" hidden="false" collective="false" import="true" targetId="b655-c3ec-e9ed-c31d" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="8973-e024-7cdf-f0b5" name="Dropships" hidden="false" collective="false" import="true" targetId="cfb8-02ed-d21e-f258" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-          </costs>
-        </entryLink>
+        <entryLink id="1275-72dd-f179-4676" name="Fighters" hidden="false" collective="false" import="true" targetId="e5b4-fbbd-2bc7-3d15" type="selectionEntry"/>
+        <entryLink id="c7af-dfa5-8fb6-bc2d" name="Fighters Aces" hidden="false" collective="false" import="true" targetId="aa3a-acff-a891-a563" type="selectionEntry"/>
+        <entryLink id="04ea-3370-3210-ca8b" name="Bombers" hidden="false" collective="false" import="true" targetId="8442-3e91-d6bf-c413" type="selectionEntry"/>
+        <entryLink id="d35f-13b6-fc2e-539a" name="Interceptors" hidden="false" collective="false" import="true" targetId="096b-2d34-93f7-8ab5" type="selectionEntry"/>
+        <entryLink id="0b7f-0404-9762-b0fe" name="Interceptors Aces" hidden="false" collective="false" import="true" targetId="b655-c3ec-e9ed-c31d" type="selectionEntry"/>
+        <entryLink id="8973-e024-7cdf-f0b5" name="Dropships" hidden="false" collective="false" import="true" targetId="cfb8-02ed-d21e-f258" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="29c0-6dab-30e2-cd00" name="Strikecraft Template" hidden="false" collective="false" import="true">
@@ -1233,7 +1209,7 @@
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">10&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">1+/-2</characteristic>
-        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front 180</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
       </characteristics>
     </profile>
@@ -1257,7 +1233,7 @@
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">8&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">3+/0</characteristic>
-        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Side</characteristic>
+        <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front 180</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
       </characteristics>
     </profile>
