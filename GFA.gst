@@ -237,47 +237,6 @@
         <categoryLink id="a3ed-55ee-c7d5-18a3" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="d366-1af4-d6f0-1372" name="Bombard Group" hidden="false">
-      <comment>1-3 Capital ships, each must have 1 escort and can have up to 2 escorts in total.</comment>
-      <forceEntries>
-        <forceEntry id="4345-165e-eaf1-f2f2" name="Bombard Group" hidden="false">
-          <categoryLinks>
-            <categoryLink id="e9a3-9730-fe49-677d" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
-            <categoryLink id="40a7-2884-9e42-19c3" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
-            <categoryLink id="b5dd-a874-0a6c-3616" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
-            <categoryLink id="9296-22ef-c624-db4a" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
-            <categoryLink id="450a-09a2-ebf5-e543" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
-            <categoryLink id="c4e3-c71a-506f-8213" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
-            <categoryLink id="b5f4-8460-0d2f-1e8f" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
-          </categoryLinks>
-        </forceEntry>
-      </forceEntries>
-      <categoryLinks>
-        <categoryLink id="1ff1-047a-bd64-14ab" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
-        <categoryLink id="9ea3-14bd-8108-8f6a" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de6b-d3be-11a8-ef86" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8040-ce8d-5852-0499" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="672c-2ee1-e4bd-1181" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
-        <categoryLink id="3c97-6cea-2e1b-2f78" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
-          <modifiers>
-            <modifier type="increment" field="35ea-b276-cead-05d4" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="d366-1af4-d6f0-1372" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ea-b276-cead-05d4" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="2255-4a6e-fafc-d4e9" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
-        <categoryLink id="a0eb-5643-e67c-d87d" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
-        <categoryLink id="3008-b6b4-c1a9-055d" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
-      </categoryLinks>
-    </forceEntry>
     <forceEntry id="1383-5b5c-01df-92d5" name="Combat Group" hidden="false">
       <comment>1-3 Capital ships, each must have 2 escorts and each can have up to 1 support ship.�</comment>
       <forceEntries>
@@ -397,6 +356,72 @@
         <categoryLink id="79a7-9876-544d-8594" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="1c50-e68d-31a5-696f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
         <categoryLink id="2032-7e6e-45cc-65bc" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="085d-c25b-33da-0cee" name="Bombard Group" hidden="false">
+      <comment>1-3 Capital ships, each must have 1 escort and can have up to 2 escorts in total.</comment>
+      <forceEntries>
+        <forceEntry id="1411-b78a-1f41-e720" name="Bombard Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="5afb-e4fa-3f47-e284" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="a0e8-dd90-5347-6d9e" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink id="eae5-35c8-cb65-b5c9" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+            <categoryLink id="5f1f-e880-d97b-7fa4" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="315d-3917-573f-f122" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="8813-407a-11cf-d341" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+            <categoryLink id="425f-27c4-c340-e641" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="172b-e8c0-bdd4-0927" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="ec3b-64ba-1f7f-b851" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b885-c325-7838-d79e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d0-7ddd-9ffa-af00" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d3f0-d675-1b32-4cb6" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+        <categoryLink id="e59f-d919-c304-4329" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <modifiers>
+            <modifier type="increment" field="e0f9-9177-db92-89ea" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="085d-c25b-33da-0cee" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f9-9177-db92-89ea" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0b18-a8d1-4359-d9ff" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="789c-7dbd-805d-4058" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="fecb-4509-6497-0ffb" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="ba23-1bb8-64ec-d0b6" name="Free Group" hidden="false">
+      <comment>1-3 Capital ships, each must have 1 escort and can have up to 2 escorts in total.</comment>
+      <forceEntries>
+        <forceEntry id="6b6d-90e9-860e-a8f5" name="Bombard Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="44b5-d008-6b22-d2e1" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="bcd1-a678-ad2c-b71f" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink id="066a-efc3-7499-b680" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+            <categoryLink id="414b-9cc5-e5f8-4ecd" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="1da9-3824-4145-9f15" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="f51b-debe-ed53-2949" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+            <categoryLink id="ca96-641d-7813-599e" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="ddd7-3381-9605-ed17" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="a619-3be4-b04c-df07" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
+        <categoryLink id="abba-5b43-7ca1-1e8e" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+        <categoryLink id="f7d5-1c6c-d11a-38bc" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+        <categoryLink id="30ca-f8fd-8622-3182" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="4963-552e-edb7-578d" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="158b-6627-ac62-3d12" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1300,7 +1325,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       </modifiers>
       <description>The moment that a ship enters the range of the minefield, they take a shot from the minefield. The number of shots they take is the level of Thrust their battlegroup is using. Every turn that they remain in range of the field they take shot at the end of their activation. The roll to hit for mines is not effected by any modifiers such as enemy thrust.</description>
     </rule>
-    <rule id="253b-2464-1105-7abc" name="ADS Attack X" hidden="false">
+    <rule id="253b-2464-1105-7abc" name="ADS Attack X" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1308,6 +1333,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
           </conditions>
         </modifier>
       </modifiers>
+      <description>These weapons hamper enemy ADS systems by overloading them with debris and heat signals making them less effective against targets. Ships hit by this have &apos; X&apos; to their ads rolls until the shooters next activation. If the weapon is an aura such as the UTS minefield. Then while any ships from a battlegroup are within the aura, the full battlegroup is affected.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2117,8 +2143,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
 Vanguard Group: Can be any group type but all ships must have thrusters 4 and above.
 
 Support Group: 2-4 Support ships, each must have 1 escort and can have up to 2 escorts in total.
-
--Modifier: +1 to ADS rolls and Attack rolls against Strike craft
+- Modifier: +1 to hit rolls with Ordnance weapons.
 
 Bombard Group: 1-3 Capital ships, each must have 1 escort and can have up to 2 escorts in total.
 - Modifier: +2&quot; to range of weapons in this battlegroup
@@ -2126,7 +2151,8 @@ Bombard Group: 1-3 Capital ships, each must have 1 escort and can have up to 2 e
 Patrol Group: 3-5 Escort Ships
 - Modifier: 1 to hit rolls against this battlegroup.
 
-Defender Group: 1 Capital ship with 2 escorts, up to 3 Support ships 2 Escort Ships can be added</characteristic>
+Defender Group: 1 Capital ship with 2 escorts, up to 3 Support ships 2 Escort Ships can be added
+- Modifier: +1 to ADS rolls and Attack rolls against Strike craft</characteristic>
       </characteristics>
     </profile>
     <profile id="5e4e-df63-39a6-961e" name="Aquatic Hulls" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
