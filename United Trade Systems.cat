@@ -29,8 +29,6 @@
     <entryLink id="a194-5ee4-1eed-1f02" name="Dreadnought" hidden="false" collective="false" import="true" targetId="17c1-52c5-96d4-664f" type="selectionEntry"/>
     <entryLink id="5a6e-053e-9cd5-334b" name="Mine Layer" hidden="false" collective="false" import="true" targetId="1a05-87d5-31f5-2df5" type="selectionEntry"/>
     <entryLink id="e078-d017-d60c-5b7c" name="Trade Station (12 Slots) (EW Lvl1)" hidden="false" collective="false" import="true" targetId="0917-a502-fd1c-cf72" type="selectionEntry"/>
-    <entryLink id="7f34-2342-8186-b27c" name="Mine Layer" hidden="false" collective="false" import="true" targetId="1a05-87d5-31f5-2df5" type="selectionEntry"/>
-    <entryLink id="2f21-3c14-ae11-e90c" name="Trade Station (12 Slots) (EW Lvl1)" hidden="false" collective="false" import="true" targetId="0917-a502-fd1c-cf72" type="selectionEntry"/>
   </entryLinks>
   <infoLinks>
     <infoLink id="7cb8-85aa-5cb3-284e" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
