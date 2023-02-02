@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3a26-c560-e648-04fe" name="Frigate" hidden="false" collective="false" import="true" targetId="ab7f-baeb-1678-4b64" type="selectionEntry"/>
     <entryLink id="a802-4515-3b49-f916" name="Line Frigate" hidden="false" collective="false" import="true" targetId="b004-55c3-1f43-e60d" type="selectionEntry"/>
@@ -1278,7 +1278,7 @@
         <entryLink id="c4b1-278d-f131-93f7" name="Strikecraft" hidden="false" collective="false" import="true" targetId="cca9-427f-6c77-7e08" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="4565-017c-d8f5-0074" name="Ship: Flagship" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="4565-017c-d8f5-0074" name="Ship: Flagship" hidden="false" collective="false" import="true" defaultSelectionEntryId="d6bb-6267-0846-2d96">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4be-5fd2-a149-1494" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b922-0313-4d06-1ca5" type="min"/>
@@ -1344,7 +1344,7 @@
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
       </characteristics>
     </profile>
-    <profile id="88bf-320f-d121-d71e" name="Point Defence Guns (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
+    <profile id="88bf-320f-d121-d71e" name="Point Defence Guns (PD)" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
       <characteristics>
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">2&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+ AA</characteristic>

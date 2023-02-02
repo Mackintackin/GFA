@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="355a-d0a5-a170-44e2" name="Sentient Union" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="355a-d0a5-a170-44e2" name="Sentient Union" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="f81e-b97c-af13-6d5e" name="Faction Traits: Sentient Union" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -199,7 +199,11 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a88-c3a9-a101-36e1" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="9954-88ee-d2d6-db92" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry"/>
+        <entryLink id="9954-88ee-d2d6-db92" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8c6-bd96-1300-b70a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -548,16 +552,6 @@
     <selectionEntry id="73e1-7d34-8485-6b88" name="Power Armour Company" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="8.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8165-43f1-ab85-64ac" name="Fighter Squadron" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b626-83c3-be2e-9dc7" name="Fighter Bomber Aces Squadron" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fc0-6873-1e9e-ad46" name="Interceptor Squadron" hidden="false" collective="false" import="true" type="upgrade">
@@ -1133,16 +1127,6 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="6fbb-e7c5-7920-779f" name="Strikecraft" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="0c8c-4047-f867-a043" name="Fighter Squadron" hidden="false" collective="false" import="true" targetId="8165-43f1-ab85-64ac" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="c61b-0764-00eb-5fc3" name="Fighter Aces Squadron" hidden="false" collective="false" import="true" targetId="b626-83c3-be2e-9dc7" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="d99f-f056-6d6e-302f" name="Interceptor Squadron" hidden="false" collective="false" import="true" targetId="5fc0-6873-1e9e-ad46" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
@@ -1153,7 +1137,7 @@
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
           </costs>
         </entryLink>
-        <entryLink id="fa1a-9240-69ea-f3d2" name="Bomber Squadron" hidden="false" collective="false" import="true" targetId="4e86-15cb-09eb-c1b2" type="selectionEntry">
+        <entryLink id="fa1a-9240-69ea-f3d2" name="Fighter Bomber Squadron" hidden="false" collective="false" import="true" targetId="4e86-15cb-09eb-c1b2" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
           </costs>
