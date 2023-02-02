@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3a26-c560-e648-04fe" name="Frigate" hidden="false" collective="false" import="true" targetId="ab7f-baeb-1678-4b64" type="selectionEntry"/>
     <entryLink id="a802-4515-3b49-f916" name="Line Frigate" hidden="false" collective="false" import="true" targetId="b004-55c3-1f43-e60d" type="selectionEntry"/>
@@ -18,6 +18,7 @@
         <categoryLink id="8cfb-85a9-b034-a68b" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b5a1-1e5e-f47d-daf2" name="Flagship" hidden="false" collective="false" import="true" targetId="6dc5-0e3e-468d-a79f" type="selectionEntry"/>
   </entryLinks>
   <infoLinks>
     <infoLink id="cdec-8f3c-5b5e-9c49" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>

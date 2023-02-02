@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29f7-6558-f3cf-6005" name="Battle Cruiser" hidden="false" collective="false" import="true" targetId="e720-6af7-03e3-fda1" type="selectionEntry"/>
     <entryLink id="182c-72b4-b254-5e74" name="Assault Ship (6 Slots)" hidden="false" collective="false" import="true" targetId="9923-f04f-d00a-4aa9" type="selectionEntry"/>
@@ -8,7 +8,7 @@
     <entryLink id="44a8-a3d2-8ac6-9088" name="Corvette" hidden="false" collective="false" import="true" targetId="341d-9d9e-6c19-7a7e" type="selectionEntry"/>
     <entryLink id="f94a-6892-d50f-0da8" name="Cruiser" hidden="false" collective="false" import="true" targetId="1c4d-e08e-5439-db5c" type="selectionEntry"/>
     <entryLink id="5d60-6b60-dc40-407a" name="Destroyer" hidden="false" collective="false" import="true" targetId="076e-3e93-f589-8f63" type="selectionEntry"/>
-    <entryLink id="2ee1-409b-ec9d-ad4b" name="Fleet Carrier" hidden="false" collective="false" import="true" targetId="1651-f297-2cb8-8dad" type="selectionEntry"/>
+    <entryLink id="2ee1-409b-ec9d-ad4b" name="Fleet Carrier (16 Slots)" hidden="false" collective="false" import="true" targetId="1651-f297-2cb8-8dad" type="selectionEntry"/>
     <entryLink id="a2df-f2af-6f4a-b1ef" name="Escort Destroyer" hidden="false" collective="false" import="true" targetId="922c-1332-749b-8b56" type="selectionEntry"/>
     <entryLink id="38ca-d3d1-4b5a-b98b" name="Frigate" hidden="false" collective="false" import="true" targetId="e9e3-baa0-fd89-4856" type="selectionEntry"/>
     <entryLink id="e76b-4086-8fba-8caf" name="Heavy Destroyer" hidden="false" collective="false" import="true" targetId="dde0-dd11-0454-0eb5" type="selectionEntry"/>
@@ -29,6 +29,7 @@
     <entryLink id="a219-2365-848c-d8c1" name="Electronic Warfare Ship (Lvl1)" hidden="false" collective="false" import="true" targetId="f47a-c154-e427-61e9" type="selectionEntry"/>
     <entryLink id="ffd5-54df-1f31-ac02" name="Attack Boat" hidden="false" collective="false" import="true" targetId="956a-a739-9a11-9535" type="selectionEntry"/>
     <entryLink id="d7ae-97f4-d2cf-8d9a" name="Patrol Boat" hidden="false" collective="false" import="true" targetId="24e7-4738-f627-1fbf" type="selectionEntry"/>
+    <entryLink id="6443-233e-9c99-0097" name="Light Carrier (8 Slots)" hidden="false" collective="false" import="true" targetId="d6a3-2e7d-e981-c098" type="selectionEntry"/>
   </entryLinks>
   <infoLinks>
     <infoLink id="0119-6dbb-1b3a-97c6" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>

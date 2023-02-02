@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="355a-d0a5-a170-44e2" name="Sentient Union" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="355a-d0a5-a170-44e2" name="Sentient Union" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="f81e-b97c-af13-6d5e" name="Faction Traits: Sentient Union" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1361,8 +1361,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-3</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">2</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">8+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
       </characteristics>
     </profile>
     <profile id="ffee-960f-fe71-7450" name="Interceptors" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1371,8 +1371,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">1</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">8+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="547f-17db-4edf-1d6b" name="Interceptor Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1381,8 +1381,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">4+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">1</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">8+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="b93e-edcb-ecef-968a" name="Dropships" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1391,8 +1391,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">1</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">8+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="a2bb-d011-6979-d2a9" name="Multi-Spectrum Shielding" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">

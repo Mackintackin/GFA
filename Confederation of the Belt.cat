@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="539e-f112-781d-b346" name="Confederation of the Belt" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="539e-f112-781d-b346" name="Confederation of the Belt" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0e40-f6f3-e820-02be" name="Asteroid" hidden="false"/>
   </categoryEntries>
@@ -750,13 +750,13 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2419-f96f-6b44-51d8" name="Ship: Support Ship (8 slots)" hidden="false" collective="false" import="true" defaultSelectionEntryId="0848-df7f-cb43-b6d5">
+    <selectionEntryGroup id="2419-f96f-6b44-51d8" name="Ship: Supply Ship (10 slots)" hidden="false" collective="false" import="true" defaultSelectionEntryId="0848-df7f-cb43-b6d5">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="907b-086c-b9b0-1277" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="67b7-a210-69c2-cb33" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="81e7-d09a-2a88-7b72" name="Support Ship (8 slots) (Green)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="81e7-d09a-2a88-7b72" name="Supply Ship (10 slots) (Green)" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="bcff-ca55-b573-49aa" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
           </categoryLinks>
@@ -764,7 +764,7 @@
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0848-df7f-cb43-b6d5" name="Support Ship (8 slots) (Trained)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0848-df7f-cb43-b6d5" name="Supply Ship (10 slots) (Trained)" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="3670-ab46-f330-61f8" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
           </categoryLinks>
@@ -772,7 +772,7 @@
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="29.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0f70-8921-c3dc-8a28" name="Support Ship (8 slots) (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0f70-8921-c3dc-8a28" name="Supply Ship (10 slots) (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="b104-3002-3128-2616" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
           </categoryLinks>
@@ -1323,7 +1323,7 @@
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
       </characteristics>
     </profile>
-    <profile id="0946-f042-2792-093c" name="Supply Ship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+    <profile id="0946-f042-2792-093c" name="Supply Ship (10 slots)" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
       <characteristics>
         <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">4</characteristic>
         <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
@@ -1394,8 +1394,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">8+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">1</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">7+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="7926-6eb1-65fb-c806" name="Fighter Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1404,8 +1404,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">2</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">7+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
       </characteristics>
     </profile>
     <profile id="0bea-82b4-85e9-aac9" name="Bombers" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1414,8 +1414,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-3</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">2</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">7+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2x</characteristic>
       </characteristics>
     </profile>
     <profile id="1d02-3b49-2cbb-4924" name="Interceptors" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1424,8 +1424,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">1</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">8+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="a94c-df1d-4acc-61d5" name="Interceptor Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1434,8 +1434,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">4+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">1</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">8+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="5275-23e9-750a-aee7" name="Dropships" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1444,8 +1444,8 @@
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
         <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">1</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">8+</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
       </characteristics>
     </profile>
     <profile id="d410-17b9-ec51-c962" name="Rigged Debris Field" hidden="false" typeId="caff-551f-3edf-ec79" typeName="Mine">
