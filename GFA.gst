@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="32" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="34" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -102,10 +102,10 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e458-352f-b543-34ea" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="6176-84f7-8071-b92e" name="Fleet Commander" hidden="false">
+    <categoryEntry id="6176-84f7-8071-b92e" name="Grand Admiral" hidden="false">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="7d6c-f6c1-f8c5-d6bc" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="931d-63d7-4335-fbf1" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="7d6c-f6c1-f8c5-d6bc" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="931d-63d7-4335-fbf1" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="1400-6cc4-e9a5-372c" name="Faction Traits" hidden="false">
@@ -190,6 +190,12 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a660-d452-b24a-a094" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="5067-28fc-1954-8f7e" name="Battlegroup Commander" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21b8-3830-bee7-3ef8" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2a38-442e-6558-f877" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
@@ -199,7 +205,6 @@
           <categoryLinks>
             <categoryLink id="a259-f1db-b9c3-68c4" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
             <categoryLink id="ae72-2589-f5ae-4cab" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
-            <categoryLink id="8aa8-efae-3bc6-8400" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
             <categoryLink id="1026-9320-4a59-1a4a" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="25d8-f23b-926b-f85b" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="cb8e-8398-61c6-86ab" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
@@ -209,11 +214,6 @@
       </forceEntries>
       <categoryLinks>
         <categoryLink id="7681-eb5c-f70d-1575" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
-        <categoryLink id="e0a8-ba58-34ab-1681" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d122-ba5e-df72-30c1" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="c968-6dd7-9d9e-1ba5" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adba-d302-6d0b-bcf4" type="max"/>
@@ -222,7 +222,7 @@
         </categoryLink>
         <categoryLink id="6074-ffb4-0078-fe79" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
           <modifiers>
-            <modifier type="increment" field="f41a-eeb3-1198-d916" value="2.0">
+            <modifier type="increment" field="f41a-eeb3-1198-d916" value="1.0">
               <repeats>
                 <repeat field="selections" scope="5ef9-7be3-c10e-89bb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e62e-eaf7-0a7a-8ede" repeats="1" roundUp="false"/>
               </repeats>
@@ -429,7 +429,11 @@
     <entryLink id="143e-d9ea-0059-01f5" name="Generica" hidden="false" collective="false" import="true" targetId="361e-5fd6-4d5b-854e" type="selectionEntry"/>
     <entryLink id="bdce-0f55-7d1c-197e" name="&lt;Reference&gt; Ship Classes" hidden="false" collective="false" import="true" targetId="40e0-5460-07a7-5bc1" type="selectionEntry"/>
     <entryLink id="ac1c-16bc-5571-4e46" name="Weapon Trait Location " hidden="false" collective="false" import="true" targetId="2a5a-38c4-30cc-39b7" type="selectionEntry"/>
-    <entryLink id="ddb8-25b4-3570-f103" name="Vanguard Group" hidden="false" collective="false" import="true" targetId="da43-03f5-15cb-e16f" type="selectionEntry"/>
+    <entryLink id="ddb8-25b4-3570-f103" name="Vanguard Group" hidden="false" collective="false" import="true" targetId="da43-03f5-15cb-e16f" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17d6-a7d8-9be6-0301" type="max"/>
+      </constraints>
+    </entryLink>
     <entryLink id="36f0-ade1-7dee-d95d" name="&lt;Reference&gt; Battlegroup Rules" hidden="false" collective="false" import="true" targetId="ebb2-307a-e49a-dd90" type="selectionEntry"/>
   </entryLinks>
   <rules>
@@ -578,14 +582,14 @@ settled down and show his true colours next engagement.</description>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c263-1075-50d4-5c53" name="Fleet Commander" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c263-1075-50d4-5c53" name="Grand Admiral" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -596,6 +600,7 @@ settled down and show his true colours next engagement.</description>
       </constraints>
       <categoryLinks>
         <categoryLink id="0226-b098-5eec-9a2c" name="Fleet Commander" hidden="false" targetId="6176-84f7-8071-b92e" primary="false"/>
+        <categoryLink id="b75a-4ab9-2904-e49d" name="Battlegroup Commander" hidden="false" targetId="5067-28fc-1954-8f7e" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -804,6 +809,39 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="11e6-0919-7171-3349" name="Battlegroup Commander" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f5-cba9-b037-5405" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="97bd-87f1-5f32-c1be" name="Battlegroup Commander" hidden="false" targetId="5067-28fc-1954-8f7e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fbb2-4858-5cd7-8c4f" name="Battlegroup Veterency" hidden="false" collective="false" import="true" defaultSelectionEntryId="070f-e295-681a-edd8">
@@ -881,14 +919,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Admiral Command Traits" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Grand Admiral Command Traits" hidden="true" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f78-5795-3a36-44be" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
@@ -897,10 +928,31 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <entryLink id="3cf1-8dec-f98f-6eab" name="Exemplar of Command" hidden="false" collective="false" import="true" targetId="cf4b-9d79-2302-3f4e" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a197-fe12-1310-5109" name="Battlegroup Commanders" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="a197-fe12-1310-5109" name="Commander" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <entryLinks>
-        <entryLink id="7175-9fd8-9ad6-bc23" name="Fleet Commander" hidden="false" collective="false" import="true" targetId="c263-1075-50d4-5c53" type="selectionEntry"/>
-        <entryLink id="7be5-6aca-8444-ea0f" name="Admiral Command Traits" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup"/>
+        <entryLink id="7175-9fd8-9ad6-bc23" name="Grand Admiral" hidden="false" collective="false" import="true" targetId="c263-1075-50d4-5c53" type="selectionEntry"/>
+        <entryLink id="36d8-70bb-3c44-5c04" name="Battlegroup Commander" hidden="false" collective="false" import="true" targetId="11e6-0919-7171-3349" type="selectionEntry"/>
+        <entryLink id="a199-06c9-e9c9-d033" name="Grand Admiral Command Traits" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a246-4f69-5f8f-49ce" name="Hanger Upgrades" hidden="true" collective="false" import="true">
