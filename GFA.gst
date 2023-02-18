@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="34" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="39" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -36,6 +36,9 @@
     <profileType id="ee25-8839-fc92-3ef6" name="Battlegroup Commander">
       <characteristicTypes>
         <characteristicType id="8431-d304-5569-d9ee" name="Commander Trait"/>
+        <characteristicType id="e630-acd9-56e2-bdac" name="Skill"/>
+        <characteristicType id="13cd-456f-ce06-fe1d" name="Morale Bonus"/>
+        <characteristicType id="60c1-4c0e-cbc0-4430" name="Command Capacity"/>
       </characteristicTypes>
     </profileType>
     <profileType id="033a-248a-e540-baaa" name="Faction Traits">
@@ -574,14 +577,6 @@ settled down and show his true colours next engagement.</description>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf4b-9d79-2302-3f4e" name="Exemplar of Command" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="f780-33d2-6a3e-12a6" name="Exemplar of Command" hidden="false" targetId="5705-d64d-52a0-d20a" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="c263-1075-50d4-5c53" name="Grand Admiral" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -919,14 +914,93 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Grand Admiral Command Traits" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Grand Admiral Command Traits" hidden="true" collective="false" import="true" defaultSelectionEntryId="9d25-6d68-dedf-326d">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f78-5795-3a36-44be" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
       </constraints>
-      <entryLinks>
-        <entryLink id="3cf1-8dec-f98f-6eab" name="Exemplar of Command" hidden="false" collective="false" import="true" targetId="cf4b-9d79-2302-3f4e" type="selectionEntry"/>
-      </entryLinks>
+      <selectionEntries>
+        <selectionEntry id="9d25-6d68-dedf-326d" name="1 Poor" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9878-cc5d-21e9-beb0" name="1 Poor" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">7+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">-1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="7bce-c8a9-0efc-62cf" name="2 Confident" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="2d82-a04c-7ae9-43df" name="2 Confident" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">6+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7115-878e-7cc1-ae98" name="4 Legendary" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="7c44-5829-1fe2-4bbe" name="4 Legendary" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">4+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cf0b-c33c-56d7-8f16" name="3 Inspiring" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9180-afd6-7655-b55f" name="3 Inspiring" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">5+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">9</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b054-eb1a-f42d-7b86" name="The Great Khan (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="375a-1b07-bf7d-1ab0" name="The Great Khan (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">- The Great Khan’s battlegroup gains vanguard even if ships are not thrust 4.
+- All ships gain +1 morale while the Khan’s ship is on the table.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">3+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+3</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">9</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="a197-fe12-1310-5109" name="Commander" hidden="false" collective="false" import="true">
       <modifiers>
@@ -1417,11 +1491,6 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
     <profile id="98c1-ebfa-0322-ec29" name="Aegis" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship may use its Point Defense weapons at twice the normal range for overwatch only. In addition, it gets +1 accuracy when doing so</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="5705-d64d-52a0-d20a" name="Exemplar of Command (Test)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-      <characteristics>
-        <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Add +2 to Morale Checks.</characteristic>
       </characteristics>
     </profile>
     <profile id="8173-6ab7-423e-b29c" name="Ship Classes" hidden="false" typeId="fe7c-a4f6-55e4-ec01" typeName="Information">
