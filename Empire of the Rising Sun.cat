@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="009c-d7fc-1174-eb5d" name="Empire of the Rising Sun" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3eef-3507-3c86-08f7" name="Corvette" hidden="false" collective="false" import="true" targetId="8755-e250-9d76-0729" type="selectionEntry"/>
     <entryLink id="534b-6a98-4d43-36b7" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="1faf-7623-b9be-5ea7" type="selectionEntry"/>
@@ -1893,7 +1893,8 @@
     </profile>
     <profile id="5a5f-4eb7-3170-b082" name="Death before dishonour" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
-        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Ships can re-roll failed morale saves once per turn</characteristic>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">+2 to morale saves
+</characteristic>
       </characteristics>
     </profile>
     <profile id="bea5-361d-830f-d76a" name="T3 Battleship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">

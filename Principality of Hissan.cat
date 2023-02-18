@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ddd4-2f5f-37ce-f655" name="Principality of Hissan" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="811b-5dbf-9a35-8671" name="Hunter Squadron" hidden="false" collective="false" import="true" targetId="007b-16bf-bf6a-f04c" type="selectionEntry"/>
     <entryLink id="4331-6d3c-1187-5839" name="Corvette" hidden="false" collective="false" import="true" targetId="1563-15e1-1511-6e93" type="selectionEntry"/>
@@ -2034,12 +2034,12 @@ Hunter Squadrons are rare and thus there is a max of 2 squadrons per capital shi
     </profile>
     <profile id="72f5-68da-a8fd-3970" name="Bloodline command" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
-        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">-2 to activation skips</characteristic>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">The first time Hissan player draws a Battlespace Initiative token per turn, the opponent can use it instead.</characteristic>
       </characteristics>
     </profile>
     <profile id="8780-1048-2e0c-6d6e" name="Zealots" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
-        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Ships can re-roll failed morale saves once per turn</characteristic>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">A single battlegroup can reroll failed morale saves per turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="7223-b46f-aa16-9b5e" name="Attack Boats" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">

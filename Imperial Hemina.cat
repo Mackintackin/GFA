@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4a51-d63d-5a1f-0841" name="Krotan" hidden="false"/>
     <categoryEntry id="f9db-fdcf-4414-5386" name="Vespa" hidden="false"/>
@@ -1985,17 +1985,18 @@
     </profile>
     <profile id="c11a-298f-3baf-8d5a" name="Centralised Command: " hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
-        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">If captain is killed them morale saves get a 2 from now on as well as going captain skill going down a level</characteristic>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">If battlegroup commander is killed them morale saves get a 2 for the
+rest of the game</characteristic>
       </characteristics>
     </profile>
     <profile id="c5d5-77a6-4859-ac9e" name="Distinguished Admiralty:" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
-        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">+2 to Activation skips</characteristic>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Admirals gain +2 to their command capacity</characteristic>
       </characteristics>
     </profile>
     <profile id="9e1a-093e-6432-44eb" name="Extensive Training Programs:" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
-        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Green crews have Regulars crew CQB stats when boarded</characteristic>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Hemina units can reroll failed special command actions</characteristic>
       </characteristics>
     </profile>
     <profile id="5476-a699-7721-f02e" name="Node Runners:" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">

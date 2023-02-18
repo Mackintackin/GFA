@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="539e-f112-781d-b346" name="Confederation of the Belt" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="539e-f112-781d-b346" name="Confederation of the Belt" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="0e40-f6f3-e820-02be" name="Asteroid" hidden="false"/>
   </categoryEntries>
@@ -558,6 +558,16 @@
     <rule id="f000-d2ab-e468-64a9" name="Built to Last" hidden="false">
       <description>Ships of the belt are built from the ground up to take hits and knocks from asteroids and debris. Reroll any failed armor saves. Cannot reroll a reroll</description>
     </rule>
+    <rule id="6289-6c1c-b818-e569" name="New Rule" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>This is a suicidal attack, overloading the ship&apos;s core. After using this attack, the ship is destroyed.</description>
+    </rule>
   </rules>
   <infoLinks>
     <infoLink id="3023-c5e3-3e01-5af9" name="Kinetic" hidden="false" targetId="5325-1e0e-f155-dbce" type="rule"/>
@@ -665,11 +675,7 @@
     <selectionEntry id="6fc1-9f55-94d3-7862" name="Collision Course!" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="75a5-1930-7727-f4ab" name="Collision Course!" hidden="false" targetId="f2ad-fc9c-28dd-9d36" type="profile"/>
-        <infoLink id="0479-b1e7-4e59-7dcb" name="Dangerous" hidden="false" targetId="9267-b048-eda0-3858" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value="10"/>
-          </modifiers>
-        </infoLink>
+        <infoLink id="0479-b1e7-4e59-7dcb" name="Sacrifice" hidden="false" targetId="3665-af8b-c139-d88c" type="profile"/>
         <infoLink id="dd3d-adb8-2c64-6ac7" name="Shield Penetrating" hidden="false" targetId="d339-ccb4-bf7b-4791" type="profile"/>
       </infoLinks>
       <costs>
@@ -1385,7 +1391,7 @@
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">1&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">5+/-5</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">All</characteristic>
-        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Dangerous 10, Shield Penetrating</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Sacrifice, Shield Penetrating</characteristic>
       </characteristics>
     </profile>
     <profile id="94f6-966b-de76-f218" name="Fighters" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
@@ -1461,7 +1467,7 @@
         <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Belter ships have deployable decoys (Trash and scrap metal) that will attract enemy ordinance. Each ship completely ignores the very first ordinance hit on them per game. A good counter to torpedoes long range torpedoes.</characteristic>
       </characteristics>
     </profile>
-    <profile id="db37-189d-fd7e-a673" name="Converted for Combat" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
+    <profile id="db37-189d-fd7e-a673" name="Converted for Combat" hidden="true" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
         <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Belter Ships were not made for the fast maneuver that is required during combat. They may only turn twice during an activation.
 </characteristic>
@@ -1476,6 +1482,18 @@
     <profile id="9f1d-da9b-f99b-ae8a" name="Built to Last" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
         <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Ships of the belt are built from the ground up to take hits and knocks from asteroids and debris. Reroll any failed armor saves. Cannot reroll a reroll</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3665-af8b-c139-d88c" name="Sacrifice" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This is a suicidal attack, overloading the ship&apos;s core. After using this attack, the ship is destroyed.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

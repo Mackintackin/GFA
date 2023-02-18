@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="97f7-5a48-5c1a-44c1" name="Merathian Khanate" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="97f7-5a48-5c1a-44c1" name="Merathian Khanate" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="659d-a37f-1e50-6876" name="Corvette" hidden="false" collective="false" import="true" targetId="b18b-e51a-67a1-e710" type="selectionEntry"/>
     <entryLink id="4f31-8663-457f-a207" name="Attack Corvette" hidden="false" collective="false" import="true" targetId="ee78-73b3-31a5-0059" type="selectionEntry"/>
@@ -1763,7 +1763,7 @@
     </profile>
     <profile id="3f3e-ba57-3e11-fb8a" name="Warrior Culture" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
       <characteristics>
-        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Green crews have Regulars crew CQB stats when boarded</characteristic>
+        <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">No morale saves needed from ship losses after the battlegroup is down past 50%</characteristic>
       </characteristics>
     </profile>
     <profile id="a1fc-968c-fe1c-bf0b" name="Advanced Weapon Engine integration" hidden="false" typeId="033a-248a-e540-baaa" typeName="Faction Traits">
