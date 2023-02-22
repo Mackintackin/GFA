@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="39" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="40" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -98,6 +98,11 @@
         <modifier type="set" field="e458-352f-b543-34ea" value="2.0">
           <conditions>
             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26f4-1ea5-e00d-f290" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e458-352f-b543-34ea" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="085d-c25b-33da-0cee" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -931,6 +936,9 @@ Assault Ships: Assault Ships. &quot;			</comment>
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7bce-c8a9-0efc-62cf" name="2 Confident" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -1107,6 +1115,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="0489-dfa8-29f8-fe83" name="Mine Options" hidden="true" collective="true" import="true"/>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="2711-87ab-91c7-05fc" name="Fleet Commander" hidden="true">
