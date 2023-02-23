@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="40" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="41" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -842,6 +842,75 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b1d7-8653-a543-1979" name="Stealth Mines" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="efa7-e5f9-c06b-b101" name="Stealth Mines" hidden="false" typeId="caff-551f-3edf-ec79" typeName="Mine">
+          <characteristics>
+            <characteristic name="Range" typeId="5ea5-0383-0304-75d6">6&quot;</characteristic>
+            <characteristic name="Roll to hit/AP" typeId="643a-074a-5228-ebc3">6+/-2</characteristic>
+            <characteristic name="Fire Points" typeId="59cf-5e36-8154-2283"/>
+            <characteristic name="Traits" typeId="ca93-99b9-6661-294e">Shield Skipping 6+, Minefield</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fd7b-a264-ad71-1d04" name="Minefield" hidden="false" targetId="88fd-bab9-d70f-a99a" type="profile"/>
+        <infoLink id="3009-a091-63a1-146b" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6+"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="89de-9c81-7e14-4d89" name="Armour Buster Mines" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8814-10a5-8db7-df3f" name="Armour Buster Mine" hidden="false" typeId="caff-551f-3edf-ec79" typeName="Mine">
+          <characteristics>
+            <characteristic name="Range" typeId="5ea5-0383-0304-75d6">2&quot;</characteristic>
+            <characteristic name="Roll to hit/AP" typeId="643a-074a-5228-ebc3">2+/-4</characteristic>
+            <characteristic name="Fire Points" typeId="59cf-5e36-8154-2283"/>
+            <characteristic name="Traits" typeId="ca93-99b9-6661-294e">Shield Skipping 5+, Minefield</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6ae0-244a-ed46-1688" name="Minefield" hidden="false" targetId="88fd-bab9-d70f-a99a" type="profile"/>
+        <infoLink id="deaf-4a7e-72da-d415" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="5+"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="997f-0b62-9bd8-454d" name="Standard Mines" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e657-0206-8bc6-297a" name="Standard Mines" hidden="false" typeId="caff-551f-3edf-ec79" typeName="Mine">
+          <characteristics>
+            <characteristic name="Range" typeId="5ea5-0383-0304-75d6">4&quot;</characteristic>
+            <characteristic name="Roll to hit/AP" typeId="643a-074a-5228-ebc3">4+/-2</characteristic>
+            <characteristic name="Fire Points" typeId="59cf-5e36-8154-2283"/>
+            <characteristic name="Traits" typeId="ca93-99b9-6661-294e">Shield Skipping 6+, Minefield</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="544c-279d-6caa-bf0d" name="Minefield" hidden="false" targetId="88fd-bab9-d70f-a99a" type="profile"/>
+        <infoLink id="6e78-6176-4119-85fc" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="6+"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fbb2-4858-5cd7-8c4f" name="Battlegroup Veterency" hidden="false" collective="false" import="true" defaultSelectionEntryId="070f-e295-681a-edd8">
@@ -1035,6 +1104,15 @@ Assault Ships: Assault Ships. &quot;			</comment>
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="58ee-de1e-51a3-8cc5" name="Battlegroup Command Traits" hidden="true" collective="false" import="true" targetId="a046-302a-8c6a-9f00" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a246-4f69-5f8f-49ce" name="Hanger Upgrades" hidden="true" collective="false" import="true">
@@ -1116,6 +1194,81 @@ Assault Ships: Assault Ships. &quot;			</comment>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0489-dfa8-29f8-fe83" name="Mine Options" hidden="true" collective="true" import="true"/>
+    <selectionEntryGroup id="a046-302a-8c6a-9f00" name="Battlegroup Command Traits" hidden="true" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2bb-4ba9-2c13-e43e" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9df7-1d78-ca70-ce59" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="1420-64da-8bc1-07f9" name="1 Poor" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="6e1c-bd5d-4021-df4c" name="1 Poor" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">7+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">-1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3d0e-6c9a-1a49-c4df" name="2 Confident" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="dff1-2027-d523-c054" name="2 Confident" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">6+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="048e-14dd-6b15-1677" name="4 Legendary" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="f3ab-f497-9973-e49b" name="4 Legendary" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">4+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cf36-1645-e1fd-42ba" name="3 Inspiring" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="d649-3bc8-3cbd-20f3" name="3 Inspiring" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">5+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">9</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d9ca-e2f0-aab5-17c5" name="Mines" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="bc55-26b2-444d-cb71" name="Standard Mines" hidden="false" collective="false" import="true" targetId="997f-0b62-9bd8-454d" type="selectionEntry"/>
+        <entryLink id="627a-0465-02a7-d8ca" name="Armour Buster Mines" hidden="false" collective="false" import="true" targetId="89de-9c81-7e14-4d89" type="selectionEntry"/>
+        <entryLink id="a080-1894-3b8d-5987" name="Stealth Mines" hidden="false" collective="false" import="true" targetId="b1d7-8653-a543-1979" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="2711-87ab-91c7-05fc" name="Fleet Commander" hidden="true">
