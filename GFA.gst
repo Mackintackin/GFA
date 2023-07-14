@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="41" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="48" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -58,7 +58,8 @@
         <characteristicType id="a702-c3f6-cb95-b6a6" name="Roll to hit/+AP"/>
         <characteristicType id="c53e-747f-9f47-849c" name="Rundown"/>
         <characteristicType id="db31-ed7c-6704-83e3" name="Save"/>
-        <characteristicType id="3fbd-f301-2926-dcaf" name="Damage to ships"/>
+        <characteristicType id="3fbd-f301-2926-dcaf" name="Attacks Against Ships"/>
+        <characteristicType id="a75f-7e43-f243-87a2" name="Traits"/>
       </characteristicTypes>
     </profileType>
     <profileType id="caff-551f-3edf-ec79" name="Mine">
@@ -67,6 +68,14 @@
         <characteristicType id="643a-074a-5228-ebc3" name="Roll to hit/AP"/>
         <characteristicType id="59cf-5e36-8154-2283" name="Fire Points"/>
         <characteristicType id="ca93-99b9-6661-294e" name="Traits"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="9b96-0077-9566-f558" name="Infantry Stats">
+      <characteristicTypes>
+        <characteristicType id="63fd-f8ae-437b-9395" name="Attack"/>
+        <characteristicType id="4412-2637-abd3-6d06" name="Defend"/>
+        <characteristicType id="7fbe-8b08-ceac-4a4d" name="Attacks"/>
+        <characteristicType id="ffdb-7368-6e3f-b0cf" name="Save"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -204,6 +213,8 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2a38-442e-6558-f877" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="88bb-57bb-2223-9bf6" name="Character" hidden="false"/>
+    <categoryEntry id="7b6d-44b5-7ed8-3c14" name="Kodoth" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
@@ -988,7 +999,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Grand Admiral Command Traits" hidden="true" collective="false" import="true" defaultSelectionEntryId="9d25-6d68-dedf-326d">
+    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Grand Admiral" hidden="true" collective="true" import="true" defaultSelectionEntryId="9d25-6d68-dedf-326d">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f78-5795-3a36-44be" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
@@ -1054,7 +1065,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b054-eb1a-f42d-7b86" name="The Great Khan (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="51f1-5095-b449-9a74" name="The Great Khan (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1063,7 +1074,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             </modifier>
           </modifiers>
           <profiles>
-            <profile id="375a-1b07-bf7d-1ab0" name="The Great Khan (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+            <profile id="dc16-a20e-22f0-5d18" name="The Great Khan (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
               <characteristics>
                 <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">- The Great Khan’s battlegroup gains vanguard even if ships are not thrust 4.
 - All ships gain +1 morale while the Khan’s ship is on the table.</characteristic>
@@ -1077,7 +1088,116 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="40.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="740d-7f61-88a9-75b7" name="Sokhatai Maral (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink id="a2fb-98ee-9652-da32" name="Sokhatai Maral (Inspiring 3)" hidden="false" targetId="314d-f13b-fa21-03b2" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6910-1d98-fb9e-2962" name="Arkhai Hooshal (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="ca69-2808-286e-75c0" name="Arkhai Hooshal (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Devastating attacks:
+Hooshal’s fleet may take the belter’s rigged asteroids
+Circulating rumours:
+1 to enemy morale saves</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4627-4e9d-ffad-9528" name="Admiral Meng Xinyi (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edc7-8c1e-1373-40ec" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="085d-c25b-33da-0cee" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="2c94-4263-f89e-d521" name="Admiral Meng Xinyi (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Forged In Fire:
+Meng is no stranger to death and combat and has taken a few scrapes in his time. The first time his bridge is hit you can choose to reroll the dice on the damage table.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1d0e-ef9a-33e5-0252" name="Rear Admiral Dong Huo (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edc7-8c1e-1373-40ec" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink id="5b5a-1a52-a2af-fb37" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" targetId="6ad3-8019-30a8-7bdf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fe88-8746-8f50-5efc" name="Captain Yakovna (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="fd22-06f0-cd4e-143a" name="The Great Khan (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Gunboat coordination specialist:
+If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take an extra squadron of them for free. Even if this takes the battlegroup over the slot limit for escorts.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="7ad0-f7c3-96ba-0a4c" name="AEA Admirals" hidden="false" collective="false" import="true" targetId="a782-69cc-94a6-c23c" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a197-fe12-1310-5109" name="Commander" hidden="false" collective="false" import="true">
       <modifiers>
@@ -1095,7 +1215,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
       <entryLinks>
         <entryLink id="7175-9fd8-9ad6-bc23" name="Grand Admiral" hidden="false" collective="false" import="true" targetId="c263-1075-50d4-5c53" type="selectionEntry"/>
         <entryLink id="36d8-70bb-3c44-5c04" name="Battlegroup Commander" hidden="false" collective="false" import="true" targetId="11e6-0919-7171-3349" type="selectionEntry"/>
-        <entryLink id="a199-06c9-e9c9-d033" name="Grand Admiral Command Traits" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup">
+        <entryLink id="a199-06c9-e9c9-d033" name="Grand Admiral" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1260,7 +1380,69 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="237d-f721-21bf-21d7" name="Sokhatai Maral (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5b6c-d689-64eb-4319" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fa40-6e84-03e3-7fab" name="Sokhatai Maral (Inspiring 3)" hidden="false" targetId="314d-f13b-fa21-03b2" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a910-75a8-68d7-f5df" name="Batu Husun (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="85f8-06c2-a1f2-4cfa" name="Batu Husun (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Elite shock troopers:
+Batu commands some of the finest Merathian shock troopers of all the divided houses. Shock troopers gain +2 to their CQB on top of the +2 faction trait. Also enemy marines who board Batu’s ship get 1 to their CQB</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="12.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="72f8-5188-314d-1154" name="Rear Admiral Dong Huo (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edc7-8c1e-1373-40ec" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2ae9-2a06-634b-2135" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e4c9-1db1-c81e-29d2" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" targetId="6ad3-8019-30a8-7bdf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="7f9e-de73-a0e7-5a79" name="AEA Admirals" hidden="false" collective="false" import="true" targetId="a782-69cc-94a6-c23c" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d9ca-e2f0-aab5-17c5" name="Mines" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -1268,6 +1450,103 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <entryLink id="627a-0465-02a7-d8ca" name="Armour Buster Mines" hidden="false" collective="false" import="true" targetId="89de-9c81-7e14-4d89" type="selectionEntry"/>
         <entryLink id="a080-1894-3b8d-5987" name="Stealth Mines" hidden="false" collective="false" import="true" targetId="b1d7-8653-a543-1979" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a782-69cc-94a6-c23c" name="AEA Admirals" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="4ad8-a3d5-34ff-c4c5" name="Captain Schulhof (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="b240-cb75-a8e3-c781" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3b58-a450-bc83-063a" name="Captain Schulhof (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Trickster: When commanding a patrol group, when they are shot at he may choose to enact evasion manoeuvres which gives the enemy ships 2 to shooting at his group until his next activation. However he then receives 2 to shooting next activation.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">5+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="16.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a91f-4bb4-dd5c-fd1c" name="Rear Admiral Pearson (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="append" field="name" value="BGC">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="name" value="GA">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12bc-4296-4aec-df60" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="db50-9062-84df-6561" name="Rear Admiral Pearson (Inspiring 3)" hidden="false" targetId="b4ce-9b8e-9fa4-9a0b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="beae-e6b7-5135-2acd" name="Admiral Kodoth (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b6d-44b5-7ed8-3c14" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="8138-7507-9429-7953" name="Admiral Kodoth (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Old Guard: Old AEA doctrine specialised around heavy ships supported by the use of torpedo’s and mines. Torpedo boats in his fleet gain an extra torpedo. Every support group must contain at least 1 mine layer.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">2+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+3</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -1622,6 +1901,16 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
         </modifier>
       </modifiers>
       <description>These weapons hamper enemy ADS systems by overloading them with debris and heat signals making them less effective against targets. Ships hit by this have &apos; X&apos; to their ads rolls until the shooters next activation. If the weapon is an aura such as the UTS minefield. Then while any ships from a battlegroup are within the aura, the full battlegroup is affected.</description>
+    </rule>
+    <rule id="d662-a994-8530-11de" name="Shutdown" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>This weapon doesn’t damage a ship but when it hits, the targeted ship cannot move or shoot next activation. This weapon disperses to the next ship once the first ship is hit, so if 3 shots hit then 3 ships are targeted.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2483,6 +2772,63 @@ Note that the base of 3 ships acts as a single ship when they are boarded.</char
     <profile id="4fad-3a2f-efcf-91e0" name="Station" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">These ships are actually Large stations. They cannot be with within battlegroups with other ships and are always independent.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="efa0-63bc-afe5-fef1" name="Shutdown" hidden="false" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">This weapon doesn’t damage a ship but when it hits, the targeted ship cannot move or shoot next activation. This weapon disperses to the next ship once the first ship is hit, so if 3 shots hit then 3 ships are targeted.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8083-da07-56d6-4d46" name="Advanced Catapults" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship is equipped with advanced launch tubes for its strike craft. Strike craft launched from this ship may be placed within 12” inches of the carrier when launched instead of the usual 2”.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9c8a-25e6-50a2-d1f2" name="Character" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship is attached to a named character and cannot be taken without this character. You must look at the factions ‘Character’ page to find the character who uses this ship.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f7d7-4a2b-d392-bece" name="Intercept" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">damage from these strike craft can be targeted at specific enemy squadrons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3185-7632-644b-7040" name="SC Jump Drives" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">These strike craft don’t need to be taken within ship slots, and instead are purchased alongside battlegroups without taking a slot.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="61e7-6bdd-da18-214d" name="Strike Support" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">All strike craft within 16&quot; gain access to the support systems on this ship. In dogfighting the strike craft with the highest strike support gain +1 to their dogfighting attack rolls.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="314d-f13b-fa21-03b2" name="Sokhatai Maral (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+      <characteristics>
+        <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Tenacious Strike group commander:
+Strike craft in Sokhatai’s battlegroup get +1 to dogfighting, and bombers get +1 damage against ships.</characteristic>
+        <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+        <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+3</characteristic>
+        <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6ad3-8019-30a8-7bdf" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+      <characteristics>
+        <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Skill Unmatched:
+When Rear Admiral Dong Huo is admiral of the fleet, add 2 green BIT tokens to the bag. These are SRP specific BIT tokens and cannot be used by the opposing player. If the opponent draws them then put them aside until the end of the turn and they must draw again.</characteristic>
+        <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+4</characteristic>
+        <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
+        <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b4ce-9b8e-9fa4-9a0b" name="Rear Admiral Pearson (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+      <characteristics>
+        <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Refitted Docking bays: Pearson has a few tricks when it comes to getting the
+best use out of the space on her ships. (+2 strike craft slots to her ship)</characteristic>
+        <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">3+</characteristic>
+        <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+3</characteristic>
+        <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">9</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
