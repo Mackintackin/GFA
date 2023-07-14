@@ -999,7 +999,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Grand Admiral" hidden="true" collective="false" import="true" defaultSelectionEntryId="9d25-6d68-dedf-326d">
+    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Grand Admiral" hidden="true" collective="true" import="true" defaultSelectionEntryId="9d25-6d68-dedf-326d">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f78-5795-3a36-44be" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
