@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="917e-df8f-94d0-342d" name="Kodoth Flagship" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -18,7 +18,11 @@
       <entryLinks>
         <entryLink id="cf8f-97df-fffc-2b8d" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="0388-161c-5e82-1e24" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
-        <entryLink id="68fa-5d8e-c063-6a8a" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry"/>
+        <entryLink id="68fa-5d8e-c063-6a8a" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3de-84d8-021d-3a5d" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="5947-c164-33e3-957e" name="Missile Pods (Ord)" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8abf-6b6a-4fed-0fe9" type="max"/>
@@ -56,7 +60,7 @@
     </entryLink>
     <entryLink id="a27c-3d37-818b-2702" name="Battleship" hidden="false" collective="false" import="true" targetId="a20c-a6d4-2bc3-15e1" type="selectionEntry">
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="58.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="62.0"/>
       </costs>
     </entryLink>
     <entryLink id="85d8-509e-a08a-e03d" name="Carrier (12 Slots)" hidden="false" collective="false" import="true" targetId="c347-0db6-bd44-f75a" type="selectionEntry">
@@ -66,7 +70,7 @@
     </entryLink>
     <entryLink id="44a8-a3d2-8ac6-9088" name="Corvette" hidden="false" collective="false" import="true" targetId="341d-9d9e-6c19-7a7e" type="selectionEntry">
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="17.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="16.0"/>
       </costs>
     </entryLink>
     <entryLink id="f94a-6892-d50f-0da8" name="Cruiser" hidden="false" collective="false" import="true" targetId="1c4d-e08e-5439-db5c" type="selectionEntry">
@@ -285,7 +289,7 @@
         <categoryLink id="6bbf-6f0c-57de-2888" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d993-0363-bbed-d9c0" name="Missile Pods" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
+        <entryLink id="d993-0363-bbed-d9c0" name="Missile Pods (Ord)" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a8d-12b0-bad2-8959" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd5e-bfa2-b50a-cf4c" type="min"/>
@@ -319,6 +323,7 @@
           </costs>
         </entryLink>
         <entryLink id="befa-35e2-aec9-cd2c" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="8c4d-6fad-e1fb-f799" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -529,6 +534,7 @@
         <entryLink id="0756-8cb9-3cb4-dbee" name="Strikecraft Cruiser (2 Slots)" hidden="false" collective="false" import="true" targetId="933f-4154-8a23-2002" type="selectionEntryGroup"/>
         <entryLink id="4123-4952-b353-8ee8" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="eab4-1dc2-9dfe-50df" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="88ae-2b07-02fe-9f26" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -586,6 +592,7 @@
         </entryLink>
         <entryLink id="dee8-790b-eba8-5ec8" name="Strikecraft Destroyer (1 Slot)" hidden="false" collective="false" import="true" targetId="3792-6c03-4955-29c8" type="selectionEntryGroup"/>
         <entryLink id="5aff-4922-1bfc-2033" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="4d6a-b4ad-f7d3-17f8" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -622,6 +629,7 @@
         </entryLink>
         <entryLink id="16d1-4696-979c-270f" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="f31a-95cb-e1f6-cbcb" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="cfde-3d91-739b-cddd" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -731,6 +739,7 @@
           </constraints>
         </entryLink>
         <entryLink id="777e-4663-3a68-43f0" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="7797-cf17-c582-e35a" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -779,6 +788,7 @@
         </entryLink>
         <entryLink id="8c0e-4792-c78d-71bd" name="Strikecraft Heavy Destroyer (1 Slot)" hidden="false" collective="false" import="true" targetId="cd95-e563-0801-4c0f" type="selectionEntryGroup"/>
         <entryLink id="bff0-07be-6d21-5d2f" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="1025-9066-3aad-68dd" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -810,6 +820,7 @@
           </constraints>
         </entryLink>
         <entryLink id="9e47-4285-bed4-de50" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="31d3-6e7b-67bb-e188" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -881,6 +892,12 @@
           </constraints>
         </entryLink>
         <entryLink id="af50-86f9-991d-4558" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="3e8f-87f3-028c-b1f5" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
+        <entryLink id="d36b-178b-b94f-f0c9" name="Mines" hidden="false" collective="false" import="true" targetId="d9ca-e2f0-aab5-17c5" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be92-7656-9869-737a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -919,6 +936,7 @@
           </constraints>
         </entryLink>
         <entryLink id="ec37-ef43-938f-08e9" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="d768-e250-5d55-c200" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -1012,6 +1030,7 @@
           </constraints>
         </entryLink>
         <entryLink id="dc89-000d-6f91-13a3" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="1099-6bd0-791a-5525" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -1043,6 +1062,7 @@
           </constraints>
         </entryLink>
         <entryLink id="db27-51d3-741a-ee9a" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="b9f1-99f8-5863-665a" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -1140,12 +1160,13 @@
         <entryLink id="c587-a7e9-9cc8-1040" name="Strikecraft Heavy Cruiser (2 Slots)" hidden="false" collective="false" import="true" targetId="997d-d0f5-b6e9-17dd" type="selectionEntryGroup"/>
         <entryLink id="f41d-f40e-d386-78dd" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="0428-b8e1-c798-584f" name="Troop Selection" hidden="false" collective="false" import="true" targetId="9f3d-993f-0e42-735b" type="selectionEntryGroup"/>
+        <entryLink id="5860-ca86-1f3e-e452" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f47a-c154-e427-61e9" name="Electronic Warfare Ship (Lvl1)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f47a-c154-e427-61e9" name="Electronic Warfare Ship (Lvl2)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="7cf9-b810-0c80-3bbf" name="Electronic Warfare Ship (Lv1)" hidden="false" targetId="5c53-acf3-b699-de0f" type="profile"/>
       </infoLinks>
@@ -1175,10 +1196,10 @@
         <infoLink id="e152-aa95-86af-1788" name="Attack Boats" hidden="false" targetId="7874-93f0-09bb-931c" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4ca9-acdf-3e10-64b8" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
         <categoryLink id="94c5-edc0-c149-086a" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="1bcc-ff5c-be25-3612" name="Lancer" hidden="false" targetId="1c95-20dd-7250-0c03" primary="false"/>
         <categoryLink id="2c3a-83d8-d698-34e4" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
+        <categoryLink id="78fc-8641-b2ba-222d" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8ab4-ec72-a0fb-e9dc" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
@@ -1195,6 +1216,7 @@
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4709-0ebc-0bad-405e" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="9297-922f-46e6-04cd" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -1207,10 +1229,10 @@
         <infoLink id="5587-af2d-9458-298e" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="6769-9264-9768-cd3c" name="New CategoryLink" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
         <categoryLink id="701a-ea1d-da19-dd8a" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
         <categoryLink id="6c38-c24a-2e48-a562" name="Lancer" hidden="false" targetId="1c95-20dd-7250-0c03" primary="false"/>
         <categoryLink id="83b5-34af-9863-599a" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
+        <categoryLink id="27ca-4fb8-7c44-ca8d" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9613-860a-7ec1-c076" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
@@ -1227,6 +1249,7 @@
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667d-30be-4837-0245" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="f4af-2308-32bf-338e" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="false" import="true" targetId="31e8-02d6-a4e7-451d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -1512,6 +1535,21 @@
         <entryLink id="3011-913c-e0fb-c631" name="Strikecraft" hidden="false" collective="false" import="true" targetId="f3ab-94b0-7c71-baa9" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="31e8-02d6-a4e7-451d" name="Strikecraft Pearson (2 Slots)" hidden="false" collective="true" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a91f-4bb4-dd5c-fd1c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2ea-c788-ba1e-ca49" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="0ded-ee6d-2a00-0fcb" name="Strikecraft" hidden="false" collective="false" import="true" targetId="f3ab-94b0-7c71-baa9" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="6e6a-1358-8d96-1965" name="Point defence guns (PD)" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
@@ -1700,9 +1738,9 @@
     </profile>
     <profile id="a4c0-0c6b-996c-6bbe" name="Fighter Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+4</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
@@ -1711,9 +1749,9 @@
     </profile>
     <profile id="a6cc-2ba9-4dc1-2404" name="Fighters" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+3</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+3</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">8+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
@@ -1722,9 +1760,9 @@
     </profile>
     <profile id="d9bc-6283-d144-806e" name="Attack Bombers" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+2</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+2</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">4+/-3</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">4+/-3</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
@@ -1733,9 +1771,9 @@
     </profile>
     <profile id="71fd-b4a2-197d-032c" name="Interceptors" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">4+</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">4+</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">10+/0</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">10+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
@@ -1744,9 +1782,9 @@
     </profile>
     <profile id="5a5b-f1b6-9769-7e8f" name="Interceptor Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+4</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+4</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">4+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
@@ -1755,9 +1793,9 @@
     </profile>
     <profile id="bf53-ab36-0551-1dca" name="Dropships" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+1</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+1</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>

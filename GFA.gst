@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="48" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="55" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -53,9 +53,9 @@
     </profileType>
     <profileType id="57d9-4b4c-aef6-d2ff" name="Strikecraft">
       <characteristicTypes>
-        <characteristicType id="5100-19bf-79a4-f46b" name="Dogfight modifier"/>
+        <characteristicType id="5100-19bf-79a4-f46b" name="Anti SC"/>
         <characteristicType id="84f2-ec5e-e8f2-1b9c" name="Speed"/>
-        <characteristicType id="a702-c3f6-cb95-b6a6" name="Roll to hit/+AP"/>
+        <characteristicType id="a702-c3f6-cb95-b6a6" name="Anti Ship"/>
         <characteristicType id="c53e-747f-9f47-849c" name="Rundown"/>
         <characteristicType id="db31-ed7c-6704-83e3" name="Save"/>
         <characteristicType id="3fbd-f301-2926-dcaf" name="Attacks Against Ships"/>
@@ -215,6 +215,7 @@
     </categoryEntry>
     <categoryEntry id="88bb-57bb-2223-9bf6" name="Character" hidden="false"/>
     <categoryEntry id="7b6d-44b5-7ed8-3c14" name="Kodoth" hidden="false"/>
+    <categoryEntry id="f731-eb6e-ac00-c3af" name="Gunboat" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
@@ -245,6 +246,16 @@
               <repeats>
                 <repeat field="selections" scope="5ef9-7be3-c10e-89bb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e62e-eaf7-0a7a-8ede" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="f41a-eeb3-1198-d916" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -298,6 +309,16 @@
                 <repeat field="selections" scope="1383-5b5c-01df-92d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="7784-5eac-90d8-2017" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7784-5eac-90d8-2017" type="min"/>
@@ -323,6 +344,18 @@
       <categoryLinks>
         <categoryLink id="2f3a-9d4e-607f-18bb" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="6abe-11b0-8893-10b9" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <modifiers>
+            <modifier type="increment" field="6561-f66f-7d7d-efa5" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6561-f66f-7d7d-efa5" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d05-b3dc-ea22-37ef" type="min"/>
@@ -366,6 +399,16 @@
                 <condition field="selections" scope="fa06-bc3a-fdc3-52a2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="increment" field="bf2c-6eb1-771f-7f07" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf2c-6eb1-771f-7f07" type="max"/>
@@ -407,6 +450,16 @@
               <repeats>
                 <repeat field="selections" scope="085d-c25b-33da-0cee" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="e0f9-9177-db92-89ea" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -999,204 +1052,35 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Grand Admiral" hidden="true" collective="true" import="true" defaultSelectionEntryId="9d25-6d68-dedf-326d">
+    <selectionEntryGroup id="a654-6a24-3b83-0edb" name="Commander Traits" hidden="true" collective="true" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f78-5795-3a36-44be" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="9d25-6d68-dedf-326d" name="1 Poor" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="9878-cc5d-21e9-beb0" name="1 Poor" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">7+</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">-1</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">3</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7bce-c8a9-0efc-62cf" name="2 Confident" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="2d82-a04c-7ae9-43df" name="2 Confident" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">6+</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7115-878e-7cc1-ae98" name="4 Legendary" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="7c44-5829-1fe2-4bbe" name="4 Legendary" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">4+</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cf0b-c33c-56d7-8f16" name="3 Inspiring" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="9180-afd6-7655-b55f" name="3 Inspiring" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">5+</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">9</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="51f1-5095-b449-9a74" name="The Great Khan (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="dc16-a20e-22f0-5d18" name="The Great Khan (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">- The Great Khan’s battlegroup gains vanguard even if ships are not thrust 4.
-- All ships gain +1 morale while the Khan’s ship is on the table.</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">3+</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+3</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">9</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="40.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="740d-7f61-88a9-75b7" name="Sokhatai Maral (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <infoLinks>
-            <infoLink id="a2fb-98ee-9652-da32" name="Sokhatai Maral (Inspiring 3)" hidden="false" targetId="314d-f13b-fa21-03b2" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6910-1d98-fb9e-2962" name="Arkhai Hooshal (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="ca69-2808-286e-75c0" name="Arkhai Hooshal (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Devastating attacks:
-Hooshal’s fleet may take the belter’s rigged asteroids
-Circulating rumours:
-1 to enemy morale saves</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">10</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4627-4e9d-ffad-9528" name="Admiral Meng Xinyi (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edc7-8c1e-1373-40ec" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="085d-c25b-33da-0cee" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="2c94-4263-f89e-d521" name="Admiral Meng Xinyi (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Forged In Fire:
-Meng is no stranger to death and combat and has taken a few scrapes in his time. The first time his bridge is hit you can choose to reroll the dice on the damage table.</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1d0e-ef9a-33e5-0252" name="Rear Admiral Dong Huo (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edc7-8c1e-1373-40ec" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <infoLinks>
-            <infoLink id="5b5a-1a52-a2af-fb37" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" targetId="6ad3-8019-30a8-7bdf" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="fe88-8746-8f50-5efc" name="Captain Yakovna (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="fd22-06f0-cd4e-143a" name="The Great Khan (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Gunboat coordination specialist:
-If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take an extra squadron of them for free. Even if this takes the battlegroup over the slot limit for escorts.</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">7</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="7ad0-f7c3-96ba-0a4c" name="AEA Admirals" hidden="false" collective="false" import="true" targetId="a782-69cc-94a6-c23c" type="selectionEntryGroup"/>
+        <entryLink id="7ad0-f7c3-96ba-0a4c" name="AEA Admirals" hidden="false" collective="false" import="true" targetId="a782-69cc-94a6-c23c" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84e5-d495-0938-3237" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="32f2-c206-a105-e2fe" name="Generic Traits" hidden="false" collective="false" import="true" targetId="250d-cba0-c34f-a7f0" type="selectionEntryGroup"/>
+        <entryLink id="eed3-a175-ff8b-a0f9" name="Merathian Admirals" hidden="false" collective="false" import="true" targetId="a26d-2de5-74cd-c2f2" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8909-1dc7-027b-db48" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a197-fe12-1310-5109" name="Commander" hidden="false" collective="false" import="true">
@@ -1215,24 +1099,7 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
       <entryLinks>
         <entryLink id="7175-9fd8-9ad6-bc23" name="Grand Admiral" hidden="false" collective="false" import="true" targetId="c263-1075-50d4-5c53" type="selectionEntry"/>
         <entryLink id="36d8-70bb-3c44-5c04" name="Battlegroup Commander" hidden="false" collective="false" import="true" targetId="11e6-0919-7171-3349" type="selectionEntry"/>
-        <entryLink id="a199-06c9-e9c9-d033" name="Grand Admiral" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="58ee-de1e-51a3-8cc5" name="Battlegroup Command Traits" hidden="true" collective="false" import="true" targetId="a046-302a-8c6a-9f00" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink id="a199-06c9-e9c9-d033" name="Grand Admiral" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a246-4f69-5f8f-49ce" name="Hanger Upgrades" hidden="true" collective="false" import="true">
@@ -1314,7 +1181,7 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0489-dfa8-29f8-fe83" name="Mine Options" hidden="true" collective="true" import="true"/>
-    <selectionEntryGroup id="a046-302a-8c6a-9f00" name="Battlegroup Command Traits" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="a046-302a-8c6a-9f00" name="Battlegroup Commander" hidden="true" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2bb-4ba9-2c13-e43e" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9df7-1d78-ca70-ce59" type="min"/>
@@ -1380,47 +1247,6 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="237d-f721-21bf-21d7" name="Sokhatai Maral (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5b6c-d689-64eb-4319" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="fa40-6e84-03e3-7fab" name="Sokhatai Maral (Inspiring 3)" hidden="false" targetId="314d-f13b-fa21-03b2" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a910-75a8-68d7-f5df" name="Batu Husun (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="85f8-06c2-a1f2-4cfa" name="Batu Husun (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
-              <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Elite shock troopers:
-Batu commands some of the finest Merathian shock troopers of all the divided houses. Shock troopers gain +2 to their CQB on top of the +2 faction trait. Also enemy marines who board Batu’s ship get 1 to their CQB</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
-                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
-                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="12.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="72f8-5188-314d-1154" name="Rear Admiral Dong Huo (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -1451,19 +1277,21 @@ Batu commands some of the finest Merathian shock troopers of all the divided hou
         <entryLink id="a080-1894-3b8d-5987" name="Stealth Mines" hidden="false" collective="false" import="true" targetId="b1d7-8653-a543-1979" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a782-69cc-94a6-c23c" name="AEA Admirals" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="a782-69cc-94a6-c23c" name="AEA Admirals" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry id="4ad8-a3d5-34ff-c4c5" name="Captain Schulhof (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -1483,19 +1311,10 @@ Batu commands some of the finest Merathian shock troopers of all the divided hou
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="16.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a91f-4bb4-dd5c-fd1c" name="Rear Admiral Pearson (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a91f-4bb4-dd5c-fd1c" name="Rear Admiral Pearson (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
                 <modifier type="append" field="name" value="BGC">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
@@ -1522,14 +1341,9 @@ Batu commands some of the finest Merathian shock troopers of all the divided hou
         <selectionEntry id="beae-e6b7-5135-2acd" name="Admiral Kodoth (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b6d-44b5-7ed8-3c14" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b6d-44b5-7ed8-3c14" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
           <profiles>
@@ -1544,6 +1358,255 @@ Batu commands some of the finest Merathian shock troopers of all the divided hou
           </profiles>
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="250d-cba0-c34f-a7f0" name="Generic Traits" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6df-1d73-cf34-3de1" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="bf1f-046c-3941-39e4" name="1 Poor" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e305-3322-4e17-2aab" name="1 Poor" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">7+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">-1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a99d-38cb-2c49-169d" name="2 Confident" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="7af4-029e-45dc-2bb3" name="2 Confident" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">6+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4da7-45df-8c32-d5e0" name="3 Inspiring" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="f5e4-5f03-8b4b-d10b" name="3 Inspiring" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">5+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">9</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="65fb-1b54-7629-e556" name="4 Legendary" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="4743-0d20-5118-3201" name="4 Legendary" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">-</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">4+</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a26d-2de5-74cd-c2f2" name="Merathian Admirals" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="d8da-2ac8-2678-657c" name="Batu Husun (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a9a5-fec6-487c-42eb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="eeaa-1954-3b8c-d1a8" name="Batu Husun (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Elite shock troopers:
+Batu commands some of the finest Merathian shock troopers of all the divided houses. Shock troopers gain +2 to their CQB on top of the +2 faction trait. Also enemy marines who board Batu’s ship get 1 to their CQB</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="12.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="534e-e50c-d4b2-4fb4" name="Sokhatai Maral (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="append" field="name" value="BGC">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="name" value="GA">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2afb-aee4-2527-a86c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7d6f-81a7-99d4-352c" name="Sokhatai Maral (Inspiring 3)" hidden="false" targetId="314d-f13b-fa21-03b2" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fde9-4025-02a4-89ed" name="Arkhai Hooshal (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="32c8-637a-09d4-301b" name="Arkhai Hooshal (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Devastating attacks: Hooshal’s fleet may take the belter’s rigged asteroids
+Circulating rumours: 1 to enemy morale saves</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="fb08-5f34-9780-f7d3" name="SRP Admirals" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edc7-8c1e-1373-40ec" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="0a91-472d-53d5-c537" name="Admiral Meng Xinyi (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="085d-c25b-33da-0cee" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e80-5fa6-a6f4-e19f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c643-d78f-7f17-7a95" name="Admiral Meng Xinyi (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Forged In Fire:
+Meng is no stranger to death and combat and has taken a few scrapes in his time. The first time his bridge is hit you can choose to reroll the dice on the damage table.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="975c-c061-3dd5-83c9" name="Captain Yakovna (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7415-99d2-a833-fd31" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="58a3-41ec-f500-837e" name="Captain Yakovna (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Gunboat coordination specialist:
+If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take an extra squadron of them for free. Even if this takes the battlegroup over the slot limit for escorts.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="32e9-17de-a6c9-1165" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="append" field="name" value="BGC">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="name" value="GA">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bb6f-95ec-04a7-0e45" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="37a7-cbe0-9f78-0faa" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" targetId="6ad3-8019-30a8-7bdf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
