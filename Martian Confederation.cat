@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9ea2-bd7a-5ba2-7a25" name="Tharsis Lance Battleship" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -176,6 +176,7 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a21e-4b3c-fd1e-2c75" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="b86c-f46c-be62-e57e" name="Strikecraft Olympus Flagship (8 Slots)" hidden="false" collective="false" import="true" targetId="9921-1ebd-8dad-b0dd" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="110.0"/>
@@ -1416,6 +1417,14 @@
       </constraints>
       <entryLinks>
         <entryLink id="c4b1-278d-f131-93f7" name="Strikecraft" hidden="false" collective="false" import="true" targetId="cca9-427f-6c77-7e08" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9921-1ebd-8dad-b0dd" name="Strikecraft Olympus Flagship (8 Slots)" hidden="false" collective="true" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c607-5e3b-16c0-55a1" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="5daf-385d-ee2e-aeb0" name="Strikecraft" hidden="false" collective="false" import="true" targetId="cca9-427f-6c77-7e08" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
