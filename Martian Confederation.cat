@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e561-c0d9-9760-7391" name="Martian Confederation" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9ea2-bd7a-5ba2-7a25" name="Tharsis Lance Battleship" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -184,24 +184,72 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="3a26-c560-e648-04fe" name="Frigate" hidden="false" collective="false" import="true" targetId="ab7f-baeb-1678-4b64" type="selectionEntry"/>
-    <entryLink id="a802-4515-3b49-f916" name="Line Frigate" hidden="false" collective="false" import="true" targetId="b004-55c3-1f43-e60d" type="selectionEntry"/>
-    <entryLink id="737b-0d02-b4ca-02b1" name="Destroyer" hidden="false" collective="false" import="true" targetId="e4f8-71d7-ca07-32ed" type="selectionEntry"/>
-    <entryLink id="0368-0d54-8d55-2068" name="Heavy Destroyer" hidden="false" collective="false" import="true" targetId="2fa6-7093-5869-5ddb" type="selectionEntry"/>
-    <entryLink id="0fc6-301f-773a-4ecd" name="Armoured Destroyer" hidden="false" collective="false" import="true" targetId="5509-88e6-a2ac-2219" type="selectionEntry"/>
-    <entryLink id="3e8a-ca1c-104e-cd9d" name="Light Cruiser" hidden="false" collective="false" import="true" targetId="76ac-5d3f-ac2a-3ce2" type="selectionEntry"/>
-    <entryLink id="546c-4e73-b111-175d" name="Cruiser" hidden="false" collective="false" import="true" targetId="9757-9d56-37dc-b661" type="selectionEntry"/>
-    <entryLink id="20de-80cf-54da-913c" name="Battle Cruiser" hidden="false" collective="false" import="true" targetId="a1ae-1c63-4735-49aa" type="selectionEntry"/>
-    <entryLink id="2c41-78f8-96b6-1845" name="Battleship" hidden="false" collective="false" import="true" targetId="8fcf-e737-dfbb-0727" type="selectionEntry"/>
-    <entryLink id="03a0-cb8b-624d-8376" name="Carrier (14 Slots)" hidden="false" collective="false" import="true" targetId="6bfb-2728-8d38-7779" type="selectionEntry"/>
-    <entryLink id="ddd9-7b1d-0b1a-683e" name="Super Carrier" hidden="false" collective="false" import="true" targetId="5890-89d4-41a3-946f" type="selectionEntry"/>
+    <entryLink id="3a26-c560-e648-04fe" name="Frigate" hidden="false" collective="false" import="true" targetId="ab7f-baeb-1678-4b64" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="23.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="a802-4515-3b49-f916" name="Line Frigate" hidden="false" collective="false" import="true" targetId="b004-55c3-1f43-e60d" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="23.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="737b-0d02-b4ca-02b1" name="Destroyer" hidden="false" collective="false" import="true" targetId="e4f8-71d7-ca07-32ed" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="26.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="0368-0d54-8d55-2068" name="Heavy Destroyer" hidden="false" collective="false" import="true" targetId="2fa6-7093-5869-5ddb" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="0fc6-301f-773a-4ecd" name="Armoured Destroyer" hidden="false" collective="false" import="true" targetId="5509-88e6-a2ac-2219" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="27.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="3e8a-ca1c-104e-cd9d" name="Light Cruiser" hidden="false" collective="false" import="true" targetId="76ac-5d3f-ac2a-3ce2" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="39.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="546c-4e73-b111-175d" name="Cruiser" hidden="false" collective="false" import="true" targetId="9757-9d56-37dc-b661" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="41.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="20de-80cf-54da-913c" name="Battle Cruiser" hidden="false" collective="false" import="true" targetId="a1ae-1c63-4735-49aa" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="50.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="2c41-78f8-96b6-1845" name="Battleship" hidden="false" collective="false" import="true" targetId="8fcf-e737-dfbb-0727" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="66.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="03a0-cb8b-624d-8376" name="Carrier (14 Slots)" hidden="false" collective="false" import="true" targetId="6bfb-2728-8d38-7779" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="70.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="ddd9-7b1d-0b1a-683e" name="Super Carrier (18 Slots)" hidden="false" collective="false" import="true" targetId="5890-89d4-41a3-946f" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="105.0"/>
+      </costs>
+    </entryLink>
     <entryLink id="58c6-fb1e-7a35-0bcd" name="Faction: Martian Confederation" hidden="false" collective="false" import="true" targetId="bfec-66c0-bdf3-f4af" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c9d0-bf76-142b-b5e1" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
         <categoryLink id="8cfb-85a9-b034-a68b" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b5a1-1e5e-f47d-daf2" name="Flagship" hidden="false" collective="false" import="true" targetId="6dc5-0e3e-468d-a79f" type="selectionEntry"/>
+    <entryLink id="b5a1-1e5e-f47d-daf2" name="Flagship" hidden="false" collective="false" import="true" targetId="6dc5-0e3e-468d-a79f" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="72.0"/>
+      </costs>
+    </entryLink>
   </entryLinks>
   <infoLinks>
     <infoLink id="cdec-8f3c-5b5e-9c49" name="Shield Skipping" hidden="false" targetId="7ea1-4161-2294-2952" type="rule"/>
@@ -467,6 +515,7 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="6a99-21fa-3925-6cd0" name="Aegis" hidden="false" targetId="98c1-ebfa-0322-ec29" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="faab-62f8-3e8d-c221" name="Martian Confederation" hidden="false" targetId="919b-1192-f03e-8121" primary="false"/>

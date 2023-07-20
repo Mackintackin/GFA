@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="57" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="59" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
   </publications>
@@ -220,6 +220,10 @@
     <categoryEntry id="72c4-1567-4bc9-348c" name="Marineris" hidden="false"/>
     <categoryEntry id="d5fc-6cb8-e6c9-1114" name="Thrasis" hidden="false"/>
     <categoryEntry id="b26c-4d2b-0182-c747" name="Tharsis" hidden="false"/>
+    <categoryEntry id="dfe8-3719-8442-cb61" name="Empress" hidden="false"/>
+    <categoryEntry id="5603-502e-9c80-110e" name="Krotan Assault Carrier" hidden="false"/>
+    <categoryEntry id="688c-5ead-89a3-1d69" name="Reformed H Cruiser" hidden="false"/>
+    <categoryEntry id="c32a-e17b-92e4-f5bf" name="Vespa H Cruiser" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
@@ -443,7 +447,7 @@
         <categoryLink id="172b-e8c0-bdd4-0927" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="ec3b-64ba-1f7f-b851" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b885-c325-7838-d79e" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b885-c325-7838-d79e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d0-7ddd-9ffa-af00" type="min"/>
           </constraints>
         </categoryLink>
@@ -467,7 +471,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f9-9177-db92-89ea" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f9-9177-db92-89ea" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0b18-a8d1-4359-d9ff" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
@@ -498,6 +502,42 @@
         <categoryLink id="30ca-f8fd-8622-3182" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="4963-552e-edb7-578d" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
         <categoryLink id="158b-6627-ac62-3d12" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="fef6-a6e1-b7cc-b959" name="Picket Group" hidden="false">
+      <comment>Can be any group type but all ships must have thrusters 4 and above.</comment>
+      <forceEntries>
+        <forceEntry id="a564-3aae-ddd2-1b0f" name="Picket Group" hidden="false">
+          <categoryLinks>
+            <categoryLink id="2460-8cf4-b873-283d" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="d66e-c210-a9d6-add4" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink id="c405-cb6e-933d-2a7f" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
+            <categoryLink id="3243-bdde-4876-07ec" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="ca71-3a89-87fb-db08" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="b11a-a7ae-3657-3ed7" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
+          <modifiers>
+            <modifier type="increment" field="bd42-ccb9-441c-709f" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f731-eb6e-ac00-c3af" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd42-ccb9-441c-709f" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="516e-b769-7b76-f7a4" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="954d-9bc6-a3c8-8793" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+        <categoryLink id="6fc4-5adb-c885-f8a7" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1099,6 +1139,16 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3403-f7b0-bd6a-4ccf" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="5fd2-5d35-9247-40ee" name="NC Admirals" hidden="false" collective="false" import="true" targetId="ef76-916f-a6dc-c0e6" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63d1-cd30-3bb8-88cc" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e1f1-265e-0208-2a7b" name="IH Admirals" hidden="false" collective="false" import="true" targetId="91d7-8e3b-3914-231a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e4-2a15-4eaa-0353" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a197-fe12-1310-5109" name="Commander" hidden="false" collective="false" import="true">
@@ -1200,6 +1250,30 @@ Assault Ships: Assault Ships. &quot;			</comment>
     </selectionEntryGroup>
     <selectionEntryGroup id="0489-dfa8-29f8-fe83" name="Mine Options" hidden="true" collective="true" import="true"/>
     <selectionEntryGroup id="d9ca-e2f0-aab5-17c5" name="Mines" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="b8d4-ac38-a5b7-93b0" name="Tormentor Mines" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3812-dfb0-f7d9-4053" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="9458-46e8-1b5c-32ac" name="Tormentor Mines" hidden="false" typeId="caff-551f-3edf-ec79" typeName="Mine">
+              <characteristics>
+                <characteristic name="Range" typeId="5ea5-0383-0304-75d6">8&quot;</characteristic>
+                <characteristic name="Roll to hit/AP" typeId="643a-074a-5228-ebc3">-</characteristic>
+                <characteristic name="Fire Points" typeId="59cf-5e36-8154-2283">All</characteristic>
+                <characteristic name="Traits" typeId="ca93-99b9-6661-294e">Minefield, Tormentor</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="bc55-26b2-444d-cb71" name="Standard Mines" hidden="false" collective="false" import="true" targetId="997f-0b62-9bd8-454d" type="selectionEntry"/>
         <entryLink id="627a-0465-02a7-d8ca" name="Armour Buster Mines" hidden="false" collective="false" import="true" targetId="89de-9c81-7e14-4d89" type="selectionEntry"/>
@@ -1676,6 +1750,266 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="ef76-916f-a6dc-c0e6" name="NC Admirals" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3812-dfb0-f7d9-4053" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="2a96-d72a-31be-c4a1" name="Archon Moscovici (Legendary 4)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="append" field="name" value="BGC">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="name" value="GA">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile id="dc80-114e-1a3a-47ee" name="Archon Moscovici" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Prey on the weak:
+Enemy dropships within 6” of Moscovici’s battlegroup get 1 to their save rolls
+Crimson Harvest:
+When you kill a company, crew, or destroy a dropship, add a blood counter to your pool.
+Crimson Haze:
+You may spend 6 blood counters to give all ships in the battlegroup +1
+to hit next activation</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+4</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ac47-31dc-eefd-8b98" name="Lictor Draghici (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="dedf-4621-1d41-6e98" name="Lictor Draghici" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Deadly deals:
+If admiral, Draghici’s vanguard may get a free turn of movement before game start
+Crimson Harvest:
+When you kill a company, crew, or destroy a dropship, add a blood counter to your pool.
+Crimson Rush:
+You may spend 5 blood counters to increase your maximum battlegroup thrust by 1. This has a limit of +3 max thrust.�</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="605c-433a-858c-33b1" name="Extractor Zamfir (Confident 2)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f11-fae2-9c59-a140" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="e012-228a-436f-c848" name="Extractor Zamfir" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Tormentor:
+Enemy battlegroups get 1 to morale saves when within 2” of Zamfir’s battlegroup
+Crimson Harvest:
+When you kill a company, crew, or destroy a dropship, add a blood counter to your pool.
+Crimson Roots:
+You may spend 3 blood counters and give all ships in Zamfir’s battlegroup structure 1 until they activate again.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="91d7-8e3b-3914-231a" name="IH Admirals" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="818f-6080-487b-0447" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="743b-9c8f-208c-2f25" name="Empress Herra (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dfe8-3719-8442-cb61" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="5849-061b-90b7-895c" name="Empress Herra (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Imperial Glory: Herra’s battlegroup automatically passes morale checks.
+Dragon Empress: All enemy battlegroups get 2 to morale rolls when within 12” of Herra’s group
+Praetorian Guard: Herra’s ship cannot be targeted using the Assassin trait.
+The Empress is watching: All friendly battlegroups gain +1 to morale saves, and all CQB units get +1 to rolls</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+4</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">-</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">15</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="63d7-5339-36f0-845c" name="Prefect Bruccius (Legendary 4)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="append" field="name" value="BGC">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="name" value="GA">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <profiles>
+            <profile id="d55c-7e42-3710-316c" name="Prefect Bruccius (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Carpe Diem!:
+When this battlegroup destroys the last capital ship in an enemy battlegroup or causes an enemy battlegroup to rout, you may immediatelya activate this battlegroup again.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7e71-3bc5-12d2-81af" name="Auxiliary Legate Onyx (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5603-502e-9c80-110e" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36d8-70bb-3c44-5c04" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="c9b1-68ff-362a-b406" name="Auxiliary Legate Onyx (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Clashing doctrines: Hemina Battlegroups lead by non Krotan commanders (Not in a Krotan assault carrier) within 8” of Onyx’s battlegroup get 2 to their skill rolls.
+Krotan Warlord: Krotan Ravager escorts only take up 0.5 escort slots and command capacity slots per ship in Onyx’s battlegroup. Allowing for him to take 2 for every 1 normally allowed.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+3</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fda2-448f-7d78-9ffe" name="Tribune Corvus (Confident 2)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="688c-5ead-89a3-1d69" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="911e-65e1-dd79-35d0" name="Tribune Corvus (Confident 2)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Loyal to one:
+Once per game, when another battlegroup fails its morale check, if is within 8” of them he may force them to succeed the check.
+Assault commander:
+All ships in battlegroup gain 1 slot for dropships.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0555-58f6-a1b9-b99c" name="Auxiliary Legate Mirrali (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c32a-e17b-92e4-f5bf" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36d8-70bb-3c44-5c04" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="6eae-171d-06d9-515b" name="Auxiliary Legate Mirrali (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Vespa Primus: All Vespa ships in Mirrali’s battlegroup gain an extra gravity bomb�</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">-1</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="2711-87ab-91c7-05fc" name="Fleet Commander" hidden="true">
@@ -2069,7 +2403,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
     </profile>
     <profile id="98c1-ebfa-0322-ec29" name="Aegis" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship may use its Point Defense weapons at twice the normal range for overwatch only. In addition, it gets +1 accuracy when doing so</characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">An advanced fire control system for tracking small fast-moving strike craft, This ship may target strike craft at 4” range instead of the usual 2” range when intercepting strike craft</characteristic>
       </characteristics>
     </profile>
     <profile id="8173-6ab7-423e-b29c" name="Ship Classes" hidden="false" typeId="fe7c-a4f6-55e4-ec01" typeName="Information">
@@ -2845,12 +3179,16 @@ Vanguard Group: Can be any group type but all ships must have thrusters 4 and ab
 Support Group: 2-4 Support ships, each must have 1 escort and can have up to 2 escorts in total.
 - Modifier: +1 to hit rolls with Ordnance weapons.
 
-Bombard Group: 1-3 Capital ships, each must have 1 escort and can have up to 2 escorts in total.
-- Modifier: +2&quot; to range of weapons in this battlegroup
+Bombard Group: 1-4 Capital ships, each must have 1 escort.
+- Modifier: +2&quot; to range of weapons in this battlegroup.
+- May have 2 ‘heavy’ ships in the group.
 
 Patrol Group: 3-5 Escort Ships
-- Modifier: 1 to hit rolls against this battlegroup.
+Modifier: May shoot before or in between movement.
 
+Picket Group: 3-5 Escort Ships
+Modifier: Ships gain the intercept trait to allow then
+to block enemy SC during their movement
 Defender Group: 1 Capital ship with 2 escorts, up to 3 Support ships 2 Escort Ships can be added
 - Modifier: +1 to ADS rolls and Attack rolls against Strike craft</characteristic>
       </characteristics>

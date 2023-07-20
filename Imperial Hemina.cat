@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818f-6080-487b-0447" name="Imperial Hemina" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4a51-d63d-5a1f-0841" name="Krotan" hidden="false"/>
     <categoryEntry id="f9db-fdcf-4414-5386" name="Vespa" hidden="false"/>
@@ -7,6 +7,205 @@
     <categoryEntry id="28f7-d0d4-5769-5e4e" name="Assault Carrier" hidden="false"/>
     <categoryEntry id="dfb5-9f7a-7c13-60e4" name="Protector" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="515a-073d-c523-9b5b" name="Reformed Minelayers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5055-a1c9-2cf3-1630" name="Reformed Mine Layers" hidden="false" targetId="def1-4b5b-ed22-5d31" type="profile"/>
+        <infoLink id="7f8e-4229-aa49-9072" name="Mine Layer" hidden="false" targetId="436d-7b8e-f52c-8936" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="3"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="dfcd-5dc5-f711-e4e5" name="Squadron" hidden="false" targetId="c583-e232-f934-3e6b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7d86-f64d-3962-4fda" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
+        <categoryLink id="09d0-eca1-a5d9-eb73" name="Squadron" hidden="false" targetId="ef99-36e7-74bf-a84b" primary="false"/>
+        <categoryLink id="83f4-4df7-2e15-b16a" name="Mine Layer" hidden="false" targetId="d8fe-df28-9098-c1a4" primary="false"/>
+        <categoryLink id="1300-744a-b295-de2d" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
+        <categoryLink id="6396-318c-189d-9559" name="T3" hidden="false" targetId="1c0f-6851-2f14-1d00" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d928-51a1-5d98-efa4" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="b93b-463b-c260-4abf" name="Mines" hidden="false" collective="false" import="true" targetId="d9ca-e2f0-aab5-17c5" type="selectionEntryGroup"/>
+        <entryLink id="b2ad-3283-e911-481b" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f10-4600-0adf-3f45" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a230-0910-02be-d6e2" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fc1b-2f60-12c8-7bd9" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="030d-857a-4185-930d" name="Reformed Heavy Cruiser" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="198c-491a-84c2-d45d" name="Ramming Prow" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+          <characteristics>
+            <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">The heavy cruiser may choose to ram into the enemy battlegroup
+destroying an enemy ship of the defenders choice on a failed armour save at AP 2. If the enemy ship isn’t
+destroyed then the heavy cruiser must take a save at AP 2. If failed the heavy cruiser is destroyed instead.
+This must be done before the Heavy cruiser has fired this activation. Ramming ships with structure will
+reduce their structure point by 1 instead of destroying them.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b15e-b34f-dda9-1a97" name="Reformed Heavy Cruiser" hidden="false" targetId="a3a2-c3f7-7dc6-f0db" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fd38-1e4d-af80-d980" name="Reformed H Cruiser" hidden="false" targetId="688c-5ead-89a3-1d69" primary="false"/>
+        <categoryLink id="af7c-bb75-1949-a87c" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="d84c-cc7d-960b-1947" name="T3" hidden="false" targetId="1c0f-6851-2f14-1d00" primary="false"/>
+        <categoryLink id="93ca-35db-b39f-8ea2" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8485-a3a5-d3f6-b371" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="9415-8b3d-4a8a-3824" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72d8-d46f-9b27-c375" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc1d-e034-f0d6-9c0f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b1f2-d2d9-67ae-5f63" name="Heavy Disruptor Cannon" hidden="false" collective="false" import="true" targetId="b679-5f7b-44df-6313" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8b6-c109-a4a1-f0ff" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f894-9e8b-f94b-1551" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="db8b-c899-ff25-95bb" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="58.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="062e-3262-3a63-b5d6" name="Reformed Empress Flagship" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="1482-3416-e8b9-252f" name="Reformed Empress" hidden="false" targetId="8d0e-7190-afcf-51f6" type="profile"/>
+        <infoLink id="4f81-4c70-1244-4f3d" name="Character" hidden="false" targetId="9c8a-25e6-50a2-d1f2" type="profile"/>
+        <infoLink id="895b-31dc-3259-1745" name="Flag Bridge" hidden="false" targetId="4bb1-8f4b-9d23-6b13" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="96c3-582a-eb83-50f8" name="T3" hidden="false" targetId="1c0f-6851-2f14-1d00" primary="false"/>
+        <categoryLink id="1cef-9fc8-e133-e39c" name="Empress" hidden="false" targetId="dfe8-3719-8442-cb61" primary="false"/>
+        <categoryLink id="c4a8-e667-dd42-5cfb" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="62d7-cf41-6571-b899" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
+        <categoryLink id="43bb-7fd2-72f2-2a43" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a26c-8735-d2f6-897a" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="d82b-c9a6-28df-655c" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92ae-f1be-0a4d-d3cf" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="6075-f8c9-2b2e-8cdd" name="Vibro Cannon" hidden="false" collective="false" import="true" targetId="16e1-af1b-6d01-af05" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0a6-25d2-25fd-18b9" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec45-46ae-213c-95e0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="37a3-c7c1-b0bb-a6bf" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4419-21bf-b6f9-52e9" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bda9-934e-65fa-d73d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d53c-9311-766e-52e8" name="Heavy Disruptor Cannon" hidden="false" collective="false" import="true" targetId="b679-5f7b-44df-6313" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b1e-fe8f-167d-0432" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cda-1252-321d-4d34" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9af6-7aaa-84dc-047b" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="88.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3a3-a23e-a78d-aa1e" name="Reformed Battleship" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="30c4-9026-44ab-707d" name="Battleship" hidden="false" targetId="799f-3961-8ae3-458a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fbfe-e207-a566-9b60" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
+        <categoryLink id="7907-cd9f-3762-5a9c" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="b19c-b989-3ec2-0b82" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
+        <categoryLink id="6b74-eabb-122a-f4b2" name="Battleship" hidden="false" targetId="55c1-a6f4-adb1-799d" primary="false"/>
+        <categoryLink id="4fc7-332a-8dd6-9c80" name="T3" hidden="false" targetId="1c0f-6851-2f14-1d00" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9235-b69b-601c-2e50" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="a5d4-306c-3406-74f0" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d64d-cd82-d84e-59ff" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="8191-01e4-cf08-f1c0" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4b1-62f9-780b-29a0" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b477-eeb8-7fb1-b73a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4219-2669-05f6-463f" name="Vibro Cannon" hidden="false" collective="false" import="true" targetId="16e1-af1b-6d01-af05" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2afa-9bc7-ee9d-71c2" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="430a-2dad-64c5-bafc" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="607a-2dc1-4ac7-415b" name="Heavy Disruptor Cannon" hidden="false" collective="false" import="true" targetId="b679-5f7b-44df-6313" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d992-6edf-9b17-bcb8" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbbf-a964-ce02-500e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="971c-e3fb-5b33-59f4" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="76.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="1927-1c31-8ba3-bd2c" name="Cruiser" hidden="false" collective="false" import="true" targetId="eff7-3c47-3825-5eda" type="selectionEntry"/>
     <entryLink id="0718-c883-c9a3-8d81" name="Faction: Imperial Hemina" hidden="false" collective="false" import="true" targetId="5263-73c6-3588-8c88" type="selectionEntry">
@@ -15,24 +214,92 @@
         <categoryLink id="3e04-c210-ca14-09be" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5f8e-ed44-1e8a-fff9" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="2546-9124-6e9e-0868" type="selectionEntry"/>
-    <entryLink id="f57a-e66c-d917-d9c3" name="Corvette" hidden="false" collective="false" import="true" targetId="b15c-61a6-5ba4-8cc0" type="selectionEntry"/>
-    <entryLink id="a913-97d4-7296-756e" name="Carrier" hidden="false" collective="false" import="true" targetId="74e0-dce2-0384-8fa4" type="selectionEntry"/>
-    <entryLink id="6b90-562c-e2b7-6bf9" name="Frigate" hidden="false" collective="false" import="true" targetId="cd67-8e20-74fd-6797" type="selectionEntry"/>
-    <entryLink id="8b08-4dad-1dc1-9e4c" name="Destroyer (Asn)" hidden="false" collective="false" import="true" targetId="8539-7d2b-b24b-2499" type="selectionEntry"/>
-    <entryLink id="02e7-7e07-41ca-acec" name="Heavy Destroyer" hidden="false" collective="false" import="true" targetId="eb7f-a472-b41d-79dc" type="selectionEntry"/>
-    <entryLink id="463b-578c-c1dd-bc79" name="Light Cruiser (6 Slots)" hidden="false" collective="false" import="true" targetId="14de-3717-1e8a-5401" type="selectionEntry"/>
+    <entryLink id="5f8e-ed44-1e8a-fff9" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="2546-9124-6e9e-0868" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="f57a-e66c-d917-d9c3" name="Corvette" hidden="false" collective="false" import="true" targetId="b15c-61a6-5ba4-8cc0" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="a913-97d4-7296-756e" name="Carrier (12 Slots)" hidden="false" collective="false" import="true" targetId="74e0-dce2-0384-8fa4" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="62.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="6b90-562c-e2b7-6bf9" name="Frigate" hidden="false" collective="false" import="true" targetId="cd67-8e20-74fd-6797" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="21.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="8b08-4dad-1dc1-9e4c" name="Destroyer (Asn)" hidden="false" collective="false" import="true" targetId="8539-7d2b-b24b-2499" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="33.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="02e7-7e07-41ca-acec" name="Heavy Destroyer" hidden="false" collective="false" import="true" targetId="eb7f-a472-b41d-79dc" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="36.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="463b-578c-c1dd-bc79" name="Light Cruiser (6 Slots)" hidden="false" collective="false" import="true" targetId="14de-3717-1e8a-5401" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="53.0"/>
+      </costs>
+    </entryLink>
     <entryLink id="79da-e882-1e73-ccd3" name="Battle Cruiser " hidden="false" collective="false" import="true" targetId="7ff8-29b0-365c-1a44" type="selectionEntry"/>
-    <entryLink id="1c49-1482-e917-3fb2" name="Battleship" hidden="false" collective="false" import="true" targetId="d130-8aa5-881c-4a40" type="selectionEntry"/>
-    <entryLink id="8bdb-24a3-09da-af1c" name="Dreadnought" hidden="false" collective="false" import="true" targetId="821b-8ce8-5a54-5ace" type="selectionEntry"/>
-    <entryLink id="98a0-2fe0-c9b2-aa09" name="Reformed Cruiser" hidden="false" collective="false" import="true" targetId="188a-eaec-1d96-7a60" type="selectionEntry"/>
-    <entryLink id="826b-2e00-6f17-632a" name="Reformed Destroyer" hidden="false" collective="false" import="true" targetId="df7d-f391-ff96-e04d" type="selectionEntry"/>
-    <entryLink id="284c-d9e6-2994-378d" name="Reformed Guardian Ships" hidden="false" collective="false" import="true" targetId="517e-3a62-0ff2-691b" type="selectionEntry"/>
-    <entryLink id="28c7-36d8-7bb3-91fd" name="Reformed Light Carrier (6 slots)" hidden="false" collective="false" import="true" targetId="9058-bade-19ce-07f6" type="selectionEntry"/>
-    <entryLink id="ac7d-104c-3019-f387" name="Vespa Heavy Cruiser" hidden="false" collective="false" import="true" targetId="0e22-6d0f-ad25-cb17" type="selectionEntry"/>
-    <entryLink id="eedc-dcd0-7938-8e7c" name="Vespa Protector" hidden="false" collective="false" import="true" targetId="db1f-eeda-f3c6-a93e" type="selectionEntry"/>
-    <entryLink id="da10-1271-b861-2db8" name="Krotan Assault Carrier (12 slots)" hidden="false" collective="false" import="true" targetId="c517-70be-2b20-e952" type="selectionEntry"/>
-    <entryLink id="3c20-571f-b55c-3c40" name="Krotan Ravager" hidden="false" collective="false" import="true" targetId="f151-5a2c-3444-f617" type="selectionEntry"/>
+    <entryLink id="1c49-1482-e917-3fb2" name="Battleship" hidden="false" collective="false" import="true" targetId="d130-8aa5-881c-4a40" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="62.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="8bdb-24a3-09da-af1c" name="Dreadnought (4 Slots)" hidden="false" collective="false" import="true" targetId="821b-8ce8-5a54-5ace" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="90.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="98a0-2fe0-c9b2-aa09" name="Reformed Cruiser" hidden="false" collective="false" import="true" targetId="188a-eaec-1d96-7a60" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="48.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="826b-2e00-6f17-632a" name="Reformed Destroyer" hidden="false" collective="false" import="true" targetId="df7d-f391-ff96-e04d" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="34.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="284c-d9e6-2994-378d" name="Reformed Guardian Ships" hidden="false" collective="false" import="true" targetId="517e-3a62-0ff2-691b" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="26.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="28c7-36d8-7bb3-91fd" name="Reformed Light Carrier (6 slots)" hidden="false" collective="false" import="true" targetId="9058-bade-19ce-07f6" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="52.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="ac7d-104c-3019-f387" name="Vespa Heavy Cruiser" hidden="false" collective="false" import="true" targetId="0e22-6d0f-ad25-cb17" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="53.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="eedc-dcd0-7938-8e7c" name="Vespa Protector" hidden="false" collective="false" import="true" targetId="db1f-eeda-f3c6-a93e" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="da10-1271-b861-2db8" name="Krotan Assault Carrier (12 slots)" hidden="false" collective="false" import="true" targetId="c517-70be-2b20-e952" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="50.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="3c20-571f-b55c-3c40" name="Krotan Ravager" hidden="false" collective="false" import="true" targetId="f151-5a2c-3444-f617" type="selectionEntry">
+      <costs>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
+      </costs>
+    </entryLink>
   </entryLinks>
   <infoLinks>
     <infoLink id="96dc-ec32-2af5-aa0c" name="Broadside" hidden="false" targetId="94e9-1c97-3aea-9ed9" type="rule"/>
@@ -61,8 +328,7 @@
         <categoryLink id="d0e6-817c-217b-03ca" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3f8c-8455-d813-2de3" name="Cruiser" hidden="false" collective="false" import="true" targetId="0190-3032-5632-4df2" type="selectionEntryGroup"/>
-        <entryLink id="fd9c-a448-3393-bf21" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="fd9c-a448-3393-bf21" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="6bb7-a9b3-7f65-1963" name="Heavy Disruptor Cannon" hidden="false" collective="false" import="true" targetId="b679-5f7b-44df-6313" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef72-7a24-076c-0bce" type="min"/>
@@ -78,6 +344,15 @@
         <entryLink id="f561-1f8c-6ce7-b839" name="Strikecraft Cruiser" hidden="false" collective="false" import="true" targetId="ec26-debc-c81a-7a6b" type="selectionEntryGroup"/>
         <entryLink id="dfca-1d04-fdce-cb0e" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
         <entryLink id="2f09-9d9a-104e-dff2" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
+        <entryLink id="94db-7b54-ea62-ca1a" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -108,8 +383,7 @@
         <categoryLink id="c1e5-f0ff-3051-926f" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8348-658d-e74e-b640" name="Torpedo Boat" hidden="false" collective="false" import="true" targetId="fef2-bb01-e932-2d60" type="selectionEntryGroup"/>
-        <entryLink id="a21d-7249-ef86-6e9d" name="Ship options" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="a21d-7249-ef86-6e9d" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="3ca0-3804-ee76-0d20" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="f582-1c9f-e838-c733" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bda-574a-63ad-5e91" type="max"/>
@@ -122,6 +396,15 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3e5-7b50-e548-9950" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="d11d-8e3a-75bd-d523" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -132,6 +415,7 @@
         <infoLink id="9c02-28b4-3827-07eb" name="Corvette" hidden="false" targetId="3e1a-9e42-c43f-9cb2" type="profile"/>
         <infoLink id="e920-4b21-f8f8-99f7" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
         <infoLink id="e718-ea88-9821-271a" name="Thrust Vectoring" hidden="false" targetId="48a1-01c6-51cf-4c1a" type="profile"/>
+        <infoLink id="195f-9b65-b279-3e50" name="Aegis" hidden="false" targetId="98c1-ebfa-0322-ec29" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0d6e-349b-c3f2-e843" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
@@ -140,8 +424,7 @@
         <categoryLink id="a6b6-09d2-28f9-8fe2" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3f00-b185-2b95-8ba3" name="Corvette" hidden="false" collective="false" import="true" targetId="50c2-39b1-4421-e5ea" type="selectionEntryGroup"/>
-        <entryLink id="8772-06d9-bf16-9cce" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="8772-06d9-bf16-9cce" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="758a-9d65-733f-72b2" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="f582-1c9f-e838-c733" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="741a-7eeb-16c9-7e23" type="max"/>
@@ -153,6 +436,15 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db9-c674-85c3-fb3d" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbf9-d5d9-74f8-18e6" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="0e4e-c401-b3ff-b644" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -181,7 +473,7 @@
     <selectionEntry id="1785-09d7-1ce4-11b8" name="Particle Laser" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="51e4-d55b-cd99-d56f" name="Particle Laser" hidden="false" targetId="df88-94b9-9283-16ca" type="profile"/>
-        <infoLink id="8ccb-3a16-e494-42f7" name="Dual Purpose" hidden="false" targetId="f2e6-9722-1650-4eb6" type="profile"/>
+        <infoLink id="8ccb-3a16-e494-42f7" name="Instantaneous" hidden="false" targetId="263a-dd99-359f-06a3" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -250,9 +542,8 @@
           </constraints>
         </entryLink>
         <entryLink id="903a-5efc-ff53-aa19" name="Strikecraft Carrier" hidden="false" collective="false" import="true" targetId="e491-8bfe-4e18-3eec" type="selectionEntryGroup"/>
-        <entryLink id="1a3d-9e31-73bd-1932" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="1a3d-9e31-73bd-1932" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="211f-6732-5eb4-2074" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
-        <entryLink id="be44-5d72-e152-d231" name="Ship: Carrier" hidden="false" collective="false" import="true" targetId="f2ac-011a-1811-7647" type="selectionEntryGroup"/>
         <entryLink id="56fb-030b-0cf3-f969" name="Flag Bridge" hidden="false" collective="false" import="true" targetId="2f32-7bb1-35db-671c" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -266,12 +557,21 @@
           </constraints>
         </entryLink>
         <entryLink id="45fd-a82e-e326-6255" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
+        <entryLink id="d87e-7808-c8e8-488e" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="07bc-50f1-5cc2-1989" name="Fighter" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="07bc-50f1-5cc2-1989" name="Hastati Fighters" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="4dd1-7204-3eb8-899f" name="Fighters" hidden="false" targetId="93eb-cd53-9dae-f24e" type="profile"/>
       </infoLinks>
@@ -293,27 +593,27 @@
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d762-b3c6-994d-8133" name="Bomber" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d762-b3c6-994d-8133" name="Praetorian Bomber" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="aea7-96fe-2d73-60f5" name="Bomber" hidden="false" targetId="721a-2a6a-1328-9074" type="profile"/>
+        <infoLink id="aea7-96fe-2d73-60f5" name="Praetorian Bomber" hidden="false" targetId="721a-2a6a-1328-9074" type="profile"/>
+        <infoLink id="44b9-7a5d-f49c-c55b" name="Shield Skipping" hidden="false" targetId="aff2-e8e1-ddde-8382" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="8+"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ce5e-418d-d39a-73f3" name="Strikecraft" hidden="false" targetId="3117-f9a6-87cb-9559" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
     </selectionEntry>
-    <selectionEntry id="a528-f304-4613-facd" name="Interceptor" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a528-f304-4613-facd" name="Velites Interceptor" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="81a0-fdb8-ce6f-1314" name="Interceptor" hidden="false" targetId="f09e-422f-bd6e-d9b0" type="profile"/>
+        <infoLink id="bf78-6351-3d1e-0892" name="Intercept" hidden="false" targetId="f7d7-4a2b-d392-bece" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="63cf-2253-0ea7-0c3f" name="Strikecraft" hidden="false" targetId="3117-f9a6-87cb-9559" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="d31e-a6db-bde5-0c87" name="Interceptor Ace" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -338,24 +638,52 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ebec-1bd7-d27d-09b9" name="Power Armour Company" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="8.0"/>
-      </costs>
+      <profiles>
+        <profile id="deaa-01d8-f9ae-9143" name="Power Armour Company" hidden="false" typeId="9b96-0077-9566-f558" typeName="Infantry Stats">
+          <characteristics>
+            <characteristic name="Attack" typeId="63fd-f8ae-437b-9395">4+</characteristic>
+            <characteristic name="Defend" typeId="4412-2637-abd3-6d06">4+</characteristic>
+            <characteristic name="Attacks" typeId="7fbe-8b08-ceac-4a4d">2</characteristic>
+            <characteristic name="Save" typeId="ffdb-7368-6e3f-b0cf">7+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="e35a-a9e2-109b-8a1c" name="Regular Company" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-      </costs>
+      <profiles>
+        <profile id="a4c0-d018-34e5-c035" name="Regular Company" hidden="false" typeId="9b96-0077-9566-f558" typeName="Infantry Stats">
+          <characteristics>
+            <characteristic name="Attack" typeId="63fd-f8ae-437b-9395">7+</characteristic>
+            <characteristic name="Defend" typeId="4412-2637-abd3-6d06">6+</characteristic>
+            <characteristic name="Attacks" typeId="7fbe-8b08-ceac-4a4d">1</characteristic>
+            <characteristic name="Save" typeId="ffdb-7368-6e3f-b0cf">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="2add-e1dd-c61d-8a44" name="Shock Company" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
-      </costs>
+      <profiles>
+        <profile id="1955-ded8-67cc-4f1e" name="Shock Company" hidden="false" typeId="9b96-0077-9566-f558" typeName="Infantry Stats">
+          <characteristics>
+            <characteristic name="Attack" typeId="63fd-f8ae-437b-9395">5+</characteristic>
+            <characteristic name="Defend" typeId="4412-2637-abd3-6d06">7+</characteristic>
+            <characteristic name="Attacks" typeId="7fbe-8b08-ceac-4a4d">2</characteristic>
+            <characteristic name="Save" typeId="ffdb-7368-6e3f-b0cf">8+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="e852-866f-caf8-0322" name="Light Company" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
-      </costs>
+      <profiles>
+        <profile id="13fe-1246-6c55-7c44" name="Light Company" hidden="false" typeId="9b96-0077-9566-f558" typeName="Infantry Stats">
+          <characteristics>
+            <characteristic name="Attack" typeId="63fd-f8ae-437b-9395">10+</characteristic>
+            <characteristic name="Defend" typeId="4412-2637-abd3-6d06">8+</characteristic>
+            <characteristic name="Attacks" typeId="7fbe-8b08-ceac-4a4d">1</characteristic>
+            <characteristic name="Save" typeId="ffdb-7368-6e3f-b0cf">9+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="14de-3717-1e8a-5401" name="Light Cruiser (6 Slots)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -382,8 +710,7 @@
         <categoryLink id="a2c2-fe94-32a8-cea6" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c635-ff91-5b31-adb5" name="Ship: Light Cruiser" hidden="false" collective="false" import="true" targetId="9121-dccf-93d3-8b86" type="selectionEntryGroup"/>
-        <entryLink id="8d40-3245-5464-21d9" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="8d40-3245-5464-21d9" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="b186-dd76-b84c-cd94" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="f582-1c9f-e838-c733" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1961-f98f-8457-95f9" type="min"/>
@@ -399,6 +726,15 @@
         <entryLink id="399d-6ba4-abcd-3e27" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
         <entryLink id="2591-8f1e-b8e9-531f" name="Strikecraft Light Cruiser" hidden="false" collective="false" import="true" targetId="ea7d-f5b5-fccc-b912" type="selectionEntryGroup"/>
         <entryLink id="892d-1e45-8e87-1407" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
+        <entryLink id="9f37-3381-3c30-54cd" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -424,8 +760,7 @@
         <categoryLink id="4dce-8eb3-7f9a-6164" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="cec2-5297-0477-af34" name="Ship: Frigate" hidden="false" collective="false" import="true" targetId="73ce-c48d-7244-cc44" type="selectionEntryGroup"/>
-        <entryLink id="e29b-2584-9d70-87a5" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="e29b-2584-9d70-87a5" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="45b1-fde7-2e8a-2084" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="f582-1c9f-e838-c733" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9325-d07a-cce8-2c58" type="max"/>
@@ -449,6 +784,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b5-a0bb-6dfa-8417" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="93ce-f936-3e9f-d232" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -467,8 +811,7 @@
         <categoryLink id="652d-ef6b-9c3d-8a70" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="083d-673f-989f-975a" name="Ship: Destroyer" hidden="false" collective="false" import="true" targetId="936b-c6e0-8b65-7395" type="selectionEntryGroup"/>
-        <entryLink id="5d9c-7996-05e4-0994" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="5d9c-7996-05e4-0994" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="b071-b45d-22c9-d994" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="f582-1c9f-e838-c733" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f767-9332-4c2b-bb2e" type="max"/>
@@ -480,6 +823,15 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e50-451b-88e8-71d3" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a39-da35-4583-47a3" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="50a4-35db-1f37-47f1" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -515,8 +867,7 @@
         <categoryLink id="40ca-841b-9bb0-b4f4" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="bf68-a841-b40a-105c" name="Ship: Heavy Destroyer" hidden="false" collective="false" import="true" targetId="e94a-d531-527f-f74c" type="selectionEntryGroup"/>
-        <entryLink id="fb87-53d4-ae27-3047" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="fb87-53d4-ae27-3047" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="0b2f-5c38-86fb-9725" name="Heavy Disruptor Cannon" hidden="false" collective="false" import="true" targetId="b679-5f7b-44df-6313" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0831-c8a4-7aea-da67" type="max"/>
@@ -558,6 +909,15 @@
         </entryLink>
         <entryLink id="c953-371f-2ad3-5c68" name="Strikecraft Heavy Destroyer" hidden="false" collective="false" import="true" targetId="04ac-6f50-f04d-6eeb" type="selectionEntryGroup"/>
         <entryLink id="6a62-83d2-d040-370d" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
+        <entryLink id="d607-6cd6-c99a-b49b" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -585,8 +945,7 @@
         <categoryLink id="f978-f1da-d453-4925" name="Battlecruiser" hidden="false" targetId="fac4-f029-106c-5981" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d4ca-1b54-987b-d6a9" name="Ship: Battle Cruiser" hidden="false" collective="false" import="true" targetId="f22e-1414-22c7-797b" type="selectionEntryGroup"/>
-        <entryLink id="dbcd-dbe7-2ea2-2c01" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="dbcd-dbe7-2ea2-2c01" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="66a4-248d-9a92-38ef" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="177a-bf26-f4ef-02fa" type="min"/>
@@ -606,6 +965,15 @@
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
           </costs>
+        </entryLink>
+        <entryLink id="84bd-c91e-ece2-4ddc" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -627,8 +995,7 @@
         <categoryLink id="4543-452a-0957-eee4" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="43d5-e455-e160-6058" name="Ship: Battleship" hidden="false" collective="false" import="true" targetId="545c-0fc4-f9da-ca81" type="selectionEntryGroup"/>
-        <entryLink id="8e64-59ca-544d-6d4a" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="8e64-59ca-544d-6d4a" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="c17d-4c00-e883-c1b0" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31fd-09b9-4a5f-52ed" type="min"/>
@@ -668,6 +1035,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f046-83ae-b769-4ae9" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="8423-4742-936b-3f6a" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -699,8 +1075,7 @@
         <categoryLink id="906d-69ab-97d5-7cba" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ba7e-8588-d22b-c44d" name="Ship: Dreadnought" hidden="false" collective="false" import="true" targetId="8432-9b38-1fd4-8e16" type="selectionEntryGroup"/>
-        <entryLink id="ba9e-4106-279c-35b2" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="ba9e-4106-279c-35b2" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="8d43-d57b-6982-4393" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec8a-7fd5-655e-3c4d" type="min"/>
@@ -742,6 +1117,15 @@
         </entryLink>
         <entryLink id="8bea-1052-c85e-f2e8" name="Strikecraft Dreadnought" hidden="false" collective="false" import="true" targetId="86e9-c9e6-ff38-ee13" type="selectionEntryGroup"/>
         <entryLink id="5ec8-4e08-497b-3fbd" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
+        <entryLink id="a3b8-1850-d81d-c993" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -751,6 +1135,7 @@
       <infoLinks>
         <infoLink id="10c9-3b21-d6a0-7223" name="Reformed Guardian Ships" hidden="false" targetId="3bd3-5c1f-7ffc-2ad3" type="profile"/>
         <infoLink id="23ab-6b1b-469a-ae41" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
+        <infoLink id="3750-c2cc-80fe-02b9" name="Squadron" hidden="false" targetId="c583-e232-f934-3e6b" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c29f-87f5-14a7-3893" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
@@ -760,7 +1145,6 @@
         <categoryLink id="de42-25e2-7c33-8a21" name="Squadron" hidden="false" targetId="ef99-36e7-74bf-a84b" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6635-3313-df62-77fb" name="Ship: Reformed Guardian Ships" hidden="false" collective="false" import="true" targetId="64d8-1f2b-aa6a-d46c" type="selectionEntryGroup"/>
         <entryLink id="0d6d-8091-3bfe-8a07" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="f582-1c9f-e838-c733" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9fe-8bfe-255e-57d7" type="max"/>
@@ -773,7 +1157,16 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53c4-56dd-359e-fee3" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="0cd1-57b4-2d4a-a599" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="0cd1-57b4-2d4a-a599" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="a3f8-dbb6-6d1b-5693" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -790,7 +1183,6 @@
         <categoryLink id="be4f-a75b-c84a-59e5" name="T3" hidden="false" targetId="1c0f-6851-2f14-1d00" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="17d6-0bb7-b474-5970" name="Ship: Reformed Destroyer" hidden="false" collective="false" import="true" targetId="6127-83ae-079f-c3fc" type="selectionEntryGroup"/>
         <entryLink id="913a-6211-f82a-1d04" name="Escort +1" hidden="false" collective="false" import="true" targetId="44b6-ccc8-d7bc-2612" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b8-c01c-77f4-15af" type="max"/>
@@ -808,7 +1200,16 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be08-5ab5-04b4-3769" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="692c-a159-fcea-b1f0" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="692c-a159-fcea-b1f0" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="5d09-e71f-8c82-50b9" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -817,7 +1218,7 @@
     <selectionEntry id="9058-bade-19ce-07f6" name="Reformed Light Carrier (6 slots)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="e2cf-290d-1725-9379" name="Reformed Light Carrier" hidden="false" targetId="b078-c686-d79f-ddf4" type="profile"/>
-        <infoLink id="3be3-f428-185d-fb4d" name="True Carrier" hidden="false" targetId="1aaa-ac73-61a1-0b6a" type="profile"/>
+        <infoLink id="3be3-f428-185d-fb4d" name="Strike Support" hidden="false" targetId="61e7-6bdd-da18-214d" type="profile"/>
         <infoLink id="1a78-5970-b227-6a7a" name="Launch " hidden="false" targetId="209b-2acd-8dac-0cf7" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="3"/>
@@ -833,7 +1234,6 @@
         <categoryLink id="90e5-3add-0b66-6cba" name="T3" hidden="false" targetId="1c0f-6851-2f14-1d00" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b20e-5ca7-0eb1-01f4" name="Ship: Reformed Light Carrier" hidden="false" collective="false" import="true" targetId="3f78-57e1-3eb3-f5a4" type="selectionEntryGroup"/>
         <entryLink id="3e56-219f-a2f8-8141" name="Strikecraft Reformed Light Cruiser (6 or 8 Slots)" hidden="false" collective="false" import="true" targetId="2edf-1710-a375-71b1" type="selectionEntryGroup"/>
         <entryLink id="fafc-36b4-43cc-c9d6" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
           <constraints>
@@ -853,7 +1253,16 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6509-7127-1f7b-1d5e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="394f-f49e-90ea-5e95" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="394f-f49e-90ea-5e95" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="60d2-6ee5-be65-f6af" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -870,7 +1279,6 @@
         <categoryLink id="15e4-19b5-972f-dcba" name="Imperial Hemina" hidden="false" targetId="2eab-856d-734a-9c38" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6937-8701-5931-0fef" name="Ship: Reformed Cruiser" hidden="false" collective="false" import="true" targetId="8ca4-19e8-f8bd-ce31" type="selectionEntryGroup"/>
         <entryLink id="23b2-9b4b-950a-2b83" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cccb-4383-a9ff-86f0" type="max"/>
@@ -897,13 +1305,17 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de91-aba0-f059-4665" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="d7a7-f4c5-bad6-951b" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="d7a7-f4c5-bad6-951b" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="50d4-28d1-a0f7-373e" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5f76-ce39-96af-9bda" name="Heavy Cruiser" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
       </costs>
@@ -918,7 +1330,6 @@
         <categoryLink id="aac3-7b83-1abe-ff96" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a59f-d129-c7ec-9fca" name="Ship: Krotan Ravager" hidden="false" collective="false" import="true" targetId="de73-2c9b-11c3-7391" type="selectionEntryGroup"/>
         <entryLink id="98aa-3ab4-a249-b04d" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6b9-45c5-0ed7-4bc8" type="max"/>
@@ -930,6 +1341,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6646-c267-4808-1c9b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8f9-a539-36b6-a2e1" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="888d-33ff-8f0f-f856" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -952,10 +1372,10 @@
         <categoryLink id="712e-1a49-4f05-a022" name="Hanger Medium" hidden="false" targetId="3db8-dec1-a0d0-6143" primary="false"/>
         <categoryLink id="eab2-c004-0661-1510" name="Assault Carrier" hidden="false" targetId="28f7-d0d4-5769-5e4e" primary="false"/>
         <categoryLink id="3684-2362-5792-bbe2" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="86c9-69e5-5305-2e3f" name="Krotan Assault Carrier" hidden="false" targetId="5603-502e-9c80-110e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3683-2921-827e-e602" name="Ship: Krotan Heavy Cruiser" hidden="false" collective="false" import="true" targetId="45c5-6d29-1db4-a889" type="selectionEntryGroup"/>
-        <entryLink id="9680-493f-9b79-9036" name="Krotan Troop Selection" hidden="false" collective="false" import="true" targetId="dfca-eac3-4118-0732" type="selectionEntryGroup"/>
+        <entryLink id="9680-493f-9b79-9036" name="Troop: Krotan" hidden="false" collective="false" import="true" targetId="dfca-eac3-4118-0732" type="selectionEntryGroup"/>
         <entryLink id="c4c7-0fea-5734-d578" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
         <entryLink id="4559-823b-f14e-bbeb" name="Particle Laser" hidden="false" collective="false" import="true" targetId="1785-09d7-1ce4-11b8" type="selectionEntry">
           <constraints>
@@ -968,6 +1388,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f44-8b49-702e-5ef3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b736-2593-be74-6037" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="4b07-ccac-2470-c971" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -983,9 +1412,9 @@
         <categoryLink id="af8a-f9e1-080d-cfca" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="bd02-4abf-4e52-311d" name="Vespa" hidden="false" targetId="f9db-fdcf-4414-5386" primary="false"/>
         <categoryLink id="a455-f85c-6046-135f" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
+        <categoryLink id="4aec-584a-c72b-e8f0" name="Vespa H Cruiser" hidden="false" targetId="c32a-e17b-92e4-f5bf" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="dfc0-be78-f1c1-bfec" name="Ship: Vespa Heavy Cruiser" hidden="false" collective="false" import="true" targetId="5c92-d5dd-4595-8d52" type="selectionEntryGroup"/>
         <entryLink id="9059-da62-c000-069a" name="Gravity Bombs" hidden="false" collective="false" import="true" targetId="460b-3127-8d4c-2930" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a086-b792-6163-8f7d" type="max"/>
@@ -998,7 +1427,16 @@
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cca-5b45-bb88-9ceb" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="35c0-c84f-07a3-96e7" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="35c0-c84f-07a3-96e7" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="2d53-debc-f56e-4f99" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -1008,13 +1446,13 @@
       <infoLinks>
         <infoLink id="7aa8-b720-69c0-a292" name="Vespa Protector" hidden="false" targetId="66b6-b62a-ef37-5473" type="profile"/>
         <infoLink id="2992-3b0c-e92d-0b77" name="Escort" hidden="false" targetId="8bc5-4ea7-21fa-d867" type="profile"/>
+        <infoLink id="d66b-4aab-95ae-de43" name="Aegis" hidden="false" targetId="98c1-ebfa-0322-ec29" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d63e-dc1e-b4bc-d8f1" name="Protector" hidden="false" targetId="dfb5-9f7a-7c13-60e4" primary="false"/>
         <categoryLink id="a8eb-3b46-a728-df2a" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2cf3-0188-d8e9-88a1" name="Ship: Vespa Protector" hidden="false" collective="false" import="true" targetId="822d-84e2-2da6-1bea" type="selectionEntryGroup"/>
         <entryLink id="b966-be75-7002-7779" name="Fusion Cannons" hidden="false" collective="false" import="true" targetId="7d57-98ae-b242-d6fb" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b72e-fb50-cffa-cf86" type="max"/>
@@ -1041,7 +1479,16 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="311c-3512-4477-bfc8" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="e405-945f-4ca5-00b8" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="e405-945f-4ca5-00b8" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="635f-b915-c02d-7daf" name="Strikecraft Tribune Corvus" hidden="true" collective="false" import="true" targetId="69a5-c9e6-4bd8-7cb7" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fda2-448f-7d78-9ffe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
@@ -1079,172 +1526,25 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="0190-3032-5632-4df2" name="Ship: Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="0e20-2546-9fb1-bc7a">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5540-de7d-58d3-047f" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e65b-0ce3-a05e-23ae" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="4303-ec9d-c0dd-dd21" name="Cruiser (Green)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="fd96-2b11-d46c-4717" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-            <categoryLink id="46da-fa05-8769-9612" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
-            <categoryLink id="635f-8956-0f23-9293" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
-            <categoryLink id="4411-6e73-7ae4-25f5" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="54.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0e20-2546-9fb1-bc7a" name="Cruiser (Trained)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="5467-f919-fa9d-dee3" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-            <categoryLink id="60d8-a2db-83d6-c9f6" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
-            <categoryLink id="1184-e475-3410-f5bd" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
-            <categoryLink id="a2d8-2794-d538-7793" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="63.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b630-1a87-569c-e586" name="Cruiser (Veteran)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="0b08-b4e7-404a-c5b9" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-            <categoryLink id="b009-50ed-8977-bcd8" name="Cruiser" hidden="false" targetId="4cf5-ecf3-433a-257f" primary="false"/>
-            <categoryLink id="0278-4ade-467b-2aa2" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
-            <categoryLink id="23f0-1ee3-a4ff-f60e" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="76.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="fef2-bb01-e932-2d60" name="Ship: Torpedo Boat" hidden="false" collective="false" import="true" defaultSelectionEntryId="039e-1ac4-f846-b013">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3af9-cc07-d4f5-53f2" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df90-5bc2-f5b4-3072" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="9f31-ca81-008a-a94c" name="Torpedo Boat (Green)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="0fb5-5ad2-a1cd-71cb" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="23.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="039e-1ac4-f846-b013" name="Torpedo Boat (Trained)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="e126-b2f6-f0a1-48fb" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="27.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="de3c-1814-68da-9fc8" name="Torpedo Boat (Veteran)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="828a-9931-3390-8eae" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="33.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="50c2-39b1-4421-e5ea" name="Ship: Corvette" hidden="false" collective="false" import="true" defaultSelectionEntryId="a1e8-e2b4-5758-97d0">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aed-0132-8d9e-e4dc" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf58-f40d-a4ee-a3e0" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="ef8a-d004-d412-2e5c" name="Corvette (Green)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="e487-bc60-6a96-f2ad" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="21.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a1e8-e2b4-5758-97d0" name="Corvette (Trained)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="7354-c426-9f06-8665" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="24.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="29e7-1520-abd3-f519" name="Corvette (Veteran)" hidden="false" collective="false" import="true" type="unit">
-          <categoryLinks>
-            <categoryLink id="c803-216a-6e18-5b43" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="29.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup id="d0a4-cec2-62e6-b18c" name="Strikecraft" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="e205-d1aa-5dc4-fb54" name="Fighter" hidden="false" collective="false" import="true" targetId="07bc-50f1-5cc2-1989" type="selectionEntry">
+        <entryLink id="e205-d1aa-5dc4-fb54" name="Hastati Fighters" hidden="false" collective="false" import="true" targetId="07bc-50f1-5cc2-1989" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
           </costs>
         </entryLink>
-        <entryLink id="0ad3-3914-e964-d403" name="Fighter Ace" hidden="false" collective="false" import="true" targetId="9e4c-a065-c39e-4ece" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="e5f8-4950-0cca-31d0" name="Interceptor" hidden="false" collective="false" import="true" targetId="a528-f304-4613-facd" type="selectionEntry">
+        <entryLink id="e5f8-4950-0cca-31d0" name="Velites Interceptor" hidden="false" collective="false" import="true" targetId="a528-f304-4613-facd" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
           </costs>
         </entryLink>
-        <entryLink id="348e-5677-ceba-2969" name="Interceptor Ace" hidden="false" collective="false" import="true" targetId="d31e-a6db-bde5-0c87" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="8e84-c4b9-e13e-fc14" name="Dropship" hidden="false" collective="false" import="true" targetId="6222-228c-7e55-485b" type="selectionEntry"/>
-        <entryLink id="3b5f-7e3f-5b40-8de8" name="Bomber" hidden="false" collective="false" import="true" targetId="d762-b3c6-994d-8133" type="selectionEntry">
+        <entryLink id="3b5f-7e3f-5b40-8de8" name="Praetorian Bomber" hidden="false" collective="false" import="true" targetId="d762-b3c6-994d-8133" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
           </costs>
         </entryLink>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="f2ac-011a-1811-7647" name="Ship: Carrier" hidden="false" collective="false" import="true" defaultSelectionEntryId="3990-293e-f1f8-0ada">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd9-5654-0c6c-f1d4" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcdd-3503-18af-cc00" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="ced4-429b-2481-814e" name="Carrier (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="bf52-5431-9e79-9b49" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="60.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3990-293e-f1f8-0ada" name="Carrier (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="f827-a4ac-2aad-f3a1" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="70.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="647d-ea6a-ebd9-b860" name="Carrier (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="d010-fad8-05d3-32d7" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="85.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="e491-8bfe-4e18-3eec" name="Strikecraft Carrier (12 or 16 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
@@ -1279,9 +1579,21 @@
       </constraints>
       <entryLinks>
         <entryLink id="71f9-1061-daf3-d4b7" name="Light Company" hidden="false" collective="false" import="true" targetId="e852-866f-caf8-0322" type="selectionEntry"/>
-        <entryLink id="0915-a354-dfe5-604e" name="Regular Company" hidden="false" collective="false" import="true" targetId="e35a-a9e2-109b-8a1c" type="selectionEntry"/>
-        <entryLink id="4092-3092-c8f5-ec91" name="Shock Company" hidden="false" collective="false" import="true" targetId="2add-e1dd-c61d-8a44" type="selectionEntry"/>
-        <entryLink id="969d-5a92-37e4-256c" name="Power Armour Company" hidden="false" collective="false" import="true" targetId="ebec-1bd7-d27d-09b9" type="selectionEntry"/>
+        <entryLink id="0915-a354-dfe5-604e" name="Regular Company" hidden="false" collective="false" import="true" targetId="e35a-a9e2-109b-8a1c" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="4092-3092-c8f5-ec91" name="Shock Company" hidden="false" collective="false" import="true" targetId="2add-e1dd-c61d-8a44" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="969d-5a92-37e4-256c" name="Power Armour Company" hidden="false" collective="false" import="true" targetId="ebec-1bd7-d27d-09b9" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="9.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="b36c-2bc5-9155-a651" name="Ship: " hidden="false" collective="false" import="true" defaultSelectionEntryId="bc99-e843-6824-1a94">
@@ -1312,230 +1624,6 @@
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="8432-9b38-1fd4-8e16" name="Ship: Dreadnought" hidden="false" collective="false" import="true" defaultSelectionEntryId="3801-fc04-9cd9-8fac">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21dc-79d0-2801-8199" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5a8-0e89-d0d4-8eae" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="2484-73bd-4ebd-69fb" name="Dreadnought (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="d40a-add5-7f35-0e3c" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="105.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3801-fc04-9cd9-8fac" name="Dreadnought (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="c998-02f6-2650-ad26" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="123.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b822-9b24-3c31-4306" name="Dreadnought (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="3869-ad27-49e7-32f6" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="148.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="545c-0fc4-f9da-ca81" name="Ship: Battleship" hidden="false" collective="false" import="true" defaultSelectionEntryId="2ebc-12ec-2e3e-98c7">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0fe2-bca9-2ed3-690e" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7456-7b42-c928-9909" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="120a-cbaf-36eb-ff70" name="Battleship (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="60e3-007c-6058-3569" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="70.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2ebc-12ec-2e3e-98c7" name="Battleship (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="be1e-751e-4499-6f19" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="83.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1204-7e38-4101-eaea" name="Battleship (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="0e8c-b02d-d862-10c5" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="99.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="f22e-1414-22c7-797b" name="Ship: Battle Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="a235-8909-b6c7-c6fe">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a6f-f2a2-a45a-1d52" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f15c-d907-a8d1-d06f" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="11b6-e142-2048-c84f" name="Battle Cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="5599-b622-baab-4c8f" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="61.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a235-8909-b6c7-c6fe" name="Battle Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="71cb-d025-0557-7048" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="72.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8705-f1d6-9baf-4b6c" name="Battle Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="58f9-2b03-4eab-7b5b" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="86.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="e94a-d531-527f-f74c" name="Ship: Heavy Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="756e-4232-975f-6781">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5cba-6bd6-9fb9-7c3a" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="85b0-2956-6f32-587f" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="e6d9-0974-be62-5a2b" name="Heavy Destroyer (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="8d60-52d7-313a-0d83" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="40.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="756e-4232-975f-6781" name="Heavy Destroyer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="2444-f98e-15a7-843d" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="47.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5ffe-bb92-4b6d-e37a" name="Heavy Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="c1da-afac-62a9-61be" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="57.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="936b-c6e0-8b65-7395" name="Ship: Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="3dd2-7512-f03a-926e">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="74de-d413-fbe8-0610" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a1be-e403-d069-047a" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="eda2-5b57-8474-4b26" name="Destroyer (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="5a0c-41f7-c66a-b2b1" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3dd2-7512-f03a-926e" name="Destroyer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="9c15-aac9-f0c3-53dc" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="41.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6fed-555a-2c47-70b5" name="Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="424b-7efe-29a0-f91c" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="49.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="73ce-c48d-7244-cc44" name="Ship: Frigate" hidden="false" collective="false" import="true" defaultSelectionEntryId="31fa-3897-920b-6092">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cc67-22b9-1e5e-4bdc" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="60f4-79d3-30f4-0d7e" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="ebc0-851a-5442-f636" name="Frigate (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="ba6d-aeea-309b-1659" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="31fa-3897-920b-6092" name="Frigate (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="339e-ce2e-bfa5-1175" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="26.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e9d5-e958-c455-ee4f" name="Frigate (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="703b-95f7-40e2-cdbb" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="9121-dccf-93d3-8b86" name="Ship: Light Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="67b7-fdec-9b62-eb6b">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5d29-8eb1-6a2e-47b9" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="822a-8c19-edbf-ce3b" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="0b33-3b4a-df7b-362d" name="Light Cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="1a1c-58db-b01e-2589" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="52.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="67b7-fdec-9b62-eb6b" name="Light Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="1130-d2ac-84b0-91aa" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="61.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cab1-4504-c3d4-a19e" name="Light Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="c8ac-0147-b6a2-27d3" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="73.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1593,262 +1681,6 @@
         <entryLink id="a63a-34d2-1164-83f8" name="Strikecraft" hidden="false" collective="false" import="true" targetId="d0a4-cec2-62e6-b18c" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="8ca4-19e8-f8bd-ce31" name="Ship: Reformed Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="e847-e8df-6a05-3356">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb2d-02f8-e4d7-e658" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4da8-9599-37e6-1a64" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="a19e-9b1b-9956-0f83" name="Reformed Cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="3720-6515-f9c8-a4be" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="44.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e847-e8df-6a05-3356" name="Reformed Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="dbcc-163a-d366-7103" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="52.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4b38-004c-5166-51c6" name="Reformed Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="ca61-3526-39c3-9999" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="63.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="3f78-57e1-3eb3-f5a4" name="Ship: Reformed Light Carrier" hidden="false" collective="false" import="true" defaultSelectionEntryId="e540-d96e-9c8f-5fb5">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5ea2-68b3-5cc7-96d9" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca7d-4d0c-7fa7-af22" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="1206-1463-745a-8d22" name="Reformed Light Carrier (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="54bb-1cd3-1188-b2d6" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="45.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e540-d96e-9c8f-5fb5" name="Reformed Light Carrier (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="6a1f-539e-b8cc-f95b" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="54.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a913-14d9-6cdb-4491" name="Reformed Light Carrier (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="dc88-7f18-8214-ddf6" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="64.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="822d-84e2-2da6-1bea" name="Ship: Vespa Protector" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ed0-e6c8-45c8-837d">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="65a9-7d8c-3a5b-e4da" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="010f-940d-eec5-dbd9" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="76dd-1e45-7f88-03fc" name="Vespa Protector (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="8c29-64ae-c89e-f76c" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="18.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5ed0-e6c8-45c8-837d" name="Vespa Protector (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="a7b4-9bbc-4105-c639" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4e1b-b8ff-1168-4d32" name="Vespa Protector (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="dc02-1638-2423-980f" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="64d8-1f2b-aa6a-d46c" name="Ship: Reformed Guardian Ships" hidden="false" collective="false" import="true" defaultSelectionEntryId="4758-fdfd-4ddb-df7b">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a500-e008-999d-c791" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cbd-8952-8c06-9553" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="418d-d940-2d4f-58ec" name="Reformed Guardian Ships (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="b276-ed32-0a56-9060" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4758-fdfd-4ddb-df7b" name="Reformed Guardian Ships (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="8c2e-4b5b-7b0b-f22a" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="28.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="daf5-6d25-2fe3-3e6b" name="Reformed Guardian Ships (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="671c-4fe7-93e6-4f1c" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="6127-83ae-079f-c3fc" name="Ship: Reformed Destroyer" hidden="false" collective="false" import="true" defaultSelectionEntryId="cce3-4466-6f25-9e78">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6127-207a-521c-1306" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="78e8-876c-4239-fa0f" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="93a9-631b-0d6e-3f6d" name="Reformed Destroyer (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="bea9-f06e-a411-0b8f" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cce3-4466-6f25-9e78" name="Reformed Destroyer (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="860d-ae9c-1c9b-20c0" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="34.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4ef8-c3ec-203d-aa97" name="Reformed Destroyer (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="648f-0d82-aff5-92c3" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="42.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="5c92-d5dd-4595-8d52" name="Ship: Vespa Heavy Cruiser" hidden="false" collective="false" import="true" defaultSelectionEntryId="fcf8-7b83-ba4e-21ba">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cd9-6487-0d79-dcb5" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8484-f942-4be3-c1d9" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="f7b9-95f3-49ce-bf47" name="Vespa Heavy Cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="af02-ba5f-18b8-1a3c" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="45.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="fcf8-7b83-ba4e-21ba" name="Vespa Heavy Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="e856-3911-70e7-2062" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="53.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cb88-c370-1ebf-d995" name="Vespa Heavy Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="c618-3333-4809-0e37" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="64.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="45c5-6d29-1db4-a889" name="Ship: Krotan Assault Carrier" hidden="false" collective="false" import="true" defaultSelectionEntryId="dac9-4c20-da7e-73dd">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d51-4363-b7f6-e29a" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="63c2-0927-9718-6e48" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="f124-fcb3-9277-6aff" name="Krotan Heavy Cruiser (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="82db-1b94-77b0-c255" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="43.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dac9-4c20-da7e-73dd" name="Krotan Heavy Cruiser (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="7709-85ae-879d-e80d" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="50.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2d07-10d5-f5a2-b451" name="Krotan Heavy Cruiser (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="97b2-a629-252e-556a" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="60.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="de73-2c9b-11c3-7391" name="Ship: Krotan Ravager" hidden="false" collective="false" import="true" defaultSelectionEntryId="226a-2af0-f2fb-7c2f">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bee6-f4e8-fc7c-d342" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1727-65fc-0e00-5917" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="5757-3adf-93b4-9401" name="Krotan Ravager (Green)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="37a9-55ea-3166-52a4" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="18.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="226a-2af0-f2fb-7c2f" name="Krotan Ravager (Trained)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="d041-430e-1d08-fd78" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="22.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5538-0d0d-c64c-3e2a" name="Krotan Ravager (Veteran)" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="18fc-3cf6-b262-8a6d" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup id="2edf-1710-a375-71b1" name="Strikecraft Reformed Light Cruiser (6 or 8 Slots)" hidden="false" collective="true" import="true">
       <modifiers>
         <modifier type="increment" field="759a-9f06-a33d-0770" value="2.0">
@@ -1897,11 +1729,31 @@
       </constraints>
       <selectionEntries>
         <selectionEntry id="e497-45c3-9e17-3fcf" name="Krotan Heavy Shock Troops" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="fff2-bae9-3420-fbb3" name="Krotan Heavy Shock Troops" hidden="false" typeId="9b96-0077-9566-f558" typeName="Infantry Stats">
+              <characteristics>
+                <characteristic name="Attack" typeId="63fd-f8ae-437b-9395">4+</characteristic>
+                <characteristic name="Defend" typeId="4412-2637-abd3-6d06">6+</characteristic>
+                <characteristic name="Attacks" typeId="7fbe-8b08-ceac-4a4d">2</characteristic>
+                <characteristic name="Save" typeId="ffdb-7368-6e3f-b0cf">7+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="69a5-c9e6-4bd8-7cb7" name="Strikecraft Tribune Corvus" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="f995-68ed-2daf-d43b" name="Dropship" hidden="false" collective="false" import="true" targetId="6222-228c-7e55-485b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5162-f5c0-435d-d598" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="84bc-6d99-1ff3-2bba" name="Troop Selection" hidden="false" collective="false" import="true" targetId="b847-8ccd-020f-d554" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -1948,7 +1800,7 @@
         <characteristic name="Range" typeId="02c1-f192-0aa7-4b94">6&quot;</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">6+/-1</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Side</characteristic>
-        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Dual Purpose</characteristic>
+        <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4">Instantaneous</characteristic>
       </characteristics>
     </profile>
     <profile id="2037-2afc-2af4-3c13" name="Disruptor Cannon" publicationId="9db1-597c-e74f-261b" hidden="false" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
@@ -2004,34 +1856,34 @@ rest of the game</characteristic>
         <characteristic name="Faction Traits" typeId="5b1e-f660-2b2b-2991">Corvettes and destroyers gain 1 thrust making them 5.</characteristic>
       </characteristics>
     </profile>
-    <profile id="93eb-cd53-9dae-f24e" name="Fighters" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
+    <profile id="93eb-cd53-9dae-f24e" name="Hastati Fighters" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+3</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">4+</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
+        <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
+        <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
       </characteristics>
     </profile>
     <profile id="9331-1374-2dea-ed66" name="Fighter Ace" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+5</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+5</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">5+</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
+        <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
+        <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
       </characteristics>
     </profile>
-    <profile id="721a-2a6a-1328-9074" name="Bomber" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
+    <profile id="721a-2a6a-1328-9074" name="Praetorian Bomber" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+2</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">3+/-3</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">8+</characteristic>
+        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">9&quot;</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">4+/-3</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
+        <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
+        <characteristic name="Traits" typeId="a75f-7e43-f243-87a2">Shield Skipping 8+</characteristic>
       </characteristics>
     </profile>
     <profile id="b39e-a84b-01f4-e1b6" name="Carrier" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -2042,34 +1894,34 @@ rest of the game</characteristic>
         <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="f09e-422f-bd6e-d9b0" name="Interceptor" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
+    <profile id="f09e-422f-bd6e-d9b0" name="Velites Interceptors" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+2</characteristic>
-        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">5+</characteristic>
-        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">4+</characteristic>
+        <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">10+/0</characteristic>
+        <characteristic name="Save" typeId="db31-ed7c-6704-83e3">9+</characteristic>
+        <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
+        <characteristic name="Traits" typeId="a75f-7e43-f243-87a2">Intercept</characteristic>
       </characteristics>
     </profile>
     <profile id="a28c-a51f-3f51-dab1" name="Interceptor Aces" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+5</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+5</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">3+</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">6+</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
+        <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
+        <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
       </characteristics>
     </profile>
     <profile id="463e-2b3e-2a77-6f03" name="Dropships" hidden="false" typeId="57d9-4b4c-aef6-d2ff" typeName="Strikecraft">
       <characteristics>
-        <characteristic name="Dogfight modifier" typeId="5100-19bf-79a4-f46b">+1</characteristic>
+        <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+1</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
-        <characteristic name="Roll to hit/+AP" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">8+</characteristic>
+        <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">5+</characteristic>
-        <characteristic name="Damage to ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
+        <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
+        <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
       </characteristics>
     </profile>
     <profile id="7bf6-7c80-c93c-897c" name="Light Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
@@ -2222,6 +2074,38 @@ rest of the game</characteristic>
         <characteristic name="Roll to Hit/AP" typeId="738d-1ca7-eee9-c602">4+/-1</characteristic>
         <characteristic name="Fire Points" typeId="b9c0-a785-db1c-1f9f">Front+Sides</characteristic>
         <characteristic name="Traits" typeId="3491-0cc6-d26a-85a4"/>
+      </characteristics>
+    </profile>
+    <profile id="a3a2-c3f7-7dc6-f0db" name="Reformed Heavy Cruiser" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">6</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3fb1-d07f-1eab-d5b7" name="Reformed Battleship" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">7</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">6+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8d0e-7190-afcf-51f6" name="Reformed Empress" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">8</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">3</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">5+</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="def1-4b5b-ed22-5d31" name="Reformed Mine Layers" hidden="false" typeId="56db-5e91-a8cb-65e2" typeName="Ship Stats">
+      <characteristics>
+        <characteristic name="Shields" typeId="aecd-d579-3ad9-087e">3</characteristic>
+        <characteristic name="Thrusters" typeId="dc54-3469-a3c4-33c1">4</characteristic>
+        <characteristic name="Armour Save" typeId="7f46-3a45-4c91-3586">-</characteristic>
+        <characteristic name="Crew Size" typeId="5a15-af02-e253-322d">1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
