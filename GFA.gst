@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="59" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <publications>
-    <publication id="9db1-597c-e74f-261b" name="GFA 1.081"/>
-  </publications>
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="60" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
-    <costType id="ba61-5f33-318b-653a" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="ba61-5f33-318b-653a" name="Pts" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="56db-5e91-a8cb-65e2" name="Ship Stats">
@@ -103,31 +100,31 @@
     <categoryEntry id="058c-f32f-8132-917b" name="Assault" hidden="false"/>
     <categoryEntry id="965e-e27c-1b2f-e11b" name="Heavy Capital" hidden="false">
       <modifiers>
-        <modifier type="set" field="e458-352f-b543-34ea" value="2.0">
+        <modifier type="set" field="e458-352f-b543-34ea" value="2">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26f4-1ea5-e00d-f290" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26f4-1ea5-e00d-f290" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="e458-352f-b543-34ea" value="2.0">
+        <modifier type="set" field="e458-352f-b543-34ea" value="2">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="085d-c25b-33da-0cee" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="085d-c25b-33da-0cee" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e458-352f-b543-34ea" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e458-352f-b543-34ea" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="6176-84f7-8071-b92e" name="Grand Admiral" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="7d6c-f6c1-f8c5-d6bc" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="931d-63d7-4335-fbf1" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="7d6c-f6c1-f8c5-d6bc" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="931d-63d7-4335-fbf1" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="1400-6cc4-e9a5-372c" name="Faction Traits" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="1b3c-4c9b-2cfa-abd2" type="min"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5b29-760b-42a3-29e3" type="max"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="1b3c-4c9b-2cfa-abd2" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5b29-760b-42a3-29e3" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="1a19-0fd1-8500-ac26" name="Upgrades" hidden="false"/>
@@ -190,26 +187,26 @@
     <categoryEntry id="0b94-f752-e2c8-6797" name="Supply Ship" hidden="false"/>
     <categoryEntry id="ecf2-2176-9f95-0948" name="Station" hidden="false">
       <modifiers>
-        <modifier type="set" field="a660-d452-b24a-a094" value="0.0">
+        <modifier type="set" field="a660-d452-b24a-a094" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f11-fae2-9c59-a140" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e62e-eaf7-0a7a-8ede" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f11-fae2-9c59-a140" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e62e-eaf7-0a7a-8ede" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a660-d452-b24a-a094" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a660-d452-b24a-a094" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="5067-28fc-1954-8f7e" name="Battlegroup Commander" hidden="false">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21b8-3830-bee7-3ef8" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2a38-442e-6558-f877" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21b8-3830-bee7-3ef8" type="min"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2a38-442e-6558-f877" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="88bb-57bb-2223-9bf6" name="Character" hidden="false"/>
@@ -224,59 +221,59 @@
     <categoryEntry id="5603-502e-9c80-110e" name="Krotan Assault Carrier" hidden="false"/>
     <categoryEntry id="688c-5ead-89a3-1d69" name="Reformed H Cruiser" hidden="false"/>
     <categoryEntry id="c32a-e17b-92e4-f5bf" name="Vespa H Cruiser" hidden="false"/>
+    <categoryEntry name="Super Capital" id="a580-131d-fad-f1cd" hidden="false"/>
+    <categoryEntry name="EW" id="544d-a82d-600b-2f7" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5ef9-7be3-c10e-89bb" name="Support Group" hidden="false">
-      <comment>2-4 Support ships, each must have 1 escort and can have up to 2 escorts in total.�</comment>
+      <comment>2-4 Support ships, each can have up to 1 escort
+Modifier: +1 to hit rolls when shooting.</comment>
       <forceEntries>
         <forceEntry id="9b83-db1b-71ff-a3f1" name="Support Group" hidden="false">
           <categoryLinks>
             <categoryLink id="a259-f1db-b9c3-68c4" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
             <categoryLink id="ae72-2589-f5ae-4cab" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
-            <categoryLink id="1026-9320-4a59-1a4a" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="25d8-f23b-926b-f85b" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="cb8e-8398-61c6-86ab" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
             <categoryLink id="d0d8-9b15-8288-c9ae" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+            <categoryLink id="1026-9320-4a59-1a4a" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
       <categoryLinks>
         <categoryLink id="7681-eb5c-f70d-1575" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink name="Capital" hidden="false" id="cbcd-e836-366f-b82b" targetId="65b3-d043-cf27-0671" primary="false"/>
         <categoryLink id="c968-6dd7-9d9e-1ba5" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adba-d302-6d0b-bcf4" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a2-2f5a-aa1e-1c3d" type="min"/>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="afea-4279-d1ed-f987" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="2ba5-fc2b-9b74-8f35" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink id="6074-ffb4-0078-fe79" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
           <modifiers>
-            <modifier type="increment" field="f41a-eeb3-1198-d916" value="1.0">
+            <modifier type="increment" value="1" field="4fe5-de5a-fc69-a47d">
               <repeats>
-                <repeat field="selections" scope="5ef9-7be3-c10e-89bb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e62e-eaf7-0a7a-8ede" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="e62e-eaf7-0a7a-8ede" shared="true" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="f41a-eeb3-1198-d916" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="increment" value="1" field="4fe5-de5a-fc69-a47d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="975c-c061-3dd5-83c9" shared="true" includeChildSelections="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f41a-eeb3-1198-d916" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4fe5-de5a-fc69-a47d" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="66a8-0623-fd21-e8d6" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="31f5-7f4a-f5eb-571f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
         <categoryLink id="a3ed-55ee-c7d5-18a3" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+        <categoryLink id="66a8-0623-fd21-e8d6" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="1383-5b5c-01df-92d5" name="Combat Group" hidden="false">
-      <comment>1-3 Capital ships, each must have 2 escorts and each can have up to 1 support ship.�</comment>
+      <comment>1-3 Capital ships, each must have 2 escorts and each can have up to 1 support ship.�0
+Modifier: +1 to special command action rolls</comment>
       <forceEntries>
         <forceEntry id="8a24-e1d2-c7c2-6c8f" name="Combat Group" hidden="false">
           <categoryLinks>
@@ -294,42 +291,48 @@
         <categoryLink id="3b66-ae87-9815-d065" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="0047-29ae-edec-024b" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="013b-a3e9-a43d-0bdc" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fab-7f40-8087-159b" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="dfa4-3c1b-c94c-5cc1" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="533a-4f9c-8cd3-7999" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b89c-f7ce-61ea-df90" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false">
           <modifiers>
-            <modifier type="increment" field="d0e4-d8c6-b254-e8b1" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="1383-5b5c-01df-92d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="increment" value="1" field="4ef-5fa1-87c4-34b3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="65b3-d043-cf27-0671" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e4-d8c6-b254-e8b1" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4ef-5fa1-87c4-34b3" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink id="6a58-931e-3b58-e8dc" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
           <modifiers>
-            <modifier type="increment" field="7784-5eac-90d8-2017" value="2.0">
+            <modifier type="increment" value="2" field="11c9-ebcc-929a-d07d-min">
               <repeats>
-                <repeat field="selections" scope="1383-5b5c-01df-92d5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="65b3-d043-cf27-0671" shared="true" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="7784-5eac-90d8-2017" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="increment" value="2" field="11c9-ebcc-929a-d07d-max">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="65b3-d043-cf27-0671" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="11c9-ebcc-929a-d07d-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="975c-c061-3dd5-83c9" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="11c9-ebcc-929a-d07d-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="975c-c061-3dd5-83c9" shared="true" includeChildSelections="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7784-5eac-90d8-2017" type="min"/>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="11c9-ebcc-929a-d07d-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="11c9-ebcc-929a-d07d-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink id="523a-099c-4959-8ddd" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
@@ -338,7 +341,7 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry id="90e5-ead8-f2f6-c899" name="Patrol Group" hidden="false">
-      <comment>Can be any group type but all ships must have thrusters 4 and above.</comment>
+      <comment>3-5 Escort Ships</comment>
       <forceEntries>
         <forceEntry id="ecd0-aa04-3df5-d34c" name="Patrol Group" hidden="false">
           <categoryLinks>
@@ -346,6 +349,8 @@
             <categoryLink id="1a75-29e0-1224-8b6d" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="3094-e016-651a-725d" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
             <categoryLink id="20d7-5039-ba41-373b" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+            <categoryLink name="Support" hidden="false" id="b692-ddeb-3bc6-2626" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink name="Capital" hidden="false" id="c647-19c9-ad4d-569c" targetId="65b3-d043-cf27-0671" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -353,24 +358,19 @@
         <categoryLink id="2f3a-9d4e-607f-18bb" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="6abe-11b0-8893-10b9" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
           <modifiers>
-            <modifier type="increment" field="6561-f66f-7d7d-efa5" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f731-eb6e-ac00-c3af" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="increment" value="1" field="8d48-42e8-542f-c026">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="975c-c061-3dd5-83c9" shared="true" includeChildSelections="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6561-f66f-7d7d-efa5" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d05-b3dc-ea22-37ef" type="min"/>
+            <constraint type="min" value="3" field="selections" scope="force" shared="true" id="3603-861e-cd64-d708" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="8d48-42e8-542f-c026" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="cc85-b043-63e9-ace2" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="9727-3035-4d4d-e227" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+        <categoryLink id="cc85-b043-63e9-ace2" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="fa06-bc3a-fdc3-52a2" name="Defender Group" hidden="false">
@@ -392,40 +392,30 @@
         <categoryLink id="2bee-491c-cec4-387d" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="efcc-728d-2ed2-903e" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd98-1862-91fc-4ecb" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d019-adf0-6b09-b53e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d019-adf0-6b09-b53e-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8fba-561c-1197-39ab" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fac-bb2a-0bb3-6976" type="max"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="dc5d-724c-110-281a" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8646-d8e8-235e-7611" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
           <modifiers>
-            <modifier type="set" field="c21e-b148-d06b-f724" value="0.0">
+            <modifier type="increment" value="1" field="8ced-1dc-cf3a-2614">
               <conditions>
-                <condition field="selections" scope="fa06-bc3a-fdc3-52a2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" type="equalTo"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="975c-c061-3dd5-83c9" shared="true" includeChildSelections="false"/>
               </conditions>
-            </modifier>
-            <modifier type="increment" field="bf2c-6eb1-771f-7f07" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf2c-6eb1-771f-7f07" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c21e-b148-d06b-f724" type="min"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="8ced-1dc-cf3a-2614" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="79a7-9876-544d-8594" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
-        <categoryLink id="1c50-e68d-31a5-696f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
         <categoryLink id="2032-7e6e-45cc-65bc" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+        <categoryLink id="1c50-e68d-31a5-696f" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
+        <categoryLink id="79a7-9876-544d-8594" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="085d-c25b-33da-0cee" name="Bombard Group" hidden="false">
@@ -436,7 +426,7 @@
             <categoryLink id="5afb-e4fa-3f47-e284" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
             <categoryLink id="a0e8-dd90-5347-6d9e" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
             <categoryLink id="eae5-35c8-cb65-b5c9" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
-            <categoryLink id="5f1f-e880-d97b-7fa4" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="5f1f-e880-d97b-7fa4" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="315d-3917-573f-f122" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="8813-407a-11cf-d341" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
             <categoryLink id="425f-27c4-c340-e641" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
@@ -447,36 +437,42 @@
         <categoryLink id="172b-e8c0-bdd4-0927" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="ec3b-64ba-1f7f-b851" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b885-c325-7838-d79e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d0-7ddd-9ffa-af00" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c390-317e-3083-cfac" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="2ae4-b640-cfca-f22a" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink id="d3f0-d675-1b32-4cb6" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
         <categoryLink id="e59f-d919-c304-4329" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
           <modifiers>
-            <modifier type="increment" field="e0f9-9177-db92-89ea" value="1.0">
+            <modifier type="increment" value="1" field="1603-9311-529e-ca4-min">
               <repeats>
-                <repeat field="selections" scope="085d-c25b-33da-0cee" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65b3-d043-cf27-0671" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="65b3-d043-cf27-0671" shared="true" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="e0f9-9177-db92-89ea" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="8f11-fae2-9c59-a140" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f731-eb6e-ac00-c3af" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="increment" value="1" field="1603-9311-529e-ca4-max">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="65b3-d043-cf27-0671" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="1603-9311-529e-ca4-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="975c-c061-3dd5-83c9" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="1603-9311-529e-ca4-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="975c-c061-3dd5-83c9" shared="true" includeChildSelections="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f9-9177-db92-89ea" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="1603-9311-529e-ca4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1603-9311-529e-ca4-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="0b18-a8d1-4359-d9ff" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="789c-7dbd-805d-4058" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
         <categoryLink id="fecb-4509-6497-0ffb" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+        <categoryLink id="0b18-a8d1-4359-d9ff" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="ba23-1bb8-64ec-d0b6" name="Free Group" hidden="false">
@@ -487,7 +483,7 @@
             <categoryLink id="44b5-d008-6b22-d2e1" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
             <categoryLink id="bcd1-a678-ad2c-b71f" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
             <categoryLink id="066a-efc3-7499-b680" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
-            <categoryLink id="414b-9cc5-e5f8-4ecd" name="1. Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink id="414b-9cc5-e5f8-4ecd" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink id="1da9-3824-4145-9f15" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="f51b-debe-ed53-2949" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
             <categoryLink id="ca96-641d-7813-599e" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
@@ -499,9 +495,9 @@
         <categoryLink id="a619-3be4-b04c-df07" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="false"/>
         <categoryLink id="abba-5b43-7ca1-1e8e" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
         <categoryLink id="f7d5-1c6c-d11a-38bc" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
-        <categoryLink id="30ca-f8fd-8622-3182" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="4963-552e-edb7-578d" name="Assault" hidden="false" targetId="058c-f32f-8132-917b" primary="false"/>
         <categoryLink id="158b-6627-ac62-3d12" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+        <categoryLink id="30ca-f8fd-8622-3182" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="fef6-a6e1-b7cc-b959" name="Picket Group" hidden="false">
@@ -513,6 +509,8 @@
             <categoryLink id="d66e-c210-a9d6-add4" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
             <categoryLink id="c405-cb6e-933d-2a7f" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false"/>
             <categoryLink id="3243-bdde-4876-07ec" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+            <categoryLink name="Support" hidden="false" id="390a-631d-174c-38da" targetId="e62e-eaf7-0a7a-8ede" primary="false"/>
+            <categoryLink name="Capital" hidden="false" id="233c-91c0-fada-9f69" targetId="65b3-d043-cf27-0671" primary="false"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -520,34 +518,49 @@
         <categoryLink id="ca71-3a89-87fb-db08" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
         <categoryLink id="b11a-a7ae-3657-3ed7" name="Escort" hidden="false" targetId="8f11-fae2-9c59-a140" primary="false">
           <modifiers>
-            <modifier type="increment" field="bd42-ccb9-441c-709f" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f731-eb6e-ac00-c3af" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975c-c061-3dd5-83c9" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="increment" value="1" field="c4e0-54f5-da0c-1448">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="975c-c061-3dd5-83c9" shared="true" includeChildSelections="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd42-ccb9-441c-709f" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="516e-b769-7b76-f7a4" type="min"/>
+            <constraint type="min" value="3" field="selections" scope="force" shared="true" id="971f-5563-f588-2754" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="c4e0-54f5-da0c-1448" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="954d-9bc6-a3c8-8793" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
         <categoryLink id="6fc4-5adb-c885-f8a7" name="Other" hidden="false" targetId="b09d-d647-606f-39d3" primary="false"/>
+        <categoryLink id="954d-9bc6-a3c8-8793" name="Faction Traits" hidden="false" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Titan Group" id="7ce7-29f4-663f-f70b" hidden="false">
+      <comment>1 Super Capital
+Modifier: This Battlegroup never makes any morale checks.</comment>
+      <forceEntries>
+        <forceEntry name="Titan Group" id="2474-eb51-560d-1608" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Faction Traits" hidden="false" id="ff3f-47e6-aef5-1387" targetId="1400-6cc4-e9a5-372c" primary="false"/>
+            <categoryLink name="Configuration" hidden="false" id="98fa-b73c-7880-952b" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+            <categoryLink name="Super Capital" hidden="false" id="a534-a853-1ad9-a85f" targetId="a580-131d-fad-f1cd" type="category"/>
+            <categoryLink name="Other" hidden="false" id="d0b1-58af-502f-2940" targetId="b09d-d647-606f-39d3" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="6edd-4dfb-e2ac-dcd2" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink name="Super Capital" hidden="false" id="e408-48ca-a8c1-dbc7" targetId="a580-131d-fad-f1cd"/>
+        <categoryLink name="Other" hidden="false" id="dd31-caa4-e0f6-9bb5" targetId="b09d-d647-606f-39d3" primary="false"/>
+        <categoryLink name="Faction Traits" hidden="false" id="bb13-c1a1-e6a2-d45a" targetId="1400-6cc4-e9a5-372c" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <entryLinks>
     <entryLink id="143e-d9ea-0059-01f5" name="Generica" hidden="false" collective="false" import="true" targetId="361e-5fd6-4d5b-854e" type="selectionEntry"/>
     <entryLink id="bdce-0f55-7d1c-197e" name="&lt;Reference&gt; Ship Classes" hidden="false" collective="false" import="true" targetId="40e0-5460-07a7-5bc1" type="selectionEntry"/>
-    <entryLink id="ac1c-16bc-5571-4e46" name="Weapon Trait Location " hidden="false" collective="false" import="true" targetId="2a5a-38c4-30cc-39b7" type="selectionEntry"/>
+    <entryLink id="ac1c-16bc-5571-4e46" name="Weapon Trait Location" hidden="false" collective="false" import="true" targetId="2a5a-38c4-30cc-39b7" type="selectionEntry"/>
     <entryLink id="ddb8-25b4-3570-f103" name="Vanguard Group" hidden="false" collective="false" import="true" targetId="da43-03f5-15cb-e16f" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17d6-a7d8-9be6-0301" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17d6-a7d8-9be6-0301" type="max"/>
       </constraints>
     </entryLink>
     <entryLink id="36f0-ade1-7dee-d95d" name="&lt;Reference&gt; Battlegroup Rules" hidden="false" collective="false" import="true" targetId="ebb2-307a-e49a-dd90" type="selectionEntry"/>
@@ -570,17 +583,17 @@ settled down and show his true colours next engagement.</description>
   <sharedSelectionEntries>
     <selectionEntry id="e693-b158-d50d-23b0" name="Green" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4b81-1f88-c48f-88b6" name="Trained" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7961-cba4-0faa-1cd4" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4f51-f074-3226-0196" name="Ablative Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -592,7 +605,7 @@ settled down and show his true colours next engagement.</description>
         <categoryLink id="e9ea-605c-64b9-90d8" name="Upgrades" hidden="false" targetId="1a19-0fd1-8500-ac26" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="361e-5fd6-4d5b-854e" name="Generica" hidden="true" collective="false" import="true" type="unit">
@@ -606,48 +619,48 @@ settled down and show his true colours next engagement.</description>
         <infoLink id="bd79-5faf-032c-7325" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c892-fe49-42dd-3763" name="New CategoryLink" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
+        <categoryLink id="c892-fe49-42dd-3763" name="Capital" hidden="false" targetId="65b3-d043-cf27-0671" primary="true"/>
         <categoryLink id="2892-ab1c-c30e-3c31" name="Heavy Capital" hidden="false" targetId="965e-e27c-1b2f-e11b" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="78d3-2852-2d1a-f8f2" name="Battlegroup Commanders" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
+        <entryLink id="78d3-2852-2d1a-f8f2" name="Commander" hidden="false" collective="false" import="true" targetId="a197-fe12-1310-5109" type="selectionEntryGroup"/>
         <entryLink id="77d9-0851-7aa9-d4bb" name="Armoured Reactor Core" hidden="false" collective="false" import="true" targetId="a12b-233b-558c-95fb" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0578-25f7-69e7-dd03" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0578-25f7-69e7-dd03" type="max"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3"/>
           </costs>
         </entryLink>
         <entryLink id="5382-f592-6e75-f146" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="583a-026b-a04b-7df9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="583a-026b-a04b-7df9" type="max"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3"/>
           </costs>
         </entryLink>
         <entryLink id="8b33-7eb7-e796-8273" name="Flag Bridge" hidden="false" collective="false" import="true" targetId="2f32-7bb1-35db-671c" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77d9-0851-7aa9-d4bb" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="77d9-0851-7aa9-d4bb" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c7d-ac1d-5f90-a432" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c7d-ac1d-5f90-a432" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="4477-7508-7a25-ced6" name="Escort +1" hidden="false" collective="false" import="true" targetId="44b6-ccc8-d7bc-2612" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3558-93d1-5d6b-719a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3558-93d1-5d6b-719a" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="a74b-db6e-9784-5c57" name="Hanger Upgrades" hidden="false" collective="false" import="true" targetId="a246-4f69-5f8f-49ce" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="659d-a0ef-113c-2b8e" name="Adaptive Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -655,7 +668,7 @@ settled down and show his true colours next engagement.</description>
         <infoLink id="ab1c-0ffd-855d-2cbe" name="Adaptive Armor" hidden="false" targetId="0156-bedd-f065-093f" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cde8-d50d-3c29-08f0" name="APD Kinetic" hidden="false" collective="false" import="true" type="upgrade">
@@ -663,7 +676,7 @@ settled down and show his true colours next engagement.</description>
         <infoLink id="ee17-efc7-195f-1b37" name="APD Kinetic" hidden="false" targetId="57ff-1eb5-4c62-6a1b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e1b7-fb84-6b09-0012" name="APD Energy" hidden="false" collective="false" import="true" type="upgrade">
@@ -671,7 +684,7 @@ settled down and show his true colours next engagement.</description>
         <infoLink id="3f11-a0aa-e64c-7f31" name="APD Energy" hidden="false" targetId="dfb8-bdf6-2b48-625b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="621c-ef40-771a-84ff" name="Afterburners" hidden="false" collective="false" import="true" type="upgrade">
@@ -679,7 +692,7 @@ settled down and show his true colours next engagement.</description>
         <infoLink id="292d-bb32-ea3e-88e6" name="Afterburners" hidden="false" targetId="ba0f-0ad6-468a-61e6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f25-d23f-0124-f65a" name="Aegis" hidden="false" collective="false" import="true" type="upgrade">
@@ -687,7 +700,7 @@ settled down and show his true colours next engagement.</description>
         <infoLink id="6744-1755-816f-7da5" name="Aegis" hidden="false" targetId="98c1-ebfa-0322-ec29" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c263-1075-50d4-5c53" name="Grand Admiral" hidden="false" collective="false" import="true" type="upgrade">
@@ -696,22 +709,22 @@ settled down and show his true colours next engagement.</description>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5fd3-aac0-381e-fe1e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5fd3-aac0-381e-fe1e" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="0226-b098-5eec-9a2c" name="Fleet Commander" hidden="false" targetId="6176-84f7-8071-b92e" primary="false"/>
+        <categoryLink id="0226-b098-5eec-9a2c" name="Grand Admiral" hidden="false" targetId="6176-84f7-8071-b92e" primary="false"/>
         <categoryLink id="b75a-4ab9-2904-e49d" name="Battlegroup Commander" hidden="false" targetId="5067-28fc-1954-8f7e" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="40e0-5460-07a7-5bc1" name="&lt;Reference&gt; Ship Classes" hidden="false" collective="false" import="true" type="upgrade">
@@ -724,7 +737,7 @@ Capital Ship: Battlecruiser, Cruiser, Light Cruiser,  Missile Cruiser
 
 Heavy Capital Ship: Battleship, Carrier, Fleet Carrier, Dreadnought,
 
-Assault Ships: Assault Ships. &quot;			</comment>
+Assault Ships: Assault Ships. &quot;</comment>
       <infoLinks>
         <infoLink id="8d25-7b78-e053-f5e2" name="Ship Classes" hidden="false" targetId="8173-6ab7-423e-b29c" type="profile"/>
       </infoLinks>
@@ -732,7 +745,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <categoryLink id="5062-acbe-8ccf-e944" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c400-5953-f9e1-246a" name="Hanger Bay" hidden="false" collective="false" import="true" type="upgrade">
@@ -740,7 +753,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="7cea-24dc-bac4-6d38" name="Hanger Bay" hidden="false" targetId="05ad-bdd0-63b1-0b35" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="95c4-8da9-d607-b9f8" name="Hanger Small" hidden="false" collective="false" import="true" type="upgrade">
@@ -748,7 +761,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="a23e-7a03-7701-7232" name="Hangar Small" hidden="false" targetId="7a47-c68f-58c9-396e" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8079-f339-a5f7-d555" name="Hanger Medium" hidden="false" collective="false" import="true" type="upgrade">
@@ -756,7 +769,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="1434-8a9c-50ba-9a17" name="Hanger Medium" hidden="false" targetId="6221-836f-0b7d-3638" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2421-cf65-1076-2cb2" name="Hanger Large" hidden="false" collective="false" import="true" type="upgrade">
@@ -764,7 +777,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="e931-ecc6-5cf9-09e0" name="Hanger Large" hidden="false" targetId="b841-bdbf-a3ce-54cc" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74f5-e86b-6a36-d521" name="Battlegroup Veterency" hidden="false" collective="false" import="true" type="upgrade">
@@ -772,7 +785,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <entryLink id="05fe-d2bd-19c0-c628" name="Battlegroup Veterency" hidden="false" collective="false" import="true" targetId="fbb2-4858-5cd7-8c4f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="135a-3cb6-228a-98ee" name="Torpedo (Ord)" hidden="false" collective="false" import="true" type="upgrade">
@@ -785,7 +798,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="6ede-c3a7-a3d5-9ea8" name="Dumb Fire" hidden="false" targetId="b65c-c3f1-a8d6-9dea" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="63c5-8bf9-02f2-e2ec" name="Point Defense Lasers (PD)" hidden="false" collective="false" import="true" type="upgrade">
@@ -793,7 +806,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="0969-ad50-0dec-4fa7" name="Point Defence Lasers (PD)" hidden="false" targetId="22b3-9a15-af4e-2b69" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="79d3-375a-3019-8c04" name="Point Defense Guns (PD)" hidden="false" collective="false" import="true" type="upgrade">
@@ -801,7 +814,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="0c00-7fa5-9dfe-7f73" name="Point Defence Guns (PD)" hidden="false" targetId="a23a-75bc-adc3-334e" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e9b8-cd55-1588-cdf3" name="Improved Drive" hidden="false" collective="false" import="true" type="upgrade">
@@ -812,7 +825,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <categoryLink id="bc05-e88e-1a9c-39ac" name="Improved Drives" hidden="false" targetId="a340-6370-56da-2c93" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a12b-233b-558c-95fb" name="Armoured Reactor Core" hidden="false" collective="false" import="true" type="upgrade">
@@ -820,7 +833,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="5288-6db8-90e3-d8bf" name="Armored Reactor Core" hidden="false" targetId="34bb-a9f7-0e05-2123" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="44b6-ccc8-d7bc-2612" name="Escort +1" hidden="false" collective="false" import="true" type="upgrade">
@@ -832,7 +845,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="928a-8192-f225-5384" name="Escort" hidden="false" collective="false" import="true" type="upgrade">
@@ -844,7 +857,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f32-7bb1-35db-671c" name="Flag Bridge" hidden="false" collective="false" import="true" type="upgrade">
@@ -852,36 +865,36 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="dd28-10ea-20da-1880" name="Flag Bridge" hidden="false" targetId="4bb1-8f4b-9d23-6b13" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2a5a-38c4-30cc-39b7" name="Weapon Trait Location " hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="2a5a-38c4-30cc-39b7" name="Weapon Trait Location" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="de28-30e8-d507-c3ab" type="max"/>
+        <constraint field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="de28-30e8-d507-c3ab" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="8032-52f5-64c7-4b45" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+        <categoryLink id="8032-52f5-64c7-4b45" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ab99-c9c0-1687-d9ea" name="Inline with Ships" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="905f-5458-83c3-0152" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="905f-5458-83c3-0152" type="max"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4a7b-e5fd-e37b-e83a" name="At the Bottom" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e88b-22f2-edab-fdba" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e88b-22f2-edab-fdba" type="max"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="967b-25d0-480e-1efd" name="Assassin System" hidden="false" collective="false" import="true" type="upgrade">
@@ -889,21 +902,21 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="4df9-17e0-5df9-5c88" name="Assassin System" hidden="false" targetId="8b25-5436-8f22-3d08" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da43-03f5-15cb-e16f" name="Vanguard Group" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60c2-3050-c2e2-fc12" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60c2-3050-c2e2-fc12" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="baaa-f0f8-8dd0-8733" name="Vanguard" hidden="false" targetId="f9ef-0d75-192f-f129" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="e8de-1abf-c7ba-0436" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+        <categoryLink id="e8de-1abf-c7ba-0436" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ebb2-307a-e49a-dd90" name="&lt;Reference&gt; Battlegroup Rules" hidden="false" collective="false" import="true" type="upgrade">
@@ -911,10 +924,10 @@ Assault Ships: Assault Ships. &quot;			</comment>
         <infoLink id="1a19-f064-0f45-51b6" name="Battlegroup: Traits" hidden="false" targetId="84f4-11be-8f1b-9876" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="1b26-4839-ad59-48d4" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+        <categoryLink id="1b26-4839-ad59-48d4" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="11e6-0919-7171-3349" name="Battlegroup Commander" hidden="false" collective="false" import="true" type="upgrade">
@@ -925,14 +938,14 @@ Assault Ships: Assault Ships. &quot;			</comment>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6176-84f7-8071-b92e" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -941,13 +954,13 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f5-cba9-b037-5405" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f5-cba9-b037-5405" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="97bd-87f1-5f32-c1be" name="Battlegroup Commander" hidden="false" targetId="5067-28fc-1954-8f7e" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b1d7-8653-a543-1979" name="Stealth Mines" hidden="false" collective="false" import="true" type="upgrade">
@@ -970,7 +983,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="89de-9c81-7e14-4d89" name="Armour Buster Mines" hidden="false" collective="false" import="true" type="upgrade">
@@ -993,7 +1006,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="997f-0b62-9bd8-454d" name="Standard Mines" hidden="false" collective="false" import="true" type="upgrade">
@@ -1016,19 +1029,19 @@ Assault Ships: Assault Ships. &quot;			</comment>
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4.0"/>
+        <cost name="Pts" typeId="ba61-5f33-318b-653a" value="4"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fbb2-4858-5cd7-8c4f" name="Battlegroup Veterency" hidden="false" collective="false" import="true" defaultSelectionEntryId="070f-e295-681a-edd8">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a4bf-5d46-11c1-c09f" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="627e-9cd7-3ad8-1150" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a4bf-5d46-11c1-c09f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="627e-9cd7-3ad8-1150" type="min"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="aa30-36c2-e22a-1352" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
-        <categoryLink id="9f54-096c-1fc8-6e97" name="New CategoryLink" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
+        <categoryLink id="aa30-36c2-e22a-1352" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="true"/>
+        <categoryLink id="9f54-096c-1fc8-6e97" name="Configuration" hidden="false" targetId="4abf-8ab9-931b-4a97" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b721-11d6-b06f-2a0a" name="Green" hidden="false" collective="false" import="true" targetId="e693-b158-d50d-23b0" type="selectionEntry">
@@ -1036,7 +1049,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <modifier type="add" field="category" value="ca3d-268e-c54a-5ad0"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="da27-09fa-d79c-b00b" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="da27-09fa-d79c-b00b" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="d898-75f9-36ec-cd4d" name="Green" hidden="false" targetId="ca3d-268e-c54a-5ad0" primary="false"/>
@@ -1047,7 +1060,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <modifier type="add" field="category" value="c9ad-349e-fa78-f3fa"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ac95-2cef-97e0-bc43" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ac95-2cef-97e0-bc43" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="8714-1d67-0578-cc0b" name="Veteran" hidden="false" targetId="c9ad-349e-fa78-f3fa" primary="false"/>
@@ -1058,7 +1071,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <modifier type="add" field="category" value="1819-080d-2b0e-710d"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7b62-ae8c-d74c-d308" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7b62-ae8c-d74c-d308" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="cfba-29a0-bb6c-fb95" name="Trained" hidden="false" targetId="1819-080d-2b0e-710d" primary="false"/>
@@ -1070,28 +1083,28 @@ Assault Ships: Assault Ships. &quot;			</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a246-4f69-5f8f-49ce" type="equalTo"/>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a246-4f69-5f8f-49ce" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4078-bc3c-dba0-a843" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7299-efbe-7561-9a90" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4078-bc3c-dba0-a843" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7299-efbe-7561-9a90" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="4e94-1c70-d2a2-3eba" name="Improved Drive" hidden="false" collective="false" import="true" targetId="e9b8-cd55-1588-cdf3" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5192-0fef-cc29-68e7" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5192-0fef-cc29-68e7" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="b5b4-b5a2-382f-e68a" name="APD Energy" hidden="false" collective="false" import="true" targetId="e1b7-fb84-6b09-0012" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d602-4e1f-715b-aab2" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d602-4e1f-715b-aab2" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="18c6-75d3-9515-9a38" name="Aegis" hidden="false" collective="false" import="true" targetId="7f25-d23f-0124-f65a" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b3d1-ca9a-7dcb-432a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b3d1-ca9a-7dcb-432a" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1102,51 +1115,51 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f78-5795-3a36-44be" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f78-5795-3a36-44be" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cc6-1ace-4541-1ce3" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="7ad0-f7c3-96ba-0a4c" name="AEA Admirals" hidden="false" collective="false" import="true" targetId="a782-69cc-94a6-c23c" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84e5-d495-0938-3237" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84e5-d495-0938-3237" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="32f2-c206-a105-e2fe" name="Generic Traits" hidden="false" collective="false" import="true" targetId="250d-cba0-c34f-a7f0" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28e0-d8a4-2c75-344a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28e0-d8a4-2c75-344a" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="eed3-a175-ff8b-a0f9" name="Merathian Admirals" hidden="false" collective="false" import="true" targetId="a26d-2de5-74cd-c2f2" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8909-1dc7-027b-db48" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8909-1dc7-027b-db48" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="b6b3-38e6-77b2-43e7" name="SRP Admirals" hidden="false" collective="false" import="true" targetId="fb08-5f34-9780-f7d3" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="907d-ee61-33ef-d3ad" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="907d-ee61-33ef-d3ad" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="60f3-e164-a0d8-d5c7" name="MC Admirals" hidden="false" collective="false" import="true" targetId="fc8c-7739-db79-eb07" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3403-f7b0-bd6a-4ccf" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3403-f7b0-bd6a-4ccf" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="5fd2-5d35-9247-40ee" name="NC Admirals" hidden="false" collective="false" import="true" targetId="ef76-916f-a6dc-c0e6" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63d1-cd30-3bb8-88cc" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63d1-cd30-3bb8-88cc" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="e1f1-265e-0208-2a7b" name="IH Admirals" hidden="false" collective="false" import="true" targetId="91d7-8e3b-3914-231a" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e4-2a15-4eaa-0353" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e4-2a15-4eaa-0353" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1157,8 +1170,8 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5067-28fc-1954-8f7e" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1167,7 +1180,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
       <entryLinks>
         <entryLink id="7175-9fd8-9ad6-bc23" name="Grand Admiral" hidden="false" collective="false" import="true" targetId="c263-1075-50d4-5c53" type="selectionEntry"/>
         <entryLink id="36d8-70bb-3c44-5c04" name="Battlegroup Commander" hidden="false" collective="false" import="true" targetId="11e6-0919-7171-3349" type="selectionEntry"/>
-        <entryLink id="a199-06c9-e9c9-d033" name="Grand Admiral" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup"/>
+        <entryLink id="a199-06c9-e9c9-d033" name="Commander Traits" hidden="false" collective="false" import="true" targetId="a654-6a24-3b83-0edb" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a246-4f69-5f8f-49ce" name="Hanger Upgrades" hidden="true" collective="false" import="true">
@@ -1176,24 +1189,24 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3db8-dec1-a0d0-6143" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65e0-d6cc-fa09-919a" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7d6a-9af3-2353-cf10" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="197b-a939-f653-3fff" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3db8-dec1-a0d0-6143" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65e0-d6cc-fa09-919a" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7d6a-9af3-2353-cf10" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="197b-a939-f653-3fff" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b09-ce02-20bd-e4f5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b09-ce02-20bd-e4f5" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="fdb4-e7ee-fa0f-d6e3" name="Hanger Bay" hidden="false" collective="false" import="true" targetId="c400-5953-f9e1-246a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="197b-a939-f653-3fff" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="197b-a939-f653-3fff" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1201,14 +1214,14 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <categoryLink id="1bde-64c0-4a2f-6071" name="Hanger Bay" hidden="false" targetId="197b-a939-f653-3fff" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="2"/>
           </costs>
         </entryLink>
         <entryLink id="8005-d390-1f01-5e14" name="Hanger Large" hidden="false" collective="false" import="true" targetId="2421-cf65-1076-2cb2" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7d6a-9af3-2353-cf10" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7d6a-9af3-2353-cf10" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1220,7 +1233,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3db8-dec1-a0d0-6143" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3db8-dec1-a0d0-6143" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1228,14 +1241,14 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <categoryLink id="7cd1-552c-251b-f8e2" name="Hanger Medium" hidden="false" targetId="3db8-dec1-a0d0-6143" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6"/>
           </costs>
         </entryLink>
         <entryLink id="b863-a60e-1921-5f01" name="Hanger Small" hidden="false" collective="false" import="true" targetId="95c4-8da9-d607-b9f8" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65e0-d6cc-fa09-919a" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65e0-d6cc-fa09-919a" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1243,7 +1256,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             <categoryLink id="d0c9-787b-02a8-964e" name="Hanger Small" hidden="false" targetId="65e0-d6cc-fa09-919a" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="3"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -1255,7 +1268,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3812-dfb0-f7d9-4053" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3812-dfb0-f7d9-4053" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1270,7 +1283,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="6"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1284,71 +1297,55 @@ Assault Ships: Assault Ships. &quot;			</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a9b-d13a-531e-12a3" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry id="4ad8-a3d5-34ff-c4c5" name="Captain Schulhof (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4ad8-a3d5-34ff-c4c5" name="Captain Lindemann (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="b240-cb75-a8e3-c781" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="b240-cb75-a8e3-c781" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3b58-a450-bc83-063a" name="Captain Schulhof (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
+            <profile id="3b58-a450-bc83-063a" name="Captain Lindemann:(Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
               <characteristics>
-                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Trickster: When commanding a patrol group, when they are shot at he may choose to enact evasion manoeuvres which gives the enemy ships 2 to shooting at his group until his next activation. However he then receives 2 to shooting next activation.</characteristic>
-                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">5+</characteristic>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Trickster: When commanding a patrol group, when they are shot at he may choose to enact evasion manoeuvres which gives the enemy ships -2 to shooting at his group until his next activation. However he then receives 2 to shooting next activation.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">4+</characteristic>
                 <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+1</characteristic>
                 <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="16.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="16"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a91f-4bb4-dd5c-fd1c" name="Rear Admiral Pearson (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade">
-          <modifierGroups>
-            <modifierGroup>
-              <modifiers>
-                <modifier type="append" field="name" value="BGC">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="name" value="GA">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
+        <selectionEntry id="a91f-4bb4-dd5c-fd1c" name="Rear Admiral Pearson (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12bc-4296-4aec-df60" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12bc-4296-4aec-df60" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="db50-9062-84df-6561" name="Rear Admiral Pearson (Inspiring 3)" hidden="false" targetId="b4ce-9b8e-9fa4-9a0b" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="beae-e6b7-5135-2acd" name="Admiral Kodoth (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="beae-e6b7-5135-2acd" name="Admiral Kodoth (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b6d-44b5-7ed8-3c14" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b6d-44b5-7ed8-3c14" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1365,14 +1362,92 @@ Assault Ships: Assault Ships. &quot;			</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Commander Winters" hidden="true" id="a9bc-cf85-ac2a-3e02" sortIndex="4">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Commander Winters (Inspiring 3)" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander" hidden="false" id="ff42-8760-a178-cf76">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Against the grain - Winters’ has access to all command actions not chosen by the admiral,
+but cannot use any of the chosen abilities.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="33d8-29ef-157a-a717" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="5ef9-7be3-c10e-89bb" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Izabella Strahovski" hidden="true" id="eba9-73de-4a78-885" sortIndex="5">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Izabella Strahovski (Confident 2)" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander" hidden="false" id="2e50-f91c-7513-d7bc">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">EW Web - Every time Izabella’s EW ship does an EW ability, every other EW ship from other
+battlegroups can use that ability on a roll of 7+ per battlegroup as if they have just used it. They
+can they use their own abilities when they activate also.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">-1</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d9a5-8ec1-356b-fd6e" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="544d-a82d-600b-2f7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Captain Besson (Confident 2)" hidden="true" id="3b67-b75f-fc2f-ea59" sortIndex="6">
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Captain Besson (Confident 2)" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander" hidden="false" id="e663-3fea-6749-5770">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Light Carrier scout tactics - If deployed in the vanguard, Light Carriers within Besson’s battlegroup gain +1 to their ‘Strike Support’ trait.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">0</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8aa6-eac8-dc46-e637" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9322-0eaf-8900-a53d" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="250d-cba0-c34f-a7f0" name="Generic Traits" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6df-1d73-cf34-3de1" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6df-1d73-cf34-3de1" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="bf1f-046c-3941-39e4" name="1 Poor" hidden="false" collective="false" import="true" type="upgrade">
@@ -1387,7 +1462,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a99d-38cb-2c49-169d" name="2 Confident" hidden="false" collective="false" import="true" type="upgrade">
@@ -1402,7 +1477,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4da7-45df-8c32-d5e0" name="3 Inspiring" hidden="false" collective="false" import="true" type="upgrade">
@@ -1417,7 +1492,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="65fb-1b54-7629-e556" name="4 Legendary" hidden="false" collective="false" import="true" type="upgrade">
@@ -1432,7 +1507,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1441,7 +1516,7 @@ Assault Ships: Assault Ships. &quot;			</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-5a48-5c1a-44c1" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1450,12 +1525,12 @@ Assault Ships: Assault Ships. &quot;			</comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a9a5-fec6-487c-42eb" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a9a5-fec6-487c-42eb" type="max"/>
           </constraints>
           <profiles>
             <profile id="eeaa-1954-3b8c-d1a8" name="Batu Husun (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
@@ -1469,7 +1544,7 @@ Batu commands some of the finest Merathian shock troopers of all the divided hou
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="12.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="12"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="534e-e50c-d4b2-4fb4" name="Sokhatai Maral (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1478,32 +1553,32 @@ Batu commands some of the finest Merathian shock troopers of all the divided hou
               <modifiers>
                 <modifier type="append" field="name" value="BGC">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="append" field="name" value="GA">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2afb-aee4-2527-a86c" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2afb-aee4-2527-a86c" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="7d6f-81a7-99d4-352c" name="Sokhatai Maral (Inspiring 3)" hidden="false" targetId="314d-f13b-fa21-03b2" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fde9-4025-02a4-89ed" name="Arkhai Hooshal (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1519,7 +1594,7 @@ Circulating rumours: 1 to enemy morale saves</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1528,27 +1603,21 @@ Circulating rumours: 1 to enemy morale saves</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edc7-8c1e-1373-40ec" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edc7-8c1e-1373-40ec" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry id="0a91-472d-53d5-c537" name="Admiral Meng Xinyi (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0a91-472d-53d5-c537" name="Admiral Meng Xinyi (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="085d-c25b-33da-0cee" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f11-fae2-9c59-a140" type="equalTo"/>
-                    <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c8c-517b-8099-bb7e" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="085d-c25b-33da-0cee" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e80-5fa6-a6f4-e19f" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e80-5fa6-a6f4-e19f" type="max"/>
           </constraints>
           <profiles>
             <profile id="c643-d78f-7f17-7a95" name="Admiral Meng Xinyi (Legendary 4)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
@@ -1562,19 +1631,19 @@ Meng is no stranger to death and combat and has taken a few scrapes in his time.
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="975c-c061-3dd5-83c9" name="Captain Yakovna (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="975c-c061-3dd5-83c9" name="Captain Yakovna (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade" sortIndex="3">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7415-99d2-a833-fd31" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7415-99d2-a833-fd31" type="max"/>
           </constraints>
           <profiles>
             <profile id="58a3-41ec-f500-837e" name="Captain Yakovna (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
@@ -1588,34 +1657,114 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="32e9-17de-a6c9-1165" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="32e9-17de-a6c9-1165" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
                 <modifier type="append" field="name" value="BGC">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="append" field="name" value="GA">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bb6f-95ec-04a7-0e45" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bb6f-95ec-04a7-0e45" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="37a7-cbe0-9f78-0faa" name="Rear Admiral Dong Huo (Legendary 4)" hidden="false" targetId="6ad3-8019-30a8-7bdf" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grand Admiral Zakhar Nikolaev (Legendary 4)" hidden="true" id="caa4-4a02-5e1a-b666" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="2fa7-79f2-39bc-2852" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9e62-7112-30a7-2c56" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Grand Admiral Zakhar Nikolaev (Legendary 4)" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander" hidden="false" id="629d-6292-61a6-8b26">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Indomitable Command - You always decide which ship in this battlegroup is assigned
+damage first (even for strike craft/assassin systems/etc.).
+Maximum Devastation - Your fleet’s strike bombers still roll to hit even if they are destroyed
+by ADS.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+3</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="55"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Admiral Meng Xinyi (Legendary 4)" hidden="true" id="afda-3933-4ca-975b" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="085d-c25b-33da-0cee" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="47f2-b09a-ba2d-7d26" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Admiral Meng Xinyi (Legendary 4)" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander" hidden="false" id="f9de-cf59-4757-8fa5">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Forged In Fire:
+Meng is no stranger to death and combat and has taken a few scrapes in his time. The first time his bridge is hit you can choose to reroll the dice on the damage table.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Admiral Meng Xinyi (Legendary 4)" hidden="true" id="2c94-168-dd25-e2db" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="085d-c25b-33da-0cee" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e7f1-e3a2-65fb-d4c9" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Admiral Meng Xinyi (Legendary 4)" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander" hidden="false" id="12db-f946-90-62fe">
+              <characteristics>
+                <characteristic name="Commander Trait" typeId="8431-d304-5569-d9ee">Forged In Fire:
+Meng is no stranger to death and combat and has taken a few scrapes in his time. The first time his bridge is hit you can choose to reroll the dice on the damage table.</characteristic>
+                <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+2</characteristic>
+                <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="32"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1624,12 +1773,12 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e561-c0d9-9760-7391" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e561-c0d9-9760-7391" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7048-4499-89bc-b501" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7048-4499-89bc-b501" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="abf6-cdee-5538-7ebd" name="Valgar Sagittyr (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
@@ -1638,8 +1787,8 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="350f-57f3-2cea-35ee" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="350f-57f3-2cea-35ee" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1656,7 +1805,7 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2fc6-e5c4-5146-80de" name="Cygnis Rugire (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1665,19 +1814,19 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
               <modifiers>
                 <modifier type="append" field="name" value="BGC">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="append" field="name" value="GA">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="75cf-1b0d-984e-8192" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="75cf-1b0d-984e-8192" type="max"/>
           </constraints>
           <profiles>
             <profile id="aa04-8f4a-24a4-09da" name="Cygnis Rugire (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
@@ -1690,7 +1839,7 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7e05-77a3-ad1c-7433" name="Onya Brayhaul (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
@@ -1699,15 +1848,15 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72c4-1567-4bc9-348c" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72c4-1567-4bc9-348c" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="e80b-2227-80b8-4630" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="e80b-2227-80b8-4630" type="max"/>
           </constraints>
           <profiles>
             <profile id="ea3a-0278-eca7-9ed2" name="Onya Brayhaul (Inspiring 3)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
@@ -1720,19 +1869,19 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e396-60ea-6bf5-1372" name="Orion Prod (Confident 2)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b26c-4d2b-0182-c747" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b26c-4d2b-0182-c747" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2791-aa2f-1272-08cf" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2791-aa2f-1272-08cf" type="max"/>
           </constraints>
           <profiles>
             <profile id="3b5c-db5d-fec2-b05b" name="Orion Prod (Confident 2)" hidden="false" typeId="ee25-8839-fc92-3ef6" typeName="Battlegroup Commander">
@@ -1745,7 +1894,7 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="10"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1754,7 +1903,7 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3812-dfb0-f7d9-4053" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3812-dfb0-f7d9-4053" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1765,12 +1914,12 @@ If the only escorts in Yakovna’s battlegroup are T3 Gunboats then she may take
               <modifiers>
                 <modifier type="append" field="name" value="BGC">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="append" field="name" value="GA">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1793,14 +1942,14 @@ to hit next activation</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="30"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ac47-31dc-eefd-8b98" name="Lictor Draghici (Legendary 4)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1820,14 +1969,14 @@ You may spend 5 blood counters to increase your maximum battlegroup thrust by 1.
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="40.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="40"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="605c-433a-858c-33b1" name="Extractor Zamfir (Confident 2)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f11-fae2-9c59-a140" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f11-fae2-9c59-a140" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1847,7 +1996,7 @@ You may spend 3 blood counters and give all ships in Zamfir’s battlegroup stru
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1856,7 +2005,7 @@ You may spend 3 blood counters and give all ships in Zamfir’s battlegroup stru
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="818f-6080-487b-0447" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="818f-6080-487b-0447" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1867,8 +2016,8 @@ You may spend 3 blood counters and give all ships in Zamfir’s battlegroup stru
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dfe8-3719-8442-cb61" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dfe8-3719-8442-cb61" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7175-9fd8-9ad6-bc23" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1888,7 +2037,7 @@ The Empress is watching: All friendly battlegroups gain +1 to morale saves, and 
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="50.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="50"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="63d7-5339-36f0-845c" name="Prefect Bruccius (Legendary 4)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1897,12 +2046,12 @@ The Empress is watching: All friendly battlegroups gain +1 to morale saves, and 
               <modifiers>
                 <modifier type="append" field="name" value="BGC">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="append" field="name" value="GA">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c263-1075-50d4-5c53" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1920,7 +2069,7 @@ When this battlegroup destroys the last capital ship in an enemy battlegroup or 
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="35"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7e71-3bc5-12d2-81af" name="Auxiliary Legate Onyx (Inspiring 3)" hidden="true" collective="false" import="true" type="upgrade">
@@ -1929,8 +2078,8 @@ When this battlegroup destroys the last capital ship in an enemy battlegroup or 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5603-502e-9c80-110e" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36d8-70bb-3c44-5c04" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5603-502e-9c80-110e" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36d8-70bb-3c44-5c04" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1948,7 +2097,7 @@ Krotan Warlord: Krotan Ravager escorts only take up 0.5 escort slots and command
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="25"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fda2-448f-7d78-9ffe" name="Tribune Corvus (Confident 2)" hidden="true" collective="false" import="true" type="upgrade">
@@ -1957,8 +2106,8 @@ Krotan Warlord: Krotan Ravager escorts only take up 0.5 escort slots and command
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="688c-5ead-89a3-1d69" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11e6-0919-7171-3349" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="688c-5ead-89a3-1d69" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1978,7 +2127,7 @@ All ships in battlegroup gain 1 slot for dropships.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="20"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0555-58f6-a1b9-b99c" name="Auxiliary Legate Mirrali (Inspiring 3)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1987,8 +2136,8 @@ All ships in battlegroup gain 1 slot for dropships.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c32a-e17b-92e4-f5bf" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36d8-70bb-3c44-5c04" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c32a-e17b-92e4-f5bf" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36d8-70bb-3c44-5c04" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2005,7 +2154,7 @@ All ships in battlegroup gain 1 slot for dropships.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15.0"/>
+            <cost name="Pts" typeId="ba61-5f33-318b-653a" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2016,7 +2165,7 @@ All ships in battlegroup gain 1 slot for dropships.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2036,7 +2185,7 @@ settled down and show his true colours next engagement.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2046,17 +2195,17 @@ settled down and show his true colours next engagement.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <description>Dual Purpose weapons may attack Strikecraft as though a “Switch All Weapons to Point Defense!” special action had been issued. Mines may also be attacked without a special action.</description>
     </rule>
-    <rule id="0952-d944-21ef-d99e" name="Long Range " hidden="true">
+    <rule id="0952-d944-21ef-d99e" name="Long Range" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2066,7 +2215,7 @@ settled down and show his true colours next engagement.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2076,7 +2225,7 @@ settled down and show his true colours next engagement.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2086,7 +2235,7 @@ settled down and show his true colours next engagement.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2096,7 +2245,7 @@ settled down and show his true colours next engagement.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2106,7 +2255,7 @@ settled down and show his true colours next engagement.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2116,7 +2265,7 @@ settled down and show his true colours next engagement.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2128,7 +2277,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2138,7 +2287,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2148,7 +2297,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2158,7 +2307,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2168,7 +2317,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2178,7 +2327,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2188,7 +2337,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2198,7 +2347,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2208,7 +2357,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2218,7 +2367,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2228,7 +2377,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2238,7 +2387,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2248,7 +2397,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2258,7 +2407,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2268,7 +2417,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2278,7 +2427,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2288,7 +2437,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2298,7 +2447,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2308,17 +2457,17 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <description>Shields get a 7+ saving throw against this weapon. If the shields already have a saving throw due to another trait add +3 to it. </description>
+      <description>Shields get a 7+ saving throw against this weapon. If the shields already have a saving throw due to another trait add +3 to it.</description>
     </rule>
     <rule id="5325-1e0e-f155-dbce" name="Kinetic" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2328,7 +2477,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2338,7 +2487,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2348,7 +2497,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2358,7 +2507,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2368,7 +2517,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a7b-e5fd-e37b-e83a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2417,7 +2566,7 @@ Capital Ship: Battlecruiser, Cruiser, Light Cruiser,  Missile Cruiser
 
 Heavy Capital Ship: Battleship, Carrier, Fleet Carrier, Dreadnought,
 
-Assault Ships: Assault Ships. &quot;			</characteristic>
+Assault Ships: Assault Ships. &quot;</characteristic>
       </characteristics>
     </profile>
     <profile id="d6ff-f2a8-3f0b-8627" name="All or Nothing Armor Scheme" publicationId="9db1-597c-e74f-261b" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2437,7 +2586,7 @@ Assault Ships: Assault Ships. &quot;			</characteristic>
     </profile>
     <profile id="0c51-ceaa-f4aa-ba4b" name="Assault pods" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65"> If this ship it is within 2” of an enemy ship, it may send its crew to board. If the attacking ship is left without crew after CQB is completed it is destroyed and removed from play.</characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">If this ship it is within 2” of an enemy ship, it may send its crew to board. If the attacking ship is left without crew after CQB is completed it is destroyed and removed from play.</characteristic>
       </characteristics>
     </profile>
     <profile id="8b25-5436-8f22-3d08" name="Assassin System" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2492,7 +2641,7 @@ Assault Ships: Assault Ships. &quot;			</characteristic>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Shields get a save where X is the number to be equaled or exceeded to prevent damage. This can be modified by the Armor Piercing trait.</characteristic>
       </characteristics>
     </profile>
-    <profile id="bec5-dd23-0966-0c7b" name="Dodge " hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+    <profile id="bec5-dd23-0966-0c7b" name="Dodge" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <comment>Dodge X</comment>
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">When attacked this ship may completely ignore a hit on a roll of X+. This is done before damage is applied to shields or an armor save is made. A weapons AP does not apply to Dodge Rolls.</characteristic>
@@ -2534,7 +2683,7 @@ Assault Ships: Assault Ships. &quot;			</characteristic>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+8 Strikecraft Capacity</characteristic>
       </characteristics>
     </profile>
-    <profile id="e2ab-dcb8-7ef7-cb2c" name="Extra Weapon Capacitors " hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+    <profile id="e2ab-dcb8-7ef7-cb2c" name="Extra Weapon Capacitors" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <comment>Extra Weapon Capacitors X</comment>
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+X” all “energy” and “kinetic” type weapon ranges.</characteristic>
@@ -2580,7 +2729,7 @@ Assault Ships: Assault Ships. &quot;			</characteristic>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Armor is counted as +1 against Kinetic weapons.</characteristic>
       </characteristics>
     </profile>
-    <profile id="209b-2acd-8dac-0cf7" name="Launch " hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+    <profile id="209b-2acd-8dac-0cf7" name="Launch" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <comment>Launch X</comment>
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">All ships have a Launch 1 trait which is assumed and never written. Therefore Launch is only written if its capacity is higher than 1</characteristic>
@@ -2596,7 +2745,7 @@ Assault Ships: Assault Ships. &quot;			</characteristic>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">When a troop company is destroyed in CQB within 6” of this ship. Roll a dice, on an 8+, place the troop company on this ship instead of removing it from the game.</characteristic>
       </characteristics>
     </profile>
-    <profile id="436d-7b8e-f52c-8936" name="Mine Layer" page="" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
+    <profile id="436d-7b8e-f52c-8936" name="Mine Layer" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <comment>Mine Layer X</comment>
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may deploy X number of minefields during gameplay. A minelayer may also safely remove enemy mines. Removed “enemy” mines are considered to be destroyed and my not then later be deployed from this ship. A minelayer may however pick up friendly mines and move them to be deployed elsewhere.</characteristic>
@@ -2604,7 +2753,7 @@ Assault Ships: Assault Ships. &quot;			</characteristic>
     </profile>
     <profile id="1315-42b2-e854-61f9" name="Multi-Spectrum Shielding" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">As long as this ship has an active shield, it may ignore the first shield hit it receives each game turn.</characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65"> An advanced form of shield modulation. If this ship has an active shield, it may ignore the first X shield hits it receives each game turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="297b-21ca-d0df-8bee" name="Piggy Backed Strikecraft" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2620,7 +2769,7 @@ Assault Ships: Assault Ships. &quot;			</characteristic>
     </profile>
     <profile id="c788-fa96-ace6-1942" name="Reinforced Hull" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">A ship with this trait may re-roll damage to the ship. The second result stands. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">A ship with this trait may re-roll damage to the ship. The second result stands.</characteristic>
       </characteristics>
     </profile>
     <profile id="3b6b-4ec8-4ed3-c8a5" name="Scout" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2636,7 +2785,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
     </profile>
     <profile id="fdae-e1a5-6c8f-d206" name="Security Stations" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+1 CQB when defending your ship or station with this trait. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">+1 CQB when defending your ship or station with this trait.</characteristic>
       </characteristics>
     </profile>
     <profile id="ff5a-3984-e7ab-7b60" name="Shielded Carapace" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2647,17 +2796,17 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
     </profile>
     <profile id="ee75-fc0a-f7a0-ad93" name="Shield Charger" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">During this turn, ship&apos;s shield auto rebuilds 1 point of shielding. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">During this turn, ship&apos;s shield auto rebuilds 1 point of shielding.</characteristic>
       </characteristics>
     </profile>
     <profile id="6702-a7ca-8e05-951c" name="Shield Projector" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship may project its shield 3” around it covering other ships nearby from damage. Any ship within 3” range to this ship, may transfer damage taken to this ships shield as long as it has shields remaining. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship may project its shield 3” around it covering other ships nearby from damage. Any ship within 3” range to this ship, may transfer damage taken to this ships shield as long as it has shields remaining.</characteristic>
       </characteristics>
     </profile>
     <profile id="ac08-1a37-1e1e-88b8" name="Sluggish" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may only turn twice during an activation. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may only turn twice during an activation.</characteristic>
       </characteristics>
     </profile>
     <profile id="ba3e-19c6-09b8-e7d7" name="Stealth" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2678,7 +2827,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
     </profile>
     <profile id="48a1-01c6-51cf-4c1a" name="Thrust Vectoring" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may make one free turn per activation without expending thrust OR one double turn after making a move once per activation. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Ship may make one free turn per activation without expending thrust OR one double turn after making a move once per activation.</characteristic>
       </characteristics>
     </profile>
     <profile id="1aaa-ac73-61a1-0b6a" name="True Carrier" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -2688,7 +2837,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
     </profile>
     <profile id="5a4e-8b8c-67ab-d61e" name="Volatile" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">When this ship is destroyed it explodes! Any ship within 3” of this ship takes (D10/2)-1 damage (0-4 damage). Rolled for each ship in range. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">When this ship is destroyed it explodes! Any ship within 3” of this ship takes (D10/2)-1 damage (0-4 damage). Rolled for each ship in range.</characteristic>
       </characteristics>
     </profile>
     <profile id="0e82-fd26-481a-dcd2" name="Beam" hidden="true" typeId="adcc-9796-db7a-f8b1" typeName="Weapon Traits">
@@ -2696,7 +2845,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2709,7 +2858,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2721,7 +2870,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2733,7 +2882,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2745,7 +2894,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2757,7 +2906,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2769,7 +2918,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2781,7 +2930,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2794,7 +2943,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2806,7 +2955,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2819,7 +2968,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2833,7 +2982,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2846,7 +2995,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2858,7 +3007,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2870,7 +3019,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2883,7 +3032,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2895,7 +3044,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2907,7 +3056,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2919,7 +3068,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2931,7 +3080,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2943,7 +3092,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2955,7 +3104,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2967,7 +3116,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2979,7 +3128,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2991,7 +3140,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3003,7 +3152,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3015,7 +3164,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3028,7 +3177,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3040,7 +3189,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3052,7 +3201,7 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3064,12 +3213,12 @@ Note 2: Beam weapons with Dangerous only count a failure on the first dice roll.
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <characteristics>
-        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Shields get a 7+ saving throw against this weapon. If the shields already have a saving throw due to another trait add +3 to it. </characteristic>
+        <characteristic name="Trait" typeId="9d89-00a8-8d24-cb41">Shields get a 7+ saving throw against this weapon. If the shields already have a saving throw due to another trait add +3 to it.</characteristic>
       </characteristics>
     </profile>
     <profile id="7174-64e8-9d53-506e" name="Gun Battery" hidden="true" typeId="d169-b6bf-030f-d1c7" typeName="Weapon Profile">
@@ -3215,7 +3364,7 @@ Note that the base of 3 ships acts as a single ship when they are boarded.</char
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3227,7 +3376,7 @@ Note that the base of 3 ships acts as a single ship when they are boarded.</char
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab99-c9c0-1687-d9ea" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3295,6 +3444,36 @@ best use out of the space on her ships. (+2 strike craft slots to her ship)</cha
         <characteristic name="Skill" typeId="e630-acd9-56e2-bdac">3+</characteristic>
         <characteristic name="Morale Bonus" typeId="13cd-456f-ce06-fe1d">+3</characteristic>
         <characteristic name="Command Capacity" typeId="60c1-4c0e-cbc0-4430">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="CIWS" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="7796-f38e-97b5-d38e">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">Unless critically damaged, this ship’s ADS rolls always receive the maximum bonus (5+). Additionally, this ship always rolls ADS against all SC that choose it as a target.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Formation" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="6f31-66d7-728a-434e">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship gains a bonus for having X number of the same ship type in their battlegroup (including themselves).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fortress Shield" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="292-e3fa-923a-8726">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship cannot take hull damage while it has shields remaining. </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hardened Systems" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="865c-efe2-eeda-34d4">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship cannot be chosen for targeted EW abilities. Static EW abilities still apply normally.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Momentum" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="fa80-9d05-9d61-f45a">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship gains +1 max thrust during its movement if it uses all of its thrust and does not rotate.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hybrid " typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="ba00-da29-220a-ed62">
+      <characteristics>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship gains +1 max thrust during its movement if it uses all of its thrust and does not rotate.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
