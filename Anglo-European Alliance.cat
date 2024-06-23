@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="55" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2a9b-d13a-531e-12a3" name="Anglo-European Alliance" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="a2a4-026e-3ed4-8177" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="917e-df8f-94d0-342d" name="Kodoth Flagship" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -605,8 +605,8 @@
       <categoryLinks>
         <categoryLink id="254b-4df4-4f0b-5ff0" name="Destroyer" hidden="false" targetId="aaf5-53cb-dd7a-25e1" primary="false"/>
         <categoryLink id="63e4-ab6b-b957-cb10" name="T2" hidden="false" targetId="b6d5-6046-4ec0-655d" primary="false"/>
-        <categoryLink id="41e0-1c3c-b1f3-636c" name="New CategoryLink" hidden="false" targetId="8f11-fae2-9c59-a140" primary="true"/>
         <categoryLink id="50ba-cb71-7f53-22f5" name="Anglo-European Alliance" hidden="false" targetId="6f56-a31c-b476-6b3b" primary="false"/>
+        <categoryLink id="3677-1c67-e32b-127a" name="Support" hidden="false" targetId="e62e-eaf7-0a7a-8ede" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2298-77d6-afc4-9be6" name="Missile Pods (Ord)" hidden="false" collective="false" import="true" targetId="a491-957f-a29b-8e31" type="selectionEntry">
@@ -1741,7 +1741,6 @@
         <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+4</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
         <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">7+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
         <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
@@ -1752,7 +1751,6 @@
         <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+3</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">10</characteristic>
         <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">4+/-1</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">8+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
         <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
@@ -1763,7 +1761,6 @@
         <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+2</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
         <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">4+/-3</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">7+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">2</characteristic>
         <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
@@ -1774,7 +1771,6 @@
         <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">4+</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">10+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">6+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
         <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
@@ -1785,7 +1781,6 @@
         <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+4</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">12</characteristic>
         <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">4+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
         <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
@@ -1796,7 +1791,6 @@
         <characteristic name="Anti SC" typeId="5100-19bf-79a4-f46b">+1</characteristic>
         <characteristic name="Speed" typeId="84f2-ec5e-e8f2-1b9c">8</characteristic>
         <characteristic name="Anti Ship" typeId="a702-c3f6-cb95-b6a6">8+/0</characteristic>
-        <characteristic name="Rundown" typeId="c53e-747f-9f47-849c">9+</characteristic>
         <characteristic name="Save" typeId="db31-ed7c-6704-83e3">8+</characteristic>
         <characteristic name="Attacks Against Ships" typeId="3fbd-f301-2926-dcaf">1</characteristic>
         <characteristic name="Traits" typeId="a75f-7e43-f243-87a2"/>
