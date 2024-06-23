@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="60" battleScribeVersion="2.03" authorName="Mackintackin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="a2a4-026e-3ed4-8177" name="GFA" revision="62" battleScribeVersion="2.03" authorName="Michaellaneous" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="ba61-5f33-318b-653a" name="Pts" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -541,7 +541,7 @@ Modifier: This Battlegroup never makes any morale checks.</comment>
           <categoryLinks>
             <categoryLink name="Faction Traits" hidden="false" id="ff3f-47e6-aef5-1387" targetId="1400-6cc4-e9a5-372c" primary="false"/>
             <categoryLink name="Configuration" hidden="false" id="98fa-b73c-7880-952b" targetId="4abf-8ab9-931b-4a97" primary="false"/>
-            <categoryLink name="Super Capital" hidden="false" id="a534-a853-1ad9-a85f" targetId="a580-131d-fad-f1cd" type="category"/>
+            <categoryLink name="Super Capital" hidden="false" id="a534-a853-1ad9-a85f" targetId="a580-131d-fad-f1cd"/>
             <categoryLink name="Other" hidden="false" id="d0b1-58af-502f-2940" targetId="b09d-d647-606f-39d3" primary="false"/>
           </categoryLinks>
         </forceEntry>
@@ -2753,7 +2753,7 @@ Assault Ships: Assault Ships. &quot;</characteristic>
     </profile>
     <profile id="1315-42b2-e854-61f9" name="Multi-Spectrum Shielding" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65"> An advanced form of shield modulation. If this ship has an active shield, it may ignore the first X shield hits it receives each game turn.</characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">An advanced form of shield modulation. If this ship has an active shield, it may ignore the first X shield hits it receives each game turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="297b-21ca-d0df-8bee" name="Piggy Backed Strikecraft" hidden="false" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits">
@@ -3458,7 +3458,7 @@ best use out of the space on her ships. (+2 strike craft slots to her ship)</cha
     </profile>
     <profile name="Fortress Shield" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="292-e3fa-923a-8726">
       <characteristics>
-        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship cannot take hull damage while it has shields remaining. </characteristic>
+        <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship cannot take hull damage while it has shields remaining.</characteristic>
       </characteristics>
     </profile>
     <profile name="Hardened Systems" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="865c-efe2-eeda-34d4">
@@ -3471,7 +3471,7 @@ best use out of the space on her ships. (+2 strike craft slots to her ship)</cha
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship gains +1 max thrust during its movement if it uses all of its thrust and does not rotate.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Hybrid " typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="ba00-da29-220a-ed62">
+    <profile name="Hybrid" typeId="ab05-2e44-81dc-dfd0" typeName="Ship Traits" hidden="false" id="ba00-da29-220a-ed62">
       <characteristics>
         <characteristic name="Trait" typeId="69e2-0fbf-e675-3b65">This ship gains +1 max thrust during its movement if it uses all of its thrust and does not rotate.</characteristic>
       </characteristics>
